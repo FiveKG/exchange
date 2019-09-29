@@ -1,0 +1,5 @@
+### test pxg
+GET http://localhost:7758/PAX
+
+### test 
+GET http://localhost:7758/test

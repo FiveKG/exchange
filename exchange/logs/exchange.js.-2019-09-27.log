@@ -1,0 +1,2 @@
+{"date":"2019-09-27T20:33:40.818","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13780","data":'init server of pools server.'}
+{"date":"2019-09-27T20:33:40.837","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"13780","data":'**** server of pools running at http://localhost:7758/  ****'}
