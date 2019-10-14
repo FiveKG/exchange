@@ -1,0 +1,206 @@
+{"date":"2019-10-02T11:12:53.792","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"9604","data":'init server of pools server.'}
+{"date":"2019-10-02T11:12:53.814","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"9604","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-02T11:14:10.001","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13864","data":'init server of pools server.'}
+{"date":"2019-10-02T11:14:10.023","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"13864","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-02T11:14:10.091","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13864","data":'数据库同步成功'}
+{"date":"2019-10-02T11:22:19.400","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"7532","data":'init server of pools server.'}
+{"date":"2019-10-02T11:22:19.420","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"7532","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-02T11:22:19.479","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"7532","data":'数据库同步成功'}
+{"date":"2019-10-02T11:22:45.192","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"9512","data":'init server of pools server.'}
+{"date":"2019-10-02T11:22:45.215","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"9512","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-02T11:22:45.375","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"9512","data":'数据库同步成功'}
+{"date":"2019-10-02T11:25:50.708","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"8424","data":'init server of pools server.'}
+{"date":"2019-10-02T11:25:50.730","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"8424","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-02T11:25:50.791","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"8424","data":'数据库同步成功'}
+{"date":"2019-10-02T11:27:27.050","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"5664","data":'init server of pools server.'}
+{"date":"2019-10-02T11:27:27.125","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"5664","data":'数据库同步成功 Sequelize {
+  options:
+   { dialect: 'mysql',
+     dialectModule: null,
+     dialectModulePath: null,
+     host: '192.168.92.128',
+     protocol: null,
+     define:
+      { underscored: false,
+        freezeTableName: false,
+        charset: 'utf8',
+        dialectOptions: [Object],
+        timestamps: true },
+     query: {},
+     sync: {},
+     timezone: '+00:00',
+     clientMinMessages: 'warning',
+     standardConformingStrings: true,
+     logging: [Function: bound consoleCall],
+     omitNull: false,
+     native: false,
+     replication: false,
+     ssl: undefined,
+     pool: { max: 5, min: 0, acquire: 30000, idle: 10000 },
+     quoteIdentifiers: true,
+     hooks: {},
+     retry: { max: 5, match: [Array] },
+     transactionType: 'DEFERRED',
+     isolationLevel: null,
+     databaseVersion: '8.0.17',
+     typeValidation: false,
+     benchmark: false,
+     minifyAliases: false,
+     logQueryParameters: false,
+     port: 3306 },
+  config:
+   { database: 'exchange',
+     username: 'exchange_user',
+     password: 'mysql_pass_2019',
+     host: '192.168.92.128',
+     port: 3306,
+     pool: { max: 5, min: 0, acquire: 30000, idle: 10000 },
+     protocol: null,
+     native: false,
+     ssl: undefined,
+     replication: false,
+     dialectModule: null,
+     dialectModulePath: null,
+     keepDefaultTimezone: undefined,
+     dialectOptions: undefined },
+  dialect:
+   MysqlDialect {
+     sequelize: [Circular],
+     connectionManager:
+      ConnectionManager {
+        sequelize: [Circular],
+        config: [Object],
+        dialect: [Circular],
+        versionPromise: null,
+        dialectName: 'mysql',
+        pool: [Pool],
+        lib: [Object] },
+     QueryGenerator:
+      MySQLQueryGenerator {
+        sequelize: [Circular],
+        options: [Object],
+        dialect: 'mysql',
+        _dialect: [Circular],
+        OperatorMap: [Object],
+        typeValidation: undefined } },
+  queryInterface:
+   QueryInterface {
+     sequelize: [Circular],
+     QueryGenerator:
+      MySQLQueryGenerator {
+        sequelize: [Circular],
+        options: [Object],
+        dialect: 'mysql',
+        _dialect: [MysqlDialect],
+        OperatorMap: [Object],
+        typeValidation: undefined } },
+  models: { PAXAccount: PAXAccount, Pax_charge: Pax_charge },
+  modelManager:
+   ModelManager { models: [ PAXAccount, Pax_charge ], sequelize: [Circular] },
+  connectionManager:
+   ConnectionManager {
+     sequelize: [Circular],
+     config:
+      { database: 'exchange',
+        username: 'exchange_user',
+        password: 'mysql_pass_2019',
+        host: '192.168.92.128',
+        port: 3306,
+        pool: [Object],
+        protocol: null,
+        native: false,
+        ssl: undefined,
+        replication: false,
+        dialectModule: null,
+        dialectModulePath: null,
+        keepDefaultTimezone: undefined,
+        dialectOptions: undefined },
+     dialect:
+      MysqlDialect {
+        sequelize: [Circular],
+        connectionManager: [Circular],
+        QueryGenerator: [MySQLQueryGenerator] },
+     versionPromise: null,
+     dialectName: 'mysql',
+     pool:
+      Pool {
+        _factory: [Object],
+        _count: 1,
+        _draining: false,
+        _pendingAcquires: [],
+        _inUseObjects: [],
+        _availableObjects: [Array],
+        _removeIdleTimer:
+         Timeout {
+           _called: false,
+           _idleTimeout: 1000,
+           _idlePrev: [TimersList],
+           _idleNext: [TimersList],
+           _idleStart: 557,
+           _onTimeout: [Function],
+           _timerArgs: undefined,
+           _repeat: null,
+           _destroyed: false,
+           [Symbol(unrefed)]: false,
+           [Symbol(asyncId)]: 60,
+           [Symbol(triggerId)]: 59 },
+        _removeIdleScheduled: true },
+     lib:
+      { createConnection: [Function],
+        connect: [Function],
+        Connection: [Function: Connection],
+        createPool: [Function],
+        createPoolCluster: [Function],
+        createQuery: [Function: createQuery],
+        Pool: [Function: Pool],
+        createServer: [Function],
+        PoolConnection: [Function],
+        escape: [Function: escape],
+        escapeId: [Function: escapeId],
+        format: [Function: format],
+        raw: [Function: raw],
+        createConnectionPromise: [Getter],
+        createPoolPromise: [Getter],
+        createPoolClusterPromise: [Getter],
+        Types: [Getter],
+        Charsets: [Getter],
+        CharsetToEncoding: [Getter],
+        setMaxParserCache: [Function],
+        clearParserCache: [Function] } },
+  importCache: {} }'}
+{"date":"2019-10-02T11:27:27.130","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"5664","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-02T11:31:48.854","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"5664","data":'GET /PAX'}
+{"date":"2019-10-02T12:17:13.315","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6444","data":'init server of pools server.'}
+{"date":"2019-10-02T12:17:13.375","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"6444","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-02T12:17:13.434","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6444","data":'数据库同步成功'}
+{"date":"2019-10-02T12:17:17.125","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6444","data":'GET /PAX'}
+{"date":"2019-10-02T12:21:43.431","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13716","data":'init server of pools server.'}
+{"date":"2019-10-02T12:21:43.490","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"13716","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-02T12:21:43.555","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13716","data":'数据库同步成功'}
+{"date":"2019-10-02T12:22:00.183","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13716","data":'GET /PAX'}
+{"date":"2019-10-02T12:22:04.074","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13716","data":'GET /PAX'}
+{"date":"2019-10-02T12:24:10.957","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"8420","data":'init server of pools server.'}
+{"date":"2019-10-02T12:24:11.014","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"8420","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-02T12:24:11.076","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"8420","data":'数据库同步成功'}
+{"date":"2019-10-02T12:24:17.202","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"8420","data":'GET /PAX'}
+{"date":"2019-10-02T12:24:17.204","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"8420","data":'unhandledRejection err is not defined'}
+{"date":"2019-10-02T12:25:08.021","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"11084","data":'init server of pools server.'}
+{"date":"2019-10-02T12:25:08.080","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"11084","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-02T12:25:08.143","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"11084","data":'数据库同步成功'}
+{"date":"2019-10-02T12:25:10.829","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"11084","data":'GET /PAX'}
+{"date":"2019-10-02T12:25:10.836","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"11084","data":'unhandledRejection pino.error is not a function'}
+{"date":"2019-10-02T14:22:32.864","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"14020","data":'init server of pools server.'}
+{"date":"2019-10-02T14:22:32.923","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"14020","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-02T14:22:32.982","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"14020","data":'数据库同步成功'}
+{"date":"2019-10-02T14:22:35.017","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"14020","data":'GET /PAX'}
+{"date":"2019-10-02T14:22:35.032","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"14020","data":'unhandledRejection current request url : /pax is not exist in api. pls check.'}
+{"date":"2019-10-02T14:27:17.512","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13892","data":'init server of pools server.'}
+{"date":"2019-10-02T14:27:17.571","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"13892","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-02T14:27:17.630","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13892","data":'数据库同步成功'}
+{"date":"2019-10-02T14:27:21.547","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13892","data":'GET /PAX'}
+{"date":"2019-10-02T15:13:17.441","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13328","data":'init server of pools server.'}
+{"date":"2019-10-02T15:13:17.502","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"13328","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-02T15:13:17.562","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13328","data":'数据库同步成功'}
+{"date":"2019-10-02T15:13:34.311","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13328","data":'GET /PAX'}
+{"date":"2019-10-02T15:13:37.699","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13328","data":'GET /PAX'}
+{"date":"2019-10-02T15:13:41.979","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"13328","data":'GET /PAX'}

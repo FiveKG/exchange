@@ -1,0 +1,29 @@
+{"date":"2019-10-07T15:41:29.688","level":"ERROR","category":"getBalance.js","host":"frank-hp","pid":"6712","data":'getBalance error, the error stock is { FetchError: request to http://45.251.109.187:8888/v1/chain/get_currency_balance failed, reason: connect ETIMEDOUT 45.251.109.187:8888
+    at ClientRequest.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\node-fetch\lib\index.js:1455:11)
+    at ClientRequest.emit (events.js:198:13)
+    at Socket.socketErrorListener (_http_client.js:392:9)
+    at Socket.emit (events.js:198:13)
+    at emitErrorNT (internal/streams/destroy.js:91:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  message:
+   'request to http://45.251.109.187:8888/v1/chain/get_currency_balance failed, reason: connect ETIMEDOUT 45.251.109.187:8888',
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  isFetchError: true }'}
+{"date":"2019-10-07T17:33:21.847","level":"ERROR","category":"getBalance.js","host":"frank-hp","pid":"4420","data":'getBalance error, the error stock is { Error: Name not properly normalized (name: dicebankerY, normalized: dicebanker) 
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3010001,
+        name: 'name_type_exception',
+        what: 'Invalid name',
+        details: [Array] } } }'}

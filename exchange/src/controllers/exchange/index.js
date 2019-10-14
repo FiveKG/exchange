@@ -1,5 +1,4 @@
 // @ts-check
 module.exports = {
-    "PAX"       : require("./PAX"),
-    'test'       : require('./test'),
+    "get_EthAccount"       : require("./get_EthAccount"),
 }

@@ -1,6 +1,13 @@
 {
     "cSpell.words": [
+        "BIGINT",
+        "Txid",
+        "ZEROFILL",
         "appenders",
-        "nginx"
+        "bignumber",
+        "ethereumjs",
+        "nginx",
+        "rabbitmq",
+        "txtid"
     ]
 }

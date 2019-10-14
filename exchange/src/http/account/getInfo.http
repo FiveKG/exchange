@@ -1,5 +1,2 @@
 ### test pxg
-GET http://localhost:7758/PAX
-
-### test 
-GET http://localhost:7758/test
+GET http://localhost:7758/get_account?account_name=uetokencoin

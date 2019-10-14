@@ -1,0 +1,613 @@
+{"date":"2019-10-07T14:55:36.061","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"648","data":'get PAX Accction error,the error stock is TypeError: Cannot read property 'findOrCreate' of undefined
+    at get_PAXAccount (D:\work_space\yuezhi\eos\exchange\src\job\getNewPaxAccount.js:19:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-07T15:34:04.908","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8232","data":'address: 0x63e5443Ff1C2a649c1849f7Be1ecB4D4b70a3bcC'}
+{"date":"2019-10-07T15:34:04.912","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8232","data":'pax_value: Promise { '0' }'}
+{"date":"2019-10-07T15:34:04.913","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8232","data":'pax_key_pwd: WGYRnkOK'}
+{"date":"2019-10-07T15:34:04.913","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8232","data":'map_time: now()'}
+{"date":"2019-10-07T15:34:04.913","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8232","data":'ue_value: Decimal {
+  internal: '48.2400',
+  as_int: { value: 482400, exp: -4 },
+  add: [Function],
+  sub: [Function],
+  mul: [Function],
+  div: [Function],
+  toString: [Function],
+  toNumber: [Function] }'}
+{"date":"2019-10-07T15:38:51.412","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"14004","data":'address: 0x5013896C731374AEDf02095bCe4E2F1689ced883'}
+{"date":"2019-10-07T15:38:51.413","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"14004","data":'pax_value: 0'}
+{"date":"2019-10-07T15:38:51.413","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"14004","data":'pax_key_pwd: M0-zZdJ3'}
+{"date":"2019-10-07T15:38:51.414","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"14004","data":'map_time: now()'}
+{"date":"2019-10-07T15:38:51.414","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"14004","data":'ue_value: Decimal {
+  internal: '48.2400',
+  as_int: { value: 482400, exp: -4 },
+  add: [Function],
+  sub: [Function],
+  mul: [Function],
+  div: [Function],
+  toString: [Function],
+  toNumber: [Function] }'}
+{"date":"2019-10-07T15:41:29.690","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6712","data":'get PAX Account error,the error stock is { FetchError: request to http://45.251.109.187:8888/v1/chain/get_currency_balance failed, reason: connect ETIMEDOUT 45.251.109.187:8888
+    at ClientRequest.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\node-fetch\lib\index.js:1455:11)
+    at ClientRequest.emit (events.js:198:13)
+    at Socket.socketErrorListener (_http_client.js:392:9)
+    at Socket.emit (events.js:198:13)
+    at emitErrorNT (internal/streams/destroy.js:91:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  message:
+   'request to http://45.251.109.187:8888/v1/chain/get_currency_balance failed, reason: connect ETIMEDOUT 45.251.109.187:8888',
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  isFetchError: true }'}
+{"date":"2019-10-07T15:42:33.225","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12408","data":'address: 0x222aEf7b72e103b8a876Cc56C244b36E74136D88'}
+{"date":"2019-10-07T15:42:33.228","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12408","data":'pax_value: 0'}
+{"date":"2019-10-07T15:42:33.230","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12408","data":'pax_key_pwd: q1WKlL-Z'}
+{"date":"2019-10-07T15:42:33.232","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12408","data":'map_time: now()'}
+{"date":"2019-10-07T15:42:33.233","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12408","data":'ue_value: Decimal {
+  internal: '48.2400',
+  as_int: { value: 482400, exp: -4 },
+  add: [Function],
+  sub: [Function],
+  mul: [Function],
+  div: [Function],
+  toString: [Function],
+  toNumber: [Function] }'}
+{"date":"2019-10-07T15:43:24.124","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10184","data":'address: 0x3ea20c54DF5B99dbE28437796a9970b959b67f78'}
+{"date":"2019-10-07T15:43:24.138","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10184","data":'pax_value: 0'}
+{"date":"2019-10-07T15:43:24.139","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10184","data":'pax_key_pwd: p9hLMGa_'}
+{"date":"2019-10-07T15:43:24.139","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10184","data":'map_time: now()'}
+{"date":"2019-10-07T15:43:24.139","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10184","data":'ue_value: 48.2400 UE'}
+{"date":"2019-10-07T15:47:54.410","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"7688","data":'address: 0xfb172b3E77f98B6Ef70500a2F96e47a7D587eb3f'}
+{"date":"2019-10-07T15:47:54.412","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"7688","data":'pax_value: 0'}
+{"date":"2019-10-07T15:47:54.413","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"7688","data":'pax_key_pwd: MlT4x823'}
+{"date":"2019-10-07T15:47:54.413","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"7688","data":'map_time: now()'}
+{"date":"2019-10-07T15:47:54.413","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"7688","data":'ue_value: 48.2400 UE'}
+{"date":"2019-10-07T15:48:26.365","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"9540","data":'address: 0x6C4CFe743f74F63faFA8ce37da867d82BB76e54C'}
+{"date":"2019-10-07T15:48:26.367","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"9540","data":'pax_value: 0'}
+{"date":"2019-10-07T15:48:26.368","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"9540","data":'pax_key_pwd: tIhwmNiR'}
+{"date":"2019-10-07T15:48:26.368","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"9540","data":'map_time: now()'}
+{"date":"2019-10-07T15:48:26.368","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"9540","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T15:48:53.722","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8904","data":'address: 0x7c110c8c378cFDc61Bbe6649eEea284072ECAc31'}
+{"date":"2019-10-07T15:48:53.723","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8904","data":'pax_value: 0'}
+{"date":"2019-10-07T15:48:53.726","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8904","data":'pax_key_pwd: tn5eqAG2'}
+{"date":"2019-10-07T15:48:53.726","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8904","data":'map_time: now()'}
+{"date":"2019-10-07T15:48:53.726","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8904","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T15:49:41.058","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8044","data":'address: 0x9DdB96Cb5D8f1EB950323d82742fdD2AAF19Fc11'}
+{"date":"2019-10-07T15:49:41.062","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8044","data":'pax_value: 0'}
+{"date":"2019-10-07T15:49:41.063","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8044","data":'pax_key_pwd: S6-xDOaF'}
+{"date":"2019-10-07T15:49:41.063","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8044","data":'map_time: NOW'}
+{"date":"2019-10-07T15:49:41.063","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8044","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T15:56:47.672","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12596","data":'address: 0x2E48B3165816E994302E320B73b4b0415c86EDf5'}
+{"date":"2019-10-07T15:56:47.674","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12596","data":'pax_value: 0'}
+{"date":"2019-10-07T15:56:47.675","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12596","data":'pax_key_pwd: UOVchBRx'}
+{"date":"2019-10-07T15:56:47.676","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12596","data":'map_time: 2019-10-07T07:56:44.609Z'}
+{"date":"2019-10-07T15:56:47.677","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12596","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T16:07:20.343","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12312","data":'address: 0x8AF4aA52c273edcA7347681391694BdDa85FCF00'}
+{"date":"2019-10-07T16:07:20.355","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12312","data":'pax_value: 0'}
+{"date":"2019-10-07T16:07:20.356","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12312","data":'pax_key_pwd: wdJ88EJc'}
+{"date":"2019-10-07T16:07:20.357","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12312","data":'map_time: 2019-10-7 4:07:20 PM'}
+{"date":"2019-10-07T16:07:20.368","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12312","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T16:13:59.760","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13088","data":'get PAX Account error,the error stock is TypeError: random_pwd is not a function
+    at get_PAXAccount (D:\work_space\yuezhi\eos\exchange\src\job\getNewPaxAccount.js:16:38)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-07T16:23:19.167","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10328","data":'address: 0x2C9044E01b1f69a87Abdb54C6AA8D575Cb08D8b4'}
+{"date":"2019-10-07T16:23:19.176","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10328","data":'pax_value: 0'}
+{"date":"2019-10-07T16:23:19.178","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10328","data":'pax_key_pwd: 6O6kpH8H'}
+{"date":"2019-10-07T16:23:19.178","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10328","data":'map_time: 2019-10-07T08:21:05.109Z'}
+{"date":"2019-10-07T16:23:19.179","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10328","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T16:23:19.180","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10328","data":'privateKey: 0x133bc92888e07e48c7d2e2c95d21a4ed8dcc0dc251ce6acfe337e72b5843b484'}
+{"date":"2019-10-07T16:25:05.833","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10328","data":'address: 0x87681B598aBD2a6749E9CEE58b864f74283358A7'}
+{"date":"2019-10-07T16:25:05.839","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10328","data":'pax_value: 0'}
+{"date":"2019-10-07T16:25:05.839","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10328","data":'pax_key_pwd: 9p6dh6tL'}
+{"date":"2019-10-07T16:25:05.840","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10328","data":'map_time: 2019-10-07T08:21:05.109Z'}
+{"date":"2019-10-07T16:25:05.840","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10328","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T16:25:05.841","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10328","data":'privateKey: 0xb859f5840089c2061cf2e7f9627741425aacc9fa8f048b983f2ff1587c53a0b4'}
+{"date":"2019-10-07T16:27:07.719","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"11248","data":'address: 0x59533D68E322d0daA981a67a939cFB5C42c77dc9'}
+{"date":"2019-10-07T16:27:07.732","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"11248","data":'pax_value: 0'}
+{"date":"2019-10-07T16:27:07.733","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"11248","data":'pax_key_pwd: QZ3xZocr'}
+{"date":"2019-10-07T16:27:07.733","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"11248","data":'map_time: 2019-10-07T08:27:05.579Z'}
+{"date":"2019-10-07T16:27:07.733","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"11248","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T16:27:07.734","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"11248","data":'privateKey: 0xf0c915484878a52a120b215e9c92ac1ab6e2918830523356a7d86cf2a79e8ea5'}
+{"date":"2019-10-07T16:28:48.032","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6560","data":'pog_account dicebanker'}
+{"date":"2019-10-07T16:28:48.043","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6560","data":'address: 0x38794ad1EFeCcD3C901adF6A297eF331AB8dd6C0'}
+{"date":"2019-10-07T16:28:48.043","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6560","data":'pax_value: 0'}
+{"date":"2019-10-07T16:28:48.043","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6560","data":'pax_key_pwd: 1IqfEVIc'}
+{"date":"2019-10-07T16:28:48.044","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6560","data":'map_time: 2019-10-07T08:28:27.229Z'}
+{"date":"2019-10-07T16:28:48.044","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6560","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T16:28:48.044","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6560","data":'privateKey: 0x6a2ea77e79b7d34ff357b91e530f0e639379976583dd6b7cb22340a4be74f9c8'}
+{"date":"2019-10-07T16:37:47.167","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10792","data":'pog_account dicebanker'}
+{"date":"2019-10-07T16:37:47.170","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10792","data":'address: 0xEE05ccFd0819659A9FB10DF950aDFA27F1ecD4B7'}
+{"date":"2019-10-07T16:37:47.171","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10792","data":'pax_value: 0'}
+{"date":"2019-10-07T16:37:47.173","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10792","data":'pax_key_pwd: N-2dkB8G'}
+{"date":"2019-10-07T16:37:47.174","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10792","data":'map_time: 2019-10-07T08:36:34.541Z'}
+{"date":"2019-10-07T16:37:47.175","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10792","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T16:37:47.177","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10792","data":'privateKey: 0xa8df580f34d60166b6ff2b227ad3ea1175923c7ec48894fe86a9016116b0903a'}
+{"date":"2019-10-07T16:47:30.213","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10792","data":'get PAX Account error,the error stock is Error: Invalid JSON RPC response: ""
+    at Object.InvalidResponse (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-helpers\src\errors.js:42:16)
+    at XMLHttpRequest.request.onreadystatechange (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-http\src\index.js:92:32)
+    at XMLHttpRequestEventTarget.dispatchEvent (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpRequestError (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:349:14)
+    at ClientRequest.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:252:61)
+    at ClientRequest.emit (events.js:198:13)
+    at Socket.socketErrorListener (_http_client.js:392:9)
+    at Socket.emit (events.js:198:13)
+    at emitErrorNT (internal/streams/destroy.js:91:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-10-07T16:52:19.571","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'pog_account dicebanker'}
+{"date":"2019-10-07T16:52:19.572","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'address: 0xAAAB79e8990eDC49ee7a69AB8f8a3677195D7E0F'}
+{"date":"2019-10-07T16:52:19.572","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'pax_value: 0'}
+{"date":"2019-10-07T16:52:19.573","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'pax_key_pwd: AgfOKe8h'}
+{"date":"2019-10-07T16:52:19.573","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'map_time: 2019-10-07T08:51:57.279Z'}
+{"date":"2019-10-07T16:52:19.574","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T16:55:11.509","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'pog_account dicebanker'}
+{"date":"2019-10-07T16:55:11.511","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'address: 0xAD7A795e091D64Ec08a919C3036687e2ADf9D2Db'}
+{"date":"2019-10-07T16:55:11.512","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'pax_value: 0'}
+{"date":"2019-10-07T16:55:11.513","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'pax_key_pwd: iqC32y_6'}
+{"date":"2019-10-07T16:55:11.514","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'map_time: 2019-10-07T08:51:57.279Z'}
+{"date":"2019-10-07T16:55:11.515","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T16:56:13.898","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'pog_account dicebanker'}
+{"date":"2019-10-07T16:56:13.898","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'address: 0x8Afe86e05D6F002072891312C51a6bbf3d546C6B'}
+{"date":"2019-10-07T16:56:13.905","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'pax_value: 0'}
+{"date":"2019-10-07T16:56:13.906","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'pax_key_pwd: Pu-ZO_DO'}
+{"date":"2019-10-07T16:56:13.906","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'map_time: 2019-10-07T08:51:57.279Z'}
+{"date":"2019-10-07T16:56:13.906","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13044","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T16:56:38.311","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12164","data":'pog_account dicebanker'}
+{"date":"2019-10-07T16:56:38.313","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12164","data":'address: 0xB37995b5C643AC6dA57d769F0Eeb130DE79203b0'}
+{"date":"2019-10-07T16:56:38.313","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12164","data":'pax_value: 0'}
+{"date":"2019-10-07T16:56:38.314","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12164","data":'pax_key_pwd: tpUCu7Bs'}
+{"date":"2019-10-07T16:56:38.314","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12164","data":'map_time: 2019-10-07T08:56:35.378Z'}
+{"date":"2019-10-07T16:56:38.315","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12164","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T16:56:58.508","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"7448","data":'pog_account dicebanker'}
+{"date":"2019-10-07T16:56:58.508","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"7448","data":'address: 0xD6babc08Fa7AF111F0C028a487E70d8F0d9263cf'}
+{"date":"2019-10-07T16:56:58.509","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"7448","data":'pax_value: 0'}
+{"date":"2019-10-07T16:56:58.509","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"7448","data":'pax_key_pwd: HZXvYxeZ'}
+{"date":"2019-10-07T16:56:58.509","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"7448","data":'map_time: 2019-10-07T08:56:55.837Z'}
+{"date":"2019-10-07T16:56:58.510","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"7448","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T16:58:30.048","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"9712","data":'pog_account dicebanker'}
+{"date":"2019-10-07T16:58:30.050","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"9712","data":'address: 0x3Fb78bCABd549cC131a8846cF7C291C452219083'}
+{"date":"2019-10-07T16:58:30.051","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"9712","data":'pax_value: 0'}
+{"date":"2019-10-07T16:58:30.052","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"9712","data":'pax_key_pwd: aFIRunhT'}
+{"date":"2019-10-07T16:58:30.053","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"9712","data":'map_time: 2019-10-07T08:58:26.404Z'}
+{"date":"2019-10-07T16:58:30.054","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"9712","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T17:01:39.921","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"4640","data":'pog_account dicebanker'}
+{"date":"2019-10-07T17:01:39.926","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"4640","data":'address: 0x24Fa9a093456d7a444c6a9067e3C3DCEBf5A6bC6'}
+{"date":"2019-10-07T17:01:39.926","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"4640","data":'pax_value: 0'}
+{"date":"2019-10-07T17:01:39.927","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"4640","data":'pax_key_pwd: ijNvz5dO'}
+{"date":"2019-10-07T17:01:39.927","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"4640","data":'map_time: async function () {
+    try {
+        return CurrentDate;
+    } catch (err) {
+
+    }
+}'}
+{"date":"2019-10-07T17:01:39.927","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"4640","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T17:04:42.922","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"11464","data":'pog_account dicebanker'}
+{"date":"2019-10-07T17:04:42.924","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"11464","data":'address: 0x3aea3e588cBae826Bc58063E7368E16DA656Cd11'}
+{"date":"2019-10-07T17:04:42.925","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"11464","data":'pax_value: 0'}
+{"date":"2019-10-07T17:04:42.925","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"11464","data":'pax_key_pwd: kCnQojF9'}
+{"date":"2019-10-07T17:04:42.926","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"11464","data":'map_time: 2019-10-07T09:04:38.455Z'}
+{"date":"2019-10-07T17:04:42.929","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"11464","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T17:06:32.297","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13080","data":'pog_account dicebanker'}
+{"date":"2019-10-07T17:06:32.299","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13080","data":'address: 0x5c87cCc1022ce2566da0B05FfaC1ce22762C4944'}
+{"date":"2019-10-07T17:06:32.299","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13080","data":'pax_value: 0'}
+{"date":"2019-10-07T17:06:32.299","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13080","data":'pax_key_pwd: HvvR_y7Y'}
+{"date":"2019-10-07T17:06:32.299","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13080","data":'map_time: 2019-10-07T09:06:32.266Z'}
+{"date":"2019-10-07T17:06:32.300","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13080","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T17:07:15.351","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"4224","data":'pog_account dicebanker'}
+{"date":"2019-10-07T17:07:15.352","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"4224","data":'address: 0x94A95A6652388a1770a5F95D8fD291ffCa646a4B'}
+{"date":"2019-10-07T17:07:15.353","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"4224","data":'pax_value: 0'}
+{"date":"2019-10-07T17:07:15.353","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"4224","data":'pax_key_pwd: dvoMQHJF'}
+{"date":"2019-10-07T17:07:15.354","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"4224","data":'map_time: 2019-10-07T09:07:15.293Z'}
+{"date":"2019-10-07T17:07:15.354","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"4224","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T17:11:53.216","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10632","data":'pog_account dicebanker'}
+{"date":"2019-10-07T17:11:53.218","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10632","data":'address: 0xd64C5E0CC045101Ae2E880aD40EaA677213Ee67c'}
+{"date":"2019-10-07T17:11:53.219","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10632","data":'pax_value: 0'}
+{"date":"2019-10-07T17:11:53.220","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10632","data":'pax_key_pwd: A_DvzNpK'}
+{"date":"2019-10-07T17:11:53.221","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10632","data":'map_time: 2019-10-07T09:11:52.541Z'}
+{"date":"2019-10-07T17:11:53.222","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10632","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T17:13:21.772","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8312","data":'pog_account dicebanker'}
+{"date":"2019-10-07T17:13:21.773","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8312","data":'address: 0xF1636E24197644e4D589273fe17A2aFf9Fb2e2c0'}
+{"date":"2019-10-07T17:13:21.773","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8312","data":'pax_value: 0'}
+{"date":"2019-10-07T17:13:21.774","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8312","data":'pax_key_pwd: KMJDIwcQ'}
+{"date":"2019-10-07T17:13:21.774","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8312","data":'map_time: 2019-10-07T17:13:21.723Z'}
+{"date":"2019-10-07T17:13:21.775","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"8312","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T17:13:43.362","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"3648","data":'pog_account dicebanker'}
+{"date":"2019-10-07T17:13:43.365","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"3648","data":'address: 0x317aE04100169B28B87B0a4B81a2c733c9DffF1d'}
+{"date":"2019-10-07T17:13:43.366","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"3648","data":'pax_value: 0'}
+{"date":"2019-10-07T17:13:43.366","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"3648","data":'pax_key_pwd: rFUMPtSZ'}
+{"date":"2019-10-07T17:13:43.367","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"3648","data":'map_time: 2019-10-07T17:13:43.007Z'}
+{"date":"2019-10-07T17:13:43.367","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"3648","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T17:15:25.314","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6628","data":'pog_account dicebanker'}
+{"date":"2019-10-07T17:15:25.315","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6628","data":'address: 0x1445Acc91b69DeD7B3D129b017cED024F339f547'}
+{"date":"2019-10-07T17:15:25.316","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6628","data":'pax_value: 0'}
+{"date":"2019-10-07T17:15:25.317","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6628","data":'pax_key_pwd: w4zRAMaA'}
+{"date":"2019-10-07T17:15:25.317","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6628","data":'map_time: 2019-10-07T17:15:22.257Z'}
+{"date":"2019-10-07T17:15:25.318","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6628","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T17:18:13.883","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"12796","data":'get PAX Account error,the error stock is Error: Provided address "VlKrZY3V" is invalid, the capitalization checksum test failed, or its an indrect IBAN address which can't be converted.
+    at Method.inputAddressFormatter (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-helpers\src\formatters.js:409:11)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:144:38
+    at Array.map (<anonymous>)
+    at Method.formatInput (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:142:32)
+    at Method.toPayload (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:177:23)
+    at Eth.send [as getBalance] (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:467:30)
+    at get_PAXAccount (D:\work_space\yuezhi\eos\exchange\src\job\getNewPaxAccount.js:13:44)
+    at getPAXForPOG (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\get_PAXAccount.js:13:27)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-07T17:20:41.446","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13336","data":'pog_account dicebanker'}
+{"date":"2019-10-07T17:20:41.447","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13336","data":'address: 0xcf7e91c62977bE3b0d53fC889EFB00E1C27d166f'}
+{"date":"2019-10-07T17:20:41.447","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13336","data":'pax_value: 0'}
+{"date":"2019-10-07T17:20:41.448","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13336","data":'pax_key_pwd: iBVzyM4Z'}
+{"date":"2019-10-07T17:20:41.448","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13336","data":'map_time: 2019-10-07T17:20:41.394Z'}
+{"date":"2019-10-07T17:20:41.448","level":"DEBUG","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13336","data":'ue_value: 48.2400'}
+{"date":"2019-10-07T17:33:21.849","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"4420","data":'get PAX Account error,the error stock is { Error: Name not properly normalized (name: dicebankerY, normalized: dicebanker) 
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3010001,
+        name: 'name_type_exception',
+        what: 'Invalid name',
+        details: [Array] } } }'}
+{"date":"2019-10-07T17:38:22.132","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"9488","data":'get PAX Account error,the error stock is TypeError: Cannot destructure property `PAX_Address` of 'undefined' or 'null'.
+    at get_PAXAccount (D:\work_space\yuezhi\eos\exchange\src\job\getNewPaxAccount.js:26:17)'}
+{"date":"2019-10-07T17:43:11.747","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6592","data":'get PAX Account error,the error stock is TypeError: dataValues.get is not a function
+    at get_PAXAccount (D:\work_space\yuezhi\eos\exchange\src\job\getNewPaxAccount.js:34:32)'}
+{"date":"2019-10-07T17:53:53.735","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"13164","data":'get PAX Account error,the error stock is TypeError: Cannot destructure property `dataValues` of 'undefined' or 'null'.
+    at get_PAXAccount (D:\work_space\yuezhi\eos\exchange\src\job\getNewPaxAccount.js:11:44)'}
+{"date":"2019-10-07T18:00:39.607","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6976","data":'get PAX Account error,the error stock is TypeError: Cannot read property 'replace' of undefined
+    at get_PAXAccount (D:\work_space\yuezhi\eos\exchange\src\job\getNewPaxAccount.js:22:67)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-07T18:06:44.490","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6976","data":'get PAX Account error,the error stock is TypeError: Cannot read property 'replace' of undefined
+    at get_PAXAccount (D:\work_space\yuezhi\eos\exchange\src\job\getNewPaxAccount.js:22:67)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-07T18:10:28.499","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"6976","data":'get PAX Account error,the error stock is TypeError: Cannot read property 'replace' of undefined
+    at get_PAXAccount (D:\work_space\yuezhi\eos\exchange\src\job\getNewPaxAccount.js:22:67)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-07T18:12:18.548","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"5304","data":'get PAX Account error,the error stock is { SequelizeDatabaseError: Incorrect decimal value: '' for column 'Ue_value' at row 1
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Execute.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Incorrect decimal value: '' for column 'Ue_value' at row 1
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+     errno: 1366,
+     sqlState: 'HY000',
+     sqlMessage:
+      'Incorrect decimal value: \'\' for column \'Ue_value\' at row 1',
+     sql:
+      'INSERT INTO `PAXAccount` (`id`,`Pog_Account`,`PAX_Address`,`Pax_value`,`Ue_value`,`Map_time`,`pax_key_pwd`) VALUES (?,?,?,?,?,?,?);',
+     parameters:
+      [ 'Fi4WbHNO',
+        'eoshashdice',
+        '0x1064c06aa5f06915bc4A0d1efc5669e53AA41657',
+        '0',
+        '',
+        '2019-10-07 18:12:18',
+        'DVlibgh-' ] },
+  original:
+   { Error: Incorrect decimal value: '' for column 'Ue_value' at row 1
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+     errno: 1366,
+     sqlState: 'HY000',
+     sqlMessage:
+      'Incorrect decimal value: \'\' for column \'Ue_value\' at row 1',
+     sql:
+      'INSERT INTO `PAXAccount` (`id`,`Pog_Account`,`PAX_Address`,`Pax_value`,`Ue_value`,`Map_time`,`pax_key_pwd`) VALUES (?,?,?,?,?,?,?);',
+     parameters:
+      [ 'Fi4WbHNO',
+        'eoshashdice',
+        '0x1064c06aa5f06915bc4A0d1efc5669e53AA41657',
+        '0',
+        '',
+        '2019-10-07 18:12:18',
+        'DVlibgh-' ] },
+  sql:
+   'INSERT INTO `PAXAccount` (`id`,`Pog_Account`,`PAX_Address`,`Pax_value`,`Ue_value`,`Map_time`,`pax_key_pwd`) VALUES (?,?,?,?,?,?,?);',
+  parameters:
+   [ 'Fi4WbHNO',
+     'eoshashdice',
+     '0x1064c06aa5f06915bc4A0d1efc5669e53AA41657',
+     '0',
+     '',
+     '2019-10-07 18:12:18',
+     'DVlibgh-' ] }'}
+{"date":"2019-10-07T18:26:16.920","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"14392","data":'get PAX Account error,the error stock is TypeError: Cannot read property 'replace' of undefined
+    at get_PAXAccount (D:\work_space\yuezhi\eos\exchange\src\job\getNewPaxAccount.js:31:39)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-07T18:27:28.297","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10276","data":'get PAX Account error,the error stock is TypeError: Cannot read property 'replace' of undefined
+    at get_PAXAccount (D:\work_space\yuezhi\eos\exchange\src\job\getNewPaxAccount.js:32:39)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-07T18:27:38.160","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"10276","data":'get PAX Account error,the error stock is TypeError: Cannot read property 'replace' of undefined
+    at get_PAXAccount (D:\work_space\yuezhi\eos\exchange\src\job\getNewPaxAccount.js:32:39)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-07T18:28:13.437","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"14872","data":'get PAX Account error,the error stock is TypeError: Cannot read property 'replace' of undefined
+    at get_PAXAccount (D:\work_space\yuezhi\eos\exchange\src\job\getNewPaxAccount.js:32:39)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-07T18:31:45.998","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"5720","data":'get PAX Account error,the error stock is { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Execute.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeUniqueConstraintError',
+  errors:
+   [ ValidationErrorItem {
+       message: 'PRIMARY must be unique',
+       type: 'unique violation',
+       path: 'PRIMARY',
+       value: 'PHGN7LKp',
+       origin: 'DB',
+       instance: [PAXAccount],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { PRIMARY: 'PHGN7LKp' },
+  parent:
+   { Error: Duplicate entry 'PHGN7LKp' for key 'PRIMARY'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'PHGN7LKp\' for key \'PRIMARY\'',
+     sql:
+      'INSERT INTO `PAXAccount` (`id`,`Pog_Account`,`PAX_Address`,`Pax_value`,`Ue_value`,`Map_time`,`pax_key_pwd`) VALUES (?,?,?,?,?,?,?);',
+     parameters:
+      [ 'PHGN7LKp',
+        'dicebanker',
+        '0x323EE2Ce97d52d229bD221E26c1776a14aC28A3e',
+        '0',
+        '48.2400',
+        '2019-10-07 18:31:45',
+        'U3yo9byi' ] },
+  original:
+   { Error: Duplicate entry 'PHGN7LKp' for key 'PRIMARY'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'PHGN7LKp\' for key \'PRIMARY\'',
+     sql:
+      'INSERT INTO `PAXAccount` (`id`,`Pog_Account`,`PAX_Address`,`Pax_value`,`Ue_value`,`Map_time`,`pax_key_pwd`) VALUES (?,?,?,?,?,?,?);',
+     parameters:
+      [ 'PHGN7LKp',
+        'dicebanker',
+        '0x323EE2Ce97d52d229bD221E26c1776a14aC28A3e',
+        '0',
+        '48.2400',
+        '2019-10-07 18:31:45',
+        'U3yo9byi' ] },
+  sql:
+   'INSERT INTO `PAXAccount` (`id`,`Pog_Account`,`PAX_Address`,`Pax_value`,`Ue_value`,`Map_time`,`pax_key_pwd`) VALUES (?,?,?,?,?,?,?);' }'}
+{"date":"2019-10-07T18:33:23.129","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"5720","data":'get PAX Account error,the error stock is { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Execute.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeUniqueConstraintError',
+  errors:
+   [ ValidationErrorItem {
+       message: 'PRIMARY must be unique',
+       type: 'unique violation',
+       path: 'PRIMARY',
+       value: 'PHGN7LKp',
+       origin: 'DB',
+       instance: [PAXAccount],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { PRIMARY: 'PHGN7LKp' },
+  parent:
+   { Error: Duplicate entry 'PHGN7LKp' for key 'PRIMARY'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'PHGN7LKp\' for key \'PRIMARY\'',
+     sql:
+      'INSERT INTO `PAXAccount` (`id`,`Pog_Account`,`PAX_Address`,`Pax_value`,`Ue_value`,`Map_time`,`pax_key_pwd`) VALUES (?,?,?,?,?,?,?);',
+     parameters:
+      [ 'PHGN7LKp',
+        'dicebanker',
+        '0xC8cEd13314412246b1deb6C57302c246d9b31BdE',
+        '0',
+        '48.2400',
+        '2019-10-07 18:33:23',
+        'VaBwQGzX' ] },
+  original:
+   { Error: Duplicate entry 'PHGN7LKp' for key 'PRIMARY'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'PHGN7LKp\' for key \'PRIMARY\'',
+     sql:
+      'INSERT INTO `PAXAccount` (`id`,`Pog_Account`,`PAX_Address`,`Pax_value`,`Ue_value`,`Map_time`,`pax_key_pwd`) VALUES (?,?,?,?,?,?,?);',
+     parameters:
+      [ 'PHGN7LKp',
+        'dicebanker',
+        '0xC8cEd13314412246b1deb6C57302c246d9b31BdE',
+        '0',
+        '48.2400',
+        '2019-10-07 18:33:23',
+        'VaBwQGzX' ] },
+  sql:
+   'INSERT INTO `PAXAccount` (`id`,`Pog_Account`,`PAX_Address`,`Pax_value`,`Ue_value`,`Map_time`,`pax_key_pwd`) VALUES (?,?,?,?,?,?,?);' }'}
+{"date":"2019-10-07T18:37:24.422","level":"ERROR","category":"getNewPaxAccount.js","host":"frank-hp","pid":"9516","data":'get PAX Account error,the error stock is { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Execute.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeUniqueConstraintError',
+  errors:
+   [ ValidationErrorItem {
+       message: 'PRIMARY must be unique',
+       type: 'unique violation',
+       path: 'PRIMARY',
+       value: 'rnK9DrYt',
+       origin: 'DB',
+       instance: [PAXAccount],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields: { PRIMARY: 'rnK9DrYt' },
+  parent:
+   { Error: Duplicate entry 'rnK9DrYt' for key 'PRIMARY'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'rnK9DrYt\' for key \'PRIMARY\'',
+     sql:
+      'INSERT INTO `PAXAccount` (`id`,`Pog_Account`,`PAX_Address`,`Pax_value`,`Ue_value`,`Map_time`,`pax_key_pwd`) VALUES (?,?,?,?,?,?,?);',
+     parameters:
+      [ 'rnK9DrYt',
+        'eoshashdice',
+        '0x98840A900B20Cd66dcee89cC650eb58f66f11EE3',
+        '0',
+        0,
+        '2019-10-07 18:37:24',
+        'XICZ_UDf' ] },
+  original:
+   { Error: Duplicate entry 'rnK9DrYt' for key 'PRIMARY'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage: 'Duplicate entry \'rnK9DrYt\' for key \'PRIMARY\'',
+     sql:
+      'INSERT INTO `PAXAccount` (`id`,`Pog_Account`,`PAX_Address`,`Pax_value`,`Ue_value`,`Map_time`,`pax_key_pwd`) VALUES (?,?,?,?,?,?,?);',
+     parameters:
+      [ 'rnK9DrYt',
+        'eoshashdice',
+        '0x98840A900B20Cd66dcee89cC650eb58f66f11EE3',
+        '0',
+        0,
+        '2019-10-07 18:37:24',
+        'XICZ_UDf' ] },
+  sql:
+   'INSERT INTO `PAXAccount` (`id`,`Pog_Account`,`PAX_Address`,`Pax_value`,`Ue_value`,`Map_time`,`pax_key_pwd`) VALUES (?,?,?,?,?,?,?);' }'}

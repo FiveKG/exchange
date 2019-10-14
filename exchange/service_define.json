@@ -1,0 +1,32 @@
+{
+    "name" : "exchange",
+    "service_type" : "service",
+    "port":7758,
+    "summary" : [
+
+    ],
+    "apis" : [
+        {
+            "name" : "获取UE_PAX账号",
+            "summary": "",
+            "remark": [
+                "获取UE_PAX账号"
+            ],
+            "isFunctionPoint" : true,
+            "url" : "/get_account",
+            "type" : "get",
+            "requireRole" : [ "*" ],
+            "req": {
+                "account_name": { "type": "text",  "is_require": true,  "desc": "帐号名称" }
+            },
+            "res": {
+                "code": { "type": "number" , "desc": "" , "values": [ "成功" ] } ,
+                "desc": { "type": "string" ,"desc": "" },
+                "data": {
+                    "PAX_account": { "type": "text",  "is_require": true,  "desc": "UE_PAX账号" }
+                }
+            }
+        }
+        
+    ]
+}

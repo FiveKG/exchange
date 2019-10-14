@@ -1,0 +1,51 @@
+{"date":"2019-10-02T11:31:48.856","level":"DEBUG","category":"PAX.js","host":"frank-hp","pid":"5664","data":'testing'}
+{"date":"2019-10-02T12:25:10.832","level":"ERROR","category":"PAX.js","host":"frank-hp","pid":"11084","data":'request get_banker error, the error stock is TypeError: pino.error is not a function
+    at get_data (D:\work_space\yuezhi\eos\exchange\src\common\check_data\get_data.js:28:10)
+    at inspect_req_data (D:\work_space\yuezhi\eos\exchange\src\common\inspect_req_data.js:18:16)
+    at getPAXForPOG (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\PAX.js:6:29)
+    at Layer.handle [as handle_request] (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\layer.js:95:5)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:317:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (D:\work_space\yuezhi\eos\exchange\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:317:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:335:12)'}
+{"date":"2019-10-02T14:22:35.026","level":"ERROR","category":"PAX.js","host":"frank-hp","pid":"14020","data":'request get_banker error, the error stock is Error: current request url : /pax is not exist in api. pls check.
+    at get_data (D:\work_space\yuezhi\eos\exchange\src\common\check_data\get_data.js:27:17)
+    at inspect_req_data (D:\work_space\yuezhi\eos\exchange\src\common\inspect_req_data.js:18:16)
+    at getPAXForPOG (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\PAX.js:6:29)
+    at Layer.handle [as handle_request] (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\layer.js:95:5)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:317:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (D:\work_space\yuezhi\eos\exchange\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:317:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\work_space\yuezhi\eos\exchange\node_modules\express\lib\router\index.js:335:12)'}
+{"date":"2019-10-02T14:27:21.550","level":"DEBUG","category":"PAX.js","host":"frank-hp","pid":"13892","data":'the param is:[object Object]'}
+{"date":"2019-10-02T15:13:34.314","level":"DEBUG","category":"PAX.js","host":"frank-hp","pid":"13328","data":'the param is:[object Object]'}
+{"date":"2019-10-02T15:13:37.702","level":"DEBUG","category":"PAX.js","host":"frank-hp","pid":"13328","data":'the param is:[object Object]'}
+{"date":"2019-10-02T15:13:41.979","level":"DEBUG","category":"PAX.js","host":"frank-hp","pid":"13328","data":'the param is:[object Object]'}

@@ -4,6 +4,7 @@ const express = require('express');
 const logger = require("./src/common/logger").getLogger('exchange.js')
 const app = express();
 const nginx_host = `127.0.0.1`;
+const {sequelize} = require('./src/db')
 
 logger.info(`init server of pools server.`)
 app.set("x-powered-by", false);//“ X-Powered-By”是常见的非标准HTTP响应标头，设置为false
@@ -44,8 +45,16 @@ const server = module.exports = app.listen(Number(port), host);
 server.on('listening', async () => {
   // require("@yz/yue-service-register")(`${service_name}`, port);
   // 初始化系统服务数据;
-  logger.warn(`**** server of pools running at http://localhost:${port}/  ****`)
 
+
+  sequelize.sequelize.sync().then(function(result){
+    // 同步数据库
+    logger.info('数据库同步成功')
+    }).catch(error=>{
+      logger.error(`the error from sequelize.sync(),the erroe:${error}`)
+    })
+ 
+  logger.warn(`**** server of pools running at http://localhost:${port}/  ****`)
 }); 
 
 server.on("close", () => {

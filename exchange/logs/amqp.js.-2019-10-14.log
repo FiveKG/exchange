@@ -1,0 +1,1 @@
+{"date":"2019-10-14T09:47:43.381","level":"DEBUG","category":"amqp.js","host":"frank-hp","pid":"4752","data":'amqp option: {"protocol":"amqp","hostname":"192.168.92.128","port":5672,"username":"mq_user","password":"pass_2018","heartbeat":300}'}
