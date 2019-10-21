@@ -4,9 +4,9 @@ const {sequelize,psTransfer2Pog} = require('../db')
 ;(async()=>{
 
 
-    let account = await sequelize.Eth_account.findOne({where:{eth_address:"0xbb123b7f59c2f85049be43bc612c92a04558f1251"}})
-    if(!account){
-        console.log(account)
-        console.warn("warn from parseContractAction(): if(!account),the account is null,the database not exist this account");
-    }
+    const sql_result = await sequelize.Eth_charge.findOne({
+        where:{txid:"0x3cce7e5043c8d01b9eca600408c7270ed08c843d9e634e7dbf2c657a712ea639"},
+        attributes:['is_exchanged']
+    })
+    console.log(sql_result)
 })();

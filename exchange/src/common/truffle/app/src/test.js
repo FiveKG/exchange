@@ -71,13 +71,14 @@ async function transfer(){
         web3.eth.personal.unlockAccount(ACC1,'123',3000)
         web3.eth.personal.unlockAccount(ACC2,'123',3000)
         //ACC1->tbgtokencoin
-        for(let i=1;i<11;i++){
+
+        for(let i=1;i<6;i++){
             const result0 = await contract.methods.transfer("0xb8567a1bf8af7d86eb937481e57a86c12d5e792c",i).send({from: ACC1});
-            console.log(result0)
+            const result1 = await contract.methods.transfer("0xbb123b7f59c2f85049be43bc612c92a04558f125",i).send({from: ACC2});
+            console.log(result0,result1)
         }
-        sleep(1000)
+        console.log('done!')
         //ACC2->tbgjoin
-        //const result1 = await contract.methods.transfer("0xbb123b7f59c2f85049be43bc612c92a04558f125",1).send({from: ACC2});
         // const result0 = await contract.methods.transfer(ACC1,10000000000).send({from: ACC0});
         // //ACC2->tbgjoin
         // const result1 = await contract.methods.transfer(ACC2,10000000000).send({from: ACC0});
@@ -128,7 +129,7 @@ async function transfer_info(hash){
 
  async function test(){
 
-       // await transfer()
+    await transfer()
 
 
 
@@ -142,8 +143,8 @@ async function transfer_info(hash){
     // let amount = new Decimal('1.284855079553519221609493939418532947836379180315e+48')
     // let value = amount.mul(1).toDecimalPlaces(8)
     // console.log(value.toString)
-    const result= await getContractTransaction(9184)
-    console.log(result)
+    // const result= await getContractTransaction(9184)
+    // console.log(result)
     // const result = await web3.eth.getBlock(9081)
     // console.log(result)
 

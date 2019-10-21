@@ -3,6 +3,7 @@ const logger = require("../common/logger").getLogger("transfer2Pog.js")
 const {sequelize} = require('../db')
 const {getCurrentDate,generate_unique_key,redis} = require("../common")
 const { Decimal } = require("decimal.js");
+const sleep = require("./sleep")
 const {getBlock,getTokenBalance} = require('./getEthTrxAction')
 const {transfer,getCurrencyBalance:getUeBalance,getTransactionInfo} = require('./getEOSTrxAction')
 const {UE_TOKEN} = require("../common/constant/eosConstants")
@@ -40,7 +41,7 @@ async function transfer2Pog(data){
          * pog_txtid      : String|null
          * }}
          */
-        const filed = {
+        const Eth_charge_filed = {
             confirm_time: null,
             exchange_time: null,
             is_exchanged: false,
@@ -69,7 +70,7 @@ async function transfer2Pog(data){
             const pog_account = data.pog_account;
             const ue_token = new Decimal(data.ue_value)
             const ue_value = `${ue_token.toFixed(4) } UE`;
-            filed.confirm_time = getCurrentDate()
+            Eth_charge_filed.confirm_time = getCurrentDate()
 
             //转账到POG
             try{
@@ -85,11 +86,11 @@ async function transfer2Pog(data){
                 }
 
                 const res = await transfer(transfer_data)
-                filed.confirm_time = getCurrentDate();
-                filed.pog_blockNumber = res.processed.block_num;
-                filed.pog_txtid = res.processed.id;
-                filed.exchange_time= getCurrentDate()
-                filed.is_exchanged = true;
+                Eth_charge_filed.confirm_time = getCurrentDate();
+                Eth_charge_filed.pog_blockNumber = res.processed.block_num;
+                Eth_charge_filed.pog_txtid = res.processed.id;
+                Eth_charge_filed.exchange_time= getCurrentDate()
+                Eth_charge_filed.is_exchanged = true;
             }catch(err){
                 logger.error(pog_account+'接收转账操作失败:',err)
                 //转账失败预转账删除状态
@@ -97,43 +98,35 @@ async function transfer2Pog(data){
                 throw err
             }
 
-            //记录转账后的ETH/POG余额
+            //记录更新数据库的值
             const token_balance = await getTokenBalance(data.to_address)
             const ue_balance = (await getUeBalance(pog_account)).pop().replace(' UE','');
-
-            //事务开始
-            const transaction = await sequelize.sequelize.transaction();
-            try{           
-                //更新到Eth_charge
-                await sequelize.Eth_charge.update(filed,{
-                    where:{"txid":data.txid}
-                });
-                //更新到Eth_account
-                await sequelize.Eth_account.update({
-                    "token_value":token_balance,
-                    "ue_balance":ue_balance
-                },{
-                    where:{"pog_account":pog_account,"eth_address": data.to_address}
-                })
-
-                //发送事务
-                await transaction.commit()
-                await redis.del(TX_STATE+data.txid)
-                logger.debug(`${UE_TOKEN}转账至${pog_account}成功`)
+            const Eth_account_filed = {
+                "token_value":token_balance,
+                "ue_balance":ue_balance
             }
-            catch(err){
-                //事务回滚
-                logger.error(`${UE_TOKEN}转账至${pog_account}失败`,err);
-                const tx_state =await redis.get(TX_STATE+data.txid)
+            const Eth_account_where = {
+                "pog_account":pog_account,
+                "eth_address": data.to_address
+            }
+            const Eth_charge_where = {
+                "txid":data.txid
+            }
+            //更新数据库
+            try{
+                await update_DB(Eth_charge_filed,Eth_account_filed,Eth_account_where,Eth_charge_where);
+            }catch(err){
+                logger.error(`${UE_TOKEN}转账至${Eth_account_where.pog_account}更新数据库失败,重新处理`,err);
+                const tx_state =await redis.get(TX_STATE+Eth_charge_where.txid)
                 if(tx_state){
-                    logger.debug(`${TX_STATE+data.txid}:${tx_state},转账但没更新数据库，重新处理`)
-                    //@ts-ignore
-                    await check_exchange(filed.pog_blockNumber,filed.pog_txtid)
-                    await redis.del(TX_STATE+data.txid)
+                    const update_result = await check_exchange(Eth_charge_filed,Eth_account_filed,Eth_account_where,Eth_charge_where);
                 }
-                await transaction.rollback();
-                throw err
+                
             }
+
+            //更新数据库成功删除预转账状态
+            await redis.del(TX_STATE+data.txid)
+            logger.debug(`${UE_TOKEN}转账${data.ue_value} UE至${pog_account}成功`)
         }
         else{
             //没有6次确认，则不停调用自身
@@ -142,8 +135,11 @@ async function transfer2Pog(data){
             //如果调用了超过100秒仍然没有6次确认，则直接结束；一般不可能发生：节点正常但是没有矿工在挖矿
             if(differ_second>100){
                 return
+            }else{
+                console.log(`等待6次确认，已经等待${differ_second}秒`)
+                sleep(1000)
+                await transfer2Pog(data);
             }
-            await transfer2Pog(data);
         }
     }
     catch(err){
@@ -153,29 +149,84 @@ async function transfer2Pog(data){
 
 }
 
+
 /**
- * 处理已经转账但是没有更新数据库的情况
- * @param {String} pog_txid 
- * @param {Number} blockNumber
+ * 
+ * @param {{
+         * confirm_time   : null|Date,
+         * exchange_time  : null|Date,
+         * is_exchanged   : boolean,
+         * pog_blockNumber: Number|null,
+         * pog_txtid      : String|null}} Eth_charge_filed 
+ * @param {{
+ *          token_value:String,
+ *          ue_balance:any}} Eth_account_filed 
+ * @param {{
+ *        pog_account:String,
+ *        eth_address:String}} Eth_account_where 
+ * @param {{
+ *        txid:String
+ * }} Eth_charge_where 
  */
-async function check_exchange(blockNumber,pog_txid){
+async function update_DB(Eth_charge_filed,Eth_account_filed,Eth_account_where,Eth_charge_where){
+    //事务开始
+    //const transaction = await sequelize.sequelize.transaction();
+    try{ 
+        //更新到Eth_charge
+        await sequelize.Eth_charge.update(Eth_charge_filed,{
+            where:{
+                "txid":Eth_charge_where.txid
+            }
+        });
+        //更新到Eth_account
+        await sequelize.Eth_account.update(Eth_account_filed,{
+            where:Eth_account_where
+        })
+        //发送事务
+        //await transaction.commit()
+        return true
+    }
+    catch(err){
+        //事务回滚
+        //await transaction.rollback();
+        throw err
+    }
+}
+/**
+ * 处理转账倒是没有更新数据库的情况
+ * @param {{
+    * confirm_time   : null|Date,
+    * exchange_time  : null|Date,
+    * is_exchanged   : boolean,
+    * pog_blockNumber: Number|null,
+    * pog_txtid      : String|null}} Eth_charge_filed 
+* @param {{
+*          token_value:String,
+*          ue_balance:any}} Eth_account_filed 
+* @param {{
+*        pog_account:String,
+*        eth_address:String}} Eth_account_where 
+* @param {{
+*        txid:String
+* }} Eth_charge_where 
+*/
+async function check_exchange(Eth_charge_filed,Eth_account_filed,Eth_account_where,Eth_charge_where){
     try{
-        console.log('??????')
+
         const sql_result = await sequelize.Eth_charge.findOne({
-            where:{"pog_txtid":pog_txid},
+            where:{txid:Eth_charge_where.txid},
             attributes:['is_exchanged']
         })
-    
-        const trx_info = getTransactionInfo(blockNumber,pog_txid);
+        //查询pog交易信息
+        //@ts-ignore
+        const trx_info =await getTransactionInfo(Eth_charge_filed.pog_blockNumber,Eth_charge_filed.pog_txtid);
         if(trx_info){
+            
             // @ts-ignore
-            if(trx_info.status ==='executed' && !sql_result){
-                //已转账未更新
-                await sequelize.Eth_charge.update({
-                    "is_exchanged":true
-                },{
-                    where:{"pog_txtid":pog_txid}
-                })
+            if(trx_info.status ==='executed' && !sql_result.dataValues.is_exchanged){
+                //已转账未更新,重新执行
+                const update_result = await update_DB(Eth_charge_filed,Eth_account_filed,Eth_account_where,Eth_charge_where)
+                return update_result
             }
         }
     }

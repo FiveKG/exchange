@@ -110,7 +110,7 @@ async function handlerTransferActions() {
     }
 }
 
-handlerTransferActions()
+
 
 /**
  * 
@@ -232,5 +232,6 @@ async function Usdt2Ue(amount){
     let value = amount.mul(1).toDecimalPlaces(8, Decimal.ROUND_DOWN)
     return value
 }
+
 
 module.exports = handlerTransferActions;

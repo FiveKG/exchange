@@ -26,9 +26,9 @@ const sequelize = new Sequelize(database,user, password, {
   },
   dialect:'mysql', /* 'mysql' | 'mariadb' | 'postgres' | 'mssql' 之一 */
   pool: {
-    max: 5, // 连接池中最大连接数量
+    max: 20, // 连接池中最大连接数量
     min: 0, // 连接池中最小连接数量
-    acquire: 30000,
+    acquire: 30000,//出错之后再次连接的最长时间
     idle: 10000 // 如果一个线程 10 秒钟内没有被使用过的话，那么就释放线程
     }
 });
