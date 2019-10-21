@@ -1,2 +1,2 @@
 ### test pxg
-GET http://localhost:7758/get_account?account_name=uetokencoin
+GET http://localhost:7758/get_eth_account?account_name=tbgtokencoin

@@ -1,9 +1,11 @@
 // @ts-check
-const { Api, JsonRpc } = require('eosjs');
+const { Api, JsonRpc,RpcError } = require('eosjs');
+const logger = require("../common/logger").getLogger('getEOSTrxAction.js')
 const { JsSignatureProvider } = require('eosjs/dist/eosjs-jssig');  // development only
 const fetch = require('node-fetch');                                // node only
 const { TextDecoder, TextEncoder } = require('util');               // node only
-const { END_POINT } = require("../common/constant/eosConstants.js");
+const { END_POINT,PRIVATE_KEY_TEST,UE_TOKEN_SYMBOL,UE_TOKEN } = require("../common/constant/eosConstants.js");
+const sleep = require("./sleep.js");
 
 // @ts-ignore
 const rpc = new JsonRpc(END_POINT, { fetch });
@@ -42,12 +44,13 @@ async function post(api_url, options = {}) {
         headers: options.headers || {},
         body: options.data || {}
         };
-
+    
         return await asyncRequest(req_options);
     } catch (err) {
         throw err;
     }
 }
+
 
 /**
  * @description 配置项
@@ -74,6 +77,26 @@ async function getTrxAction(accountName, fromPosition) {
         let actions = result.actions;
         return actions;
     } catch (err) {
+        throw err;
+    }
+}
+
+/**
+ * 返回指定交易id的信息
+ * @param {String} txid 
+ * @param {Number} blockNumber
+ * @returns {Promise<Object>}
+ */
+async function getTransactionInfo(blockNumber,txid){
+    try{
+        const block_info = await rpc.get_block(blockNumber)
+        //@ts-ignore
+        const trx_info = block_info.transactions.find(transaction=>{
+            return transaction.trx.id==txid
+        })
+        return trx_info
+    }
+    catch (err) {
         throw err;
     }
 }
@@ -114,17 +137,15 @@ async function getCurrencyStats(code, symbol) {
 
 /**
  * 获取用户代币资产
- * @param { string } code 代币合约
  * @param { string } account 账户名
- * @param { string } [symbol] 代币符号
  */
-async function getCurrencyBalance(code, account, symbol) {
+async function getCurrencyBalance(account) {
     try {
         // @ts-ignore
         const rpc = new JsonRpc(END_POINT, { fetch });
-        const resp = await rpc.get_currency_balance(code, account, symbol);
+        const balance = await rpc.get_currency_balance(UE_TOKEN, account, UE_TOKEN_SYMBOL);
         // const { [TBG_TOKEN_SYMBOL]: { max_supply: maxSupply } } = resp;
-        return resp;
+        return balance;
     } catch (err) {
         throw err;
     }
@@ -138,10 +159,9 @@ async function getTransaction(transactionId) {
     try {
         // @ts-ignore
         const rpc = new JsonRpc(END_POINT, { fetch });
-    
 
 
-        const resp = rpc.history_get_transaction("d4688e098ce71b685fc1cdc80d33ecf7e87138aa6a90b495c3063c969816e834");
+        const resp = rpc.history_get_transaction(transactionId);
         
         return resp;
     } catch (err) {
@@ -165,19 +185,20 @@ async function newApi(privateKeyList) {
         throw err;
     }
 }
-
 /**
  * 转帐
- * @param { String } tokenContract 代币合约用户
- * @param { String } from 转帐用户
- * @param { String } to 收款人
- * @param { String } quantity  额度
- * @param { String } memo 备注
- * @param { String[] } privateKeyList 私钥数组
- */
-async function transfer(tokenContract, from, to, quantity, memo, privateKeyList) {
+ * @param {{  
+    *     tokenContract : String,
+    *     from          : String,
+    *     to            : String,
+    *     quantity      : String,
+    *     memo          : String,
+    *         }} transfer_data
+    */
+async function transfer(transfer_data) {
     try {
-        let api = await newApi(privateKeyList);
+        const {tokenContract,from,to,quantity,memo} = transfer_data;
+        let api = await newApi(PRIVATE_KEY_TEST.split(","));
         let actions = {
             actions: [{
               account: tokenContract,
@@ -194,12 +215,13 @@ async function transfer(tokenContract, from, to, quantity, memo, privateKeyList)
               }
             }]
           }
+        await sleep(5 * 300);
         const result = await api.transact(actions, {
             blocksBehind: 3,
             expireSeconds: 30,
-          });
-
-          return result;
+        });
+        return result;
+ 
     } catch (err) {
         throw err;
     }
@@ -210,5 +232,7 @@ module.exports = {
     getCurrencyStats,
     getCurrencyBalance,
     getTransaction,
+    getTransactionInfo,
+    transfer,
     rpc
 }

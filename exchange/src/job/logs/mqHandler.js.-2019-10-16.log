@@ -1,0 +1,368 @@
+{"date":"2019-10-16T19:02:05.524","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 53,
+  transactionIndex: 0,
+  transactionHash:
+   '0xf1035094a51df25e9773b60ed98a39954a0a066421a6ba2609b7dcb9c1606fac',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+  value: '1.228752631516096084265228120741596701663324978984e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.536","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 260,
+  transactionIndex: 0,
+  transactionHash:
+   '0x28ae6c43a1e61a3d9641a4560084f496bb73674fcf695b54934b0e2dac016398',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+  value: '1.228752631516096084265228120741596701663324978984e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.565","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 88,
+  transactionIndex: 0,
+  transactionHash:
+   '0x0cab5100e682a3f35137173d367a0c5077680859e1293c49791a893f07357023',
+  from: '0xD73B2c72435276C98A1266dB457fBCd0c2d2BF28',
+  to: '0x9e95a55be4b200775623c70af63061fc05869495',
+  value: '9.05357757621610059257612743564074844355899593877e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.571","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 137,
+  transactionIndex: 0,
+  transactionHash:
+   '0x8eb30f95d1c35446c56ce26463762e20cff13c53f808e585115df90bc20e07a9',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+  value: '1.228752631516096084265228120741596701663324978984e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.611","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 139,
+  transactionIndex: 0,
+  transactionHash:
+   '0x4a919b7555eb12d9a1e48cd3ae37e8a657dc613432f8a9166901767f580e34ea',
+  from: '0xD73B2c72435276C98A1266dB457fBCd0c2d2BF28',
+  to: '0x9e95a55be4b200775623c70af63061fc05869495',
+  value: '9.05357757621610059257612743564074844355899593877e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.614","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 237,
+  transactionIndex: 0,
+  transactionHash:
+   '0x567ed56154f897dbf4a19a174930976f35a88aed9c5fd9b288b7e7326f4ad0be',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+  value: '1.228752631516096084265228120741596701663324978984e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.657","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 260,
+  transactionIndex: 1,
+  transactionHash:
+   '0x76fec14df1c20271e6cbd543a02e87ee4c79c12728a39ba6911d60dd6ed2344a',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+  value: '1.228752631516096084265228120741596701663324978984e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.660","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 239,
+  transactionIndex: 0,
+  transactionHash:
+   '0x465b5fb140063e7b0b3b4b1e4a3e96e74748078e278e363f3967592c637d868c',
+  from: '0xD73B2c72435276C98A1266dB457fBCd0c2d2BF28',
+  to: '0x9e95a55be4b200775623c70af63061fc05869495',
+  value: '9.05357757621610059257612743564074844355899593877e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.704","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 260,
+  transactionIndex: 2,
+  transactionHash:
+   '0xf092280f07a4e1158fb753c937e7e20a4d936f82f017ae8da278da7d9214a37d',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+  value: '1.228752631516096084265228120741596701663324978984e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.719","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 260,
+  transactionIndex: 3,
+  transactionHash:
+   '0xb8a7d16de44c55b47b20f788bdafe794ae9ac2cb19f7bd93269c7a0e5b892ee9',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+  value: '1.228752631516096084265228120741596701663324978984e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.751","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 240,
+  transactionIndex: 0,
+  transactionHash:
+   '0x7a2aa9aadea5a8f1df0460c96ae694d19880c37a9115df10102ec4b0ccfeb1a6',
+  from: '0x9e95a55BE4B200775623c70aF63061fc05869495',
+  to: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
+  value: '2.422542571654325638691808493666016779634658551e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.755","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 260,
+  transactionIndex: 4,
+  transactionHash:
+   '0x4ffb8b705c70afa4efe79bfa8e171c2454a5dce7ad37b6041c6ead0517862fae',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+  value: '1.228752631516096084265228120741596701663324978984e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.795","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 260,
+  transactionIndex: 5,
+  transactionHash:
+   '0x99afccd66ca7a55ac17952d7bc187404c007326a37b595e70d12cfe3696b4308',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+  value: '1.228752631516096084265228120741596701663324978984e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.798","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 260,
+  transactionIndex: 6,
+  transactionHash:
+   '0x5d9ebee50d17fefd6b3978932913eb2f837e8f974ba0f9ac809c96f27c6d2018',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+  value: '1.228752631516096084265228120741596701663324978984e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.840","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 260,
+  transactionIndex: 7,
+  transactionHash:
+   '0x198dcb5336f1a7412fcee5648c4f292ab63007cf39d560fdba27acfee3a4a58c',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+  value: '1.228752631516096084265228120741596701663324978984e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.842","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 260,
+  transactionIndex: 8,
+  transactionHash:
+   '0x81dd6f048ab8fab91391227542c32b2b096f28c4ba5e6f34771511306d9f3662',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+  value: '1.228752631516096084265228120741596701663324978984e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.884","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 260,
+  transactionIndex: 9,
+  transactionHash:
+   '0xdb4e3a5fc7ea5727b344f65eeccc8f081df8b1798f2491398e61e05cbedf1522',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+  value: '1.228752631516096084265228120741596701663324978984e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.886","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 262,
+  transactionIndex: 0,
+  transactionHash:
+   '0xb1b9c923493f43f9f40592807ed3d0f86b8dac0b8eae409395e9ba760ee6885e',
+  from: '0xD73B2c72435276C98A1266dB457fBCd0c2d2BF28',
+  to: '0x9e95a55be4b200775623c70af63061fc05869495',
+  value: '9.05357757621610059257612743564074844355899593877e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.928","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 263,
+  transactionIndex: 0,
+  transactionHash:
+   '0x7b544b820cc0b775d84cdefce5d10dbe46dd2657ba266c446c874857ab4a9d3d',
+  from: '0xD73B2c72435276C98A1266dB457fBCd0c2d2BF28',
+  to: '0x9e95a55be4b200775623c70af63061fc05869495',
+  value: '9.05357757621610059257612743564074844355899593877e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.931","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 263,
+  transactionIndex: 1,
+  transactionHash:
+   '0x9b6b6d1b9cabb9ea0a782cd29c81fdc804a2c2139a52436e71568c4d25211443',
+  from: '0xD73B2c72435276C98A1266dB457fBCd0c2d2BF28',
+  to: '0x9e95a55be4b200775623c70af63061fc05869495',
+  value: '9.05357757621610059257612743564074844355899593877e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.972","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 263,
+  transactionIndex: 2,
+  transactionHash:
+   '0x4a3b2dc52964a6448405f29c7fd425247cb87ccd4a1ca9ff9c69276c07822506',
+  from: '0xD73B2c72435276C98A1266dB457fBCd0c2d2BF28',
+  to: '0x9e95a55be4b200775623c70af63061fc05869495',
+  value: '9.05357757621610059257612743564074844355899593877e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:05.979","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 263,
+  transactionIndex: 3,
+  transactionHash:
+   '0xb57488a89ff103d968e78e9846174f12b92a875082e018a0e325b84e740fbdc4',
+  from: '0xD73B2c72435276C98A1266dB457fBCd0c2d2BF28',
+  to: '0x9e95a55be4b200775623c70af63061fc05869495',
+  value: '9.05357757621610059257612743564074844355899593877e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.016","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 263,
+  transactionIndex: 4,
+  transactionHash:
+   '0x3ad7f40ab7c427176158f11887bb22ce7f24e98526eaab8acf101ac3620cff5a',
+  from: '0xD73B2c72435276C98A1266dB457fBCd0c2d2BF28',
+  to: '0x9e95a55be4b200775623c70af63061fc05869495',
+  value: '9.05357757621610059257612743564074844355899593877e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.020","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 264,
+  transactionIndex: 0,
+  transactionHash:
+   '0x33f9cf07b09ebcd1128b005515a866c8d74a7b8c7cc67f8da188329496b8e0fc',
+  from: '0xD73B2c72435276C98A1266dB457fBCd0c2d2BF28',
+  to: '0x9e95a55be4b200775623c70af63061fc05869495',
+  value: '9.05357757621610059257612743564074844355899593877e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.060","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 264,
+  transactionIndex: 1,
+  transactionHash:
+   '0xb1180f4d3d1034ef7cd9ddc623ba0fa24731270d2230baeafea2de4b7ca615ff',
+  from: '0xD73B2c72435276C98A1266dB457fBCd0c2d2BF28',
+  to: '0x9e95a55be4b200775623c70af63061fc05869495',
+  value: '9.05357757621610059257612743564074844355899593877e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.064","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 264,
+  transactionIndex: 2,
+  transactionHash:
+   '0x75ad5b201548384845b8cf929110845198527c499b6921caab14e9e2dc20e869',
+  from: '0xD73B2c72435276C98A1266dB457fBCd0c2d2BF28',
+  to: '0x9e95a55be4b200775623c70af63061fc05869495',
+  value: '9.05357757621610059257612743564074844355899593877e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.104","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 264,
+  transactionIndex: 3,
+  transactionHash:
+   '0x0315ddde550d624495daea8f13a122659540fbbf1e2973baaa9a82397c04d19b',
+  from: '0xD73B2c72435276C98A1266dB457fBCd0c2d2BF28',
+  to: '0x9e95a55be4b200775623c70af63061fc05869495',
+  value: '9.05357757621610059257612743564074844355899593877e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.108","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 264,
+  transactionIndex: 4,
+  transactionHash:
+   '0x5a4aceb927b8aa80d7006960adb3accf402d4a6c3257184fe7dc5be533eaa50d',
+  from: '0x9e95a55BE4B200775623c70aF63061fc05869495',
+  to: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
+  value: '2.422542571654325638691808493666016779634658551e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.148","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 264,
+  transactionIndex: 5,
+  transactionHash:
+   '0xa38b0e174b0bde71d15dd4845baef98d2b652fa3f8ae2fd5c9aa879407f27d54',
+  from: '0x9e95a55BE4B200775623c70aF63061fc05869495',
+  to: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
+  value: '2.422542571654325638691808493666016779634658551e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.154","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 264,
+  transactionIndex: 6,
+  transactionHash:
+   '0xbc53a681d6f782b29dc639a9dbd3bf637ad5b60f980b390edf553ff42d1ff778',
+  from: '0x9e95a55BE4B200775623c70aF63061fc05869495',
+  to: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
+  value: '2.422542571654325638691808493666016779634658551e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.196","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 264,
+  transactionIndex: 7,
+  transactionHash:
+   '0xf58289f673b92d03e2ffffdc8020f0ffaa9f78b3ea7cc271ce618475dcd9add6',
+  from: '0x9e95a55BE4B200775623c70aF63061fc05869495',
+  to: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
+  value: '2.422542571654325638691808493666016779634658551e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.199","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 264,
+  transactionIndex: 8,
+  transactionHash:
+   '0xfc6038578229b139d58c21d8638f52ec566863bf928c46d33a1495d5a4d863e5',
+  from: '0x9e95a55BE4B200775623c70aF63061fc05869495',
+  to: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
+  value: '2.422542571654325638691808493666016779634658551e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.240","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 264,
+  transactionIndex: 9,
+  transactionHash:
+   '0x248a04e41fff641c67185bf4f2bd439ae2399365dc0fa7f2575146ce0392996b',
+  from: '0x9e95a55BE4B200775623c70aF63061fc05869495',
+  to: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
+  value: '2.422542571654325638691808493666016779634658551e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.243","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 266,
+  transactionIndex: 0,
+  transactionHash:
+   '0x2d1fb634a8034eaf6ad1300a0afcf77a736cd27f072abc53f9a6c31a6add5649',
+  from: '0x9e95a55BE4B200775623c70aF63061fc05869495',
+  to: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
+  value: '2.422542571654325638691808493666016779634658551e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.284","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 266,
+  transactionIndex: 1,
+  transactionHash:
+   '0xba53f3e52332ae9a5c8642005019360c20532225b601ed96a01511e5298d91bd',
+  from: '0x9e95a55BE4B200775623c70aF63061fc05869495',
+  to: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
+  value: '2.422542571654325638691808493666016779634658551e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.287","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 266,
+  transactionIndex: 2,
+  transactionHash:
+   '0x2f2cd20438b8f5dd67d77b4563faf8527aa355f831c5855a698887e9860fe31a',
+  from: '0x9e95a55BE4B200775623c70aF63061fc05869495',
+  to: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
+  value: '2.422542571654325638691808493666016779634658551e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.328","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 266,
+  transactionIndex: 3,
+  transactionHash:
+   '0x1e798f0771d80bd74a54acde1eea782ee6f99f82b969d353d5b6ab08947e4996',
+  from: '0x9e95a55BE4B200775623c70aF63061fc05869495',
+  to: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
+  value: '2.422542571654325638691808493666016779634658551e+47',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.336","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 317,
+  transactionIndex: 0,
+  transactionHash:
+   '0xcfca8dedf87de0a2a4e15034425f7c149fe2915164bd344ba2f9dcc84b72e922',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xe10ee4f719e8ad5eb16a665b6f46116ce259ad1b',
+  value: '1.284855079553519221609493939418532947836379180315e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.372","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 323,
+  transactionIndex: 0,
+  transactionHash:
+   '0xd58ee356b5a966cc1a9cae8a0ad6fb7dbcf4cde2deb5e1064b08726d2da3f2dc',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xe10ee4f719e8ad5eb16a665b6f46116ce259ad1b',
+  value: '1.284855079553519221609493939418532947836379180315e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.375","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 8966,
+  transactionIndex: 0,
+  transactionHash:
+   '0x9a9ca6bb818ab0fb143390dd0392dd6d7a1db515fbbc8ce17966ce6842b60a2f',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xe10ee4f719e8ad5eb16a665b6f46116ce259ad1b',
+  value: '1.284855079553519221609493939418532947836379180315e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.418","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 8968,
+  transactionIndex: 0,
+  transactionHash:
+   '0x346e24d88684ee12c9a9872c418b4868b645428cb1ac4c2533d651e481b98c8e',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xe10ee4f719e8ad5eb16a665b6f46116ce259ad1b',
+  value: '1.284855079553519221609493939418532947836379180315e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.421","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 8978,
+  transactionIndex: 0,
+  transactionHash:
+   '0xfe9f8e575f9c5bc810c40daace38a313b78eb1f1b4e4554823298a802d929c5d',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xe10ee4f719e8ad5eb16a665b6f46116ce259ad1b',
+  value: '1.284855079553519221609493939418532947836379180315e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.464","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 8979,
+  transactionIndex: 0,
+  transactionHash:
+   '0x0ed27d728df3f62018230c644de3bc7788296a6de3b645c4b8d05c2b89e82a35',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xe10ee4f719e8ad5eb16a665b6f46116ce259ad1b',
+  value: '1.284855079553519221609493939418532947836379180315e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.472","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 8983,
+  transactionIndex: 0,
+  transactionHash:
+   '0xf6dceda97afe553f55785fbe06ab5445ca43a740d89192c5af7c9f3834648a41',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xe10ee4f719e8ad5eb16a665b6f46116ce259ad1b',
+  value: '1.284855079553519221609493939418532947836379180315e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.512","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 8983,
+  transactionIndex: 1,
+  transactionHash:
+   '0xfd5a4429f7345e911411df2244829d99605bc3296022f649a610e89c51e40e33',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xe10ee4f719e8ad5eb16a665b6f46116ce259ad1b',
+  value: '1.284855079553519221609493939418532947836379180315e+48',
+  event: 'Transfer' }'}
+{"date":"2019-10-16T19:02:06.519","level":"DEBUG","category":"mqHandler.js","host":"frank-hp","pid":"2644","data":'psTrx result: { blockNumber: 8983,
+  transactionIndex: 2,
+  transactionHash:
+   '0xafba57cf1fa590d0142d5feaa1915ead8b6f33c10d72b9c487acd51c2923ba1e',
+  from: '0x2a6F0E7cE6CB445Cb8d1928274792DaB9f28107C',
+  to: '0xe10ee4f719e8ad5eb16a665b6f46116ce259ad1b',
+  value: '1.284855079553519221609493939418532947836379180315e+48',
+  event: 'Transfer' }'}

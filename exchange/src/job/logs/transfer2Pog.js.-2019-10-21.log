@@ -1,0 +1,1476 @@
+{"date":"2019-10-21T10:29:51.415","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10368","data":'txid:0x8042837c106d2c6f7a3e70b3a9b5f46a897e77cb293bd3fc6376b33f245b83e2已经兑换过了'}
+{"date":"2019-10-21T10:29:51.994","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10368","data":'txid:0xf8818164a8200b1a426805f044a207538178bde0e0fc9498d4534f7bde2d000a已经兑换过了'}
+{"date":"2019-10-21T10:29:51.995","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10368","data":'txid:0x392c397ff894d392bdd3030f3c494e211e1eee795534d21f8d763ff400168468已经兑换过了'}
+{"date":"2019-10-21T10:29:51.998","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10368","data":'txid:0xc3293ae3e9da9443bd2c36f10075517e9d0a729a4970f288b414b6d570a4a4a5已经兑换过了'}
+{"date":"2019-10-21T10:29:51.999","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10368","data":'txid:0x86fa0bba541021331c962395435e9487dc9ca9856f57b2782878d6b72b7212f0已经兑换过了'}
+{"date":"2019-10-21T10:29:52.001","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10368","data":'txid:0x46b4085e16aa7c423b3a30e2f71c52e2eaf817bcb7196050e1eb552acc28e4db已经兑换过了'}
+{"date":"2019-10-21T10:29:52.002","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10368","data":'txid:0x97fab95005a2cc62bc39cbfd7e77bb4108ca05f34b47cb63f8ae5b127fa34d01已经兑换过了'}
+{"date":"2019-10-21T10:29:52.003","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10368","data":'txid:0x4b9e4cf37686f3a3bb51b43864eceebd2793f8730a918dffe0caa025b5f1ae78已经兑换过了'}
+{"date":"2019-10-21T10:29:54.017","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10368","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T10:29:54.090","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10368","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T10:29:54.475","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10368","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T10:29:54.720","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10368","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T10:55:41.493","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x8a2d836fa042dc5a4c5b6772cf49777f0febfdd2510ba1b27d4f0b71e034a8db已经兑换过了'}
+{"date":"2019-10-21T10:55:41.495","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x8042837c106d2c6f7a3e70b3a9b5f46a897e77cb293bd3fc6376b33f245b83e2已经兑换过了'}
+{"date":"2019-10-21T10:55:41.510","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x392c397ff894d392bdd3030f3c494e211e1eee795534d21f8d763ff400168468已经兑换过了'}
+{"date":"2019-10-21T10:55:43.462","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:43.469","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:43.826","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:44.268","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:44.273","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0xf8818164a8200b1a426805f044a207538178bde0e0fc9498d4534f7bde2d000a已经兑换过了'}
+{"date":"2019-10-21T10:55:44.273","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x86fa0bba541021331c962395435e9487dc9ca9856f57b2782878d6b72b7212f0已经兑换过了'}
+{"date":"2019-10-21T10:55:44.274","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0xc3293ae3e9da9443bd2c36f10075517e9d0a729a4970f288b414b6d570a4a4a5已经兑换过了'}
+{"date":"2019-10-21T10:55:44.274","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x46b4085e16aa7c423b3a30e2f71c52e2eaf817bcb7196050e1eb552acc28e4db已经兑换过了'}
+{"date":"2019-10-21T10:55:45.297","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0xc6d2e761640e59f60858fffd6463dd5597f7adc92b5ef661ab49134ccf0afab5已经兑换过了'}
+{"date":"2019-10-21T10:55:45.311","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:45.315","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:45.333","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:45.334","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:45.337","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:45.339","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x97fab95005a2cc62bc39cbfd7e77bb4108ca05f34b47cb63f8ae5b127fa34d01已经兑换过了'}
+{"date":"2019-10-21T10:55:45.340","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x4b9e4cf37686f3a3bb51b43864eceebd2793f8730a918dffe0caa025b5f1ae78已经兑换过了'}
+{"date":"2019-10-21T10:55:45.340","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x15692a57514a19b45094c82ba8d6e31c6c8a47047344bdbf54dc2ec098850643已经兑换过了'}
+{"date":"2019-10-21T10:55:45.347","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x1a681f4d6e17b0d0ab83e6fda4d4129801a7fd78a2937c6014dced1dae161550已经兑换过了'}
+{"date":"2019-10-21T10:55:45.642","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC0接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:45.644","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:45.769","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:45.770","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:45.771","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:45.771","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:45.772","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:45.779","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:46.412","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:46.416","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:46.417","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:46.638","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:46.641","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:46.861","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.286","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.287","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.287","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.289","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.290","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.292","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.293","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.501","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.504","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.506","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.511","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.512","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.512","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.513","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.514","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.514","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.514","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.674","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.837","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.839","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.952","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.953","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.954","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.954","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.958","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:47.961","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:48.498","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:48.917","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.127","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.235","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC0接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.236","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.239","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.361","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.364","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC0接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.367","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC0接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.368","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC0接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.369","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC0接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.578","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC0接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.580","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.581","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.582","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.584","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.584","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.587","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC0接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.694","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.696","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.698","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC0接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.699","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.699","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.711","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC0接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:49.712","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:50.760","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'ACC0接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:55:50.762","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T10:57:03.564","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"1472","data":'txid:0x8a2d836fa042dc5a4c5b6772cf49777f0febfdd2510ba1b27d4f0b71e034a8db已经兑换过了'}
+{"date":"2019-10-21T10:57:03.568","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"1472","data":'txid:0x8042837c106d2c6f7a3e70b3a9b5f46a897e77cb293bd3fc6376b33f245b83e2已经兑换过了'}
+{"date":"2019-10-21T10:57:03.607","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"1472","data":'txid:0x392c397ff894d392bdd3030f3c494e211e1eee795534d21f8d763ff400168468已经兑换过了'}
+{"date":"2019-10-21T10:57:03.650","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"1472","data":'txid:0xf8818164a8200b1a426805f044a207538178bde0e0fc9498d4534f7bde2d000a已经兑换过了'}
+{"date":"2019-10-21T10:57:03.698","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"1472","data":'txid:0xc3293ae3e9da9443bd2c36f10075517e9d0a729a4970f288b414b6d570a4a4a5已经兑换过了'}
+{"date":"2019-10-21T10:57:03.742","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"1472","data":'txid:0x86fa0bba541021331c962395435e9487dc9ca9856f57b2782878d6b72b7212f0已经兑换过了'}
+{"date":"2019-10-21T10:57:03.787","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"1472","data":'txid:0x46b4085e16aa7c423b3a30e2f71c52e2eaf817bcb7196050e1eb552acc28e4db已经兑换过了'}
+{"date":"2019-10-21T10:57:03.833","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"1472","data":'txid:0xc6d2e761640e59f60858fffd6463dd5597f7adc92b5ef661ab49134ccf0afab5已经兑换过了'}
+{"date":"2019-10-21T10:57:03.875","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"1472","data":'txid:0x97fab95005a2cc62bc39cbfd7e77bb4108ca05f34b47cb63f8ae5b127fa34d01已经兑换过了'}
+{"date":"2019-10-21T10:57:03.919","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"1472","data":'txid:0x15692a57514a19b45094c82ba8d6e31c6c8a47047344bdbf54dc2ec098850643已经兑换过了'}
+{"date":"2019-10-21T10:57:03.963","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"1472","data":'txid:0x4b9e4cf37686f3a3bb51b43864eceebd2793f8730a918dffe0caa025b5f1ae78已经兑换过了'}
+{"date":"2019-10-21T10:57:04.008","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"1472","data":'txid:0x1a681f4d6e17b0d0ab83e6fda4d4129801a7fd78a2937c6014dced1dae161550已经兑换过了'}
+{"date":"2019-10-21T12:11:08.499","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'tbgjoin接收转账操作失败: { Error: duplicate transaction 55c0a6df2954fd7afbe0d3d9ee03d57fc9e369c6a631a77b77c493d2625daa6c
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 409,
+     message: 'Conflict',
+     error:
+      { code: 3040008,
+        name: 'tx_duplicate',
+        what: 'Duplicate transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:11:08.504","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'the error is from transfer2Pog(),the error trace is { Error: duplicate transaction 55c0a6df2954fd7afbe0d3d9ee03d57fc9e369c6a631a77b77c493d2625daa6c
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 409,
+     message: 'Conflict',
+     error:
+      { code: 3040008,
+        name: 'tx_duplicate',
+        what: 'Duplicate transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:11:08.521","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:11:08.527","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:11:08.533","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:11:08.709","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:11:08.742","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'tbgtokencoin接收转账操作失败: { Error: duplicate transaction 23bc49715cb04b2b917375a15dba2cea99f43f1e622fb7ae5a3c705592ca3ac8
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 409,
+     message: 'Conflict',
+     error:
+      { code: 3040008,
+        name: 'tx_duplicate',
+        what: 'Duplicate transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:11:08.745","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'the error is from transfer2Pog(),the error trace is { Error: duplicate transaction 23bc49715cb04b2b917375a15dba2cea99f43f1e622fb7ae5a3c705592ca3ac8
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 409,
+     message: 'Conflict',
+     error:
+      { code: 3040008,
+        name: 'tx_duplicate',
+        what: 'Duplicate transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:11:09.316","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'tbgjoin接收转账操作失败: { Error: duplicate transaction ee0e1e09bf0734a79f293f9568795c4a58bc3b57fb83a9a8585481f8a4b691c5
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 409,
+     message: 'Conflict',
+     error:
+      { code: 3040008,
+        name: 'tx_duplicate',
+        what: 'Duplicate transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:11:09.426","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'the error is from transfer2Pog(),the error trace is { Error: duplicate transaction ee0e1e09bf0734a79f293f9568795c4a58bc3b57fb83a9a8585481f8a4b691c5
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 409,
+     message: 'Conflict',
+     error:
+      { code: 3040008,
+        name: 'tx_duplicate',
+        what: 'Duplicate transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:11:09.447","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'tbgtokencoin接收转账操作失败: { Error: duplicate transaction 2cebe02b6daa930637e6440cf0cffffc318fc02fdd3f4d0ea2f67deccfb4fb01
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 409,
+     message: 'Conflict',
+     error:
+      { code: 3040008,
+        name: 'tx_duplicate',
+        what: 'Duplicate transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:11:09.450","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'the error is from transfer2Pog(),the error trace is { Error: duplicate transaction 2cebe02b6daa930637e6440cf0cffffc318fc02fdd3f4d0ea2f67deccfb4fb01
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 409,
+     message: 'Conflict',
+     error:
+      { code: 3040008,
+        name: 'tx_duplicate',
+        what: 'Duplicate transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:11:09.558","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'uetokencoin转账至tbgjoin成功'}
+{"date":"2019-10-21T12:11:09.581","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T12:11:09.581","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T12:11:09.587","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'uetokencoin转账至tbgjoin成功'}
+{"date":"2019-10-21T12:11:09.674","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T12:11:09.678","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T12:11:09.681","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'uetokencoin转账至tbgjoin成功'}
+{"date":"2019-10-21T12:11:09.709","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T12:11:09.734","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'uetokencoin转账至tbgjoin成功'}
+{"date":"2019-10-21T12:12:46.684","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'txid:0x6fe0b99c7af0a044caf8d080d6dd8b545831dabb4575513f46f6ba544b9d5103已经兑换过了'}
+{"date":"2019-10-21T12:12:46.684","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'txid:0x0ccf43dc57a8b0148cd3e1530c0a581a9b671aa3e0e5e99060ae39a7de370e4b已经兑换过了'}
+{"date":"2019-10-21T12:12:46.691","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'txid:0x76e4bd2b0327114913b0a239528c907c75dad659d77f1aa9d2aba863c2c03508已经兑换过了'}
+{"date":"2019-10-21T12:12:46.691","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'txid:0xbf8803678ba82466e1152131d9e8f6339dc3fe6f5a6e2bd1400441b9b0a66d5e已经兑换过了'}
+{"date":"2019-10-21T12:12:46.692","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'txid:0x365e90e018bc2c76508fc9bf6d7f17a471e09de6d8061eb5074adaaaf34ff69f已经兑换过了'}
+{"date":"2019-10-21T12:12:46.701","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'txid:0x5cab47129dbdd28998e06518982b5d732cba661d179f8530faac5917d1dd7947已经兑换过了'}
+{"date":"2019-10-21T12:12:46.702","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'txid:0x8f7ad2429492335151376f07a6085e61c9624d143a67a2b48dbaf13f96c4fe75已经兑换过了'}
+{"date":"2019-10-21T12:12:46.702","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'txid:0x225a97fc3ab7115ac1ff9b1ca0cc06b9b18632f7a1110302d0ed6f1c8e3b73f1已经兑换过了'}
+{"date":"2019-10-21T12:12:47.607","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'txid:0x11d46e6e248ef7e96f576d55f8af56c68ff1070300b386e65d993352bf8dbde4已经兑换过了'}
+{"date":"2019-10-21T12:12:48.750","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'ACC1接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:12:48.752","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:12:49.211","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'ACC2接收转账操作失败: { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:12:49.213","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'the error is from transfer2Pog(),the error trace is { Error: assertion failure with message: to account does not exist
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3050003,
+        name: 'eosio_assert_message_exception',
+        what: 'eosio_assert_message assertion failure',
+        details: [Array] } } }'}
+{"date":"2019-10-21T12:12:49.391","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T12:12:49.785","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'uetokencoin转账至tbgjoin成功'}
+{"date":"2019-10-21T12:12:49.865","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'uetokencoin转账至tbgjoin成功'}
+{"date":"2019-10-21T12:12:50.952","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"13964","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T14:16:56.343","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"6696","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T14:16:59.345","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"6696","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T14:16:59.363","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"6696","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T14:16:59.677","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"6696","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T14:16:59.809","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"6696","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T14:17:00.275","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"6696","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T14:17:02.454","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"6696","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T14:17:03.840","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"6696","data":'uetokencoin转账至tbgjoin成功'}
+{"date":"2019-10-21T14:17:04.599","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"6696","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T14:17:10.703","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"6696","data":'uetokencoin转账至tbgtokencoin成功'}
+{"date":"2019-10-21T14:20:04.024","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x366ab96059d16e25947f35a4de423a6b75d096444c701608c1d0117849acab13已经兑换过了'}
+{"date":"2019-10-21T14:20:04.029","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0xaede9ede7fa8289cf8ae5f5f1e733dd1cb2b573a5751f4d32f88337e677e3e14已经兑换过了'}
+{"date":"2019-10-21T14:20:04.066","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x718fad6ed859c38de88a3715f91679c1cd28a70d557f596bd01f128538983048已经兑换过了'}
+{"date":"2019-10-21T14:20:04.105","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x6d0c1f6e4c133f064e7688ef44cdd4e2ca24354f63111259f569180036dbbe30已经兑换过了'}
+{"date":"2019-10-21T14:20:04.155","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x6ae3143f293d43433fde0f8120465b523d8856c1f098f5eba3f85d994c5777a4已经兑换过了'}
+{"date":"2019-10-21T14:20:04.202","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x7e81c9a100ab85ccc92b0ff4274ae29bc4745dbbbd6b571f80096c11fa873889已经兑换过了'}
+{"date":"2019-10-21T14:20:04.248","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x752c185bd94d3a716b95ec64f4da07851e8ed0531931c01496b148e8df13ba50已经兑换过了'}
+{"date":"2019-10-21T14:20:04.291","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0xfa47119b4745c17fa10d51ef120d72fa30c6adf4b19ad4cf29d82b06c7564c2c已经兑换过了'}
+{"date":"2019-10-21T14:20:04.333","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11376","data":'txid:0x213abac9f3f6f02427b1d0b6ed3879c646d399a40d545dd2bfad8280fdabf9a0已经兑换过了'}
+{"date":"2019-10-21T14:21:39.339","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"4104","data":'txid:0x366ab96059d16e25947f35a4de423a6b75d096444c701608c1d0117849acab13已经兑换过了'}
+{"date":"2019-10-21T14:21:39.342","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"4104","data":'txid:0xaede9ede7fa8289cf8ae5f5f1e733dd1cb2b573a5751f4d32f88337e677e3e14已经兑换过了'}
+{"date":"2019-10-21T14:21:39.372","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"4104","data":'txid:0x718fad6ed859c38de88a3715f91679c1cd28a70d557f596bd01f128538983048已经兑换过了'}
+{"date":"2019-10-21T14:21:39.410","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"4104","data":'txid:0x6d0c1f6e4c133f064e7688ef44cdd4e2ca24354f63111259f569180036dbbe30已经兑换过了'}
+{"date":"2019-10-21T14:21:39.454","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"4104","data":'txid:0x6ae3143f293d43433fde0f8120465b523d8856c1f098f5eba3f85d994c5777a4已经兑换过了'}
+{"date":"2019-10-21T14:21:39.499","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"4104","data":'txid:0x7e81c9a100ab85ccc92b0ff4274ae29bc4745dbbbd6b571f80096c11fa873889已经兑换过了'}
+{"date":"2019-10-21T14:21:39.573","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"4104","data":'txid:0x752c185bd94d3a716b95ec64f4da07851e8ed0531931c01496b148e8df13ba50已经兑换过了'}
+{"date":"2019-10-21T14:21:39.604","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"4104","data":'txid:0xfa47119b4745c17fa10d51ef120d72fa30c6adf4b19ad4cf29d82b06c7564c2c已经兑换过了'}
+{"date":"2019-10-21T14:21:39.659","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"4104","data":'txid:0x213abac9f3f6f02427b1d0b6ed3879c646d399a40d545dd2bfad8280fdabf9a0已经兑换过了'}
+{"date":"2019-10-21T15:01:51.495","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10920","data":'txid:0x366ab96059d16e25947f35a4de423a6b75d096444c701608c1d0117849acab13已经兑换过了'}
+{"date":"2019-10-21T15:01:51.497","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10920","data":'txid:0xaede9ede7fa8289cf8ae5f5f1e733dd1cb2b573a5751f4d32f88337e677e3e14已经兑换过了'}
+{"date":"2019-10-21T15:01:51.509","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10920","data":'txid:0x718fad6ed859c38de88a3715f91679c1cd28a70d557f596bd01f128538983048已经兑换过了'}
+{"date":"2019-10-21T15:01:51.553","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10920","data":'txid:0x6d0c1f6e4c133f064e7688ef44cdd4e2ca24354f63111259f569180036dbbe30已经兑换过了'}
+{"date":"2019-10-21T15:01:51.595","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10920","data":'txid:0x6ae3143f293d43433fde0f8120465b523d8856c1f098f5eba3f85d994c5777a4已经兑换过了'}
+{"date":"2019-10-21T15:01:51.640","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10920","data":'txid:0x7e81c9a100ab85ccc92b0ff4274ae29bc4745dbbbd6b571f80096c11fa873889已经兑换过了'}
+{"date":"2019-10-21T15:01:51.689","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10920","data":'txid:0x752c185bd94d3a716b95ec64f4da07851e8ed0531931c01496b148e8df13ba50已经兑换过了'}
+{"date":"2019-10-21T15:01:51.728","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10920","data":'txid:0xfa47119b4745c17fa10d51ef120d72fa30c6adf4b19ad4cf29d82b06c7564c2c已经兑换过了'}
+{"date":"2019-10-21T15:01:51.780","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10920","data":'txid:0x213abac9f3f6f02427b1d0b6ed3879c646d399a40d545dd2bfad8280fdabf9a0已经兑换过了'}
+{"date":"2019-10-21T15:01:54.540","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"10920","data":'uetokencoin转账至tbgtokencoin成功'}

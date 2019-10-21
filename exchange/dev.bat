@@ -39,7 +39,7 @@ set EXCHANGE_REDIS_PASS = redis_pass_2019
 set EXCHANGE_RABBIT_HOST = 192.168.92.128
 set EXCHANGE_RABBIT_PORT = 5672
 set EXCHANGE_RABBIT_USER = mq_user
-set EXCHANGE_RABBIT_PASS = pass_2018
+set EXCHANGE_RABBIT_PASS = pass_2019
 
-set PROVIDER = http://localhost:8545
+set PROVIDER = ws://localhost:8545
 node exchange.js

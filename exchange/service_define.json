@@ -13,7 +13,7 @@
                 "获取UE_PAX账号"
             ],
             "isFunctionPoint" : true,
-            "url" : "/get_account",
+            "url" : "/get_eth_account",
             "type" : "get",
             "requireRole" : [ "*" ],
             "req": {

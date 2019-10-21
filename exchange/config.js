@@ -15,6 +15,6 @@ module.exports = {
         "host": "192.168.92.128",
         "port": 5672,
         "user": "mq_user",
-        "pwd" : "pass_2018"
+        "pwd" : "pass_2019"
     } 
 }

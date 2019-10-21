@@ -1,0 +1,46 @@
+{"date":"2019-10-18T10:27:29.006","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"9304","data":'init server of pools server.'}
+{"date":"2019-10-18T10:27:29.541","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"9304","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-18T10:27:29.668","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"9304","data":'数据库同步成功'}
+{"date":"2019-10-18T10:29:13.142","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"9304","data":'GET /get_account'}
+{"date":"2019-10-18T10:29:34.798","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"9304","data":'GET /get_account'}
+{"date":"2019-10-18T10:31:25.076","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"8300","data":'init server of pools server.'}
+{"date":"2019-10-18T10:31:25.622","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"8300","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-18T10:31:25.740","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"8300","data":'数据库同步成功'}
+{"date":"2019-10-18T10:31:27.793","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"8300","data":'GET /get_account'}
+{"date":"2019-10-18T10:33:39.593","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"1320","data":'init server of pools server.'}
+{"date":"2019-10-18T10:33:40.126","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"1320","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-18T10:33:40.225","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"1320","data":'数据库同步成功'}
+{"date":"2019-10-18T10:33:45.577","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"1320","data":'GET /get_account'}
+{"date":"2019-10-18T10:34:02.690","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6840","data":'init server of pools server.'}
+{"date":"2019-10-18T10:34:03.249","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"6840","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-18T10:34:03.371","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6840","data":'数据库同步成功'}
+{"date":"2019-10-18T10:34:04.318","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6840","data":'GET /get_account'}
+{"date":"2019-10-18T10:37:31.592","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"3904","data":'init server of pools server.'}
+{"date":"2019-10-18T10:37:32.151","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"3904","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-18T10:37:32.250","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"3904","data":'数据库同步成功'}
+{"date":"2019-10-18T10:37:33.980","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"3904","data":'GET /get_EthAccount'}
+{"date":"2019-10-18T10:37:33.992","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"3904","data":'unhandledRejection current request url : /get_ethaccount is not exist in api. pls check.'}
+{"date":"2019-10-18T10:38:08.295","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"9840","data":'init server of pools server.'}
+{"date":"2019-10-18T10:38:08.898","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"9840","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-18T10:38:09.061","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"9840","data":'数据库同步成功'}
+{"date":"2019-10-18T10:38:10.659","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"9840","data":'GET /get_ethAccount'}
+{"date":"2019-10-18T10:38:10.673","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"9840","data":'unhandledRejection current request url : /get_ethaccount is not exist in api. pls check.'}
+{"date":"2019-10-18T10:38:45.632","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6392","data":'init server of pools server.'}
+{"date":"2019-10-18T10:38:46.186","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"6392","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-18T10:38:46.289","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6392","data":'数据库同步成功'}
+{"date":"2019-10-18T10:38:47.786","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6392","data":'GET /get_eth_account'}
+{"date":"2019-10-18T10:38:47.792","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"6392","data":'unhandledRejection current request url : /get_eth_account is not exist in api. pls check.'}
+{"date":"2019-10-18T10:42:48.327","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10920","data":'init server of pools server.'}
+{"date":"2019-10-18T10:42:48.883","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"10920","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-18T10:42:48.960","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10920","data":'数据库同步成功'}
+{"date":"2019-10-18T10:42:50.438","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10920","data":'GET /get_eth_account'}
+{"date":"2019-10-18T10:43:15.626","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10920","data":'GET /get_eth_account'}
+{"date":"2019-10-18T19:46:13.927","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"12176","data":'init server of pools server.'}
+{"date":"2019-10-18T19:46:14.471","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"12176","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-18T19:46:14.938","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"12176","data":'数据库同步成功'}
+{"date":"2019-10-18T20:03:27.493","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"8300","data":'init server of pools server.'}
+{"date":"2019-10-18T20:03:28.031","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"8300","data":'**** server of pools running at http://localhost:7758/  ****'}
+{"date":"2019-10-18T20:03:28.134","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"8300","data":'数据库同步成功'}
+{"date":"2019-10-18T20:04:05.602","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"8300","data":'GET /get_eth_account'}
+{"date":"2019-10-18T20:04:54.725","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"8300","data":'GET /get_eth_account'}
+{"date":"2019-10-18T20:05:06.593","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"8300","data":'GET /get_eth_account'}

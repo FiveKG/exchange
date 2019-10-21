@@ -15,6 +15,7 @@ async function getPAXForPOG(req,res,next){
         resData["data"] = {
             num : num
         }
+ 
          res.send(resData);
     }catch(error){
         logger.error("request get_banker error, the error stock is %O", error);

@@ -2,7 +2,7 @@
 const {CONTRACT_ADDRESS,ACC0,ABI,PROVIDER} = require("../common/constant/web3Config")
 const Web3 = require('web3');
 const web3 = new Web3(process.env.PROVIDER||PROVIDER||'http://localhost:8545');
-const get_balance = require("./getCurrencyBalance")
+const {getCurrencyBalance:getUeBalance} = require("./getEOSTrxAction")
 const logger = require("../common/logger").getLogger("getNewPaxAccount.js")
 const {sequelize} = require('../db')
 const {getCurrentDate,generate_unique_key} = require("../common")
@@ -21,13 +21,12 @@ async function get_Eth_account(pog_account){
             return result.dataValues.eth_address
         }
         //未创建
-
         const address     = await web3.eth.personal.newAccount(generate_unique_key())
-        //const token_value   = await web3.eth.getBalance(address)
+
         const token_value = await contract.methods.balanceOf(address).call()
         const eth_key_pwd = generate_unique_key();
         const map_time    = getCurrentDate();
-        let   ue_value    = await get_balance(pog_account);
+        let   ue_value    = await getUeBalance(pog_account);
 
         if(ue_value==false){
             //账号没UE币
@@ -38,7 +37,7 @@ async function get_Eth_account(pog_account){
         result= await sequelize.Eth_account.create({
             id         : generate_unique_key(),
             pog_account: pog_account,
-            eth_address: address,
+            eth_address: address.toLowerCase(),
             token_value: token_value,
             eth_key_pwd: eth_key_pwd,
             map_time   : map_time,

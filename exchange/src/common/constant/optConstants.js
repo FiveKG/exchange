@@ -1,23 +1,20 @@
 // @ts-check
 
-/***
- * 操作类型常量
- */
 
-// 哈希骰子投注
-const HASH_DICE_BET = "hash_dice_bet";
+// 获取eth账号
+const GET_ETH_ACC = "GET_ETH_ACC";
 
-// 哈希骰子开奖
-const HASH_DICE_OPEN = "hash_dice_open";
 
-const HASH_DICE_MQ = 'hash_dice_mq';
+//消息队列常量-处理转账
+const HANDLE_TRANSFER = "HANDLE_TRANSFER";
+
 /**
- * TBG发币规划
+ * 消息队列配置变量
  */
 const CONSTANT = {
-    "HASH_DICE_BET" : HASH_DICE_BET,
-    "HASH_DICE_MQ"  : HASH_DICE_MQ,
-    "HASH_DICE_OPEN": HASH_DICE_OPEN
+    "GET_ETH_ACC" : GET_ETH_ACC,
+    "HANDLE_TRANSFER"  : HANDLE_TRANSFER,
+
 }
 
 module.exports = CONSTANT

@@ -74,11 +74,11 @@ function createTable(sequelize,Sequelize){
            // get(){return this.getDataValue('recharge_time')},set(valueToBeSet){this.setDataValue('recharge_time', valueToBeSet)},
         },
         confirm_time:{
-            type: Sequelize.DATE,allowNull : false,comment: '确认到帐时间',
+            type: Sequelize.DATE,allowNull : true,comment: '确认到帐时间',
            // get(){return this.getDataValue('Confirm_time')},set(valueToBeSet){this.setDataValue('Confirm_time', valueToBeSet)},
         },
         exchange_time:{
-            type: Sequelize.TEXT,allowNull : false,defaultValue:Sequelize.NOW,comment: '兑换时间',
+            type: Sequelize.DATE,allowNull : true,defaultValue:Sequelize.NOW,comment: '兑换时间',
            // get(){return this.getDataValue('exchange_time')},set(valueToBeSet){this.setDataValue('exchange_time', valueToBeSet)},
         },
         is_exchanged:{
@@ -90,11 +90,11 @@ function createTable(sequelize,Sequelize){
            // get(){return this.getDataValue('eth_blockNumber')},set(valueToBeSet){this.setDataValue('eth_blockNumber', valueToBeSet)},
         },
         pog_blockNumber:{
-            type: Sequelize.BIGINT(),allowNull : false,comment: 'Pog链上的兑换记录的高度',
+            type: Sequelize.BIGINT(),allowNull : true,comment: 'Pog链上的兑换记录的高度',
            // get(){return this.getDataValue('pog_blockNumber')},set(valueToBeSet){this.setDataValue('pog_blockNumber', valueToBeSet)},
         },
         pog_txtid:{
-            type: Sequelize.TEXT,allowNull : false,comment: 'pog上的交易记录',
+            type: Sequelize.TEXT,allowNull : true,comment: 'pog上的交易记录',
             //get(){return this.getDataValue('pog_txtid')},set(valueToBeSet){this.setDataValue('pog_txtid', valueToBeSet)},
         },
         log_info:{

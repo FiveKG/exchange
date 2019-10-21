@@ -1,46 +1,28 @@
+const {PROVIDER,CONTRACT_ADDRESS,ACC0,ACC1,ABI} = require("../common/constant/web3Config")
 const Web3 = require('web3');
-const {PROVIDER} = require("../common/constant/web3Config")
-const web3 = new Web3(process.env.PROVIDER||PROVIDER||'http://localhost:8545');
+const web3 = new Web3(process.env.PROVIDER||PROVIDER||'ws://localhost:8545');
 const logger = require("../common/logger").getLogger('getPAXTrxAction.js')
-
-
+const contract =new web3.eth.Contract(ABI,CONTRACT_ADDRESS)
 
 /**
- * @returns {Object} 返回区块信息
- * {
-    "number": 3,
-    "hash": "0xef95f2f1ed3ca60b048b4bf67cde2195961e0bba6f70bcbea9a2c4e133e34b46",
-    "parentHash": "0x2302e1c0b972d00932deb5dab9eb2982f570597d9d42504c05d9c2147eaf9c88",
-    "nonce": "0xfb6e1a62d119228b",
-    "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-    "transactionsRoot": "0x3a1b03875115b79539e5bd33fb00d8f7b7cd61929d5a3c574f507b8acf415bee",
-    "stateRoot": "0xf1133199d44695dfa8fd1bcfe424d82854b5cebef75bddd7e40ea94cda515bcb",
-    "miner": "0x8888f1f195afa192cfee860698584c030f4c9db1",
-    "difficulty": '21345678965432',
-    "totalDifficulty": '324567845321',
-    "size": 616,
-    "extraData": "0x",
-    "gasLimit": 3141592,
-    "gasUsed": 21662,
-    "timestamp": 1429287689,
-    "transactions": [
-        "0x9fc76417374aa880d4449a1f7f31ec597f00b1f6f3dd2d66f4c9c6c445836d8b"
-    ],
-    "uncles": []
-}
+ * //不指定区块默认区块号是最新区块号,指定区块号则返回该区块号的信息
+ * @param {Number|String|null} 
+ * @returns {Object|Number} 
  */
 async function getBlock(block_number=null){
     try{
         if(!block_number){
-            //不指定区块默认区块号是最新区块号
+            //不指定区块
             block_number = await web3.eth.getBlockNumber()
+            return block_number
         }
+        //指定区块号
         const block_info = await  web3.eth.getBlock(block_number)
         return block_info
     }
     catch(err){
         logger.error('the error from getBlock(),the error stock is %O',err)
+        throw err
     }
 
 }
@@ -76,6 +58,7 @@ async function getTransaction(block_transaction){
     }
     catch(err){
         logger.error('the error from getTransaction(),the error stock is %O',err)
+        throw err
     }
 }
 
@@ -103,16 +86,47 @@ async function getCurrentTransaction(block_number = null){
     }
     catch(err){
         logger.error('the error from getCurrentTransaction(),the error stock is %O',err)
+        throw err
     }
 }
 
-async function getContractTransaction(){
+/**
+ * 查询合约账号的历史事件，每次查询一个区块的所有交易数据
+ * @param {Number} fromBlock 从第几块区查起，默认是0
+ * @returns {Array<Object>} 交易对象数组
+ */
+async function getContractTransaction(fromBlock=0){
+    try{
+        const event = await contract.getPastEvents('Transfer',{
+            fromBlock:fromBlock,
+            toBlock: "latest"
+        })
+        return event
 
+    }catch(err)
+    {
+        console.log("err from getContractTransaction(),ths track is %O:",err)
+        throw err
+    }
 }
-
+/**
+ * 返回该eth账号的合约余额
+ * @param {String} eth_account 
+ * @returns {String}
+ */
+async function getTokenBalance(eth_account){
+    try{
+        const balance = await contract.methods.balanceOf(eth_account).call()
+        return balance
+    }
+    catch(err){
+        console.log("err from getTokenBalance(),ths track is %O:",err)
+    }
+}
 module.exports={
     "getBlock":getBlock,
     "getTransaction":getTransaction,
     "getCurrentTransaction":getCurrentTransaction,
-    "getContractTransaction":getContractTransaction
+    "getContractTransaction":getContractTransaction,
+    "getTokenBalance":getTokenBalance
 }
