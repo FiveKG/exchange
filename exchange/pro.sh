@@ -44,7 +44,7 @@ export EXCHANGE_RABBIT_PORT = 5672
 export EXCHANGE_RABBIT_USER = mq_user
 export EXCHANGE_RABBIT_PASS = pass_2019
 
-export ETH_PROVIDER = ws://localhost:8545
+export ETH_PROVIDER = http:// 172.19.2.122:39842
 node exchange.js
 
 
