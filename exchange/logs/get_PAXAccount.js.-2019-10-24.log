@@ -1,0 +1,7 @@
+{"date":"2019-10-24T11:08:06.705","level":"DEBUG","category":"get_PAXAccount.js","host":"frank-hp","pid":"4648","data":'the param is:{"account_name":"uetokencoin"}'}
+{"date":"2019-10-24T11:08:15.997","level":"DEBUG","category":"get_PAXAccount.js","host":"frank-hp","pid":"4648","data":'the param is:{"account_name":"tbgjoin"}'}
+{"date":"2019-10-24T11:08:21.323","level":"DEBUG","category":"get_PAXAccount.js","host":"frank-hp","pid":"4648","data":'the param is:{"account_name":"tbgjoin"}'}
+{"date":"2019-10-24T11:08:26.610","level":"DEBUG","category":"get_PAXAccount.js","host":"frank-hp","pid":"4648","data":'the param is:{"account_name":"tbgtokencoin"}'}
+{"date":"2019-10-24T11:26:16.457","level":"DEBUG","category":"get_PAXAccount.js","host":"frank-hp","pid":"11084","data":'the param is:{"account_name":"tbgtokencoin"}'}
+{"date":"2019-10-24T11:26:27.410","level":"DEBUG","category":"get_PAXAccount.js","host":"frank-hp","pid":"11084","data":'the param is:{"account_name":"tbgjoin"}'}
+{"date":"2019-10-24T11:26:41.093","level":"DEBUG","category":"get_PAXAccount.js","host":"frank-hp","pid":"11084","data":'the param is:{"account_name":"uetokencoin"}'}

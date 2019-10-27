@@ -50,6 +50,7 @@ server.on('listening', async () => {
   sequelize.sequelize.sync().then(function(result){
     // 同步数据库
     logger.info('数据库同步成功')
+    
     }).catch(error=>{
       logger.error(`the error from sequelize.sync(),the erroe:${error}`)
     })

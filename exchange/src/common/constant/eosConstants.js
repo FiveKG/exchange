@@ -1,33 +1,24 @@
 // @ts-check
 
-// 投资额度
-// 参与 TBG1 所需 UE 额度
-const BASE_AMOUNT = "100";
-// TBG1 收款账户
-const TBG_WALLET_RECEIVER = 'tbgreceiver'
-// TBG1 出款账户
-const DISPENSE_ACCOUNT = "tbgjoin";
+
 // EOS token 合约账户
+//最低转账金额
+const BASE_AMOUNT = '100';
+
 const EOS_TOKEN = "eosio.token";
 const EOS_TOKEN_SYMBOL = "EOS"
 // UE token 合约账户
 const UE_TOKEN = "uetokencoin";
 const UE_TOKEN_SYMBOL = "UE"
-// TBG token 合约账户
-const TBG_TOKEN = "tbgtokencoin"
-const TBG_TOKEN_SYMBOL = "TBG"
+// TBG token 测试账户
+const TBG_TOKEN = "tbgjoin"
 
-// 庄家
-const BANKER = "dicebanker"
+// TBG token 测试账户
+const TBG_TOKEN2 = 'tbgtokencoin'
 
-// 代投注账号(超级用户)
-const AGENT_ACCOUNT = "eoshashdice"
-
-// 哈希骰子帐号(超级用户)
-const HASH_DICE_CONTRACT = "eoshashdice";
 
 // // // 节点信息
-const END_POINT = "http://45.251.109.187:8888"
+const END_POINT = process.env.EOS_END_POINT || "http://45.251.109.187:8888";
 
 // // 私钥
 // const PRIVATE_KEY_TEST = "5J6sFQ2xv32UzS9dWJHZ8HHcjxcCYBiWR7mt3bhpvzdYj5xUjiJ,5KQDHX3bQHkhAeo9CW3KxJ1YiUfYPMVuEcsYeC7hgyyjFB5k8oz"
@@ -40,21 +31,16 @@ const PRIVATE_KEY_TEST = "5J2GxxF4xCfAZjP9R26jwnVY8rp8FYqXRE1fJPq5KDMSxa5NRuW,5K
  * @type { Constant }
  */
 const CONSTANT = {
-    "BASE_AMOUNT": BASE_AMOUNT,
-    "TBG_WALLET_RECEIVER": TBG_WALLET_RECEIVER,
-    "DISPENSE_ACCOUNT": DISPENSE_ACCOUNT,
-    "EOS_TOKEN": EOS_TOKEN,
-    "TBG_TOKEN": TBG_TOKEN,
-    "UE_TOKEN": UE_TOKEN,
-    "END_POINT": END_POINT,
+    "BASE_AMOUNT"     : BASE_AMOUNT,
+    "EOS_TOKEN"       : EOS_TOKEN,
+    "UE_TOKEN"        : UE_TOKEN,
+    "TBG_TOKEN"       : TBG_TOKEN,
+    "TBG_TOKEN2"      : TBG_TOKEN2,
+    "END_POINT"       : END_POINT,
     "PRIVATE_KEY_TEST": PRIVATE_KEY_TEST,
     "EOS_TOKEN_SYMBOL": EOS_TOKEN_SYMBOL,
-    "UE_TOKEN_SYMBOL": UE_TOKEN_SYMBOL,
-    "TBG_TOKEN_SYMBOL": TBG_TOKEN_SYMBOL,
-    "AGENT_ACCOUNT" :AGENT_ACCOUNT,
-    "BANKER":BANKER,
-    "HASH_DICE_CONTRACT":HASH_DICE_CONTRACT,
-    "JWT_SECRET":JWT_SECRET
+    "UE_TOKEN_SYMBOL" : UE_TOKEN_SYMBOL,
+    "JWT_SECRET"      : JWT_SECRET
 }
 
 module.exports = CONSTANT
@@ -62,19 +48,14 @@ module.exports = CONSTANT
 /**
  * @description 
  * @typedef { Object } Constant
- * @property { String } BASE_AMOUNT 投资额度
- * @property { String } TBG_WALLET_RECEIVER 收款帐号
- * @property { String } DISPENSE_ACCOUNT 出款帐号
+ * @property { String } BASE_AMOUNT 对峙转账金额
  * @property { String } EOS_TOKEN EOS 代币合约帐号 eosio.token
- * @property { String } TBG_TOKEN TBG 代币合约帐号
+ * @property { String } UE_TOKEN UE 代币合约帐号
+ * @property { String } TBG_TOKEN 测试帐号1
+ * @property { String } TBG_TOKEN2 测试帐号2
  * @property { String } END_POINT scatter 节点
  * @property { String } PRIVATE_KEY_TEST 私钥
- * @property { string } UE_TOKEN UE 代币合约帐号
  * @property { String } EOS_TOKEN_SYMBOL EOS 代币符号
  * @property { String } UE_TOKEN_SYMBOL UE 代币符号
- * @property { string } TBG_TOKEN_SYMBOL TBG 代币符号
- * @property { string } BANKER 庄家代号
- * @property { string } AGENT_ACCOUNT 代投帐号
- * @property { string } HASH_DICE_CONTRACT 哈希骰子超级用户
- * @property { string } JWT_SECRET  token
+ * @property { String } JWT_SECRET  token
  */

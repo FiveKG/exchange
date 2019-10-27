@@ -1,8 +1,9 @@
 // @ts-check
 const logger = require("../common/logger.js").getLogger("listenTransfer.js")
-const { redis,getCurrentDate,generate_unique_key } = require("../common");
+const { redis,generate_unique_key } = require("../common");
 const { Decimal } = require("decimal.js");
 const { scheduleJob } = require("node-schedule");
+const { BASE_AMOUNT,ETH2POG_RATE} = require("../common/constant/exchange_rule")
 const {getContractTransaction} = require("./getEthTrxAction")
 const {ACC0,ACC1,ACC2} = require("../common/constant/web3Config")
 const BLOCK_NUMBER = "tbg:exchange:Eth:lastBlockNumber";
@@ -44,8 +45,6 @@ async function handlerTransferActions() {
         const actions = await getContractTransaction(lastBlockNumber)
 
             for (const action of actions) {
-            
-            logger.warn(`<==========处理交易区块号是：${action.blockNumber}=========>,<==========该区块的交易索引：${action.transactionIndex}=========>`)
             let lastBlockNumber2 = await getLastBlockNumber(); //获取上次处理好的扫描位置
             const LastTxNumber = await getLastTxNumber();
             //如果是处理过的交易
@@ -55,52 +54,47 @@ async function handlerTransferActions() {
 
             const result = await parseContractAction(action);
             // 如果返回条件不符，直接更新状态，继续处理下一个
-            if (result.blockNumber==='pending' ||  !result.value || !result.from || !result.to || !result.event ) {
+            if (result.blockNumber==='pending' ||  !result.usdt_value || !result.from_eth_address || !result.to_eth_address || !result.event ) {
                 logger.debug("wrong result",result)
                 continue;
             }
+            
+            logger.warn(`<==========处理交易区块号是：${action.blockNumber}=========>,<==========该区块的交易索引：${action.transactionIndex}=========>`)
 
-            //兑换
-            let ue_value =await Usdt2Ue(new Decimal(result.value))
-            let pog_account_obj = await sequelize.Eth_account.findOne({
-                where:{'eth_address':result.to},
-                attributes: ['pog_account']
-            })
-            let pog_account = pog_account_obj.dataValues.pog_account;
             //整理数据
             let defaults = {
-                id             : generate_unique_key(),
-                txid           : result.transactionId,
-                from_address   : result.from,
-                to_address     : result.to,
-                token_value    : result.value,
-                ue_value       : ue_value.toString(),
-                recharge_time  : getCurrentDate(),
-                confirm_time   : null,
-                exchange_time  : null,
-                is_exchanged   : false,
-                eth_blockNumber: result.blockNumber,
-                pog_blockNumber: null,
-                pog_txtid      : null,
-                pog_account    : pog_account,
-                log_info       : ''
+                id              : generate_unique_key(),
+                eth_txid        : result.eth_txid,
+                from_eth_address: result.from_eth_address,
+                to_eth_address  : result.to_eth_address,
+                usdt_value      : result.usdt_value,
+                ue_value        : result.ue_value,
+                recharge_time   : new Date(),
+                confirm_time    : null,
+                exchange_time   : null,
+                is_exchanged    : false,
+                eth_blockNumber : result.blockNumber,
+                pog_blockNumber : null,
+                pog_account     : result.pog_account,
+                pog_txid        : null,
+                log_info        : 'Eth2Pog'
             };
             //插入数据库
             try{
                 let sql_result = await sequelize.Eth_charge.findCreateFind({
-                    where:{"txid":result.transactionId},
+                    where:{"eth_txid":result.eth_txid},
                     defaults:defaults,
                 });
+
             }catch(err){
                 logger.error('this error from handlerTransferActions->sequelize.Eth_charge.findCreateFind(),the error trace is %O',err);
                 continue;
             }
-            
+        
             //传送至消息队列紧张POG转账
             await psTransfer2Pog.pub(defaults)
             await redis.set(TX_NUMBER,action.transactionIndex);
             await redis.set(BLOCK_NUMBER,action.blockNumber);
-
         }
         await redis.del(INVEST_LOCK);
         return
@@ -111,7 +105,7 @@ async function handlerTransferActions() {
 }
 
 
-
+handlerTransferActions()
 /**
  * 
  * @param {Object} action  某一记录
@@ -120,71 +114,99 @@ async function handlerTransferActions() {
 async function parseContractAction(action){
     try{
         /**
-         * @type {{blockNumber:Number|null,
+         * @type {{
+         * blockNumber     : Number|null,
          * transactionIndex: String|null,
-         * transactionId   : String|null,
-         * from            : String|null,
-         * to              : String|null,
-         * value           : String|Number|null;
+         * eth_txid        : String|null,
+         * from_eth_address: String|null,
+         * to_eth_address  : String|null,
+         * pog_account     : String|null
+         * usdt_value      : Decimal|null,
+         * ue_value        : Decimal|null,
          * event           : String|null
          * }}
          */
         let result = {
             "blockNumber"     : null,
             "transactionIndex": null,
-            "transactionId"   : null,
-            "from"            : null,
-            "to"              : null,
-            "value"           : null,
+            "eth_txid"        : null,
+            "from_eth_address": null,
+            "to_eth_address"  : null,
+            "pog_account"     : null,
+            "usdt_value"      : null,
+            "ue_value"        : null,
             "event"           : null
         }
+
+        //blockNumber
         let blockNumber = action.blockNumber;
-        
         if(blockNumber===null){
             logger.warn("warn from parseContractAction():if(blockNumber===null),the blockNumber is pending,so blockNumber is null");
             blockNumber = 'pending';
             return result
         }
+
+        //transactionIndex
         let transactionIndex = action.transactionIndex;
         if(parseInt(transactionIndex).toString() == "NaN"){
             logger.warn("warn from parseContractAction():if((parseInt(transactionIndex).toString() == 'NaN')");
             return result
         }
-        let transactionId = action.transactionHash;
-        let from = action.returnValues._from;
-        //查询充值对象是否是数据库的一个
-        let to = action.returnValues._to.toLowerCase();
-        let account = await sequelize.Eth_account.findOne({where:{eth_address:to}})
-        if(!account){
-            to = null;
+
+        //eth_txid
+        let eth_txid = action.transactionHash;
+
+        //from_eth_address
+        let from_eth_address = action.returnValues._from;
+
+        //to_eth_address
+        let to_eth_address = action.returnValues._to;
+
+        //pog_account
+        let pog_account_obj = await sequelize.Eth_account.findOne({
+            where:{'eth_address':to_eth_address},
+            attributes: ['pog_account']
+        })
+        if(!pog_account_obj){
+            to_eth_address = null;
             logger.warn("warn from parseContractAction(): if(!account),the account is null,the database not exist this account");
             return result
-        }else if(account.dataValues==ACC0||account.dataValues==ACC1||account.dataValues==ACC2){
-            to = null;
+        }else if(pog_account_obj.dataValues==ACC0||pog_account_obj.dataValues==ACC1||pog_account_obj.dataValues==ACC2){
+            to_eth_address = null;
             logger.warn("warn from parseContractAction(): if(!account),the account is *********ACC0,ACC1,ACC2*********");
             return result
         }
+        let pog_account = pog_account_obj.dataValues.pog_account;
 
-        let value = new Decimal(action.returnValues._value)
+        //usdt_value
+        let usdt_value = new Decimal(action.returnValues._value)
         if(parseInt(action.returnValues._to).toString() == "NaN"){
             logger.warn("warn from parseContractAction():if(parseInt(action.returnValues._to).toString() == 'NaN'), the value is not a number");
             return result
         }
-        if(value.isNegative() || value.isZero()){
-            logger.warn("warn from parseContractAction():if(value.isNaN() || value.isNegative() || value.isZero()), the value is wrong");
+        if(usdt_value.lessThan(BASE_AMOUNT)){
+            logger.warn("warn from parseContractAction():if(usdt_value.lessThan(BASE_AMOUNT)), the value is wrong");
             return result
-        }
+        };
+
+        //ue_value
+        let ue_value =await Usdt2Ue(new Decimal(usdt_value));
+
+        //event
         let event = action.event
         if(event !== 'Transfer'){
             logger.warn("warn from parseContractAction():if(event !== 'Transfer'), the event value is not 'Transfer'");
             return result
-        }
+        };
+
         result.blockNumber      = blockNumber;
         result.transactionIndex = transactionIndex;
-        result.transactionId    = transactionId;
-        result.from             = from;
-        result.to               = to ;
-        result.value            = value.toString();
+        result.eth_txid         = eth_txid;
+        result.from_eth_address = from_eth_address;
+        result.to_eth_address   = to_eth_address ;
+        result.usdt_value       = usdt_value;
+        result.pog_account      = pog_account;
+        result.ue_value         = ue_value;
         result.event            = event;
 
         return result
@@ -228,8 +250,8 @@ async function getLastTxNumber(){
  * @param {Decimal} amount 
  */
 async function Usdt2Ue(amount){
-    //兑换比例；保留8位小数点，向下四舍五入，一共保留32未
-    let value = amount.mul(1).toDecimalPlaces(8, Decimal.ROUND_DOWN)
+    //兑换比例；保留8位小数点，向下四舍五入
+    let value = amount.mul(ETH2POG_RATE).toDecimalPlaces(8, Decimal.ROUND_DOWN)
     return value
 }
 

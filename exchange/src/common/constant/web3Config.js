@@ -1,6 +1,6 @@
 //@ts-check
 //服务提供器
-const PROVIDER = 'ws://localhost:8545'
+const PROVIDER = process.env.ETH_PROVIDER||'http:// 172.19.2.122:39842'
 
  
 

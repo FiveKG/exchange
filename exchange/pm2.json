@@ -1,0 +1,29 @@
+{
+    "apps": [
+        {
+            "name"        : "httpService",
+            "script"      : "./exchange.js",
+            "watch"       : false,
+            "cwd"         : "./",
+            "error_file"  : "../logs/tbgService-err.log",
+            "out_file"    : "../logs/tbgService-out.log"
+        },
+        {
+            "name"        : "listenEthTransfer",
+            "script"      : "./listenEthTransfer.js",
+            "watch"       : false,
+            "cwd"         : "./src/job",
+            "error_file"  : "../../../logs/listenTransfer-err.log",
+            "out_file"    : "../../../logs/listenTransfer-out.log"
+        },
+        {
+            "name"        : "mqHandler",
+            "script"      : "./mqHandler.js",
+            "watch"       : false,
+            "cwd"         : "./src/job",
+            "error_file"  : "../../../logs/mqHandler-err.log",
+            "out_file"    : "../../../logs/mqHandler-out.log"
+        }
+
+    ]
+}   

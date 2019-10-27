@@ -1,2 +1,9 @@
 ### test pxg
-GET http://localhost:7758/get_eth_account?account_name=tbgtokencoin
+GET http://localhost:7758/get_eth_account?account_name=uetokencoin
+
+### get history
+GET http://localhost:7758/history_exchange_records?account_name=tbgtokencoin
+
+
+### get detail
+GET http://localhost:7758/get_record_detail?record_id=Rets_vsn

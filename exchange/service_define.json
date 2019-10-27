@@ -26,6 +26,54 @@
                     "PAX_account": { "type": "text",  "is_require": true,  "desc": "UE_PAX账号" }
                 }
             }
+        },
+        {
+            "name" : "获取兑换历史",
+            "summary": "",
+            "remark": [
+                "获取兑换历史记录"
+            ],
+            "isFunctionPoint" : true,
+            "url" : "/history_exchange_records",
+            "type" : "get",
+            "requireRole" : [ "*" ],
+            "req": {
+                "account_name": { "type": "text",  "is_require": true,  "desc": "帐号名称" }
+            },
+            "res": {
+                "code": { "type": "number" , "desc": "" , "values": [ "成功" ] } ,
+                "desc": { "type": "string" ,"desc": "" },
+                "data": {
+                    "mode": { "type": "string",  "is_require": true,  "desc": "兑换方式" },
+                    "time": { "type": "string","is_require": true,"desc": "兑换时间"},
+                    "amount":{ "type": "string","is_require": true,"desc": "兑换金额"}
+                }
+            }
+        },
+        {
+            "name" : "获取兑换详情",
+            "summary": "",
+            "remark": [
+                "获取兑换详情"
+            ],
+            "isFunctionPoint" : true,
+            "url" : "/get_record_detail",
+            "type" : "get",
+            "requireRole" : [ "*" ],
+            "req": {
+                "record_id": { "type": "text",  "is_require": true,  "desc": "记录id" }
+            },
+            "res": {
+                "code": { "type": "number" , "desc": "" , "values": [ "成功" ] } ,
+                "desc": { "type": "string" ,"desc": "" },
+                "data": {
+                    "exchange_time": { "type": "string",  "is_require": true,  "desc": "兑换时间" },
+                    "to_eth_address": { "type": "string","is_require": true,"desc": "转入地址"},
+                    "usdt_value":{ "type": "string","is_require": true,"desc": "实收usdt数量"},
+                    "ue_value":{"type": "string","is_require": true,"desc": "兑换UE数量"},
+                    "pog_account":{"type": "string","is_require": true,"desc": "UE接受地址"}
+                }
+            }
         }
         
     ]

@@ -101,6 +101,41 @@ async function getTransactionInfo(blockNumber,txid){
     }
 }
 
+/**
+ * 
+ * @param {Number|null} blockNumber 
+ * @returns {Promise<{
+ *  expiration:String,
+ *  pog_txtid:String,
+ *  actions:Array<Object>
+ * }>}
+ */
+async function getTrxInfoByBlockNumber(blockNumber=0){
+    try{
+        const block_info = await rpc.get_block(18868288)
+        //@ts-ignore
+        let info = block_info.transactions.map(t=>{
+            let trx_info = {
+                "expiration":"",
+                "pog_txtid":"",
+                "actions":null
+            }
+            let trx = t.trx;
+            trx_info.pog_txtid= trx.id;
+    
+            let transaction = trx.transaction;
+            trx_info.expiration = transaction.expiration;
+            //@ts-ignore
+            trx_info.actions = transaction.actions.filter(action=>action.name=="transfer")
+            return trx_info
+        })
+
+        return info
+    }
+    catch(err){
+        throw err;
+    }
+}
 // /**
 //  * 
 //  * @param { string } accountName 
@@ -234,5 +269,6 @@ module.exports = {
     getTransaction,
     getTransactionInfo,
     transfer,
+    getTrxInfoByBlockNumber,
     rpc
 }

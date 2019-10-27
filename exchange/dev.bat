@@ -1,5 +1,6 @@
 #!/bin/bash
-#Description: run HASH_DICE service
+#Description: run EXCHANGE service
+unset EOS_END_POINT 
 unset EXCHANGE_SERVER_HOST
 unset EXCHANGE_SERVER_PORT
 
@@ -21,7 +22,8 @@ unset EXCHANGE_REDIS_PASS
 unset PROVIDER
 unset NODE_ENV
 
-set TBG_SERVER=http://192.168.1.141:9527/
+set EOS_END_POINT = http://45.251.109.187:8888
+set TBG_SERVER = http://192.168.1.141:9527/
 set EXCHANGE_SERVER_HOST=0.0.0.0
 set EXCHANGE_SERVER_PORT=7758
 set NODE_ENV = debug

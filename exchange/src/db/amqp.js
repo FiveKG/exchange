@@ -13,7 +13,7 @@ const amqpOption = {
     heartbeat: 300
 };
 
-logger.debug(`amqp option: %j`, amqpOption);
+
 
 /**
  * @type { any }
@@ -31,6 +31,7 @@ let channel = null;
  * @returns {Promise<amqplib.Channel>}
  */
 async function getAmqpChannel(queueName) {
+    logger.debug(`amqp option: %j`, amqpOption);
     if(queueName == null){
         throw new Error(`queueName can't be null.`)
     }

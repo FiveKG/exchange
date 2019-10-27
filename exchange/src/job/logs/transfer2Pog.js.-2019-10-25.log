@@ -1,0 +1,358 @@
+{"date":"2019-10-25T15:33:29.309","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11416","data":'uetokencoin转账1 UE至tbgtokencoin成功'}
+{"date":"2019-10-25T15:33:31.053","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11416","data":'uetokencoin转账1 UE至tbgtokencoin成功'}
+{"date":"2019-10-25T15:33:34.064","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11416","data":'uetokencoin转账1 UE至tbgtokencoin成功'}
+{"date":"2019-10-25T15:33:37.490","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11416","data":'uetokencoin转账1 UE至tbgtokencoin成功'}
+{"date":"2019-10-25T15:33:41.936","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11416","data":'tbgtokencoin接收转账操作失败: { Error: duplicate transaction 8dba2e12abaed4f273b33ce104bc671838f7a633c777f4ea53d87dfbaf7d3924
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 409,
+     message: 'Conflict',
+     error:
+      { code: 3040008,
+        name: 'tx_duplicate',
+        what: 'Duplicate transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-25T15:33:41.968","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11416","data":'the error is from transfer2Pog(),the error trace is { Error: duplicate transaction 8dba2e12abaed4f273b33ce104bc671838f7a633c777f4ea53d87dfbaf7d3924
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 409,
+     message: 'Conflict',
+     error:
+      { code: 3040008,
+        name: 'tx_duplicate',
+        what: 'Duplicate transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-25T15:33:46.336","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11416","data":'uetokencoin转账1 UE至tbgtokencoin成功'}
+{"date":"2019-10-25T15:34:17.868","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"11416","data":'uetokencoin转账1 UE至tbgtokencoin成功'}
+{"date":"2019-10-25T15:34:27.232","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11416","data":'tbgtokencoin接收转账操作失败: { Error: expired transaction 42a85f1000e0938a9bb51bdae1f1ab000fdf637d89d548ae9b29648c81198a20
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3040005,
+        name: 'expired_tx_exception',
+        what: 'Expired Transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-25T15:34:27.235","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11416","data":'the error is from transfer2Pog(),the error trace is { Error: expired transaction 42a85f1000e0938a9bb51bdae1f1ab000fdf637d89d548ae9b29648c81198a20
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3040005,
+        name: 'expired_tx_exception',
+        what: 'Expired Transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-25T15:34:33.390","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11416","data":'tbgtokencoin接收转账操作失败: { Error: expired transaction 9fa7dd212034cba8aaa4b4c24cfb2fb61f9884d503e900d7fb6641b883dd6b64
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3040005,
+        name: 'expired_tx_exception',
+        what: 'Expired Transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-25T15:34:33.392","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"11416","data":'the error is from transfer2Pog(),the error trace is { Error: expired transaction 9fa7dd212034cba8aaa4b4c24cfb2fb61f9884d503e900d7fb6641b883dd6b64
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 500,
+     message: 'Internal Service Error',
+     error:
+      { code: 3040005,
+        name: 'expired_tx_exception',
+        what: 'Expired Transaction',
+        details: [Array] } } }'}
+{"date":"2019-10-25T15:39:11.264","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7132","data":'eth_txid:0x52c02df2c8fbe92641399d35ceaeb5c50d3322ae8f6cb8383f32f552327ba9fd已经兑换过了'}
+{"date":"2019-10-25T16:42:58.252","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"8040","data":'eth_txid:0x52c02df2c8fbe92641399d35ceaeb5c50d3322ae8f6cb8383f32f552327ba9fd已经兑换过了'}
+{"date":"2019-10-25T16:45:15.232","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"8040","data":'uetokencoin转账1 UE至tbgtokencoin成功'}
+{"date":"2019-10-25T16:48:06.358","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'uetokencoin转账1 UE至tbgtokencoin成功'}
+{"date":"2019-10-25T16:49:14.062","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x52c02df2c8fbe92641399d35ceaeb5c50d3322ae8f6cb8383f32f552327ba9fd已经兑换过了'}
+{"date":"2019-10-25T16:49:14.090","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0xf621ec3a5b7c6213d07bd59051ddf0fd949740cd455b99535aa998d80712680f已经兑换过了'}
+{"date":"2019-10-25T16:49:14.131","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x31d7783b4efb1476b0e1a359f61aa92f7eaedfb830e24320ea6c4d9376992988已经兑换过了'}
+{"date":"2019-10-25T16:49:17.479","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x52c02df2c8fbe92641399d35ceaeb5c50d3322ae8f6cb8383f32f552327ba9fd已经兑换过了'}
+{"date":"2019-10-25T16:49:17.481","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0xf621ec3a5b7c6213d07bd59051ddf0fd949740cd455b99535aa998d80712680f已经兑换过了'}
+{"date":"2019-10-25T16:49:17.482","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x31d7783b4efb1476b0e1a359f61aa92f7eaedfb830e24320ea6c4d9376992988已经兑换过了'}
+{"date":"2019-10-25T16:49:20.317","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'uetokencoin转账1 UE至tbgtokencoin成功'}
+{"date":"2019-10-25T16:50:04.554","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0xe66afab341051e1796fbe88123f487765def48d52acdfaa03c52b2839f780381已经兑换过了'}
+{"date":"2019-10-25T16:50:05.006","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0xd6b608a5ec78ec6295f268cd656daa9ce1effd85c2f8077c0287c85385c6e798已经兑换过了'}
+{"date":"2019-10-25T16:50:05.010","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x52f4fcc92c36976629f43915229138730f0e277b2003d98d4d8c912221aa9899已经兑换过了'}
+{"date":"2019-10-25T16:50:05.021","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x52c02df2c8fbe92641399d35ceaeb5c50d3322ae8f6cb8383f32f552327ba9fd已经兑换过了'}
+{"date":"2019-10-25T16:50:05.023","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x3ac04989d5876e08275a540b0736b5be0b5cfa50cb87aba62e7db0693ea43036已经兑换过了'}
+{"date":"2019-10-25T16:50:05.024","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0xf621ec3a5b7c6213d07bd59051ddf0fd949740cd455b99535aa998d80712680f已经兑换过了'}
+{"date":"2019-10-25T16:50:05.028","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x6cf395836e33d6b969b105b649f3d0b01b0c9da22482e7bf47ed866a0ffdc38c已经兑换过了'}
+{"date":"2019-10-25T16:50:05.035","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0xde29dabd5d014d48ce7f0c2f7fbfbd7ee1db97e01c316c328e7fe05248a84756已经兑换过了'}
+{"date":"2019-10-25T16:50:05.036","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x31d7783b4efb1476b0e1a359f61aa92f7eaedfb830e24320ea6c4d9376992988已经兑换过了'}
+{"date":"2019-10-25T16:50:08.293","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'uetokencoin转账1 UE至tbgtokencoin成功'}
+{"date":"2019-10-25T16:50:10.103","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'uetokencoin转账1 UE至tbgtokencoin成功'}
+{"date":"2019-10-25T16:50:11.061","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0xa0c1fe6aba6033d389f69b23b4e2cc99f7ec0651d192d5e3e365db9bf09f6d4f已经兑换过了'}
+{"date":"2019-10-25T16:50:11.101","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0xbdbd9521780e62b5a83a6161022219e735c75812edfa5fece162eee8fce775ab已经兑换过了'}
+{"date":"2019-10-25T16:50:11.146","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0xe66afab341051e1796fbe88123f487765def48d52acdfaa03c52b2839f780381已经兑换过了'}
+{"date":"2019-10-25T16:50:11.191","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x2cccb63f17ac5e54b37a2b35404cf0dd6e2966039b594c3c6eaeb6e2f1790f24已经兑换过了'}
+{"date":"2019-10-25T16:50:11.235","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x52f4fcc92c36976629f43915229138730f0e277b2003d98d4d8c912221aa9899已经兑换过了'}
+{"date":"2019-10-25T16:50:11.281","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0xd6b608a5ec78ec6295f268cd656daa9ce1effd85c2f8077c0287c85385c6e798已经兑换过了'}
+{"date":"2019-10-25T16:50:11.325","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0xde29dabd5d014d48ce7f0c2f7fbfbd7ee1db97e01c316c328e7fe05248a84756已经兑换过了'}
+{"date":"2019-10-25T16:50:11.368","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x3ac04989d5876e08275a540b0736b5be0b5cfa50cb87aba62e7db0693ea43036已经兑换过了'}
+{"date":"2019-10-25T16:50:11.410","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x6cf395836e33d6b969b105b649f3d0b01b0c9da22482e7bf47ed866a0ffdc38c已经兑换过了'}
+{"date":"2019-10-25T16:50:11.455","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x52c02df2c8fbe92641399d35ceaeb5c50d3322ae8f6cb8383f32f552327ba9fd已经兑换过了'}
+{"date":"2019-10-25T16:50:11.499","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0xf621ec3a5b7c6213d07bd59051ddf0fd949740cd455b99535aa998d80712680f已经兑换过了'}
+{"date":"2019-10-25T16:50:11.545","level":"DEBUG","category":"transfer2Pog.js","host":"frank-hp","pid":"7544","data":'eth_txid:0x31d7783b4efb1476b0e1a359f61aa92f7eaedfb830e24320ea6c4d9376992988已经兑换过了'}
+{"date":"2019-10-25T17:29:02.077","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"1056","data":'uetokencoin转账至tbgtokencoin更新数据库失败,重新处理 { SequelizeDatabaseError: Unknown column 'eth_txid2' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at handler (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Prepare.Commands.Prepare [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:595:11)
+    at Prepare.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'eth_txid2' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Prepare.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'eth_txid2\' in \'where clause\'',
+     sql:
+      'UPDATE `Eth_charge` SET `confirm_time`=?,`exchange_time`=?,`is_exchanged`=?,`pog_blockNumber`=?,`pog_txid`=? WHERE `eth_txid2` = ?',
+     parameters:
+      [ '2019-10-25 09:28:23',
+        '2019-10-25 09:29:02',
+        true,
+        19393581,
+        '3a03007f4e43455c951b55238b70c6b48477e39b98feddb33ccc0e08c18dba8b',
+        '0x759b86eb38330705ab85652af2cf518b02935e2c344d5912173edbfcc65659e1' ] },
+  original:
+   { Error: Unknown column 'eth_txid2' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Prepare.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'eth_txid2\' in \'where clause\'',
+     sql:
+      'UPDATE `Eth_charge` SET `confirm_time`=?,`exchange_time`=?,`is_exchanged`=?,`pog_blockNumber`=?,`pog_txid`=? WHERE `eth_txid2` = ?',
+     parameters:
+      [ '2019-10-25 09:28:23',
+        '2019-10-25 09:29:02',
+        true,
+        19393581,
+        '3a03007f4e43455c951b55238b70c6b48477e39b98feddb33ccc0e08c18dba8b',
+        '0x759b86eb38330705ab85652af2cf518b02935e2c344d5912173edbfcc65659e1' ] },
+  sql:
+   'UPDATE `Eth_charge` SET `confirm_time`=?,`exchange_time`=?,`is_exchanged`=?,`pog_blockNumber`=?,`pog_txid`=? WHERE `eth_txid2` = ?',
+  parameters:
+   [ '2019-10-25 09:28:23',
+     '2019-10-25 09:29:02',
+     true,
+     19393581,
+     '3a03007f4e43455c951b55238b70c6b48477e39b98feddb33ccc0e08c18dba8b',
+     '0x759b86eb38330705ab85652af2cf518b02935e2c344d5912173edbfcc65659e1' ] }'}
+{"date":"2019-10-25T17:29:03.172","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"1056","data":'this is check_exchange(),the error trace is { SequelizeDatabaseError: Unknown column 'eth_txid2' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at handler (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Prepare.Commands.Prepare [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:595:11)
+    at Prepare.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'eth_txid2' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Prepare.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'eth_txid2\' in \'where clause\'',
+     sql:
+      'UPDATE `Eth_charge` SET `confirm_time`=?,`exchange_time`=?,`is_exchanged`=?,`pog_blockNumber`=?,`pog_txid`=? WHERE `eth_txid2` = ?',
+     parameters:
+      [ '2019-10-25 09:28:23',
+        '2019-10-25 09:29:02',
+        true,
+        19393581,
+        '3a03007f4e43455c951b55238b70c6b48477e39b98feddb33ccc0e08c18dba8b',
+        '0x759b86eb38330705ab85652af2cf518b02935e2c344d5912173edbfcc65659e1' ] },
+  original:
+   { Error: Unknown column 'eth_txid2' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Prepare.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'eth_txid2\' in \'where clause\'',
+     sql:
+      'UPDATE `Eth_charge` SET `confirm_time`=?,`exchange_time`=?,`is_exchanged`=?,`pog_blockNumber`=?,`pog_txid`=? WHERE `eth_txid2` = ?',
+     parameters:
+      [ '2019-10-25 09:28:23',
+        '2019-10-25 09:29:02',
+        true,
+        19393581,
+        '3a03007f4e43455c951b55238b70c6b48477e39b98feddb33ccc0e08c18dba8b',
+        '0x759b86eb38330705ab85652af2cf518b02935e2c344d5912173edbfcc65659e1' ] },
+  sql:
+   'UPDATE `Eth_charge` SET `confirm_time`=?,`exchange_time`=?,`is_exchanged`=?,`pog_blockNumber`=?,`pog_txid`=? WHERE `eth_txid2` = ?',
+  parameters:
+   [ '2019-10-25 09:28:23',
+     '2019-10-25 09:29:02',
+     true,
+     19393581,
+     '3a03007f4e43455c951b55238b70c6b48477e39b98feddb33ccc0e08c18dba8b',
+     '0x759b86eb38330705ab85652af2cf518b02935e2c344d5912173edbfcc65659e1' ] }'}
+{"date":"2019-10-25T17:29:03.174","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"1056","data":'the error is from transfer2Pog(),the error trace is { SequelizeDatabaseError: Unknown column 'eth_txid2' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at handler (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Prepare.Commands.Prepare [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:595:11)
+    at Prepare.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'eth_txid2' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Prepare.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'eth_txid2\' in \'where clause\'',
+     sql:
+      'UPDATE `Eth_charge` SET `confirm_time`=?,`exchange_time`=?,`is_exchanged`=?,`pog_blockNumber`=?,`pog_txid`=? WHERE `eth_txid2` = ?',
+     parameters:
+      [ '2019-10-25 09:28:23',
+        '2019-10-25 09:29:02',
+        true,
+        19393581,
+        '3a03007f4e43455c951b55238b70c6b48477e39b98feddb33ccc0e08c18dba8b',
+        '0x759b86eb38330705ab85652af2cf518b02935e2c344d5912173edbfcc65659e1' ] },
+  original:
+   { Error: Unknown column 'eth_txid2' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Prepare.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'eth_txid2\' in \'where clause\'',
+     sql:
+      'UPDATE `Eth_charge` SET `confirm_time`=?,`exchange_time`=?,`is_exchanged`=?,`pog_blockNumber`=?,`pog_txid`=? WHERE `eth_txid2` = ?',
+     parameters:
+      [ '2019-10-25 09:28:23',
+        '2019-10-25 09:29:02',
+        true,
+        19393581,
+        '3a03007f4e43455c951b55238b70c6b48477e39b98feddb33ccc0e08c18dba8b',
+        '0x759b86eb38330705ab85652af2cf518b02935e2c344d5912173edbfcc65659e1' ] },
+  sql:
+   'UPDATE `Eth_charge` SET `confirm_time`=?,`exchange_time`=?,`is_exchanged`=?,`pog_blockNumber`=?,`pog_txid`=? WHERE `eth_txid2` = ?',
+  parameters:
+   [ '2019-10-25 09:28:23',
+     '2019-10-25 09:29:02',
+     true,
+     19393581,
+     '3a03007f4e43455c951b55238b70c6b48477e39b98feddb33ccc0e08c18dba8b',
+     '0x759b86eb38330705ab85652af2cf518b02935e2c344d5912173edbfcc65659e1' ] }'}

@@ -1,8 +1,8 @@
 // @ts-check
 const {inspect_req_data,get_status} = require("../../common")
 const logger  =require("../../common/logger").getLogger("get_PAXAccount.js")
-const get_account = require("../../job/getNewPaxAccount")
-const psGetPAXAccount = require("../../db/psGetPAXAccount")
+const get_account = require("../../job/getNewEthAccount")
+
 //@ts-ignore
 async function getPAXForPOG(req,res,next){
     try{
@@ -18,7 +18,7 @@ async function getPAXForPOG(req,res,next){
  
          res.send(resData);
     }catch(error){
-        logger.error("request get_banker error, the error stock is %O", error);
+        logger.error("request getPAXForPOG error, the error stock is %O", error);
         throw error;
     }
 }

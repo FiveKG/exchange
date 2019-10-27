@@ -4,6 +4,7 @@ const { redis } = require("../../../../common");
 const sleep = require("../../../../job/sleep")
 const Web3 = require('web3')
 let web3 = new Web3("ws://localhost:8545");
+const moment = require('moment')
 
 if(typeof web3 !=='undefined'){ //检查是否已有web3实例
     web3=new Web3(web3.currentProvider);
@@ -67,16 +68,16 @@ const addr_to = ACC1;
 //   })
 async function transfer(){
     try{
-        // web3.eth.personal.unlockAccount(ACC0,'123',3000)
+        web3.eth.personal.unlockAccount(ACC0,'123',3000)
         web3.eth.personal.unlockAccount(ACC1,'123',3000)
         web3.eth.personal.unlockAccount(ACC2,'123',3000)
         //ACC1->tbgtokencoin
 
-        for(let i=1;i<6;i++){
-            const result0 = await contract.methods.transfer("0xb8567a1bf8af7d86eb937481e57a86c12d5e792c",i).send({from: ACC1});
-            const result1 = await contract.methods.transfer("0xbb123b7f59c2f85049be43bc612c92a04558f125",i).send({from: ACC2});
+  
+            const result0 = await contract.methods.transfer("0x0C4575771c38D71F0785924DFC6349B6aC643e18",101).send({from:ACC0});
+            const result1 = await contract.methods.transfer("0x84A5093a0D335bbB630149545B2f3Af965686656",101).send({from: ACC2});
             console.log(result0,result1)
-        }
+        
         console.log('done!')
         //ACC2->tbgjoin
         // const result0 = await contract.methods.transfer(ACC1,10000000000).send({from: ACC0});
@@ -90,6 +91,7 @@ async function transfer(){
     }
 }
 
+
 //@ts-ignore
 async function getTokenBalance(account){
     try{
@@ -102,16 +104,16 @@ async function getTokenBalance(account){
 
 }
 
+
 //@ts-ignore
 async function transfer_info(hash){
     try{
         const transfer_info = await web3.eth.getTransaction(hash)
-        let input = transfer_info.input
+
         console.log("decodeParameters:",transfer_info)
         //@ts-ignore
         const result = decoder.decodeData(input);
-        console.log("input info :",result.inputs)
-        console.log("input info.BN :",result.inputs[1].toString())
+
 
     }catch(err){
         console.log("err transfer_info:",err)
@@ -130,26 +132,40 @@ async function transfer_info(hash){
  async function test(){
 
     await transfer()
-
-
+    //console.log(process.env.EOS_END_POINT)
+    // web3.eth.personal.unlockAccount(ACC0,'123',3000)
+    // web3.eth.sendTransaction({
+    //     from: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
+    //     to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+    //     value: '100000000000000'
+    // })
+    // .then(function(receipt){
+    //     console.log(receipt)
+    // })
 
     // console.log(await getTokenBalance(UEACC))
-    // transfer_info("0xc7ea3a0330e826d7e35a1c23a764da0935908dcf45693c35f022fff6e77c77c5")
-    //console.log(await getTokenBalance(UEACC))
+   // transfer_info("0x02a1b0973a823b71d673fd15ecc656bd3b73e249226615fc8432aacc4740553a")
+    // console.log(await web3.eth.getBlock(10023))
+   // console.log(await web3.eth.getTransactionReceipt("0x02a1b0973a823b71d673fd15ecc656bd3b73e249226615fc8432aacc4740553a"));
+    //console.log(await web3.eth.getTransaction("0x02a1b0973a823b71d673fd15ecc656bd3b73e249226615fc8432aacc4740553a"))
+    
+
+
     // console.log(await getTokenBalance(ACC0))
+
+    //console.log(await getTokenBalance(ACC1))
     // console.log(await getTokenBalance(ACC1))
     // console.log(await getTokenBalance(ACC2))
+
     //Decimal.set({ precision:32, rounding:Decimal.ROUND_DOWN })
     // let amount = new Decimal('1.284855079553519221609493939418532947836379180315e+48')
     // let value = amount.mul(1).toDecimalPlaces(8)
     // console.log(value.toString)
-    // const result= await getContractTransaction(9184)
+    // const result= await getContractTransaction(9516)
     // console.log(result)
-    // const result = await web3.eth.getBlock(9081)
-    // console.log(result)
-
-
+    //console.log(web3.eth.personal)
     // console.log(event)
+
     // return
  }
 
