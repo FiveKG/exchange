@@ -1,2 +1,0 @@
-{"date":"2019-10-30T19:20:45.634","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10304","data":'the param is:{"transfer_from_address":"0xE543732c26f84A83E7FcE1fE9479376400344d5D","transfer_amount":"500000"}'}
-{"date":"2019-10-30T19:45:02.771","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"708","data":'the param is:{"transfer_from_address":"0xE543732c26f84A83E7FcE1fE9479376400344d5D","transfer_amount":"500000"}'}

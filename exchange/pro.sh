@@ -23,7 +23,7 @@ unset EXCHANGE_REDIS_PASS
 unset ETH_PROVIDER
 unset NODE_ENV
 
-export EOS_END_POINT=http://45.251.109.187:8888
+export EOS_END_POINT=http://testnode.poggy.one:8888
 
 export EXCHANGE_SERVER_HOST=0.0.0.0
 export EXCHANGE_SERVER_PORT=7758

@@ -74,6 +74,7 @@
                     "detail": {
                         "type": "objectArray", "desc": "全部兑换信息",
                         "properties": {
+                            "eth_txid":{ "type": "string",  "is_require": true,  "desc": "交易id" },
                             "mode": { "type": "string",  "is_require": true,  "desc": "兑换方式" },
                             "time": { "type": "string","is_require": true,"desc": "兑换时间"},
                             "amount":{ "type": "string","is_require": true,"desc": "兑换金额"}

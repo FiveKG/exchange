@@ -12,26 +12,26 @@ logger.debug(`handlerTransferActions EOS running...`);
 // 每秒中执行一次,有可能上一条监听的还没有执行完毕,下一次监听又再执行了一次,从而造成多条数据重复
 const INVEST_LOCK = `tbg:lock:exchange:Eos`;
 let count = 1;
-// scheduleJob("*/1 * * * * *", begin);
-// // 如果中途断开，再次启动时计数到 10 以后清除缓存
-// async function begin() {
-//     try {
-//         const investLock = await redis.get(INVEST_LOCK);
-//         if (!investLock) {
-//             await handlerTransferActions();
-//             count = 0;
-//         } else {
-//             if (count > 10)  {
-//                 await redis.del(INVEST_LOCK);
-//             } else {
-//                 count += 1;
-//             }
-//             return;
-//         }
-//     } catch (err) {
-//         throw err;
-//     }
-// }
+scheduleJob("*/ * * * * *", begin);
+// 如果中途断开，再次启动时计数到 10 以后清除缓存
+async function begin() {
+    try {
+        const investLock = await redis.get(INVEST_LOCK);
+        if (!investLock) {
+            await handlerTransferActions();
+            count = 0;
+        } else {
+            if (count > 10)  {
+                await redis.del(INVEST_LOCK);
+            } else {
+                count += 1;
+            }
+            return;
+        }
+    } catch (err) {
+        throw err;
+    }
+}
 
 /**
  * 监听智能合约账号的转账记录

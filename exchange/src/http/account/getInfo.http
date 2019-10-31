@@ -15,14 +15,14 @@ POST http://localhost:7758/exchange/record_trx
 content-type: application/json
 
 {
-    "pog_account":"test_account",
-    "trx_id":"test",
-    "transfer_from_address":"0x31674f9E16f74C4F123eE98F1549E5eb7b317E5f",
-    "transfer_to_address":"0x239a4d35728ddff5f9d2f6cba55caca743650313",
-    "transfer_amount":"115"
+    "pog_account":"TES2",
+    "trx_id":"0x2926c4d3d6c876d41448fd35054685beee22f0d2a9882f682749e81376c33adb",
+    "transfer_from_address":"0x0e1d7ed21ab2f48c7a97be6ff8c816ce221b2cb8",
+    "transfer_to_address":"0xd73b2c72435276c98a1266db457fbcd0c2d2bf28",
+    "transfer_amount":"0"
 }
 ### get history
-GET http://localhost:7758/exchange/history_exchange_records?pog_account=test_account
+GET http://localhost:7758/exchange/history_exchange_records?pog_account=TES3
 
 
 ### get detail

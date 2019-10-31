@@ -24,6 +24,11 @@ const USDT2UE_TAX = "0 USDT";
 const UE2USDT_TAX = "5 USDT";
 
 /**
+ * 转账到期时间,小时
+ */
+const EXPIRATION_HOUR =24;
+
+/**
  * TBG发币规划
  * @type { Constant }
  */
@@ -34,7 +39,8 @@ const CONSTANT = {
     "HOT_ADDRESS_MAX":HOT_ADDRESS_MAX,
     "HOT_ADDRESS_MIN":HOT_ADDRESS_MIN,
     "USDT2UE_TAX":USDT2UE_TAX,
-    "UE2USDT_TAX":UE2USDT_TAX
+    "UE2USDT_TAX":UE2USDT_TAX,
+    "EXPIRATION_HOUR":EXPIRATION_HOUR
 }
 
 module.exports = CONSTANT
@@ -49,4 +55,5 @@ module.exports = CONSTANT
  * @property { String } HOT_ADDRESS_MIN
  * @property { String } USDT2UE_TAX
  * @property { String } UE2USDT_TAX
+ * @property { Number } EXPIRATION_HOUR
 */

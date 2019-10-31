@@ -70,7 +70,7 @@ function createTable(sequelize,Sequelize){
            // get(){return this.getDataValue('Confirm_time')},set(valueToBeSet){this.setDataValue('Confirm_time', valueToBeSet)},
         },
         exchange_time:{
-            type: Sequelize.DATE,allowNull : true,defaultValue:Sequelize.NOW,comment: '兑换时间(世界标准时)',
+            type: Sequelize.DATE,allowNull : true,comment: '兑换时间(世界标准时)',
            // get(){return this.getDataValue('exchange_time')},set(valueToBeSet){this.setDataValue('exchange_time', valueToBeSet)},
         },
         is_exchanged:{

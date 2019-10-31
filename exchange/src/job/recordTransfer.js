@@ -38,7 +38,7 @@ async function recordTransfer(transfer_data){
         const log_info = "USDT2UE"
         
         //插入数据库
-        const result = await sequelize.Eth_charge.create({id,eth_txid,from_eth_address,to_eth_address,usdt_value,ue_value,recharge_time,is_exchanged,pog_account,service_charge,exchange_rate});
+        const result = await sequelize.Eth_charge.create({id,eth_txid,from_eth_address,to_eth_address,usdt_value,ue_value,recharge_time,is_exchanged,pog_account,service_charge,exchange_rate,log_info});
         return 
     }catch(err){
         logger.error('err from recordTransfer(),ths track is %O:',err)

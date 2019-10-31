@@ -15,8 +15,6 @@ async function test(){
  
 }
 ;(async()=>{
-
-    const lastBlockNumber = await getBlock();
-    const blockInfo = await getBlock(lastBlockNumber);
-    console.log(blockInfo)
+    const str = 'dq125.1564sd]';
+    console.log(str.replace(/[^\d.]/g,''))
 })();

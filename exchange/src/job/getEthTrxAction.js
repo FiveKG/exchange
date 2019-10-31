@@ -6,6 +6,8 @@ const {sequelize} = require('../db');
 const sleep = require("./sleep");
 const Web3 = require('web3');
 const web3 = new Web3(process.env.PROVIDER||PROVIDER||'http://localhost:8545');
+const InputDataDecoder = require('ethereum-input-data-decoder');
+const decoder = new InputDataDecoder(ABI);
 const logger = require("../common/logger").getLogger('getEthTrxAction.js')
 const contract =new web3.eth.Contract(ABI,CONTRACT_ADDRESS)
 
@@ -43,53 +45,15 @@ async function getEthBalance(eth_address){
 
 /**
  * @param {String} txHash
- * @returns {Promise<{
-* blockHash  : String|null,
-* blockNumber: Number|null,
-* from       : String|null,
-* gas        : Number|null,
-* gasPrice   : String|null,
-* hash       : String|null,
-* to         : String|null,
-* value      : String|null          
- * }>}  获取以太坊交易数据
+ * @returns {Promise<Object>}  获取以太坊交易数据
  */
 async function getTransaction(txHash){
-
     try{
-        const Transaction_info = await web3.eth.getTransaction(txHash);
-        /**
-         * @type {{
-         * blockHash  : String|null,
-         * blockNumber: Number|null,
-         * from       : String|null,
-         * gas        : Number|null,
-         * gasPrice   : String|null,
-         * hash       : String|null,
-         * to         : String|null,
-         * value      : String|null
-         * }}
-         */
-        const transaction_info = {
-            blockHash  : null,
-            blockNumber: null,
-            from       : null,
-            gas        : null,
-            gasPrice   : null,
-            hash       : null,
-            to         : null,
-            value      : null,
-        };
-    
-        transaction_info['blockHash']   = Transaction_info.blockHash;
-        transaction_info['blockNumber'] = Transaction_info.blockNumber;
-        transaction_info['from']        = Transaction_info.from;
-        transaction_info['gas']         = Transaction_info.gas;
-        transaction_info['gasPrice']    = Transaction_info.gasPrice;
-        transaction_info['hash']        = Transaction_info.hash;
-        transaction_info['to']          = Transaction_info.to;
-        transaction_info['value']       = Transaction_info.value;
+        const transaction = await web3.eth.getTransaction(txHash);
+        //@ts-ignore
+        const inputs = decoder.decodeData(transaction.input);
 
+        const transaction_info = Object.assign(transaction,inputs)
         return transaction_info
     }
     catch(err){

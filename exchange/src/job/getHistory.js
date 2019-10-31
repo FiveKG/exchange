@@ -10,7 +10,7 @@ async function get_history(pog_account){
     try{
         const sql_result = await sequelize.Eth_charge.findAll({
             where:{pog_account:pog_account,is_exchanged:true},
-            attributes:["ue_value",'exchange_time','log_info','id'],
+            attributes:["ue_value",'exchange_time','log_info','id','eth_txid'],
             order: [['exchange_time', 'DESC']]
         })
         //@ts-ignore

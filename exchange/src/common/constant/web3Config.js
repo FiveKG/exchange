@@ -5,30 +5,23 @@ const PROVIDER = process.env.ETH_PROVIDER||'http://localhost:8545'
  
 
 //Exchange合约地址
-const CONTRACT_ADDRESS = "0x36CB591c2c6446Ae74f55457061B3a85B698dC16";
+const CONTRACT_ADDRESS = "0xdac17f958d2ee523a2206206994597c13d831ec7";//"0x36CB591c2c6446Ae74f55457061B3a85B698dC16";
 //发币账号
 const USDT_COIN = "0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c";
 //热钱包
-const HOT_ADDRESS = "0xd73b2c72435276c98a1266db457fbcd0c2d2bf28";
+const HOT_ADDRESS = "0xDcCE5Fec3890be188Fca7427794E8b1B62ba5576";//"0xd73b2c72435276c98a1266db457fbcd0c2d2bf28";
 //冷钱包1
-const COLD_ADDRESS1 = "0xbb123b7f59c2f85049be43bc612c92a04558f125";
+const COLD_ADDRESS1 = "0xd1a1c25c5Fc7f7C2f1DE0DAA5DCc8A7269A8D40D";//"0xbb123b7f59c2f85049be43bc612c92a04558f125";
 //冷钱包2
-const COLD_ADDRESS2 = "0x9e95a55be4b200775623c70af63061fc05869495";
+const COLD_ADDRESS2 = "0xe508062993724b18604905ddE63949D36Ec7662d";//"0x9e95a55be4b200775623c70af63061fc05869495";
 //冷钱包3
-const COLD_ADDRESS3 = "0x2c6f76a4bb4ed82155e754355b832655190732d9";
+const COLD_ADDRESS3 = "0xe61C73D4AeDC080766222b761894B3209EA95449";//"0x2c6f76a4bb4ed82155e754355b832655190732d9";
 //冷钱包4
-const COLD_ADDRESS4 = "0x239a4d35728ddff5f9d2f6cba55caca743650313";
+const COLD_ADDRESS4 = "0x79278f06dB692dfcE39cd8225bb79910d5B790fF";//"0x239a4d35728ddff5f9d2f6cba55caca743650313";
 //冷钱包5
-const COLD_ADDRESS5 = "0x33f9fb77222ccaaa45f76cb680b99c371014e72e";
+const COLD_ADDRESS5 = "0xB472c2788Acd9f50f5547564a641Ce3179f59beb";//"0x33f9fb77222ccaaa45f76cb680b99c371014e72e";
 //钱包集合
 const ADDRESSES = [HOT_ADDRESS,COLD_ADDRESS1,COLD_ADDRESS2,COLD_ADDRESS3,COLD_ADDRESS4,COLD_ADDRESS5]
-
-//EOS有钱账号
-const UE_TOKEN = "uetokencoin";
-//EOS第二账号 
-const TBG_TOKEN = "tbgtokencoin";
-//EOS第三账号
-const WALLET_RECEIVER = "tbgjoin";
 
 
 //合约abi，压缩地址：https://www.sojson.com/yasuo.html
@@ -49,15 +42,12 @@ const WEB3 = {
     'COLD_ADDRESS4'   : COLD_ADDRESS4,
     'COLD_ADDRESS5'   : COLD_ADDRESS5,
     "ADDRESSES"       : ADDRESSES,
-    'ABI'             : ABI,
-    'UE_TOKEN'        : UE_TOKEN,
-    'TBG_TOKEN'       : TBG_TOKEN,
-    'WALLET_RECEIVER' : WALLET_RECEIVER
+    'ABI'             : ABI
 }
 
 module.exports = WEB3
 /**
- * @description Web3变量
+ * @description Web3变量 
  * @typedef { Object } Web3
  * @property { string } PROVIDER 底层通讯服务提供器
  * @property { string } CONTRACT_ADDRESS 合约地址
@@ -69,8 +59,5 @@ module.exports = WEB3
  * @property { string } COLD_ADDRESS4 账号4
  * @property { string } COLD_ADDRESS5 账号5
  * @property { array } ADDRESSES 冷热账号集合
- * @property { string } UE_TOKEN eos账号0，有钱
- * @property { string } TBG_TOKEN eos账号1
- * @property { string } WALLET_RECEIVER 账号2
  * @property { array } ABI  合约ABI
  */
