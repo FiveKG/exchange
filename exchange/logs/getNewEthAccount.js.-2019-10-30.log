@@ -1,0 +1,4 @@
+{"date":"2019-10-30T18:30:36.764","level":"ERROR","category":"getNewEthAccount.js","host":"frank-hp","pid":"11616","data":'get_Eth_account error,the error stock is TypeError: Cannot read property 'findOne' of undefined
+    at get_Eth_account (D:\work_space\yuezhi\eos\exchange\src\job\getNewEthAccount.js:15:50)
+    at get_EthAccount (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\get_EthAccount.js:14:35)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}

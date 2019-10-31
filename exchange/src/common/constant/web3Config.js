@@ -1,17 +1,27 @@
 //@ts-check
 //服务提供器
-const PROVIDER = process.env.ETH_PROVIDER||'http:// 172.19.2.122:39842'
+const PROVIDER = process.env.ETH_PROVIDER||'http://localhost:8545'
 
  
 
 //Exchange合约地址
 const CONTRACT_ADDRESS = "0x36CB591c2c6446Ae74f55457061B3a85B698dC16";
-//默认账号，有钱
-const ACC0 = "0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c";
-//第二账号
-const ACC1 = "0xd73b2c72435276c98a1266db457fbcd0c2d2bf28";
-//第三账号
-const ACC2 = "0x9e95a55be4b200775623c70af63061fc05869495";
+//发币账号
+const USDT_COIN = "0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c";
+//热钱包
+const HOT_ADDRESS = "0xd73b2c72435276c98a1266db457fbcd0c2d2bf28";
+//冷钱包1
+const COLD_ADDRESS1 = "0xbb123b7f59c2f85049be43bc612c92a04558f125";
+//冷钱包2
+const COLD_ADDRESS2 = "0x9e95a55be4b200775623c70af63061fc05869495";
+//冷钱包3
+const COLD_ADDRESS3 = "0x2c6f76a4bb4ed82155e754355b832655190732d9";
+//冷钱包4
+const COLD_ADDRESS4 = "0x239a4d35728ddff5f9d2f6cba55caca743650313";
+//冷钱包5
+const COLD_ADDRESS5 = "0x33f9fb77222ccaaa45f76cb680b99c371014e72e";
+//钱包集合
+const ADDRESSES = [HOT_ADDRESS,COLD_ADDRESS1,COLD_ADDRESS2,COLD_ADDRESS3,COLD_ADDRESS4,COLD_ADDRESS5]
 
 //EOS有钱账号
 const UE_TOKEN = "uetokencoin";
@@ -31,9 +41,14 @@ const ABI = [{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","t
 const WEB3 = {
     'PROVIDER'        : PROVIDER,
     'CONTRACT_ADDRESS': CONTRACT_ADDRESS,
-    'ACC0'            : ACC0,
-    'ACC1'            : ACC1,
-    'ACC2'            : ACC2,
+    "USDT_COIN"       : USDT_COIN,
+    'HOT_ADDRESS'     : HOT_ADDRESS,
+    'COLD_ADDRESS1'   : COLD_ADDRESS1,
+    'COLD_ADDRESS2'   : COLD_ADDRESS2,
+    'COLD_ADDRESS3'   : COLD_ADDRESS3,
+    'COLD_ADDRESS4'   : COLD_ADDRESS4,
+    'COLD_ADDRESS5'   : COLD_ADDRESS5,
+    "ADDRESSES"       : ADDRESSES,
     'ABI'             : ABI,
     'UE_TOKEN'        : UE_TOKEN,
     'TBG_TOKEN'       : TBG_TOKEN,
@@ -46,9 +61,14 @@ module.exports = WEB3
  * @typedef { Object } Web3
  * @property { string } PROVIDER 底层通讯服务提供器
  * @property { string } CONTRACT_ADDRESS 合约地址
- * @property { string } ACC0 账号0，有钱
- * @property { string } ACC1 账号1
- * @property { string } ACC2 账号2
+ * @property { string } USDT_COIN 发币账号
+ * @property { string } HOT_ADDRESS  热钱包
+ * @property { string } COLD_ADDRESS1 账号1
+ * @property { string } COLD_ADDRESS2 账号2
+ * @property { string } COLD_ADDRESS3 账号3
+ * @property { string } COLD_ADDRESS4 账号4
+ * @property { string } COLD_ADDRESS5 账号5
+ * @property { array } ADDRESSES 冷热账号集合
  * @property { string } UE_TOKEN eos账号0，有钱
  * @property { string } TBG_TOKEN eos账号1
  * @property { string } WALLET_RECEIVER 账号2

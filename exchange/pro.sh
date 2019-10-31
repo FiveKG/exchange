@@ -23,30 +23,28 @@ unset EXCHANGE_REDIS_PASS
 unset ETH_PROVIDER
 unset NODE_ENV
 
-export EOS_END_POINT = http://45.251.109.187:8888
-export TBG_SERVER = http://192.168.1.141:9527/
+export EOS_END_POINT=http://45.251.109.187:8888
+
 export EXCHANGE_SERVER_HOST=0.0.0.0
 export EXCHANGE_SERVER_PORT=7758
-export NODE_ENV = debug
+export NODE_ENV=debug
 
-export EXCHANGE_DB_HOST = 127.0.0.1
-export EXCHANGE_DB_PORT = 3306
-export EXCHANGE_DB_NAME = exchange
-export EXCHANGE_DB_USER = exchange_user
-export EXCHANGE_DB_PASS = mysql_pass_2019
+export EXCHANGE_DB_HOST=127.0.0.1
+export EXCHANGE_DB_PORT=3306
+export EXCHANGE_DB_NAME=exchange
+export EXCHANGE_DB_USER=exchange_user
+export EXCHANGE_DB_PASS=mysql_pass_2019
 
-export EXCHANGE_REDIS_HOST = 127.0.0.1
-export EXCHANGE_REDIS_PORT = 6379
-export EXCHANGE_REDIS_PASS = redis_pass_2019
+export EXCHANGE_REDIS_HOST=127.0.0.1
+export EXCHANGE_REDIS_PORT=6379
+export EXCHANGE_REDIS_PASS=redis_pass_2019
 
-export EXCHANGE_RABBIT_HOST = 127.0.0.1
-export EXCHANGE_RABBIT_PORT = 5672
-export EXCHANGE_RABBIT_USER = mq_user
-export EXCHANGE_RABBIT_PASS = pass_2019
+export EXCHANGE_RABBIT_HOST=127.0.0.1
+export EXCHANGE_RABBIT_PORT=5672
+export EXCHANGE_RABBIT_USER=mq_user
+export EXCHANGE_RABBIT_PASS=pass_2019
 
-export ETH_PROVIDER = http:// 172.19.2.122:39842
-node exchange.js
-
+export ETH_PROVIDER=http://172.19.2.122:39842
 
 cat > ./config.js <<EOF
 module.exports = {

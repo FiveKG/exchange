@@ -18,7 +18,7 @@ const TBG_TOKEN2 = 'tbgtokencoin'
 
 
 // // // 节点信息
-const END_POINT = process.env.EOS_END_POINT || "http://45.251.109.187:8888";
+const END_POINT = process.env.EOS_END_POINT || "http://172.19.2.125:8888";
 
 // // 私钥
 // const PRIVATE_KEY_TEST = "5J6sFQ2xv32UzS9dWJHZ8HHcjxcCYBiWR7mt3bhpvzdYj5xUjiJ,5KQDHX3bQHkhAeo9CW3KxJ1YiUfYPMVuEcsYeC7hgyyjFB5k8oz"

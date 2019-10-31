@@ -22,7 +22,7 @@ unset EXCHANGE_REDIS_PASS
 unset PROVIDER
 unset NODE_ENV
 
-set EOS_END_POINT = http://45.251.109.187:8888
+set EOS_END_POINT = http://172.19.2.125:8888
 set TBG_SERVER = http://192.168.1.141:9527/
 set EXCHANGE_SERVER_HOST=0.0.0.0
 set EXCHANGE_SERVER_PORT=7758
@@ -43,5 +43,5 @@ set EXCHANGE_RABBIT_PORT = 5672
 set EXCHANGE_RABBIT_USER = mq_user
 set EXCHANGE_RABBIT_PASS = pass_2019
 
-set PROVIDER = ws://localhost:8545
+set PROVIDER = http://localhost:8545
 node exchange.js

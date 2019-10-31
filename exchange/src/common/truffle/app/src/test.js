@@ -1,9 +1,10 @@
 //@ts-check
-const {CONTRACT_ADDRESS,ACC0,ACC1,ACC2,ABI,PROVIDER,UE_TOKEN,TBG_TOKEN,WALLET_RECEIVER} = require("../../../../common/constant/web3Config")
+const {CONTRACT_ADDRESS,USDT_COIN,HOT_ADDRESS,COLD_ADDRESS1,COLD_ADDRESS2,ABI,PROVIDER,UE_TOKEN,TBG_TOKEN,WALLET_RECEIVER} = require("../../../../common/constant/web3Config")
 const { redis } = require("../../../../common");
 const sleep = require("../../../../job/sleep")
 const Web3 = require('web3')
-let web3 = new Web3("ws://localhost:8545");
+//let web3 = new Web3("http:// 172.19.2.122:39842");
+let web3 = new Web3("http:192.168.1.105:8545");
 const moment = require('moment')
 
 if(typeof web3 !=='undefined'){ //检查是否已有web3实例
@@ -11,7 +12,7 @@ if(typeof web3 !=='undefined'){ //检查是否已有web3实例
 }else{
     //否则就连接到给出节点
     web3=new Web3();
-    web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8545"));//注意这里注意端口不用一致，直接默认8546即可（若刚刚启动节点的rpc端口是8545的情况下）
+    web3.setProvider(new Web3.providers.WebsocketProvider("http://192.168.1.105:8545"));//注意这里注意端口不用一致，直接默认8546即可（若刚刚启动节点的rpc端口是8545的情况下）
 }
 
 const contract =new web3.eth.Contract(ABI,CONTRACT_ADDRESS)
@@ -46,8 +47,6 @@ async function getContractTransaction(fromBlock=0){
 }
 
 
-const addr_from = ACC0;
-const addr_to = ACC1;
 
 
 // //获取转账信息 ACC0->contract->ACC1
@@ -68,15 +67,23 @@ const addr_to = ACC1;
 //   })
 async function transfer(){
     try{
-        web3.eth.personal.unlockAccount(ACC0,'123',3000)
-        web3.eth.personal.unlockAccount(ACC1,'123',3000)
-        web3.eth.personal.unlockAccount(ACC2,'123',3000)
+
+        //web3.eth.personal.unlockAccount(USDT_COIN,'123',10000)
         //ACC1->tbgtokencoin
 
-  
-            const result0 = await contract.methods.transfer("0x0C4575771c38D71F0785924DFC6349B6aC643e18",101).send({from:ACC0});
-            const result1 = await contract.methods.transfer("0x84A5093a0D335bbB630149545B2f3Af965686656",101).send({from: ACC2});
-            console.log(result0,result1)
+            web3.eth.personal.unlockAccount(USDT_COIN,'123',10000)
+            contract.methods.transfer("0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90",1000000).send({from:USDT_COIN})
+            .on('transactionHash', function(hash){
+                console.log("transactionHash",hash)
+                web3.eth.getTransaction(hash).then(console.log)
+            })
+            .on('confirmation', function(confirmationNumber, receipt){
+                console.log("confirmationNumber,receipt",confirmationNumber,receipt)
+            })
+            .on('receipt', function(receipt){
+                console.log("receipt",receipt)
+            })
+
         
         console.log('done!')
         //ACC2->tbgjoin
@@ -109,11 +116,10 @@ async function getTokenBalance(account){
 async function transfer_info(hash){
     try{
         const transfer_info = await web3.eth.getTransaction(hash)
-
-        console.log("decodeParameters:",transfer_info)
+        console.log(transfer_info)
         //@ts-ignore
-        const result = decoder.decodeData(input);
-
+        const result = decoder.decodeData(transfer_info.input);
+        console.log(result)
 
     }catch(err){
         console.log("err transfer_info:",err)
@@ -131,24 +137,28 @@ async function transfer_info(hash){
 
  async function test(){
 
-    await transfer()
+    // const passwd = await web3.eth.accounts.decrypt({"address":"9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","crypto":{"cipher":"aes-128-ctr","ciphertext":"9b6e249ee68d3d988e3716b64f91b83806416910a4f3001b41b4e16594f6d52f","cipherparams":{"iv":"1cdd8520c741c868dbd15665ceb8becc"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"ee2b8dc276802b0599e0ae035ea583d94f86c69ecfb17cfbec31f23518a0dbb0"},"mac":"f7ae2939a4cc77bf5101266ca0e66928e85cd85cbe4fb878d422d306873b9000"},"id":"2aa58b17-8dbb-4108-866c-9de6c6e73440","version":3},"123");
+    // console.log(passwd)
+    //await transfer()
+
     //console.log(process.env.EOS_END_POINT)
-    // web3.eth.personal.unlockAccount(ACC0,'123',3000)
+    // web3.eth.personal.unlockAccount(USDT_COIN,'123',3000)
     // web3.eth.sendTransaction({
     //     from: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
-    //     to: '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
-    //     value: '100000000000000'
+    //     to: '0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90',
+    //     value: '1000000000000000'
     // })
     // .then(function(receipt){
     //     console.log(receipt)
     // })
 
-    // console.log(await getTokenBalance(UEACC))
-   // transfer_info("0x02a1b0973a823b71d673fd15ecc656bd3b73e249226615fc8432aacc4740553a")
-    // console.log(await web3.eth.getBlock(10023))
-   // console.log(await web3.eth.getTransactionReceipt("0x02a1b0973a823b71d673fd15ecc656bd3b73e249226615fc8432aacc4740553a"));
-    //console.log(await web3.eth.getTransaction("0x02a1b0973a823b71d673fd15ecc656bd3b73e249226615fc8432aacc4740553a"))
-    
+    console.log(await getTokenBalance("0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90"))
+    // const result = await web3.eth.getBlock(9048)
+    // console.log()
+    //console.log(new Date(result.timestamp*1000))
+    //console.log(await web3.eth.getTransactionReceipt("0xfe7f152e943145f14fd305273e70edd408a06e223790c7a78b1fccd8f1ecf764"));
+    //await transfer_info("0xfe7f152e943145f14fd305273e70edd408a06e223790c7a78b1fccd8f1ecf764")
+
 
 
     // console.log(await getTokenBalance(ACC0))

@@ -1,7 +1,7 @@
 //@ts-check
 const {inspect_req_data,get_status} = require("../../common");
 const logger  =require("../../common/logger").getLogger("detail_record.js");
-const get_detail_record = require("../../job/get_detail_record");
+const get_detail_record = require("../../job/getDetailRecord");
 //@ts-ignore
 async function detail_record(req,res,next){
     try{
@@ -10,8 +10,8 @@ async function detail_record(req,res,next){
 
         //psGetPAXAccount.pub(reqData)
         let resData = get_status(1);
-        const num = await get_detail_record(reqData.record_id)
-        resData["data"] = num
+        const result = await get_detail_record(reqData.eth_txid)
+        resData["data"] = result
  
         res.send(resData);
     }catch(error){

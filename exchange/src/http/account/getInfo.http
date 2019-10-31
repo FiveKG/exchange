@@ -1,9 +1,29 @@
 ### test pxg
-GET http://localhost:7758/get_eth_account?account_name=uetokencoin
+GET http://localhost:7758/exchange/get_eth_account?account_name=tbgjoin
 
+###check eth address
+POST  http://localhost:7758/exchange/check_eth_account
+content-type: application/json
+
+{
+    "transfer_from_address":"0xE543732c26f84A83E7FcE1fE9479376400344d5D",
+    "transfer_amount":"500000"
+}
+
+### record_trx
+POST http://localhost:7758/exchange/record_trx
+content-type: application/json
+
+{
+    "pog_account":"test_account",
+    "trx_id":"test",
+    "transfer_from_address":"0x31674f9E16f74C4F123eE98F1549E5eb7b317E5f",
+    "transfer_to_address":"0x239a4d35728ddff5f9d2f6cba55caca743650313",
+    "transfer_amount":"115"
+}
 ### get history
-GET http://localhost:7758/history_exchange_records?account_name=tbgtokencoin
+GET http://localhost:7758/exchange/history_exchange_records?pog_account=test_account
 
 
 ### get detail
-GET http://localhost:7758/get_record_detail?record_id=Rets_vsn
+GET http://localhost:7758/exchange/get_record_detail?record_id=Rets_vsn

@@ -22,6 +22,7 @@ async function get_Eth_account(pog_account){
         const address     = await web3.eth.personal.newAccount(generate_unique_key())
         const eth_key_pwd = generate_unique_key();
         const map_time    = new Date();
+        
 
         result= await sequelize.Eth_account.create({
             id         : generate_unique_key(),
@@ -30,10 +31,11 @@ async function get_Eth_account(pog_account){
             eth_key_pwd: eth_key_pwd,
             map_time   : map_time,
         })
+
         return result.dataValues.eth_address
 
     }catch(err){
-        logger.error("get PAX Account error,the error stock is %O",err)
+        logger.error("get_Eth_account error,the error stock is %O",err)
     }
 
 }

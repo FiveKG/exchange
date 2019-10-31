@@ -2,7 +2,8 @@
 const logger = require("../common/logger").getLogger("transfer2Pog.js")
 const {sequelize} = require('../db')
 const {redis} = require("../common")
-const moment = require('moment')
+//const moment = require('moment')
+//const data_fns = require('date-fns/fromUnixTime')
 const { Decimal } = require("decimal.js");
 const {getBlock,is6confirm} = require('./getEthTrxAction')
 const {transfer,getTransactionInfo} = require('./getEOSTrxAction')
@@ -86,7 +87,8 @@ async function transfer2Pog(data){
 
                 const res = await transfer(transfer_data)
                 const unix_timestamp  = (await getBlock(data.eth_blockNumber)).timestamp;
-                Eth_charge_filed.confirm_time = moment.utc(moment.unix(unix_timestamp)).format();
+                //Eth_charge_filed.confirm_time = moment.utc(moment.unix(unix_timestamp)).format();
+                Eth_charge_filed.confirm_time = new Date(unix_timestamp*1000)
                 
                 Eth_charge_filed.pog_blockNumber = res.processed.block_num;
                 Eth_charge_filed.pog_txid = res.processed.id;

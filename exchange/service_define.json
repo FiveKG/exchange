@@ -7,24 +7,51 @@
     ],
     "apis" : [
         {
-            "name" : "获取UE_PAX账号",
-            "summary": "",
+            "name" : "获取该地址的gas,usdt余额和转账地址及其所需的燃气",
+            "summary": "", 
             "remark": [
-                "获取UE_PAX账号"
+                "gas值单位是Gwei"
             ],
             "isFunctionPoint" : true,
-            "url" : "/get_eth_account",
-            "type" : "get",
+            "url" : "/exchange/check_eth_account",
+            "type" : "post",
             "requireRole" : [ "*" ],
             "req": {
-                "account_name": { "type": "text",  "is_require": true,  "desc": "帐号名称" }
+                "transfer_from_address": { "type": "text",  "is_require": true,  "desc": "转账源eth地址" },
+                "transfer_amount":{ "type": "text",  "is_require": true,  "desc": "转账代币金额"}
             },
             "res": {
                 "code": { "type": "number" , "desc": "" , "values": [ "成功" ] } ,
                 "desc": { "type": "string" ,"desc": "" },
                 "data": {
-                    "PAX_account": { "type": "text",  "is_require": true,  "desc": "UE_PAX账号" }
+                    "transfer_to_address": { "type": "text",  "is_require": true,  "desc": "转账目标地址" },
+                    "estimate_gas_Gwei": { "type": "text",  "is_require": true,  "desc": "估计要花费的gas值，单位Gwei"},
+                    "gas_Gwei_balance": { "type": "text",  "is_require": true,  "desc": "gas余额，单位Gwei"},
+                    "usdt_balance": { "type": "text",  "is_require": true,  "desc": "usdt余额"}
                 }
+            }
+        },
+        {
+            "name" : "记录交易id和pog账户",
+            "summary": "", 
+            "remark": [
+                "记录交易id和pog账户"
+            ],
+            "isFunctionPoint" : true,
+            "url" : "/exchange/record_trx",
+            "type" : "post",
+            "requireRole" : [ "*" ],
+            "req": {
+                "pog_account": { "type": "text",  "is_require": true,  "desc": "pog账号" },
+                "trx_id":{ "type": "text",  "is_require": true,  "desc": "交易id"},
+                "transfer_from_address":{"type": "text",  "is_require": true,  "desc": "转账源eth地址" },
+                "transfer_to_address":{"type": "text",  "is_require": true,  "desc": "转账目标eth地址" },
+                "transfer_amount":{"type": "text",  "is_require": true,  "desc": "转账金额" }
+            },
+            "res": {
+                "code": { "type": "number" , "desc": "" , "values": [ "成功" ] } ,
+                "desc": { "type": "string" ,"desc": "" },
+                "data": {}
             }
         },
         {
@@ -34,19 +61,25 @@
                 "获取兑换历史记录"
             ],
             "isFunctionPoint" : true,
-            "url" : "/history_exchange_records",
+            "url" : "/exchange/history_exchange_records",
             "type" : "get",
             "requireRole" : [ "*" ],
             "req": {
-                "account_name": { "type": "text",  "is_require": true,  "desc": "帐号名称" }
+                "pog_account": { "type": "text",  "is_require": true,  "desc": "帐号名称" }
             },
             "res": {
                 "code": { "type": "number" , "desc": "" , "values": [ "成功" ] } ,
                 "desc": { "type": "string" ,"desc": "" },
                 "data": {
-                    "mode": { "type": "string",  "is_require": true,  "desc": "兑换方式" },
-                    "time": { "type": "string","is_require": true,"desc": "兑换时间"},
-                    "amount":{ "type": "string","is_require": true,"desc": "兑换金额"}
+                    "detail": {
+                        "type": "objectArray", "desc": "全部兑换信息",
+                        "properties": {
+                            "mode": { "type": "string",  "is_require": true,  "desc": "兑换方式" },
+                            "time": { "type": "string","is_require": true,"desc": "兑换时间"},
+                            "amount":{ "type": "string","is_require": true,"desc": "兑换金额"}
+                        }
+                    }
+                    
                 }
             }
         },
@@ -57,11 +90,11 @@
                 "获取兑换详情"
             ],
             "isFunctionPoint" : true,
-            "url" : "/get_record_detail",
+            "url" : "/exchange/get_record_detail",
             "type" : "get",
             "requireRole" : [ "*" ],
             "req": {
-                "record_id": { "type": "text",  "is_require": true,  "desc": "记录id" }
+                "eth_txid": { "type": "text",  "is_require": true,  "desc": "记录id" }
             },
             "res": {
                 "code": { "type": "number" , "desc": "" , "values": [ "成功" ] } ,
@@ -70,6 +103,8 @@
                     "exchange_time": { "type": "string",  "is_require": true,  "desc": "兑换时间" },
                     "to_eth_address": { "type": "string","is_require": true,"desc": "转入地址"},
                     "usdt_value":{ "type": "string","is_require": true,"desc": "实收usdt数量"},
+                    "exchange_rate":{ "type": "string","is_require": true,"desc": "兑换比例"},
+                    "service_charge":{ "type": "string","is_require": true,"desc": "手续费"},
                     "ue_value":{"type": "string","is_require": true,"desc": "兑换UE数量"},
                     "pog_account":{"type": "string","is_require": true,"desc": "UE接受地址"}
                 }

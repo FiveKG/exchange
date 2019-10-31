@@ -1,0 +1,5 @@
+{"date":"2019-10-31T09:23:30.370","level":"DEBUG","category":"detail_record.js","host":"frank-hp","pid":"708","data":'the param is:{"account_name":"tbgjoin"}'}
+{"date":"2019-10-31T09:23:39.726","level":"DEBUG","category":"detail_record.js","host":"frank-hp","pid":"708","data":'the param is:{"account_name":"test"}'}
+{"date":"2019-10-31T09:24:23.293","level":"DEBUG","category":"detail_record.js","host":"frank-hp","pid":"708","data":'the param is:{"account_name":"test_account"}'}
+{"date":"2019-10-31T09:28:13.906","level":"DEBUG","category":"detail_record.js","host":"frank-hp","pid":"10992","data":'the param is:{"pog_account":"test_account"}'}
+{"date":"2019-10-31T09:29:19.428","level":"DEBUG","category":"detail_record.js","host":"frank-hp","pid":"10928","data":'the param is:{"pog_account":"test_account"}'}

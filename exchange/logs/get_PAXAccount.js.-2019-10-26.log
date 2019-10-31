@@ -1,9 +1,0 @@
-{"date":"2019-10-26T10:54:26.529","level":"ERROR","category":"get_PAXAccount.js","host":"frank-hp","pid":"11704","data":'request history_exchange_records error, the error stock is { code: 2000,
-  desc:
-   'request params is invalid, The required parameters are not passed as follows: account_name' }'}
-{"date":"2019-10-26T10:54:30.971","level":"DEBUG","category":"get_PAXAccount.js","host":"frank-hp","pid":"11704","data":'the param is:{"account_name":"uetokencoin"}'}
-{"date":"2019-10-26T10:54:43.767","level":"DEBUG","category":"get_PAXAccount.js","host":"frank-hp","pid":"11704","data":'the param is:{"account_name":"uetokencoin"}'}
-{"date":"2019-10-26T10:55:15.567","level":"DEBUG","category":"get_PAXAccount.js","host":"frank-hp","pid":"11704","data":'the param is:{"account_name":"uetokencoin"}'}
-{"date":"2019-10-26T10:55:44.060","level":"DEBUG","category":"get_PAXAccount.js","host":"frank-hp","pid":"11704","data":'the param is:{"account_name":"tbgtokencoin"}'}
-{"date":"2019-10-26T20:18:46.849","level":"DEBUG","category":"get_PAXAccount.js","host":"frank-hp","pid":"10324","data":'the param is:{"account_name":"uetokencoin"}'}
-{"date":"2019-10-26T20:18:54.313","level":"DEBUG","category":"get_PAXAccount.js","host":"frank-hp","pid":"10324","data":'the param is:{"account_name":"uetokencoin"}'}

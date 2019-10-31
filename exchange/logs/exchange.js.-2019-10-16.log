@@ -1,5 +1,0 @@
-{"date":"2019-10-16T15:33:05.788","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"4184","data":'init server of pools server.'}
-{"date":"2019-10-16T15:33:06.470","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"4184","data":'**** server of pools running at http://localhost:7758/  ****'}
-{"date":"2019-10-16T15:33:06.593","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"4184","data":'数据库同步成功'}
-{"date":"2019-10-16T15:33:07.689","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"4184","data":'GET /get_account'}
-{"date":"2019-10-16T15:33:15.970","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"4184","data":'GET /get_account'}

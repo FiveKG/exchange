@@ -55,7 +55,7 @@ server.on('listening', async () => {
       logger.error(`the error from sequelize.sync(),the erroe:${error}`)
     })
  
-  logger.warn(`**** server of pools running at http://localhost:${port}/  ****`)
+  logger.warn(`**** server of pools running at http://${host}:${port}/  ****`)
 }); 
 
 server.on("close", () => {

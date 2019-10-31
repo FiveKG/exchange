@@ -1,0 +1,113 @@
+{"date":"2019-10-31T09:22:32.561","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"708","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T09:22:32.593","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"708","data":'unhandledRejection ENOENT: no such file or directory, unlink 'D:\work_space\yuezhi\eos\exchange\logs\exchange.js.-2019-10-28.log''}
+{"date":"2019-10-31T09:23:30.369","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"708","data":'GET /exchange/history_exchange_records'}
+{"date":"2019-10-31T09:23:39.724","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"708","data":'GET /exchange/history_exchange_records'}
+{"date":"2019-10-31T09:24:23.291","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"708","data":'GET /exchange/history_exchange_records'}
+{"date":"2019-10-31T09:27:48.877","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10992","data":'init server of pools server.'}
+{"date":"2019-10-31T09:27:49.304","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"10992","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-10-31T09:27:49.394","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10992","data":'数据库同步成功'}
+{"date":"2019-10-31T09:28:13.902","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10992","data":'GET /exchange/history_exchange_records'}
+{"date":"2019-10-31T09:29:16.777","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10928","data":'init server of pools server.'}
+{"date":"2019-10-31T09:29:17.194","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"10928","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-10-31T09:29:17.277","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10928","data":'数据库同步成功'}
+{"date":"2019-10-31T09:29:19.424","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10928","data":'GET /exchange/history_exchange_records'}
+{"date":"2019-10-31T09:42:25.023","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'init server of pools server.'}
+{"date":"2019-10-31T09:42:25.443","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"10200","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-10-31T09:42:25.534","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'数据库同步成功'}
+{"date":"2019-10-31T09:58:50.224","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T09:59:39.353","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:00:06.982","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:00:08.995","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:00:13.092","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:00:15.782","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:00:22.862","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:00:48.391","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:00:50.813","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:16:13.722","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:16:21.476","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:16:25.300","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:19:30.978","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:19:43.477","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:20:03.283","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:20:45.260","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:20:47.519","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:25:10.969","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:25:16.847","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:25:19.209","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:25:46.485","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:25:56.510","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:26:07.488","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:26:12.821","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:27:53.856","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:27:57.109","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:28:12.494","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:28:21.514","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:28:51.615","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:29:20.084","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:29:29.673","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:30:11.716","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:30:14.165","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:30:20.228","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:30:48.319","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:30:50.033","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:30:59.359","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'GET /exchange/get_eth_account'}
+{"date":"2019-10-31T10:47:56.828","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T10:47:56.851","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T10:50:15.796","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T10:50:15.862","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T10:51:13.813","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T10:51:13.981","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T10:52:10.942","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T10:52:10.962","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T10:52:15.709","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T10:52:42.852","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T10:52:42.926","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T10:53:22.530","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T10:53:22.540","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T10:54:06.370","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T10:54:06.401","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T10:57:08.803","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T10:57:08.837","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T10:57:33.796","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T10:57:33.808","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T10:57:39.454","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T10:57:39.532","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T10:58:13.978","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T10:58:14.029","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:03:44.801","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T11:03:44.822","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:03:46.761","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:06:01.640","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T11:06:01.732","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:06:28.839","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T11:06:28.861","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:15:34.138","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T11:15:34.261","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:15:34.288","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10200","data":'unhandledRejection connection not open'}
+{"date":"2019-10-31T11:15:37.026","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:15:37.044","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10200","data":'unhandledRejection connection not open'}
+{"date":"2019-10-31T11:15:49.138","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T11:15:49.161","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:15:49.175","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10200","data":'unhandledRejection connection not open'}
+{"date":"2019-10-31T11:16:09.664","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T11:16:09.711","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:16:09.717","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10200","data":'unhandledRejection connection not open'}
+{"date":"2019-10-31T11:16:12.508","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:16:12.534","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10200","data":'unhandledRejection connection not open'}
+{"date":"2019-10-31T11:16:20.463","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T11:16:21.113","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:16:21.135","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10200","data":'unhandledRejection connection not open'}
+{"date":"2019-10-31T11:16:26.358","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T11:16:26.407","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:16:26.530","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10200","data":'unhandledRejection connection not open'}
+{"date":"2019-10-31T11:17:38.260","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T11:17:38.484","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:17:38.503","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10200","data":'unhandledRejection connection not open'}
+{"date":"2019-10-31T11:17:40.586","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:17:40.604","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10200","data":'unhandledRejection connection not open'}
+{"date":"2019-10-31T11:17:57.361","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T11:17:57.471","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:17:57.483","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10200","data":'unhandledRejection connection not open'}
+{"date":"2019-10-31T11:21:55.341","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'OPTIONS /exchange/check_eth_account'}
+{"date":"2019-10-31T11:21:55.371","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10200","data":'POST /exchange/check_eth_account'}
+{"date":"2019-10-31T11:21:55.382","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10200","data":'unhandledRejection connection not open'}

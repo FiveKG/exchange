@@ -1,11 +1,11 @@
 // @ts-check
-const logger = require("../common/logger.js").getLogger("listenTransfer.js")
+const logger = require("../common/logger.js").getLogger("listenEthTrx.js")
 const { redis,generate_unique_key } = require("../common");
 const { Decimal } = require("decimal.js");
 const { scheduleJob } = require("node-schedule");
 const { BASE_AMOUNT,UE2USDT_RATE} = require("../common/constant/exchange_rule")
-const {getContractTransaction} = require("./getEthTrxAction")
-const {HOT_ADDRESS,COLD_ADDRESS1,COLD_ADDRESS2,COLD_ADDRESS3,COLD_ADDRESS4,COLD_ADDRESS5} = require("../common/constant/web3Config")
+const {getBlock} = require("./getEthTrxAction")
+const {ADDRESSES} = require("../common/constant/web3Config")
 const BLOCK_NUMBER = "tbg:exchange:Eth:lastBlockNumber";
 const TX_NUMBER = "tgb:exchange:Eth:tx_number"
 const {sequelize,psTransfer2Pog} = require('../db')
@@ -13,7 +13,7 @@ logger.debug(`handlerTransferActions running...`);
 // 每秒中执行一次,有可能上一条监听的还没有执行完毕,下一次监听又再执行了一次,从而造成多条数据重复
 const INVEST_LOCK = `tbg:lock:exchange:Eth`;
 let count = 1;
-scheduleJob("*/1 * * * * *", begin);
+scheduleJob("*/3 * * * * *", begin);
 // 如果中途断开，再次启动时计数到 10 以后清除缓存
 async function begin() {
     try {
@@ -41,8 +41,10 @@ async function handlerTransferActions() {
     try {
         await redis.set(INVEST_LOCK, 1);
 
-        let lastBlockNumber = await getLastBlockNumber(); //获取上次扫描位置
-        const actions = await getContractTransaction(lastBlockNumber)
+        const lastBlockNumber = await getBlock();
+        const blockInfo = await getBlock(lastBlockNumber);
+
+        
 
             for (const action of actions) {
             let lastBlockNumber2 = await getLastBlockNumber(); //获取上次处理好的扫描位置

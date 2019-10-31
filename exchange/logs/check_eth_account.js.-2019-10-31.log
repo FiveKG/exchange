@@ -1,0 +1,269 @@
+{"date":"2019-10-31T10:47:56.862","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T10:50:15.867","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T10:51:13.983","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T10:52:10.965","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T10:52:15.711","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T10:52:42.928","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T10:53:22.542","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T10:54:06.404","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T10:57:08.839","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T10:57:33.809","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T10:57:39.535","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T10:58:14.030","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:03:44.825","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:03:46.764","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:06:01.736","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:06:28.864","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:15:34.263","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:15:34.283","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'this error from check_eth_account(),the error trace is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:15:34.285","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'request check_eth_account error, the error stock is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:15:37.029","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:15:37.041","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'this error from check_eth_account(),the error trace is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:15:37.042","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'request check_eth_account error, the error stock is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:15:49.163","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:15:49.169","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'this error from check_eth_account(),the error trace is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:15:49.171","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'request check_eth_account error, the error stock is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:16:09.712","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:16:09.715","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'this error from check_eth_account(),the error trace is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:16:09.716","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'request check_eth_account error, the error stock is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:16:12.521","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:16:12.530","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'this error from check_eth_account(),the error trace is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:16:12.532","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'request check_eth_account error, the error stock is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:16:21.115","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:16:21.131","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'this error from check_eth_account(),the error trace is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:16:21.133","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'request check_eth_account error, the error stock is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:16:26.418","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:16:26.502","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'this error from check_eth_account(),the error trace is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:16:26.520","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'request check_eth_account error, the error stock is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:17:38.487","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:17:38.499","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'this error from check_eth_account(),the error trace is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:17:38.501","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'request check_eth_account error, the error stock is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:17:40.588","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:17:40.596","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'this error from check_eth_account(),the error trace is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:17:40.603","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'request check_eth_account error, the error stock is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:17:57.473","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:17:57.480","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'this error from check_eth_account(),the error trace is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:17:57.482","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'request check_eth_account error, the error stock is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:21:55.373","level":"DEBUG","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'the param is:{"transfer_from_address":"0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","transfer_amount":"1"}'}
+{"date":"2019-10-31T11:21:55.380","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'this error from check_eth_account(),the error trace is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-10-31T11:21:55.381","level":"ERROR","category":"check_eth_account.js","host":"frank-hp","pid":"10200","data":'request check_eth_account error, the error stock is Error: connection not open
+    at WebsocketProvider.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-ws\src\index.js:282:18)
+    at RequestManager.send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:132:66)
+    at sendRequest (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:560:42)
+    at send (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-method\src\index.js:581:13)
+    at Object._executeMethod (D:\work_space\yuezhi\eos\exchange\node_modules\web3-eth-contract\src\index.js:826:24)
+    at getTokenBalance (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:129:71)
+    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:166:59)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\job\checkEthAccount.js:17:43)
+    at check_eth_account (D:\work_space\yuezhi\eos\exchange\src\controllers\exchange\check_eth_account.js:14:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}

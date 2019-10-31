@@ -6,35 +6,35 @@ const shortid = require('shortid');
  * @param {*} Sequelize 
  */
 function createTable(sequelize,Sequelize){
-    const Eth_account = sequelize.define('Eth_account', {
-        // 属性
-        id :{
-            type: Sequelize.STRING,defaultValue:shortid.generate(),primaryKey: true,comment: 'Eth_account_id',
-            //get(){return this.getDataValue('id')}
-        },
-        pog_account: {
-          type: Sequelize.TEXT,allowNull : false,comment: '一个小写的POG的账号',
-          //get(){return this.getDataValue('id')},set(valueToBeSet){this.setDataValue('Pog_Account', valueToBeSet)},
-        },
-        eth_address: {
-          type: Sequelize.TEXT,allowNull : false,comment: '以太坊地址',
-          //get(){return this.getDataValue('PAX_Address')},set(valueToBeSet){this.setDataValue('PAX_Address', valueToBeSet)},
-        },
-        map_time: {
-            type: Sequelize.DATE,allowNull : false,defaultValue:Sequelize.NOW,comment: '建立映射的时间(世界标准时)',
-           // get(){return this.getDataValue('Map_time')},set(valueToBeSet){this.setDataValue('Map_time', valueToBeSet)},
-        },
-        eth_key_pwd: {
-            type: Sequelize.TEXT,allowNull : false,comment: '解锁eth账号的密码',
-            //get(){return this.getDataValue('pax_key_pwd')},set(valueToBeSet){this.setDataValue('pax_key_pwd', valueToBeSet)},
-        }
-      }, {
-        timestamps: false,
-        comment :"pax账号表",
-        freezeTableName: true,
-      }
+    // const Eth_account = sequelize.define('Eth_account', {
+    //     // 属性
+    //     id :{
+    //         type: Sequelize.STRING,defaultValue:shortid.generate(),primaryKey: true,comment: 'Eth_account_id',
+    //         //get(){return this.getDataValue('id')}
+    //     },
+    //     pog_account: {
+    //       type: Sequelize.TEXT,allowNull : false,comment: '一个小写的POG的账号',
+    //       //get(){return this.getDataValue('id')},set(valueToBeSet){this.setDataValue('Pog_Account', valueToBeSet)},
+    //     },
+    //     eth_address: {
+    //       type: Sequelize.TEXT,allowNull : false,comment: '以太坊地址',
+    //       //get(){return this.getDataValue('PAX_Address')},set(valueToBeSet){this.setDataValue('PAX_Address', valueToBeSet)},
+    //     },
+    //     map_time: {
+    //         type: Sequelize.DATE,allowNull : false,defaultValue:Sequelize.NOW,comment: '建立映射的时间(世界标准时)',
+    //        // get(){return this.getDataValue('Map_time')},set(valueToBeSet){this.setDataValue('Map_time', valueToBeSet)},
+    //     },
+    //     eth_key_pwd: {
+    //         type: Sequelize.TEXT,allowNull : false,comment: '解锁eth账号的密码',
+    //         //get(){return this.getDataValue('pax_key_pwd')},set(valueToBeSet){this.setDataValue('pax_key_pwd', valueToBeSet)},
+    //     }
+    //   }, {
+    //     timestamps: false,
+    //     comment :"pax账号表",
+    //     freezeTableName: true,
+    //   }
     
-      );
+    //   );
     
     const Eth_charge = sequelize.define('Eth_charge',{
         id :{
@@ -78,7 +78,11 @@ function createTable(sequelize,Sequelize){
            // get(){return this.getDataValue('Is_exchanged')},set(valueToBeSet){this.setDataValue('Is_exchanged', valueToBeSet)},
         },
         eth_blockNumber:{
-            type: Sequelize.BIGINT(),allowNull : false,comment: '转账记录的以太坊高度',
+            type: Sequelize.BIGINT(),allowNull : true,comment: '转账记录的以太坊高度',
+           // get(){return this.getDataValue('eth_blockNumber')},set(valueToBeSet){this.setDataValue('eth_blockNumber', valueToBeSet)},
+        },
+        eth_confirm_blockNumber:{
+            type: Sequelize.BIGINT(),allowNull : true,comment: '以太坊的确认高度',
            // get(){return this.getDataValue('eth_blockNumber')},set(valueToBeSet){this.setDataValue('eth_blockNumber', valueToBeSet)},
         },
         pog_blockNumber:{
@@ -93,6 +97,12 @@ function createTable(sequelize,Sequelize){
             type: Sequelize.TEXT,allowNull : true,comment: 'pog上的交易记录',
             //get(){return this.getDataValue('pog_txtid')},set(valueToBeSet){this.setDataValue('pog_txtid', valueToBeSet)},
         },
+        service_charge:{
+            type: Sequelize.TEXT,allowNull : false,comment: '手续费',
+        },  
+        exchange_rate:{
+            type:Sequelize.DECIMAL(32,8).ZEROFILL,allowNull : false,comment: '兑换比例',
+        },  
         log_info:{
             type: Sequelize.TEXT,allowNull : true,comment: '本兑换的执行记录备注',
            // get(){return this.getDataValue('Log_info')},set(valueToBeSet){this.setDataValue('Log_info', valueToBeSet)},
@@ -104,6 +114,6 @@ function createTable(sequelize,Sequelize){
 
       })
 
-    return  {'Eth_account':Eth_account,'Eth_charge':Eth_charge}
+    return  {'Eth_charge':Eth_charge}
 }
 module.exports = createTable;
