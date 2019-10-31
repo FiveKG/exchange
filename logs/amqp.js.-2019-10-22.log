@@ -1,3 +1,0 @@
-{"date":"2019-10-22T10:58:25.046","level":"DEBUG","category":"amqp.js","host":"frank-hp","pid":"9276","data":'amqp option: {"protocol":"amqp","hostname":"192.168.92.128","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}'}
-{"date":"2019-10-22T10:59:24.724","level":"DEBUG","category":"amqp.js","host":"frank-hp","pid":"3188","data":'amqp option: {"protocol":"amqp","hostname":"192.168.92.128","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}'}
-{"date":"2019-10-22T11:02:32.727","level":"DEBUG","category":"amqp.js","host":"frank-hp","pid":"5804","data":'amqp option: {"protocol":"amqp","hostname":"192.168.92.128","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}'}

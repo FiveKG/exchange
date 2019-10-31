@@ -1,6 +1,0 @@
-{"date":"2019-10-29T10:55:32.104","level":"ERROR","category":"getPAXTrxAction.js","host":"frank-hp","pid":"10736","data":'err from acceptTransferEthAccount(),ths track is Error: [DecimalError] Invalid argument: 5000000000
-    at new Decimal (D:\work_space\yuezhi\eos\exchange\node_modules\Decimal.js\decimal.js:4340:15)
-    at Decimal.P.comparedTo.P.cmp (D:\work_space\yuezhi\eos\exchange\node_modules\Decimal.js\decimal.js:227:17)
-    at Decimal.P.lessThan.P.lt (D:\work_space\yuezhi\eos\exchange\node_modules\Decimal.js\decimal.js:1065:17)
-    at acceptTransferEthAccount (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:155:32)
-    at process._tickCallback (internal/process/next_tick.js:68:7):'}
