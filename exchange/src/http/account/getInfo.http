@@ -15,11 +15,11 @@ POST http://localhost:7758/exchange/record_trx
 content-type: application/json
 
 {
-    "pog_account":"TES2",
-    "trx_id":"0x2926c4d3d6c876d41448fd35054685beee22f0d2a9882f682749e81376c33adb",
-    "transfer_from_address":"0x0e1d7ed21ab2f48c7a97be6ff8c816ce221b2cb8",
-    "transfer_to_address":"0xd73b2c72435276c98a1266db457fbcd0c2d2bf28",
-    "transfer_amount":"0"
+    "pog_account":"11g22p33s",
+    "trx_id":"0xb166c34245bad2b07a1a1d67f0eccb436c20c759e5e55e7b967e0bf34d878251",
+    "transfer_from_address":"0x813f20301ccf5825e7a34936a12385c38989301d",
+    "transfer_to_address":"0xbb123b7f59c2f85049be43bc612c92a04558f125",
+    "transfer_amount":"10"
 }
 ### get history
 GET http://localhost:7758/exchange/history_exchange_records?pog_account=TES3

@@ -42,44 +42,56 @@ async function handlerTransferActions() {
         await redis.set(INVEST_LOCK, 1);
         const now = new Date();
         /** 
-         * 两种情况：一种是redis的区块号没跟上最新区块号，一种是redis已经追上最新区块号。
-         * 每次从redis获取区块号进行处理，处理如果成功结束，则与最新区块号对比
-         * if(redis.block<lastBlock),redis.block+1,否则对比
+         * 数据库算法：每次固定时间，获取所有未兑换的主键id，根据充值时间排序，从最新时间开始排序；
+         * 获得的主键id统统放入数组，因为是id索引，速度会很快
+         * 每次从数组拿出10个id，根据id去查具体信息，此时还是通过主键索引，速度依然很快
         */
-        // const redis_block_number = await getLastBlockNumber();
-        // const blockInfo = await getBlock(redis_block_number);
-        // if(!blockInfo.transactions)return
-        // const block_time = new Date(blockInfo.timestamp*1000);
 
         
         //从数据库获取没有完成的交易
-        const sql_transactions = await sequelize.Eth_charge.findAll({
+        const sql_transactions_id = await sequelize.Eth_charge.findAll({
             where:{is_exchanged:false},
-            attributes:['eth_txid','recharge_time','pog_account','ue_value'],
-            limit: 1,
+            attributes:["id"],
             raw: true,
         });
+        
+        const id_array= sql_transactions_id.map(element=>{
+            return element.id
+        })
+        
+        while(1){
+            const new_array = id_array.splice(0,10);
+            if(new_array.length===0)break
+            const sql_transactions = await sequelize.Eth_charge.findAll({
+                where:{id:new_array},
+                attributes:["eth_txid",'recharge_time','pog_account','ue_value'],
+                order:[['recharge_time','DESC']],
+                raw: true,
+            });
+            const minute = 1000 * 60;
+            const hour = minute * 60;
+            console.log(sql_transactions)
 
-        const minute = 1000 * 60;
-        const hour = minute * 60;
+            for(const transaction of sql_transactions){
+                const eth_txid      = transaction.eth_txid;
+                const recharge_time = new  Date(transaction.recharge_time);
+                const pog_account   = transaction.pog_account;
+                const ue_value      = transaction.ue_value;
+                const h =( now.getTime() - recharge_time.getTime())/hour;
+                
+                if(h>=EXPIRATION_HOUR)continue
 
-        for(const transaction of sql_transactions){
-            const eth_txid      = transaction.eth_txid;
-            const recharge_time = new  Date(transaction.recharge_time);
-            const pog_account   = transaction.pog_account;
-            const ue_value      = transaction.ue_value;
-            const h =( now.getTime() - recharge_time.getTime())/hour;
-            //等待超过24小时，有可能发生的问题是，每次数据库拿到的都是预期的前几个
-            if(h>=EXPIRATION_HOUR)continue
+                const transaction_info = await getTransaction(eth_txid);
+                const data = await  parseTransaction(transaction_info)
 
-            const transaction_info = await getTransaction(eth_txid);
-            const data = await  parseTransaction(transaction_info)
-            if(!data) continue
-            data.ue_value = ue_value;
-            data.pog_account = pog_account;
-            //转账
-            await psTransfer2Pog.pub(data)
+                if(!data) continue
+                data.ue_value = ue_value;
+                data.pog_account = pog_account;
+                //转账
+                await psTransfer2Pog.pub(data)
+            }
         }
+        
 
         await redis.del(INVEST_LOCK);
         return

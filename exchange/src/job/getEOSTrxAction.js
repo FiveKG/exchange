@@ -236,7 +236,7 @@ async function transfer(transfer_data) {
         let api = await newApi(PRIVATE_KEY_TEST.split(","));
         let actions = {
             actions: [{
-              account: "ue.token",
+              account: tokenContract,
               name: "transfer",
               authorization: [{
                 actor: from,
@@ -250,7 +250,7 @@ async function transfer(transfer_data) {
               }
             }]
           }
-        await sleep(5 * 300);
+        await sleep(5 * 400);
         const result = await api.transact(actions, {
             blocksBehind: 3,
             expireSeconds: 30,

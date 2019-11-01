@@ -16,7 +16,14 @@ async function record_charge(req,res,next){
         }
         
         const result = await recordTransfer(data);
+
         let resData = get_status(1);
+        if(result==500){
+            resData = get_status(500);
+        }else if(result ==2000){
+            resData = get_status(2000);
+        }
+       
         res.send(resData);
     }catch(error){
         let resData = get_status(500);

@@ -1,0 +1,80 @@
+{"date":"2019-11-01T12:03:48.284","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"13880","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T14:25:23.880","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"5892","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T14:27:06.267","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"2572","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T14:28:43.883","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8104","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T14:28:58.633","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8628","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T14:29:41.620","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8052","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T14:30:18.349","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8072","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T14:30:25.074","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"3856","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T14:34:21.619","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"7980","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T15:00:06.320","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"4032","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T15:17:22.385","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"1912","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:10:32.355","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"3908","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:14:02.906","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"6544","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:17:30.008","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"2932","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:17:52.963","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"9908","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:17:53.049","level":"ERROR","category":"listenEthTrx.js","host":"frank-hp","pid":"9908","data":'this error from handlerTransferActions(),the error trace is O% Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type common.Hash
+    at Object.ErrorResponse (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-helpers\src\errors.js:29:16)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-http\src\index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-01T18:19:10.552","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"9860","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:19:10.645","level":"ERROR","category":"listenEthTrx.js","host":"frank-hp","pid":"9860","data":'this error from handlerTransferActions(),the error trace is O% Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type common.Hash
+    at Object.ErrorResponse (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-helpers\src\errors.js:29:16)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-http\src\index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-01T18:21:50.162","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"10052","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:22:18.567","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8804","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:22:42.244","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"9340","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:22:42.336","level":"ERROR","category":"listenEthTrx.js","host":"frank-hp","pid":"9340","data":'this error from handlerTransferActions(),the error trace is O% Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type common.Hash
+    at Object.ErrorResponse (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-helpers\src\errors.js:29:16)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-http\src\index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-01T18:23:38.745","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"3220","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:24:19.584","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"9392","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:24:33.842","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"7600","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:25:33.587","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8556","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:25:44.778","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"5512","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:26:17.349","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"7528","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T18:26:29.062","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"7504","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:01:26.948","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"4776","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:01:55.449","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8340","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:02:28.671","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"5176","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:02:48.452","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8532","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:04:29.338","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"4776","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:05:38.896","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"9432","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:08:09.340","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8692","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:08:39.120","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8516","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:09:16.502","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8124","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:09:31.100","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"4628","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:14:37.315","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"7672","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:22:20.676","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"5288","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:22:38.646","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"9336","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:23:26.191","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8536","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:23:38.055","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"10016","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:23:50.199","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"6460","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:24:04.713","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"7480","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:24:45.242","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"3660","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:41:30.109","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"7816","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T19:58:15.804","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"840","data":'handlerTransferActions running...'}
+{"date":"2019-11-01T20:00:25.660","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8048","data":'handlerTransferActions running...'}

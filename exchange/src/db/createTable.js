@@ -42,7 +42,7 @@ function createTable(sequelize,Sequelize){
             //get(){return this.getDataValue('id')}
         },
         eth_txid:{
-            type: Sequelize.TEXT,allowNull : false,comment: '充值/提现交易记录txid',
+            type: Sequelize.STRING(255),allowNull : false,unique:true,comment: '充值/提现交易记录txid',
            // get(){return this.getDataValue('Txid')},set(valueToBeSet){this.setDataValue('Txid', valueToBeSet)},
         },
         from_eth_address:{
@@ -94,7 +94,7 @@ function createTable(sequelize,Sequelize){
             //get(){return this.getDataValue('id')},set(valueToBeSet){this.setDataValue('Pog_Account', valueToBeSet)},
         },
         pog_txid:{
-            type: Sequelize.TEXT,allowNull : true,comment: 'pog上的交易记录',
+            type: Sequelize.STRING,allowNull : true,unique:true,comment: 'pog上的交易记录',
             //get(){return this.getDataValue('pog_txtid')},set(valueToBeSet){this.setDataValue('pog_txtid', valueToBeSet)},
         },
         service_charge:{

@@ -1,6 +1,7 @@
 //@ts-check
-const {PROVIDER,CONTRACT_ADDRESS,COLD_ADDRESS1,COLD_ADDRESS2,COLD_ADDRESS3,COLD_ADDRESS4,COLD_ADDRESS5,HOT_ADDRESS,ABI} = require("../common/constant/web3Config");
+const {PROVIDER,KEY_TOKEN,CONTRACT_ADDRESS,COLD_ADDRESS1,COLD_ADDRESS2,COLD_ADDRESS3,COLD_ADDRESS4,COLD_ADDRESS5,HOT_ADDRESS,ABI} = require("../common/constant/web3Config");
 const {HOT_ADDRESS_MAX,HOT_ADDRESS_MIN} = require('../common/constant/exchange_rule');
+const request = require("request");;
 const {Decimal} = require("Decimal.js");
 const {sequelize} = require('../db');
 const sleep = require("./sleep");
@@ -10,6 +11,58 @@ const InputDataDecoder = require('ethereum-input-data-decoder');
 const decoder = new InputDataDecoder(ABI);
 const logger = require("../common/logger").getLogger('getEthTrxAction.js')
 const contract =new web3.eth.Contract(ABI,CONTRACT_ADDRESS)
+
+
+/**
+ * 异步请求方法
+ * @param {Object} options 配置项
+ * @returns {Promise}
+ */
+async function asyncRequest(options) {
+    return new Promise((resolve, reject) => {
+        //@ts-ignore
+        request(options, (err, res, body) => {
+        if (err) {
+            return reject(err);
+        }
+        resolve(body);
+        });
+    });
+}
+  
+/**
+ * POST方式请求
+ * @param {String} api_url 接口URL
+ * @returns {Promise<Object>}
+ */
+async function get(api_url) {
+    try {
+        const req_options = {
+        uri: api_url,
+        method: "get",
+        json: true,
+        };
+        return await asyncRequest(req_options);
+    } catch (err) {
+        throw err;
+    }
+}
+
+/**
+ * 获取节点abi
+ * @returns {Promise<Object>}
+ */
+async function getABI() {
+    try {
+        const url = `http://api-cn.etherscan.com/api?module=contract&action=getabi&address=${CONTRACT_ADDRESS}&apikey=${KEY_TOKEN}`;
+        const result = await get(url);
+        const abi = JSON.parse(result.result)
+        return abi;
+    } catch (err) {
+        throw err;
+    }
+}
+
 
 /**
  * //不指定区块默认区块号是最新区块号,指定区块号则返回该区块号的信息
@@ -252,5 +305,6 @@ module.exports={
     "is6confirm"              : is6confirm,
     "acceptTransferEthAccount": acceptTransferEthAccount,
     "estimateGas"             : estimateGas,
-    "getEthBalance"           : getEthBalance
+    "getEthBalance"           : getEthBalance,
+    "getABI"                  : getABI
 }

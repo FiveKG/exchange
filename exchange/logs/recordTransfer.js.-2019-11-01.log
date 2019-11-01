@@ -1,0 +1,105 @@
+{"date":"2019-11-01T14:59:32.289","level":"DEBUG","category":"recordTransfer.js","host":"frank-hp","pid":"8680","data":'wrong transfer_to_address from analysisData(),transfer_to_address: 0x0e1d7ed21ab2f48c7a97be6ff8c816ce221b2cb8'}
+{"date":"2019-11-01T14:59:44.189","level":"DEBUG","category":"recordTransfer.js","host":"frank-hp","pid":"8680","data":'wrong transfer_to_address from analysisData(),transfer_to_address: 0x0e1d7ed21ab2f48c7a97be6ff8c816ce221b2cb8'}
+{"date":"2019-11-01T14:59:53.344","level":"DEBUG","category":"recordTransfer.js","host":"frank-hp","pid":"8680","data":'wrong transfer_to_address from analysisData(),transfer_to_address: 0x0e1d7ed21ab2f48c7a97be6ff8c816ce221b2cb8'}
+{"date":"2019-11-01T15:02:09.352","level":"DEBUG","category":"recordTransfer.js","host":"frank-hp","pid":"8680","data":'wrong transfer_to_address from analysisData(),transfer_to_address: 0x0e1d7ed21ab2f48c7a97be6ff8c816ce221b2cb8'}
+{"date":"2019-11-01T15:07:49.683","level":"DEBUG","category":"recordTransfer.js","host":"frank-hp","pid":"8680","data":'wrong transfer_to_address from analysisData(),transfer_to_address: 0x0e1d7ed21ab2f48c7a97be6ff8c816ce221b2cb8'}
+{"date":"2019-11-01T15:09:55.481","level":"DEBUG","category":"recordTransfer.js","host":"frank-hp","pid":"3576","data":'wrong transfer_to_address from analysisData(),transfer_to_address: 0x0e1d7ed21ab2f48c7a97be6ff8c816ce221b2cb8'}
+{"date":"2019-11-01T15:12:51.526","level":"DEBUG","category":"recordTransfer.js","host":"frank-hp","pid":"4784","data":'wrong transfer_to_address from analysisData(),transfer_to_address: 0x0e1d7ed21ab2f48c7a97be6ff8c816ce221b2cb8'}
+{"date":"2019-11-01T15:29:52.667","level":"DEBUG","category":"recordTransfer.js","host":"frank-hp","pid":"7472","data":'wrong transfer_to_address from analysisData(),transfer_to_address: 0x813f20301ccf5825e7a34936a12385c38989301d'}
+{"date":"2019-11-01T16:07:17.197","level":"ERROR","category":"recordTransfer.js","host":"frank-hp","pid":"1480","data":'err from recordTransfer() to insert db error,ths track is { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Execute.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeUniqueConstraintError',
+  errors:
+   [ ValidationErrorItem {
+       message: 'eth_txid must be unique',
+       type: 'unique violation',
+       path: 'eth_txid',
+       value:
+        '0xeaafb56e3b6abb32b0c64d8838f38b3c808d2ad7d7e0813915e20dcb0d8909',
+       origin: 'DB',
+       instance: [Eth_charge],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields:
+   { eth_txid:
+      '0xeaafb56e3b6abb32b0c64d8838f38b3c808d2ad7d7e0813915e20dcb0d8909' },
+  parent:
+   { Error: Duplicate entry '0xeaafb56e3b6abb32b0c64d8838f38b3c808d2ad7d7e0813915e20dcb0d8909' for key 'eth_txid'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage:
+      'Duplicate entry \'0xeaafb56e3b6abb32b0c64d8838f38b3c808d2ad7d7e0813915e20dcb0d8909\' for key \'eth_txid\'',
+     sql:
+      'INSERT INTO `Eth_charge` (`id`,`eth_txid`,`from_eth_address`,`to_eth_address`,`usdt_value`,`ue_value`,`recharge_time`,`is_exchanged`,`pog_account`,`service_charge`,`exchange_rate`,`log_info`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?);',
+     parameters:
+      [ 'V655sxNN',
+        '0xeaafb56e3b6abb32b0c64d8838f38b3c808d2ad7d7e0813915e20dcb0d89092f',
+        '0x813f20301ccf5825e7a34936a12385c38989301d',
+        '0x33f9fb77222ccaaa45f76cb680b99c371014e72e',
+        '10',
+        '10',
+        '2019-11-01 08:07:17',
+        false,
+        '11g22p33s',
+        '0 USDT',
+        '1',
+        'USDT2UE' ] },
+  original:
+   { Error: Duplicate entry '0xeaafb56e3b6abb32b0c64d8838f38b3c808d2ad7d7e0813915e20dcb0d8909' for key 'eth_txid'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage:
+      'Duplicate entry \'0xeaafb56e3b6abb32b0c64d8838f38b3c808d2ad7d7e0813915e20dcb0d8909\' for key \'eth_txid\'',
+     sql:
+      'INSERT INTO `Eth_charge` (`id`,`eth_txid`,`from_eth_address`,`to_eth_address`,`usdt_value`,`ue_value`,`recharge_time`,`is_exchanged`,`pog_account`,`service_charge`,`exchange_rate`,`log_info`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?);',
+     parameters:
+      [ 'V655sxNN',
+        '0xeaafb56e3b6abb32b0c64d8838f38b3c808d2ad7d7e0813915e20dcb0d89092f',
+        '0x813f20301ccf5825e7a34936a12385c38989301d',
+        '0x33f9fb77222ccaaa45f76cb680b99c371014e72e',
+        '10',
+        '10',
+        '2019-11-01 08:07:17',
+        false,
+        '11g22p33s',
+        '0 USDT',
+        '1',
+        'USDT2UE' ] },
+  sql:
+   'INSERT INTO `Eth_charge` (`id`,`eth_txid`,`from_eth_address`,`to_eth_address`,`usdt_value`,`ue_value`,`recharge_time`,`is_exchanged`,`pog_account`,`service_charge`,`exchange_rate`,`log_info`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?);' }:'}

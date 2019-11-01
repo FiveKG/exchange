@@ -1,5 +1,5 @@
 //@ts-check
-const {ADDRESSES, CONTRACT_ADDRESS,USDT_COIN,HOT_ADDRESS,COLD_ADDRESS1,COLD_ADDRESS2,ABI,PROVIDER,UE_TOKEN,TBG_TOKEN,WALLET_RECEIVER} = require("../../../../common/constant/web3Config")
+const {ADDRESSES, CONTRACT_ADDRESS,USDT_COIN,HOT_ADDRESS,COLD_ADDRESS4,COLD_ADDRESS5,COLD_ADDRESS1,COLD_ADDRESS2,ABI,PROVIDER,UE_TOKEN,TBG_TOKEN,WALLET_RECEIVER} = require("../../../../common/constant/web3Config")
 const { redis } = require("../../../../common");
 const sleep = require("../../../../job/sleep")
 const Web3 = require('web3')
@@ -19,9 +19,9 @@ const decoder = new InputDataDecoder(ABI);
 const { Decimal } = require("decimal.js");
 
 const TEST1= '0xaa14d51bd26d2d7a71301db01354e335cb977da4'
-const TEST2 ='0x0e1d7ed21ab2f48c7a97be6ff8c816ce221b2cb8'
-const TEST3 ='0x813f20301ccf5825e7a34936a12385c38989301d'
-const POG_ADDRESSES =[TEST1,TEST2,TEST3]
+const uecirculate ='0x0e1d7ed21ab2f48c7a97be6ff8c816ce221b2cb8'
+const g22p33s ='0x813f20301ccf5825e7a34936a12385c38989301d'
+const POG_ADDRESSES =[uecirculate,g22p33s]
 
 contract.methods.name().call().then(name=>console.log('name:',name))
 contract.methods.symbol().call().then(values=>console.log("symbol:",values))
@@ -68,11 +68,17 @@ async function getContractTransaction(fromBlock=0){
 async function transfer(){
     try{
 
-        web3.eth.personal.unlockAccount(USDT_COIN,'123',10000)
-            contract.methods.transfer("0x1D45760E92d99696261E3Da273c32296E30645b0",10000).send({from:USDT_COIN})
-            .on('transactionHash', function(hash){
-                console.log("transactionHash",hash)
-            })
+        // web3.eth.personal.unlockAccount(USDT_COIN,'123',10000)
+        //     contract.methods.transfer("0x813f20301ccf5825e7a34936a12385c38989301d",1000000).send({from:USDT_COIN})
+        //     .on('transactionHash', function(hash){
+        //         console.log("transactionHash",hash)
+        //     })
+
+        //     web3.eth.personal.unlockAccount(USDT_COIN,'123',10000)
+        //     contract.methods.transfer("0xf50D78f8Dd8Afe331cF1e8D968e99A1633355F1f",1000000).send({from:USDT_COIN})
+        //     .on('transactionHash', function(hash){
+        //         console.log("transactionHash",hash)
+        //     })
         //     contract.methods.transfer(TEST2,10000).send({from:USDT_COIN})
         //     .on('transactionHash', function(hash){
         //         console.log("transactionHash",hash)
@@ -83,9 +89,9 @@ async function transfer(){
         //     })
         //++++++++++++++++++++++++++++++++++++++++++++++++
 
-        // web3.eth.personal.unlockAccount(TEST1,'123',10000)
-        // web3.eth.personal.unlockAccount(TEST2,'123',10000)
-        // web3.eth.personal.unlockAccount(TEST3,'123',10000)
+
+        // web3.eth.personal.unlockAccount(uecirculate,'123',10000)
+        web3.eth.personal.unlockAccount(g22p33s,'123',10000)
 
         // for(let i=0;i<5;i++){
         //     let eth_index = Math.floor((Math.random()*ADDRESSES.length));
@@ -96,6 +102,27 @@ async function transfer(){
         //     })
 
         // }
+        contract.methods.transfer(COLD_ADDRESS1,10).send({from:g22p33s})
+        .on('transactionHash', function(hash){
+            console.log("11g22p33s");
+            console.log(hash);
+            console.log(g22p33s);
+            console.log(COLD_ADDRESS1)
+        })
+        contract.methods.transfer(COLD_ADDRESS4,10).send({from:g22p33s})
+        .on('transactionHash', function(hash){
+            console.log("11g22p33s");
+            console.log(hash);
+            console.log(g22p33s);
+            console.log(COLD_ADDRESS4)
+        })
+        contract.methods.transfer(COLD_ADDRESS5,10).send({from:g22p33s})
+        .on('transactionHash', function(hash){
+            console.log("11g22p33s");
+            console.log(hash);
+            console.log(g22p33s);
+            console.log(COLD_ADDRESS5)
+        })
 
         console.log('done!')
         //ACC2->tbgjoin
@@ -149,23 +176,23 @@ async function transfer_info(hash){
 
  async function test(){
 
-    // const passwd = await web3.eth.accounts.decrypt({"address":"9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90","crypto":{"cipher":"aes-128-ctr","ciphertext":"9b6e249ee68d3d988e3716b64f91b83806416910a4f3001b41b4e16594f6d52f","cipherparams":{"iv":"1cdd8520c741c868dbd15665ceb8becc"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"ee2b8dc276802b0599e0ae035ea583d94f86c69ecfb17cfbec31f23518a0dbb0"},"mac":"f7ae2939a4cc77bf5101266ca0e66928e85cd85cbe4fb878d422d306873b9000"},"id":"2aa58b17-8dbb-4108-866c-9de6c6e73440","version":3},"123");
-    // console.log(passwd)
-    await transfer()
+    const passwd = await web3.eth.accounts.decrypt({"address":"4f9e1512a28a13424dd1aa65c7b07cbef6a1523b","crypto":{"cipher":"aes-128-ctr","ciphertext":"7413383e7545510fb31726e92d7213788b6f89082a88b19fce78f7e192f25648","cipherparams":{"iv":"8eb90b6a4556067c87f5d3ba6d5683a2"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"75c5bfe940082960be5cba9af151660a9af787079ec467ead7e5209ec2fb7f35"},"mac":"81fffce240b14710575ea650a1c2d87989a7002b20a75098e82b6f535cda5799"},"id":"ac1cc69a-6b14-44ce-a7f5-15cca1656bca","version":3},"123");
+    console.log(passwd)
+    //await transfer()
 
-    console.log(process.env.EOS_END_POINT)
-    web3.eth.personal.unlockAccount(USDT_COIN,'123',3000)
-    web3.eth.sendTransaction({
-        from: '0x1D45760E92d99696261E3Da273c32296E30645b0',
-        to: TEST1,
-        value: '1000000000000000'
-    })
+ 
+    // web3.eth.personal.unlockAccount(USDT_COIN,'123',3000)
+    // web3.eth.sendTransaction({
+    //     from: USDT_COIN,
+    //     to: "0x2c313b8c966a32f765f052d3620dffea3c3a2c03",
+    //     value: '1000000000000000'
+    // })
     // .then(function(receipt){
     //     console.log(receipt)
     // })
     // web3.eth.sendTransaction({
-    //     from: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
-    //     to: TEST2,
+    //     from: USDT_COIN,
+    //     to: "0x813f20301ccf5825e7a34936a12385c38989301d",
     //     value: '1000000000000000'
     // })
     // .then(function(receipt){
@@ -180,7 +207,7 @@ async function transfer_info(hash){
     //     console.log(receipt)
     // })
 
-   // console.log(await getTokenBalance("0x9571d6c7bbe67dd4655a9b7c65b1a4a0c95a7a90"))
+  //console.log(await getTokenBalance("0x813f20301ccf5825e7a34936a12385c38989301d"))
     // const result = await web3.eth.getBlock(9048)
     // console.log()
     //console.log(new Date(result.timestamp*1000))

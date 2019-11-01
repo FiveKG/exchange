@@ -21,7 +21,7 @@ async function recordTransfer(transfer_data){
         const {the_pog_account,trx_id,transfer_from_address,transfer_to_address,transfer_amount}  = await analysisData(transfer_data);
         if(!the_pog_account||!trx_id||!transfer_from_address||!transfer_to_address||!transfer_amount){
             console.log('数据不符合要求',the_pog_account,trx_id,transfer_from_address,transfer_to_address,transfer_amount);
-            return
+            return 2000
         }
 
         const id = await generate_unique_key();
@@ -38,10 +38,16 @@ async function recordTransfer(transfer_data){
         const log_info = "USDT2UE"
         
         //插入数据库
-        const result = await sequelize.Eth_charge.create({id,eth_txid,from_eth_address,to_eth_address,usdt_value,ue_value,recharge_time,is_exchanged,pog_account,service_charge,exchange_rate,log_info});
-        return 
+        try{
+            const result = await sequelize.Eth_charge.create({id,eth_txid,from_eth_address,to_eth_address,usdt_value,ue_value,recharge_time,is_exchanged,pog_account,service_charge,exchange_rate,log_info});
+            return 1
+        }catch(err){
+            logger.error('err from recordTransfer() to insert db error,ths track is %O:',err);
+            return 500
+        }
+        
     }catch(err){
-        logger.error('err from recordTransfer(),ths track is %O:',err)
+        logger.error('err from recordTransfer(),ths track is %O:',err);
         throw err
     }
 }

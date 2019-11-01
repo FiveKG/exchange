@@ -1,0 +1,3 @@
+{"date":"2019-10-31T23:45:24.275","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"2428","data":'init server of pools server.'}
+{"date":"2019-10-31T23:45:24.817","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"2428","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-10-31T23:45:24.921","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"2428","data":'数据库同步成功'}

@@ -4,7 +4,7 @@ const {sequelize} = require('../db');
 const {redis} = require("../common");
 const TX_STATE = 'tgb:exchange:Eth:tx_hash:';
 const {Decimal} = require('decimal.js')
-const {UE_TOKEN} = require("../common/constant/eosConstants");
+const {UE_TOKEN,UE_CONTRACT} = require("../common/constant/eosConstants");
 const {transfer,getTransactionInfo} = require('./getEOSTrxAction');
 /**
  * 
@@ -50,7 +50,7 @@ async function transfer2Pog(data){
             await redis.set(TX_STATE+data.eth_txid,1)
 
             const transfer_data ={
-                "tokenContract"  : UE_TOKEN,
+                "tokenContract"  : UE_CONTRACT,
                 "from"           : UE_TOKEN,
                 "to"             : pog_account,
                 "quantity"       : ue_value,
@@ -59,12 +59,10 @@ async function transfer2Pog(data){
             
             const res = await transfer(transfer_data)
             
-            Eth_charge_filed.exchange_time = new Date();
             Eth_charge_filed.pog_blockNumber = res.processed.block_num;
             Eth_charge_filed.pog_txid = res.processed.id;
             Eth_charge_filed.exchange_time= new Date()
             Eth_charge_filed.is_exchanged = true;
-
         }catch(err){
             logger.error(pog_account+'接收转账操作失败:',err)
             //转账失败预转账删除状态

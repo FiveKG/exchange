@@ -1,7 +1,7 @@
 //@ts-check
 const {transfer,getTransactionInfo,getTrxAction,getTrxInfoByBlockNumber,rpc} = require('./getEOSTrxAction')
-const {acceptTransferEthAccount,getTokenBalance,estimateGas,getBlock} = require('./getEthTrxAction')
-const {UE_TOKEN,TBG_TOKEN,TBG_TOKEN2} = require('../common/constant/eosConstants')
+const {acceptTransferEthAccount,getTokenBalance,getEthBalance,estimateGas,getBlock,getABI} = require('./getEthTrxAction')
+const {UE_TOKEN,TBG_TOKEN2} = require('../common/constant/eosConstants')
 const {PROVIDER,CONTRACT_ADDRESS,COLD_ADDRESS1,COLD_ADDRESS2,COLD_ADDRESS3,COLD_ADDRESS4,COLD_ADDRESS5,HOT_ADDRESS,ABI} = require("../common/constant/web3Config");
 const {sequelize,psTransfer2Pog} = require('../db')
 
@@ -12,9 +12,8 @@ const data_fns = require('date-fns/fromUnixTime')
 const { Decimal } = require("decimal.js");
 
 async function test(){
- 
+    web3.eth.accounts.decrypt()
 }
 ;(async()=>{
-    const str = 'dq125.1564sd]';
-    console.log(str.replace(/[^\d.]/g,''))
+    
 })();

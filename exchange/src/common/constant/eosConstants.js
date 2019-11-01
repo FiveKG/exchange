@@ -6,7 +6,7 @@
 const BASE_AMOUNT = '100';
 
 // // UE token 合约账户
-// const UE_TOKEN = "ue.token";
+const UE_CONTRACT = "ue.token";
 const UE_TOKEN_SYMBOL = "UE"
 // TBG token 测试账户
 const UE_TOKEN = "uecirculate"
@@ -30,6 +30,7 @@ const PRIVATE_KEY_TEST = "5KSojdUwrwA1dMBmyhEKXaocjyfdXxmFqUtDT468rmQb6QvgwAd,5J
  */
 const CONSTANT = {
     "BASE_AMOUNT"     : BASE_AMOUNT,
+    "UE_CONTRACT"     : UE_CONTRACT,
     "UE_TOKEN"        : UE_TOKEN,
     "TBG_TOKEN2"      : TBG_TOKEN2,
     "END_POINT"       : END_POINT,
@@ -44,7 +45,8 @@ module.exports = CONSTANT
  * @description 
  * @typedef { Object } Constant
  * @property { String } BASE_AMOUNT 对峙转账金额
- * @property { String } UE_TOKEN UE 代币合约帐号
+ * @property { String } UE_CONTRACT UE 代币合约帐号
+ * @property { String } UE_TOKEN UE测试
  * @property { String } TBG_TOKEN2 测试帐号2
  * @property { String } END_POINT scatter 节点
  * @property { String } PRIVATE_KEY_TEST 私钥
