@@ -44,6 +44,8 @@ async function transfer2Pog(data){
 
             const pog_account = data.pog_account;
             const ue_value = `${new Decimal(data.ue_value).toFixed(4) } UE`;
+
+ 
            //转账
            try{
             //设置预转账状态,用redis记录
@@ -56,9 +58,7 @@ async function transfer2Pog(data){
                 "quantity"       : ue_value,
                 "memo"           : ""
             }
-            
             const res = await transfer(transfer_data)
-            
             Eth_charge_filed.pog_blockNumber = res.processed.block_num;
             Eth_charge_filed.pog_txid = res.processed.id;
             Eth_charge_filed.exchange_time= new Date()
@@ -116,7 +116,6 @@ catch(err){
 
 async function check_exchange(Eth_charge_filed,Eth_charge_where){
     try{
-
         const sql_result = await sequelize.Eth_charge.findOne({
             where:{eth_txid:Eth_charge_where.eth_txid},
             attributes:['is_exchanged']

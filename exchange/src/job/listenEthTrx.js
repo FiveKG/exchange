@@ -13,7 +13,7 @@ logger.debug(`handlerTransferActions running...`);
 // 每秒中执行一次,有可能上一条监听的还没有执行完毕,下一次监听又再执行了一次,从而造成多条数据重复
 const INVEST_LOCK = `tbg:lock:exchange:Eth`;
 let count = 1;
-scheduleJob("*/4 * * * * *", begin);
+scheduleJob("*/10 * * * * *", begin);
 // 如果中途断开，再次启动时计数到 10 以后清除缓存
 async function begin() {
     try {
@@ -58,7 +58,6 @@ async function handlerTransferActions() {
         const id_array= sql_transactions_id.map(element=>{
             return element.id
         })
-        
         while(1){
             const new_array = id_array.splice(0,10);
             if(new_array.length===0)break
@@ -70,8 +69,6 @@ async function handlerTransferActions() {
             });
             const minute = 1000 * 60;
             const hour = minute * 60;
-            console.log(sql_transactions)
-
             for(const transaction of sql_transactions){
                 const eth_txid      = transaction.eth_txid;
                 const recharge_time = new  Date(transaction.recharge_time);
@@ -79,7 +76,14 @@ async function handlerTransferActions() {
                 const ue_value      = transaction.ue_value;
                 const h =( now.getTime() - recharge_time.getTime())/hour;
                 
-                if(h>=EXPIRATION_HOUR)continue
+                if(h>=EXPIRATION_HOUR)
+                {
+                    logger.debug(`${eth_txid} is over to 24hr,delete it!`)
+                    await sequelize.Eth_charge.destroy({
+                        where: {eth_txid:eth_txid}
+                    })
+                    continue
+                }
 
                 const transaction_info = await getTransaction(eth_txid);
                 const data = await  parseTransaction(transaction_info)
@@ -91,7 +95,6 @@ async function handlerTransferActions() {
                 await psTransfer2Pog.pub(data)
             }
         }
-        
 
         await redis.del(INVEST_LOCK);
         return
@@ -102,7 +105,6 @@ async function handlerTransferActions() {
 }
 
 
-handlerTransferActions()
 /**
  * 
  * @param {Object} transaction_info  某一记录
@@ -125,11 +127,20 @@ async function parseTransaction(transaction_info){
             eth_confirm_blockNumber :null,
         }
 
-        if(!transaction_info||!transaction_info.blockNumber)return false;
-        if(transaction_info.method !=='transfer') return false;
+        if(!transaction_info||!transaction_info.blockNumber){
+            logger.debug(`error:transaction_info:${transaction_info},transaction_info.blockNumber:${transaction_info.blockNumber}`)
+            return false;
+        }
+        if(transaction_info.method !=='transfer'){
+            logger.debug(`error:transaction_info.method:${transaction_info.method}`)
+            return false;
+        } 
 
         const to_address = "0x"+transaction_info.inputs[0];
-        if(!ADDRESSES.includes(to_address)) return false;
+        if(!ADDRESSES.includes(to_address)){
+            logger.debug(`error:to_address:${to_address}`)
+            return false;
+        } 
 
         const lastBlock = await getBlock();
         const eth_txid                = transaction_info.hash;
@@ -139,7 +150,10 @@ async function parseTransaction(transaction_info){
         const confirm_time            = new Date(block_info.timestamp*1000);
         
         //不满足6次确认也先放着
-        if(eth_blockNumber>lastBlock) return false
+        if(eth_blockNumber>lastBlock){
+            logger.debug(`not enough to 6 confirm!`)
+            return false
+        } 
 
         data.eth_txid                = eth_txid;
         data.confirm_time            = confirm_time;

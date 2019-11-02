@@ -4,13 +4,13 @@ const { redis } = require("../../../../common");
 const sleep = require("../../../../job/sleep")
 const Web3 = require('web3')
 //let web3 = new Web3("http:// 172.19.2.122:39842");
-let web3 = new Web3("http://192.168.1.105:8545");
+let web3 = new Web3("http://192.168.1.103:8545");
 if(typeof web3 !=='undefined'){ //检查是否已有web3实例
     web3=new Web3(web3.currentProvider);
 }else{
     //否则就连接到给出节点
     web3=new Web3();
-    web3.setProvider(new Web3.providers.WebsocketProvider("http://192.168.1.105:8545"));//注意这里注意端口不用一致，直接默认8546即可（若刚刚启动节点的rpc端口是8545的情况下）
+    web3.setProvider(new Web3.providers.WebsocketProvider("http://192.168.1.103:8545"));//注意这里注意端口不用一致，直接默认8546即可（若刚刚启动节点的rpc端口是8545的情况下）
 }
 const contract =new web3.eth.Contract(ABI,CONTRACT_ADDRESS)
 
@@ -176,28 +176,28 @@ async function transfer_info(hash){
 
  async function test(){
 
-    const passwd = await web3.eth.accounts.decrypt({"address":"4f9e1512a28a13424dd1aa65c7b07cbef6a1523b","crypto":{"cipher":"aes-128-ctr","ciphertext":"7413383e7545510fb31726e92d7213788b6f89082a88b19fce78f7e192f25648","cipherparams":{"iv":"8eb90b6a4556067c87f5d3ba6d5683a2"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"75c5bfe940082960be5cba9af151660a9af787079ec467ead7e5209ec2fb7f35"},"mac":"81fffce240b14710575ea650a1c2d87989a7002b20a75098e82b6f535cda5799"},"id":"ac1cc69a-6b14-44ce-a7f5-15cca1656bca","version":3},"123");
-    console.log(passwd)
+    // const passwd = await web3.eth.accounts.decrypt({"address":"4f9e1512a28a13424dd1aa65c7b07cbef6a1523b","crypto":{"cipher":"aes-128-ctr","ciphertext":"7413383e7545510fb31726e92d7213788b6f89082a88b19fce78f7e192f25648","cipherparams":{"iv":"8eb90b6a4556067c87f5d3ba6d5683a2"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"75c5bfe940082960be5cba9af151660a9af787079ec467ead7e5209ec2fb7f35"},"mac":"81fffce240b14710575ea650a1c2d87989a7002b20a75098e82b6f535cda5799"},"id":"ac1cc69a-6b14-44ce-a7f5-15cca1656bca","version":3},"123");
+    // console.log(passwd)
     //await transfer()
 
  
-    // web3.eth.personal.unlockAccount(USDT_COIN,'123',3000)
-    // web3.eth.sendTransaction({
-    //     from: USDT_COIN,
-    //     to: "0x2c313b8c966a32f765f052d3620dffea3c3a2c03",
-    //     value: '1000000000000000'
-    // })
-    // .then(function(receipt){
-    //     console.log(receipt)
-    // })
-    // web3.eth.sendTransaction({
-    //     from: USDT_COIN,
-    //     to: "0x813f20301ccf5825e7a34936a12385c38989301d",
-    //     value: '1000000000000000'
-    // })
-    // .then(function(receipt){
-    //     console.log(receipt)
-    // })
+    web3.eth.personal.unlockAccount(USDT_COIN,'123',3000)
+    web3.eth.sendTransaction({
+        from: USDT_COIN,
+        to: "0x9571D6c7bBE67DD4655a9B7C65b1a4a0C95A7A90",
+        value: '1000000000000000'
+    })
+    .then(function(receipt){
+        console.log(receipt)
+    })
+    web3.eth.sendTransaction({
+        from: USDT_COIN,
+        to: "0x9571D6c7bBE67DD4655a9B7C65b1a4a0C95A7A90",
+        value: '1000000000000000'
+    })
+    .then(function(receipt){
+        console.log(receipt)
+    })
     // web3.eth.sendTransaction({
     //     from: '0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c',
     //     to: TEST3,

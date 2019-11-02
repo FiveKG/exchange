@@ -2,16 +2,16 @@
 GET http://localhost:7758/exchange/get_eth_account?account_name=tbgjoin
 
 ###check eth address
-POST  http://localhost:7758/exchange/check_eth_account
+POST  http://www.UETOKEN.IO/exchange/check_eth_account
 content-type: application/json
 
 {
-    "transfer_from_address":"0xE543732c26f84A83E7FcE1fE9479376400344d5D",
+    "transfer_from_address":"0x2a7af4e48f25a751ddb9d0174738e01d0a2743c2",
     "transfer_amount":"500000"
 }
 
 ### record_trx
-POST http://localhost:7758/exchange/record_trx
+POST http://www.UETOKEN.IO/exchange/record_trx
 content-type: application/json
 
 {

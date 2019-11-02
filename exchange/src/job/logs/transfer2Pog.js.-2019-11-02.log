@@ -1,0 +1,30 @@
+{"date":"2019-11-02T18:13:33.983","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"7860","data":'11g22p33s接收转账操作失败: { Error: duplicate transaction 403221924a15cececca543554855c1dd3682c13aa0b989a8cb2fd3ac0c5894ad
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 409,
+     message: 'Conflict',
+     error:
+      { code: 3040008,
+        name: 'tx_duplicate',
+        what: 'Duplicate transaction',
+        details: [Array] } } }'}
+{"date":"2019-11-02T18:13:34.011","level":"ERROR","category":"transfer2Pog.js","host":"frank-hp","pid":"7860","data":'this error from transfer2Pog(),the error trace is O% { Error: duplicate transaction 403221924a15cececca543554855c1dd3682c13aa0b989a8cb2fd3ac0c5894ad
+    at new RpcError (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-rpcerror.js:26:28)
+    at JsonRpc.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:118:35)
+    at step (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:36:23)
+    at Object.next (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:17:53)
+    at fulfilled (D:\work_space\yuezhi\eos\exchange\node_modules\eosjs\dist\eosjs-jsonrpc.js:8:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  json:
+   { code: 409,
+     message: 'Conflict',
+     error:
+      { code: 3040008,
+        name: 'tx_duplicate',
+        what: 'Duplicate transaction',
+        details: [Array] } } }'}

@@ -4,7 +4,7 @@ const logger = require("../common/logger").getLogger('getEOSTrxAction.js')
 const { JsSignatureProvider } = require('eosjs/dist/eosjs-jssig');  // development only
 const fetch = require('node-fetch');                                // node only
 const { TextDecoder, TextEncoder } = require('util');               // node only
-const { END_POINT,PRIVATE_KEY_TEST,UE_TOKEN_SYMBOL,UE_TOKEN } = require("../common/constant/eosConstants.js");
+const { END_POINT,PRIVATE_KEY_TEST,UE_TOKEN_SYMBOL,UE_TOKEN,UE_CONTRACT } = require("../common/constant/eosConstants.js");
 const sleep = require("./sleep.js");
 
 // @ts-ignore
@@ -178,7 +178,7 @@ async function getCurrencyBalance(account) {
     try {
         // @ts-ignore
         const rpc = new JsonRpc(END_POINT, { fetch });
-        const balance = await rpc.get_currency_balance(UE_TOKEN, account, UE_TOKEN_SYMBOL);
+        const balance = await rpc.get_currency_balance(UE_CONTRACT, account, UE_TOKEN_SYMBOL);
         // const { [TBG_TOKEN_SYMBOL]: { max_supply: maxSupply } } = resp;
         return balance;
     } catch (err) {
@@ -250,7 +250,7 @@ async function transfer(transfer_data) {
               }
             }]
           }
-        await sleep(5 * 400);
+        await sleep(5 * 500);
         const result = await api.transact(actions, {
             blocksBehind: 3,
             expireSeconds: 30,

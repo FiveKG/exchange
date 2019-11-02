@@ -10,7 +10,7 @@
         },
         {
             "name"        : "listenEthTransfer",
-            "script"      : "./listenEthTransfer.js",
+            "script"      : "./listenEthTrx.js",
             "watch"       : false,
             "cwd"         : "./src/job",
             "error_file"  : "../../../logs/listenTransfer-err.log",

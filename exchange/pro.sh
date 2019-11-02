@@ -44,7 +44,7 @@ export EXCHANGE_RABBIT_PORT=5672
 export EXCHANGE_RABBIT_USER=mq_user
 export EXCHANGE_RABBIT_PASS=pass_2019
 
-export ETH_PROVIDER = http://ethapi.GPSTOKEN.IO:8545
+export ETH_PROVIDER=http://ethapi.GPSTOKEN.IO:8545
 
 cat > ./config.js <<EOF
 module.exports = {
