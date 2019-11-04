@@ -1,0 +1,17 @@
+{"date":"2019-11-04T12:18:56.711","level":"DEBUG","category":"record_charge.js","host":"frank-hp","pid":"11600","data":'the param is:{"pog_account":"11g22p33s","trx_id":"0x1ec60c0b1a096a144d188b599143fd7f94873cd89242b807378ff668ef098b12","transfer_from_address":"0x2a7af4e48f25a751ddb9d0174738e01d0a2743c2","transfer_to_address":"0xd1a1c25c5Fc7f7C2f1DE0DAA5DCc8A7269A8D40D","transfer_amount":"10"}'}
+{"date":"2019-11-04T12:27:58.703","level":"DEBUG","category":"record_charge.js","host":"frank-hp","pid":"11600","data":'the param is:{"pog_account":"11g22p33s","trx_id":"0x1ec60c0b1a096a1144d188b599143fd7f94873cd89242b807378ff668ef098b12","transfer_from_address":"0x2a7af4e48f25a751ddb9d0174738e01d0a2743c2","transfer_to_address":"0xd1a1c25c5Fc7f7C2f1DE0DAA5DCc8A7269A8D40D","transfer_amount":"10"}'}
+{"date":"2019-11-04T14:02:51.907","level":"DEBUG","category":"record_charge.js","host":"frank-hp","pid":"11600","data":'the param is:{"pog_account":"11g22p33s","trx_id":"0x1ec60c0b1a096a1144d188b599143fd7f94873cd89242b807378ff668ef098b12","transfer_from_address":"0x2a7af4e48f25a751ddb9d0174738e01d0a2743c2","transfer_to_address":"0xDcCE5Fec3890be188Fca7427794E8b1B62ba5576","transfer_amount":"10"}'}
+{"date":"2019-11-04T14:03:22.951","level":"DEBUG","category":"record_charge.js","host":"frank-hp","pid":"11600","data":'the param is:{"pog_account":"11g22p33s","trx_id":"0x1ec60c0b1a096a1144d188b599143fd7f94873cd89242b807378ff668ef098b12","transfer_from_address":"0x2a7af4e48f25a751ddb9d0174738e01d0a2743c2","transfer_to_address":"0xDcCE5Fec3890be188Fca7427794E8b1B62ba5576","transfer_amount":"10"}'}
+{"date":"2019-11-04T15:33:35.252","level":"ERROR","category":"record_charge.js","host":"frank-hp","pid":"11600","data":'request history_exchange_records error, the error stock is { code: 2000,
+  desc:
+   'request params is invalid, The required parameters are not passed as follows: transfer_amount' }'}
+{"date":"2019-11-04T15:37:40.606","level":"ERROR","category":"record_charge.js","host":"frank-hp","pid":"10844","data":'request history_exchange_records error, the error stock is { code: 2000,
+  desc:
+   'request params is invalid, The required parameters are not passed as follows: transfer_amount' }'}
+{"date":"2019-11-04T15:41:21.862","level":"ERROR","category":"record_charge.js","host":"frank-hp","pid":"10844","data":'request history_exchange_records error, the error stock is { code: 2000,
+  desc:
+   'request params is invalid, The required parameters are not passed as follows: transfer_amount' }'}
+{"date":"2019-11-04T15:41:56.322","level":"ERROR","category":"record_charge.js","host":"frank-hp","pid":"10844","data":'request history_exchange_records error, the error stock is { code: 2000,
+  desc:
+   'request params is invalid, The required parameters are not passed as follows: transfer_amount' }'}
+{"date":"2019-11-04T15:43:54.384","level":"DEBUG","category":"record_charge.js","host":"frank-hp","pid":"10844","data":'the param is:{"pog_account":"uetestuser21","trx_id":"0xfb39b536d7313a457b7ee3815677c68a1eb35d6a822e7da76ec870cf3442367f","transfer_from_address":"0x9571D6c7bBE67DD4655a9B7C65b1a4a0C95A7A90","transfer_to_address":"0xDcCE5Fec3890be188Fca7427794E8b1B62ba5576","transfer_amount":"1"}'}

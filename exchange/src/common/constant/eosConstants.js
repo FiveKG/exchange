@@ -8,7 +8,7 @@ const BASE_AMOUNT = '100';
 // // UE token 合约账户
 const UE_CONTRACT = "ue.token";
 const UE_TOKEN_SYMBOL = "UE"
-// TBG token 测试账户
+// TBG token 测试账户,钱都在这
 const UE_TOKEN = "uecirculate"
 
 // TBG token 测试账户钱多一点

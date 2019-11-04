@@ -1,0 +1,24 @@
+{"date":"2019-11-04T12:18:53.683","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"11600","data":'init server of pools server.'}
+{"date":"2019-11-04T12:18:54.326","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"11600","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-11-04T12:18:54.611","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"11600","data":'数据库同步成功'}
+{"date":"2019-11-04T12:18:56.699","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"11600","data":'POST /exchange/record_trx'}
+{"date":"2019-11-04T12:27:58.702","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"11600","data":'POST /exchange/record_trx'}
+{"date":"2019-11-04T14:02:51.905","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"11600","data":'POST /exchange/record_trx'}
+{"date":"2019-11-04T14:03:22.950","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"11600","data":'POST /exchange/record_trx'}
+{"date":"2019-11-04T15:33:35.242","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"11600","data":'OPTIONS /exchange/record_trx'}
+{"date":"2019-11-04T15:33:35.250","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"11600","data":'POST /exchange/record_trx'}
+{"date":"2019-11-04T15:33:35.252","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"11600","data":'unhandledRejection undefined'}
+{"date":"2019-11-04T15:37:19.225","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10844","data":'init server of pools server.'}
+{"date":"2019-11-04T15:37:19.870","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"10844","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-11-04T15:37:19.952","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10844","data":'数据库同步成功'}
+{"date":"2019-11-04T15:37:40.584","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10844","data":'OPTIONS /exchange/record_trx'}
+{"date":"2019-11-04T15:37:40.591","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10844","data":'POST /exchange/record_trx'}
+{"date":"2019-11-04T15:37:40.607","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10844","data":'unhandledRejection undefined'}
+{"date":"2019-11-04T15:41:21.849","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10844","data":'OPTIONS /exchange/record_trx'}
+{"date":"2019-11-04T15:41:21.859","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10844","data":'POST /exchange/record_trx'}
+{"date":"2019-11-04T15:41:21.862","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10844","data":'unhandledRejection undefined'}
+{"date":"2019-11-04T15:41:56.312","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10844","data":'OPTIONS /exchange/record_trx'}
+{"date":"2019-11-04T15:41:56.320","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10844","data":'POST /exchange/record_trx'}
+{"date":"2019-11-04T15:41:56.322","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10844","data":'unhandledRejection undefined'}
+{"date":"2019-11-04T15:43:54.375","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10844","data":'OPTIONS /exchange/record_trx'}
+{"date":"2019-11-04T15:43:54.383","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10844","data":'POST /exchange/record_trx'}

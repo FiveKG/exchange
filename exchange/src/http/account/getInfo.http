@@ -16,11 +16,25 @@ content-type: application/json
 
 {
     "pog_account":"11g22p33s",
-    "trx_id":"0xb166c34245bad2b07a1a1d67f0eccb436c20c759e5e55e7b967e0bf34d878251",
-    "transfer_from_address":"0x813f20301ccf5825e7a34936a12385c38989301d",
-    "transfer_to_address":"0xbb123b7f59c2f85049be43bc612c92a04558f125",
+    "trx_id":"0x3b893466d49476918a5cda5529881b1fd26d5ebf47b68aa6ec588f8776de0e29",
+    "transfer_from_address":"0x2a7af4e48f25a751ddb9d0174738e01d0a2743c2",
+    "transfer_to_address":"0xDcCE5Fec3890be188Fca7427794E8b1B62ba5576",
     "transfer_amount":"10"
 }
+
+
+### record_trx
+POST http://localhost:7758/exchange/record_trx
+content-type: application/json
+
+{
+    "pog_account":"11g22p33s",
+    "trx_id":"0x12f2f9ee7901f4c4bade9120606faae83d84b909a287b02191f723fd9108768b",
+    "transfer_from_address":"0x2a7af4e48f25a751ddb9d0174738e01d0a2743c2",
+    "transfer_to_address":"0xDcCE5Fec3890be188Fca7427794E8b1B62ba5576",
+    "transfer_amount":"20"
+}
+
 ### get history
 GET http://localhost:7758/exchange/history_exchange_records?pog_account=TES3
 

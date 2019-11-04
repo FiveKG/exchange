@@ -11,7 +11,7 @@ const InputDataDecoder = require('ethereum-input-data-decoder');
 const decoder = new InputDataDecoder(ABI);
 const logger = require("../common/logger").getLogger('getEthTrxAction.js')
 const contract =new web3.eth.Contract(ABI,CONTRACT_ADDRESS)
-
+const Tx = require('ethereumjs-tx');
 
 /**
  * 异步请求方法
@@ -103,6 +103,7 @@ async function getEthBalance(eth_address){
 async function getTransaction(txHash){
     try{
         const transaction = await web3.eth.getTransaction(txHash);
+
         //@ts-ignore
         const inputs = decoder.decodeData(transaction.input);
 
@@ -297,6 +298,59 @@ async function is6confirm(txHash){
     }
 }
 
+/**
+ * 
+ * @param {String} from_address 
+ * @param {String} to_address
+ * @param {Number} value 
+ * @param {String} privateKey
+ */
+async function sendSignTransfer(from_address,to_address,value,privateKey){
+    let nonce =await web3.eth.getTransactionCount(from_address);
+    const gasPrice = await web3.eth.getGasPrice();
+    const data = await contract.methods.transfer(to_address,value).encodeABI();
+
+    var rawTransaction = {
+        "from": from_address,
+        "nonce": web3.utils.toHex(nonce++),
+        "gasLimit": web3.utils.toHex(99000),
+        "gasPrice": web3.utils.toHex(10e9),
+        "to": CONTRACT_ADDRESS,
+        "value": "0x0",
+        "data": data,
+    };
+
+    const tx = new Tx(rawTransaction);  
+    const privKey = Buffer.from(privateKey, 'hex');
+    tx.sign(privKey);
+    let serializedTx = tx.serialize().toString('hex');
+    web3.eth.sendSignedTransaction('0x' + serializedTx.toString('hex'),function(err, hash) {
+        if (!err) {
+            console.log(hash);
+            return hash
+        } else {
+            console.log('err',err)
+        }
+    })
+    // // 发送交易
+    // return new Promise((resolve, reject) => {
+    //     try{
+    //         web3.eth.sendSignedTransaction('0x' + serializedTx.toString('hex'))
+    //         .on('receipt',function(receipt){
+    //                 resolve(receipt)
+    //         })
+    //         .on('error', (err)=> {reject(err)});
+    //     }catch(err){
+
+    //     }
+    // })
+
+}
+
+async function getGasPrice(){
+    return await web3.eth.getGasPrice()
+}
+
 module.exports={
     "getBlock"                : getBlock,
     "getTransaction"          : getTransaction,
@@ -306,5 +360,7 @@ module.exports={
     "acceptTransferEthAccount": acceptTransferEthAccount,
     "estimateGas"             : estimateGas,
     "getEthBalance"           : getEthBalance,
-    "getABI"                  : getABI
+    "getABI"                  : getABI,
+    "sendSignTransfer"        : sendSignTransfer,
+    "getGasPrice"             : getGasPrice
 }

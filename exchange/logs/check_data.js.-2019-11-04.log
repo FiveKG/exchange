@@ -1,0 +1,4 @@
+{"date":"2019-11-04T15:33:35.251","level":"ERROR","category":"check_data.js","host":"frank-hp","pid":"11600","data":'param: [transfer_amount] must given.'}
+{"date":"2019-11-04T15:37:40.603","level":"ERROR","category":"check_data.js","host":"frank-hp","pid":"10844","data":'param: [transfer_amount] must given.'}
+{"date":"2019-11-04T15:41:21.861","level":"ERROR","category":"check_data.js","host":"frank-hp","pid":"10844","data":'param: [transfer_amount] must given.'}
+{"date":"2019-11-04T15:41:56.321","level":"ERROR","category":"check_data.js","host":"frank-hp","pid":"10844","data":'param: [transfer_amount] must given.'}

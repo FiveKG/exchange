@@ -1,0 +1,18 @@
+{"date":"2019-11-04T16:28:11.373","level":"ERROR","category":"getEthTrxAction.js","host":"frank-hp","pid":"1196","data":'the error from getTransaction(),the error stock is TypeError: Cannot read property 'input' of null
+    at getTransaction (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:107:55)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-11-04T16:29:02.866","level":"ERROR","category":"getEthTrxAction.js","host":"frank-hp","pid":"10820","data":'the error from getTransaction(),the error stock is TypeError: Cannot read property 'input' of null
+    at getTransaction (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:107:55)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-11-04T16:29:10.022","level":"ERROR","category":"getEthTrxAction.js","host":"frank-hp","pid":"12632","data":'the error from getTransaction(),the error stock is TypeError: Cannot read property 'input' of null
+    at getTransaction (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:107:55)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-11-04T16:29:42.779","level":"ERROR","category":"getEthTrxAction.js","host":"frank-hp","pid":"3472","data":'the error from getTransaction(),the error stock is TypeError: Cannot read property 'input' of null
+    at getTransaction (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:107:55)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-11-04T16:30:43.176","level":"ERROR","category":"getEthTrxAction.js","host":"frank-hp","pid":"10320","data":'the error from getTransaction(),the error stock is TypeError: Cannot read property 'input' of null
+    at getTransaction (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:108:55)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}
+{"date":"2019-11-04T16:33:55.137","level":"ERROR","category":"getEthTrxAction.js","host":"frank-hp","pid":"10488","data":'the error from getTransaction(),the error stock is TypeError: Cannot read property 'input' of null
+    at getTransaction (D:\work_space\yuezhi\eos\exchange\src\job\getEthTrxAction.js:108:55)
+    at process._tickCallback (internal/process/next_tick.js:68:7)'}

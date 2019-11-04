@@ -142,6 +142,7 @@ async function parseTransaction(transaction_info){
             return false;
         } 
 
+
         const lastBlock = await getBlock();
         const eth_txid                = transaction_info.hash;
         const block_info              = await getBlock(transaction_info.blockNumber);
@@ -149,7 +150,7 @@ async function parseTransaction(transaction_info){
         const eth_confirm_blockNumber = eth_blockNumber+6;
         const confirm_time            = new Date(block_info.timestamp*1000);
         
-        //不满足6次确认也先放着
+        //不满足6次确认也先放着 
         if(eth_blockNumber>lastBlock){
             logger.debug(`not enough to 6 confirm!`)
             return false
