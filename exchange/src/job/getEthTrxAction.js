@@ -12,7 +12,7 @@ const decoder = new InputDataDecoder(ABI);
 const logger = require("../common/logger").getLogger('getEthTrxAction.js')
 const contract =new web3.eth.Contract(ABI,CONTRACT_ADDRESS)
 const Tx = require('ethereumjs-tx');
-const bigNumber = web3.utils.BN;
+
 /**
  * 异步请求方法
  * @param {Object} options 配置项
@@ -334,12 +334,7 @@ async function sendSignTransfer(from_address,to_address,value,privateKey){
     })
 }
 
-//@ts-ignore
-async function BN2String(BN){
-    //@ts-ignore
-    const amount = new web3.utils.BN(BN)
-    return amount.toString()
-}
+
 
 async function getGasPrice(){
     return await web3.eth.getGasPrice()
@@ -356,6 +351,6 @@ module.exports={
     "getEthBalance"           : getEthBalance,
     "getABI"                  : getABI,
     "sendSignTransfer"        : sendSignTransfer,
-    "getGasPrice"             : getGasPrice,
-    "BN2String"               : BN2String
+    "getGasPrice"             : getGasPrice
+
 }

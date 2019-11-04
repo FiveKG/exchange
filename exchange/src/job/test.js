@@ -27,12 +27,12 @@ async function getEosBalance(){
 async function web3Transfer(){
     const from = '0x2a7af4e48f25a751ddb9d0174738e01d0a2743c2';
     const to = '0xDcCE5Fec3890be188Fca7427794E8b1B62ba5576';
-    const amount = 10;
+    const amount = 10*1000000;
     const privateKey = '781761149574a203d4e744257927824b2e35e0d71ccb273cafcaf9f61e004cd6';
     await sendSignTransfer(from,to,amount,privateKey);
     
 }
 ;(async()=>{
-    const result = await getTransactionInfo(650835,'82c4aa42d3dc992749c3d07c32daccc476797bddd11fde9f944f4f177108a5bf')
+    const result = await getTransaction("0xc63ca2fa8fcb781cc98db2bd6e8de4ca8a35a0680e9ed95c025e6d1dd113f598")
     console.log(result)
 })();
