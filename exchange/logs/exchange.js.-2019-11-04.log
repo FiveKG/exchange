@@ -22,3 +22,18 @@
 {"date":"2019-11-04T15:41:56.322","level":"ERROR","category":"exchange.js","host":"frank-hp","pid":"10844","data":'unhandledRejection undefined'}
 {"date":"2019-11-04T15:43:54.375","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10844","data":'OPTIONS /exchange/record_trx'}
 {"date":"2019-11-04T15:43:54.383","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"10844","data":'POST /exchange/record_trx'}
+{"date":"2019-11-04T18:14:11.016","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"7492","data":'init server of pools server.'}
+{"date":"2019-11-04T18:14:11.661","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"7492","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-11-04T18:14:11.732","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"7492","data":'数据库同步成功'}
+{"date":"2019-11-04T18:15:40.648","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6888","data":'init server of pools server.'}
+{"date":"2019-11-04T18:15:41.304","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"6888","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-11-04T18:15:41.399","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6888","data":'数据库同步成功'}
+{"date":"2019-11-04T18:52:27.637","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6888","data":'OPTIONS /exchange/record_trx'}
+{"date":"2019-11-04T18:52:27.643","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6888","data":'POST /exchange/record_trx'}
+{"date":"2019-11-04T18:56:30.765","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6888","data":'OPTIONS /exchange/record_trx'}
+{"date":"2019-11-04T18:56:30.770","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6888","data":'POST /exchange/record_trx'}
+{"date":"2019-11-04T19:14:05.934","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6888","data":'OPTIONS /exchange/record_trx'}
+{"date":"2019-11-04T19:14:05.940","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"6888","data":'POST /exchange/record_trx'}
+{"date":"2019-11-04T19:33:18.219","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"9196","data":'init server of pools server.'}
+{"date":"2019-11-04T19:33:18.845","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"9196","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-11-04T19:33:18.930","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"9196","data":'数据库同步成功'}

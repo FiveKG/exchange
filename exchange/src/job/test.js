@@ -33,15 +33,6 @@ async function web3Transfer(){
     
 }
 ;(async()=>{
-    //await web3Transfer()
-
-    // const result1 = await getTransaction("0x3b893466d49476918a5cda5529881b1fd26d5ebf47b68aa6ec588f8776de0e29");
-    // console.log(result1)
-    // sleep(1000)
-    // const result2 = await getTransaction("0x6ebfc3433712ca53c564866af48774d4c6ad08d6f7b4eadaa9b7defd784e42ca");
-    // console.log(result2)
-
-    await test()
-    await getEosBalance()
-    
+    const result = await getTransactionInfo(650835,'82c4aa42d3dc992749c3d07c32daccc476797bddd11fde9f944f4f177108a5bf')
+    console.log(result)
 })();

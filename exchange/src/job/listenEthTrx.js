@@ -4,7 +4,7 @@ const { redis,generate_unique_key } = require("../common");
 const { Decimal } = require("decimal.js");
 const { scheduleJob } = require("node-schedule");
 const { BASE_AMOUNT,UE2USDT_RATE,EXPIRATION_HOUR} = require("../common/constant/exchange_rule")
-const {getBlock,getTransaction} = require("./getEthTrxAction")
+const {getBlock,getTransaction,BN2String} = require("./getEthTrxAction")
 const {ADDRESSES} = require("../common/constant/web3Config")
 const BLOCK_NUMBER = "tbg:exchange:Eth:lastBlockNumber";
 const TX_NUMBER = "tgb:exchange:Eth:tx_number"
@@ -63,7 +63,7 @@ async function handlerTransferActions() {
             if(new_array.length===0)break
             const sql_transactions = await sequelize.Eth_charge.findAll({
                 where:{id:new_array},
-                attributes:["eth_txid",'recharge_time','pog_account','ue_value'],
+                attributes:["eth_txid",'recharge_time','pog_account','ue_value','usdt_value'],
                 order:[['recharge_time','DESC']],
                 raw: true,
             });
@@ -71,7 +71,7 @@ async function handlerTransferActions() {
             const hour = minute * 60;
             for(const transaction of sql_transactions){
                 const eth_txid      = transaction.eth_txid;
-                const recharge_time = new  Date(transaction.recharge_time);
+                const recharge_time = new Date(transaction.recharge_time);
                 const pog_account   = transaction.pog_account;
                 const ue_value      = transaction.ue_value;
                 const h =( now.getTime() - recharge_time.getTime())/hour;
@@ -86,13 +86,14 @@ async function handlerTransferActions() {
                 }
 
                 const transaction_info = await getTransaction(eth_txid);
-                const data = await  parseTransaction(transaction_info)
+                const data = await  parseTransaction(transaction_info,transaction.usdt_value);
 
                 if(!data) continue
                 data.ue_value = ue_value;
                 data.pog_account = pog_account;
+                
                 //转账
-                await psTransfer2Pog.pub(data)
+                //await psTransfer2Pog.pub(data)
             }
         }
 
@@ -108,16 +109,18 @@ async function handlerTransferActions() {
 /**
  * 
  * @param {Object} transaction_info  某一记录
+ * @param {String} usdt_value
  * @returns {Promise<Object>} 解析后的数据
  */
-async function parseTransaction(transaction_info){
+async function parseTransaction(transaction_info,usdt_value){
     try{
         /**
          * @type {{
          *  eth_txid : String|null,
          *  confirm_time:Date|null,
          *  eth_blockNumber:Number|null,
-         *  eth_confirm_blockNumber:Number|null
+         *  eth_confirm_blockNumber:Number|null,
+         *  usdt_values:String|null
          * }}
          */
         const data = {
@@ -125,6 +128,7 @@ async function parseTransaction(transaction_info){
             confirm_time :null,
             eth_blockNumber : null,
             eth_confirm_blockNumber :null,
+            usdt_values :null,
         }
 
         if(!transaction_info||!transaction_info.blockNumber){
@@ -142,14 +146,21 @@ async function parseTransaction(transaction_info){
             return false;
         } 
 
-
+        const transfer_amount = transaction_info.inputs[1];
+        const amount = await BN2String(transfer_amount)
+        const usdt_amount = new Decimal(usdt_value)
+        if(!usdt_amount.equals(amount)){
+            logger.debug(`error:db_usdt_value not equals to end point usdt_value!db_usdt_value:${usdt_value},end point:${amount}`);
+            return false
+        }
+        
         const lastBlock = await getBlock();
         const eth_txid                = transaction_info.hash;
         const block_info              = await getBlock(transaction_info.blockNumber);
         const eth_blockNumber         = parseInt(transaction_info.blockNumber);
         const eth_confirm_blockNumber = eth_blockNumber+6;
         const confirm_time            = new Date(block_info.timestamp*1000);
-        
+        const usdt_values             = amount;
         //不满足6次确认也先放着 
         if(eth_blockNumber>lastBlock){
             logger.debug(`not enough to 6 confirm!`)
@@ -160,6 +171,7 @@ async function parseTransaction(transaction_info){
         data.confirm_time            = confirm_time;
         data.eth_confirm_blockNumber = eth_confirm_blockNumber;
         data.eth_blockNumber         = eth_blockNumber;
+        data.usdt_values             = usdt_values;
         return data
     }
     catch(err){
