@@ -86,7 +86,7 @@ async function handlerTransferActions() {
                 }
 
                 const transaction_info = await getTransaction(eth_txid);
-                const data = await  parseTransaction(transaction_info,transaction.usdt_value);
+                const data = await  parseTransaction(transaction_info);
 
                 if(!data) continue
                 data.ue_value = ue_value;
@@ -109,10 +109,9 @@ async function handlerTransferActions() {
 /**
  * 
  * @param {Object} transaction_info  某一记录
- * @param {String} usdt_value
  * @returns {Promise<Object>} 解析后的数据
  */
-async function parseTransaction(transaction_info,usdt_value){
+async function parseTransaction(transaction_info){
     try{
         /**
          * @type {{
@@ -120,15 +119,13 @@ async function parseTransaction(transaction_info,usdt_value){
          *  confirm_time:Date|null,
          *  eth_blockNumber:Number|null,
          *  eth_confirm_blockNumber:Number|null,
-         *  usdt_values:String|null
          * }}
          */
         const data = {
             eth_txid : null,
             confirm_time :null,
             eth_blockNumber : null,
-            eth_confirm_blockNumber :null,
-            usdt_values :null,
+            eth_confirm_blockNumber :null
         }
 
         if(!transaction_info||!transaction_info.blockNumber){
@@ -146,13 +143,7 @@ async function parseTransaction(transaction_info,usdt_value){
             return false;
         } 
 
-        const transfer_amount = transaction_info.inputs[1];
-        const amount = await BN2String(transfer_amount)
-        const usdt_amount = new Decimal(usdt_value)
-        if(!usdt_amount.equals(amount)){
-            logger.debug(`error:db_usdt_value not equals to end point usdt_value!db_usdt_value:${usdt_value},end point:${amount}`);
-            return false
-        }
+
         
         const lastBlock = await getBlock();
         const eth_txid                = transaction_info.hash;
@@ -160,7 +151,7 @@ async function parseTransaction(transaction_info,usdt_value){
         const eth_blockNumber         = parseInt(transaction_info.blockNumber);
         const eth_confirm_blockNumber = eth_blockNumber+6;
         const confirm_time            = new Date(block_info.timestamp*1000);
-        const usdt_values             = amount;
+
         //不满足6次确认也先放着 
         if(eth_blockNumber>lastBlock){
             logger.debug(`not enough to 6 confirm!`)
@@ -171,7 +162,7 @@ async function parseTransaction(transaction_info,usdt_value){
         data.confirm_time            = confirm_time;
         data.eth_confirm_blockNumber = eth_confirm_blockNumber;
         data.eth_blockNumber         = eth_blockNumber;
-        data.usdt_values             = usdt_values;
+
         return data
     }
     catch(err){
