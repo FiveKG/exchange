@@ -3,8 +3,8 @@ const logger = require("../common/logger.js").getLogger("listenEthTrx.js")
 const { redis,generate_unique_key } = require("../common");
 const { Decimal } = require("decimal.js");
 const { scheduleJob } = require("node-schedule");
-const { BASE_AMOUNT,UE2USDT_RATE,EXPIRATION_HOUR} = require("../common/constant/exchange_rule")
-const {getBlock,getTransaction,BN2String} = require("./getEthTrxAction")
+const { UE2USDT_RATE,EXPIRATION_HOUR} = require("../common/constant/exchange_rule")
+const {getBlock,getTransaction} = require("./getEthTrxAction")
 const {ADDRESSES} = require("../common/constant/web3Config")
 const BLOCK_NUMBER = "tbg:exchange:Eth:lastBlockNumber";
 const TX_NUMBER = "tgb:exchange:Eth:tx_number"
@@ -50,11 +50,12 @@ async function handlerTransferActions() {
         
         //从数据库获取没有完成的交易
         const sql_transactions_id = await sequelize.Eth_charge.findAll({
-            where:{is_exchanged:false},
+            where:{is_exchanged:false,log_info:'USDT2UE'},
             attributes:["id"],
             raw: true,
         });
         
+        //@ts-ignore
         const id_array= sql_transactions_id.map(element=>{
             return element.id
         })
@@ -93,7 +94,7 @@ async function handlerTransferActions() {
                 data.pog_account = pog_account;
                 
                 //转账
-                //await psTransfer2Pog.pub(data)
+                await psTransfer2Pog.pub(data)
             }
         }
 

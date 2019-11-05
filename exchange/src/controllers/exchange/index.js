@@ -5,5 +5,5 @@ module.exports = {
     "check_eth_account"       : require("./check_eth_account"),
     "history_exchange_records": require("./history_exchange_records"),
     "detail_record"           : require("./detail_record"),
-
+    "ue2usdt"                 : require('./ue2usdt')
 }

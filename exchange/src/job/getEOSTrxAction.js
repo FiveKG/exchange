@@ -90,6 +90,7 @@ async function getTrxAction(accountName, fromPosition) {
 async function getTransactionInfo(blockNumber,txid){
     try{
         const block_info = await rpc.get_block(blockNumber)
+        //block_info.transactions[0].trx.transaction.actions
         //@ts-ignore
         const trx_info = block_info.transactions.find(transaction=>{
             return transaction.trx.id==txid
@@ -112,7 +113,7 @@ async function getTransactionInfo(blockNumber,txid){
  */
 async function getTrxInfoByBlockNumber(blockNumber=0){
     try{
-        const block_info = await rpc.get_block(18868288)
+        const block_info = await rpc.get_block(blockNumber)
         //@ts-ignore
         let info = block_info.transactions.map(t=>{
             let trx_info = {
@@ -125,8 +126,10 @@ async function getTrxInfoByBlockNumber(blockNumber=0){
     
             let transaction = trx.transaction;
             trx_info.expiration = transaction.expiration;
+
             //@ts-ignore
-            trx_info.actions = transaction.actions.filter(action=>action.name=="transfer")
+            trx_info.actions = transaction.actions.filter(action=>action.name=="transfer");
+            
             return trx_info
         })
 
@@ -136,21 +139,7 @@ async function getTrxInfoByBlockNumber(blockNumber=0){
         throw err;
     }
 }
-// /**
-//  * 
-//  * @param { string } accountName 
-//  * @param { number } actionSeq 
-//  */
-// async function getTrxAction(accountName, actionSeq) {
-//     try {
-//         // @ts-ignore
-//         const resp = await rpc.history_get_actions(accountName, actionSeq, 9);
-//         // console.debug("resp: ", resp.actions);
-//         return resp.actions;
-//     } catch (err) {
-//         throw err;
-//     }
-// }
+
 
 /**
  * 获取代币发行信息

@@ -42,7 +42,7 @@ function createTable(sequelize,Sequelize){
             //get(){return this.getDataValue('id')}
         },
         eth_txid:{
-            type: Sequelize.STRING(255),allowNull : false,unique:true,comment: '充值/提现交易记录txid',
+            type: Sequelize.STRING(255),allowNull : true,unique:true,comment: '充值/提现交易记录txid',
            // get(){return this.getDataValue('Txid')},set(valueToBeSet){this.setDataValue('Txid', valueToBeSet)},
         },
         from_eth_address:{
@@ -50,7 +50,7 @@ function createTable(sequelize,Sequelize){
           //  get(){return this.getDataValue('From_address')},set(valueToBeSet){this.setDataValue('From_address', valueToBeSet)},
         },
         to_eth_address:{
-            type: Sequelize.TEXT,allowNull : false,comment: '代币输入地址',
+            type: Sequelize.TEXT,allowNull : true,comment: '代币输入地址',
             //get(){return this.getDataValue('pax_address')},set(valueToBeSet){this.setDataValue('pax_address', valueToBeSet)},
         },
         usdt_value:{
@@ -87,6 +87,10 @@ function createTable(sequelize,Sequelize){
         },
         pog_blockNumber:{
             type: Sequelize.BIGINT(),allowNull : true,comment: 'Pog链上的兑换记录的高度',
+           // get(){return this.getDataValue('pog_blockNumber')},set(valueToBeSet){this.setDataValue('pog_blockNumber', valueToBeSet)},
+        },
+        pog_confirm_blockNumber:{
+            type: Sequelize.BIGINT(),allowNull : true,comment: 'Pog链上的确认高度',
            // get(){return this.getDataValue('pog_blockNumber')},set(valueToBeSet){this.setDataValue('pog_blockNumber', valueToBeSet)},
         },
         pog_account: {

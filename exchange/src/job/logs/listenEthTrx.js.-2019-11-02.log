@@ -1,4 +1,0 @@
-{"date":"2019-11-02T18:13:14.824","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8156","data":'handlerTransferActions running...'}
-{"date":"2019-11-02T18:13:20.161","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8156","data":'error:transaction_info:[object Object],transaction_info.blockNumber:null'}
-{"date":"2019-11-02T18:13:20.170","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8156","data":'error:transaction_info:[object Object],transaction_info.blockNumber:null'}
-{"date":"2019-11-02T18:13:20.185","level":"DEBUG","category":"listenEthTrx.js","host":"frank-hp","pid":"8156","data":'error:transaction_info:[object Object],transaction_info.blockNumber:null'}

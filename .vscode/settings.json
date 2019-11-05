@@ -2,6 +2,8 @@
     "cSpell.words": [
         "BIGINT",
         "Gwei",
+        "MINIUSDT",
+        "PRIVATEKEY",
         "TGBJOIN",
         "Txid",
         "UETOKENCOIN",
@@ -12,6 +14,7 @@
         "ethereumjs",
         "nginx",
         "rabbitmq",
+        "trxid",
         "txtid"
     ]
 }

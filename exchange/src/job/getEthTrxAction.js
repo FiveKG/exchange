@@ -12,7 +12,9 @@ const decoder = new InputDataDecoder(ABI);
 const logger = require("../common/logger").getLogger('getEthTrxAction.js')
 const contract =new web3.eth.Contract(ABI,CONTRACT_ADDRESS)
 const Tx = require('ethereumjs-tx');
-
+const LOCK_ETH_TRANSFER = "tgb:exchange:lockEthTransfer:from:"
+const LOCK_ALL = "tgb:exchange:"
+const redis = require('../common/redis')
 /**
  * 异步请求方法
  * @param {Object} options 配置项
@@ -184,6 +186,7 @@ async function acceptTransferEthAccount(transfer_amount){
         const hot_address_balance_eth = new Decimal(await getTokenBalance(HOT_ADDRESS))
         const hot_address_balance_sql = await sequelize.Eth_charge.sum('usdt_value',{where:{
             to_eth_address:HOT_ADDRESS,
+            log_info:'USDT2UE',
             is_exchanged:false
         }})
         const hot_address_balance = hot_address_balance_eth.add(hot_address_balance_sql);
@@ -199,6 +202,7 @@ async function acceptTransferEthAccount(transfer_amount){
         const cold_address1_balance_eth = new Decimal(await getTokenBalance(COLD_ADDRESS1));
         const cold_address1_balance_sql = await sequelize.Eth_charge.sum('usdt_value',{where:{
             to_eth_address:COLD_ADDRESS1,
+            log_info:'USDT2UE',
             is_exchanged:false
         }})
         const cold_address1_balance = cold_address1_balance_eth.add(cold_address1_balance_sql);
@@ -207,6 +211,7 @@ async function acceptTransferEthAccount(transfer_amount){
         const cold_address2_balance_eth = new Decimal(await getTokenBalance(COLD_ADDRESS2));
         const cold_address2_balance_sql = await sequelize.Eth_charge.sum('usdt_value',{where:{
             to_eth_address:COLD_ADDRESS2,
+            log_info:'USDT2UE',
             is_exchanged:false
         }})
         const cold_address2_balance = cold_address2_balance_eth.add(cold_address2_balance_sql);
@@ -215,6 +220,7 @@ async function acceptTransferEthAccount(transfer_amount){
         const cold_address3_balance_eth = new Decimal(await getTokenBalance(COLD_ADDRESS3));
         const cold_address3_balance_sql = await sequelize.Eth_charge.sum('usdt_value',{where:{
             to_eth_address:COLD_ADDRESS3,
+            log_info:'USDT2UE',
             is_exchanged:false
         }})
         const cold_address3_balance = cold_address3_balance_eth.add(cold_address3_balance_sql);
@@ -223,6 +229,7 @@ async function acceptTransferEthAccount(transfer_amount){
         const cold_address4_balance_eth = new Decimal(await getTokenBalance(COLD_ADDRESS4));
         const cold_address4_balance_sql = await sequelize.Eth_charge.sum('usdt_value',{where:{
             to_eth_address:COLD_ADDRESS4,
+            log_info:'USDT2UE',
             is_exchanged:false
         }})
         const cold_address4_balance = cold_address4_balance_eth.add(cold_address4_balance_sql);
@@ -231,6 +238,7 @@ async function acceptTransferEthAccount(transfer_amount){
         const cold_address5_balance_eth = new Decimal(await getTokenBalance(COLD_ADDRESS5));
         const cold_address5_balance_sql = await sequelize.Eth_charge.sum('usdt_value',{where:{
             to_eth_address:COLD_ADDRESS5,
+            log_info:'USDT2UE',
             is_exchanged:false
         }})
         const cold_address5_balance = cold_address5_balance_eth.add(cold_address5_balance_sql);
@@ -255,7 +263,25 @@ async function acceptTransferEthAccount(transfer_amount){
         throw err
     }
 }
-
+/**
+ * 返回热地址usdt余额
+ * @returns {Promise<Decimal>}
+ */
+async function getHotAddressUSDTBalance(){
+    try{
+        const hot_address_balance_eth = new Decimal(await getTokenBalance(HOT_ADDRESS))
+        const hot_address_balance_sql = await sequelize.Eth_charge.sum('usdt_value',{where:{
+            to_eth_address:HOT_ADDRESS,
+            log_info:'USDT2UE',
+            is_exchanged:false
+        }})
+        const hot_address_balance = hot_address_balance_eth.add(hot_address_balance_sql);
+        return hot_address_balance
+    }catch(err){
+        logger.error("err from getHotAddressUSDTBalance(),ths track is %O:",err);
+        throw err
+    }
+}
 /**
  * 
  * @param {String} eth_account_from 
@@ -304,12 +330,17 @@ async function is6confirm(txHash){
  * @param {String} to_address
  * @param {Number} value 
  * @param {String} privateKey
+ * @param {Number} nonceNumber 
  */
-async function sendSignTransfer(from_address,to_address,value,privateKey){
-    let nonce =await web3.eth.getTransactionCount(from_address);
+async function sendSignTransfer(from_address,to_address,value,privateKey,nonceNumber=0){
+    if(await redis.get(LOCK_ETH_TRANSFER+from_address)){
+        return
+    }
+    await redis.set(LOCK_ETH_TRANSFER+from_address,1)
+    let nonce =await web3.eth.getTransactionCount(from_address)+nonceNumber;
     const gasPrice = await web3.eth.getGasPrice();
     const data = await contract.methods.transfer(to_address,value).encodeABI();
-
+console.log('==================nonce====================',nonce,value)
     var rawTransaction = {
         "from": from_address,
         "nonce": web3.utils.toHex(nonce++),
@@ -319,19 +350,35 @@ async function sendSignTransfer(from_address,to_address,value,privateKey){
         "value": "0x0",
         "data": data,
     };
-
     const tx = new Tx(rawTransaction);  
     const privKey = Buffer.from(privateKey, 'hex');
     tx.sign(privKey);
     let serializedTx = tx.serialize().toString('hex');
-    web3.eth.sendSignedTransaction('0x' + serializedTx.toString('hex'),function(err, hash) {
-        if (!err) {
-            console.log(hash);
-            return hash
-        } else {
-            console.log('err',err)
-        }
-    })
+    //@ts-ignore
+    let hastStr = await sendSignedTransaction('0x' + serializedTx.toString('hex'));
+    await redis.del(LOCK_ETH_TRANSFER+from_address);
+    return hastStr;
+
+}
+/**
+ * 
+ * @param {string} hash_str hash 字符串
+ * @returns {Promise<string>}
+ */
+function sendSignedTransaction(hash_str){
+    const promise = new Promise( ( resolve , reject) => {
+        web3.eth.sendSignedTransaction(hash_str ,function(err, hash) {
+            if (err == null) {
+                resolve(hash);
+                // console.log(hash);
+                // return hash
+            } else {
+                reject(err);
+                // console.log('err',err)
+            }
+        })
+    });
+    return promise;
 }
 
 
@@ -351,6 +398,6 @@ module.exports={
     "getEthBalance"           : getEthBalance,
     "getABI"                  : getABI,
     "sendSignTransfer"        : sendSignTransfer,
-    "getGasPrice"             : getGasPrice
-
+    "getGasPrice"             : getGasPrice,
+    "getHotAddressUSDTBalance":getHotAddressUSDTBalance
 }

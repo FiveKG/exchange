@@ -2,7 +2,7 @@
 const logger = require("../common/logger").getLogger("transfer2Pog.js");
 const {sequelize} = require('../db');
 const {redis} = require("../common");
-const TX_STATE = 'tgb:exchange:Eth:tx_hash:';
+const TX_STATE = 'tgb:exchange:USDT2UE:tx_hash:';
 const {Decimal} = require('decimal.js')
 const {UE_TOKEN,UE_CONTRACT} = require("../common/constant/eosConstants");
 const {transfer,getTransactionInfo} = require('./getEOSTrxAction');
@@ -91,7 +91,7 @@ async function transfer2Pog(data){
     } 
 }
 
-
+//@ts-ignore
 async function update_DB(Eth_charge_filed,Eth_charge_where){
 //事务开始
 const transaction = await sequelize.sequelize.transaction();
@@ -113,7 +113,7 @@ catch(err){
 }
 }
 
-
+//@ts-ignore
 async function check_exchange(Eth_charge_filed,Eth_charge_where){
     try{
         const sql_result = await sequelize.Eth_charge.findOne({

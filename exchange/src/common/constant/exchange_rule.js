@@ -1,16 +1,20 @@
 // @ts-check
 
-/**
- * 兑换基础
- */
-const BASE_AMOUNT = "100";
 
+/**
+ * 提交基础
+ */
+const BASE_CASH = '10';
 /**
  * 兑换比例
  */
 const USDT2UE_RATE = "1";
 const UE2USDT_RATE = "1";
 
+/**
+ * 提现时热账号的金额不得低于MINIUSDT 
+ */
+const MINIUSDT  = '100000'
 /**
  * 热账号的最大限定值和最小值
  */
@@ -33,14 +37,15 @@ const EXPIRATION_HOUR =24;
  * @type { Constant }
  */
 const CONSTANT = {
-    "BASE_AMOUNT": BASE_AMOUNT,
-    "USDT2UE_RATE":USDT2UE_RATE,
-    "UE2USDT_RATE":UE2USDT_RATE,
-    "HOT_ADDRESS_MAX":HOT_ADDRESS_MAX,
-    "HOT_ADDRESS_MIN":HOT_ADDRESS_MIN,
-    "USDT2UE_TAX":USDT2UE_TAX,
-    "UE2USDT_TAX":UE2USDT_TAX,
-    "EXPIRATION_HOUR":EXPIRATION_HOUR
+    "USDT2UE_RATE"   : USDT2UE_RATE,
+    "UE2USDT_RATE"   : UE2USDT_RATE,
+    "HOT_ADDRESS_MAX": HOT_ADDRESS_MAX,
+    "HOT_ADDRESS_MIN": HOT_ADDRESS_MIN,
+    "USDT2UE_TAX"    : USDT2UE_TAX,
+    "UE2USDT_TAX"    : UE2USDT_TAX,
+    "EXPIRATION_HOUR": EXPIRATION_HOUR,
+    "BASE_CASH"      : BASE_CASH,
+    "MINIUSDT"       : MINIUSDT
 }
 
 module.exports = CONSTANT
@@ -48,12 +53,13 @@ module.exports = CONSTANT
 /**
  * @description 常量
  * @typedef { Object } Constant
- * @property { String } BASE_AMOUNT 
  * @property { String } USDT2UE_RATE
  * @property { String } UE2USDT_RATE
  * @property { String } HOT_ADDRESS_MAX
  * @property { String } HOT_ADDRESS_MIN
+ * @property { String } MINIUSDT
  * @property { String } USDT2UE_TAX
  * @property { String } UE2USDT_TAX
  * @property { Number } EXPIRATION_HOUR
+ * @property { String } BASE_CASH
 */

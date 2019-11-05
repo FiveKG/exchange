@@ -35,6 +35,20 @@ content-type: application/json
     "transfer_amount":"20"
 }
 
+
+### record_trx
+POST http://localhost:7758/exchange/ue2usdt
+content-type: application/json
+
+{
+    "block_number":813935,
+    "pog_account":"11g22p33s",
+    "trx_id":"28ac8c3f38fcbce7792e51f92211babbfaf99fb427d11bcd878dd22cf78a9d30",
+    "transfer_amount":"20"
+}
+
+
+
 ### get history
 GET http://localhost:7758/exchange/history_exchange_records?pog_account=TES3
 

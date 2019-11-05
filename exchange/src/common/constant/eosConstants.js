@@ -2,8 +2,6 @@
 
 
 // EOS token 合约账户
-//最低转账金额
-const BASE_AMOUNT = '100';
 
 // // UE token 合约账户
 const UE_CONTRACT = "ue.token";
@@ -29,7 +27,6 @@ const PRIVATE_KEY_TEST = "5KSojdUwrwA1dMBmyhEKXaocjyfdXxmFqUtDT468rmQb6QvgwAd,5J
  * @type { Constant }
  */
 const CONSTANT = {
-    "BASE_AMOUNT"     : BASE_AMOUNT,
     "UE_CONTRACT"     : UE_CONTRACT,
     "UE_TOKEN"        : UE_TOKEN,
     "TBG_TOKEN2"      : TBG_TOKEN2,
@@ -44,7 +41,6 @@ module.exports = CONSTANT
 /**
  * @description 
  * @typedef { Object } Constant
- * @property { String } BASE_AMOUNT 对峙转账金额
  * @property { String } UE_CONTRACT UE 代币合约帐号
  * @property { String } UE_TOKEN UE测试
  * @property { String } TBG_TOKEN2 测试帐号2

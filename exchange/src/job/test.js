@@ -1,7 +1,7 @@
 //@ts-check
 const {transfer,getTransactionInfo,getTrxAction,getTrxInfoByBlockNumber,rpc,getCurrencyBalance} = require('./getEOSTrxAction')
 const {acceptTransferEthAccount,getTransaction,getGasPrice,getTokenBalance,getEthBalance,estimateGas,getBlock,getABI,sendSignTransfer} = require('./getEthTrxAction')
-const {UE_TOKEN,TBG_TOKEN2} = require('../common/constant/eosConstants')
+const {UE_TOKEN,UE_CONTRACT,UE_TOKEN_SYMBOL,TBG_TOKEN2} = require('../common/constant/eosConstants')
 const {PROVIDER,CONTRACT_ADDRESS,COLD_ADDRESS1,COLD_ADDRESS2,COLD_ADDRESS3,COLD_ADDRESS4,COLD_ADDRESS5,HOT_ADDRESS,ABI} = require("../common/constant/web3Config");
 const {sequelize,psTransfer2Pog} = require('../db')
 const Web3 = require('web3')
@@ -14,13 +14,18 @@ const local  = require('date-fns/locale/zh-CN');
 const data_fns = require('date-fns/fromUnixTime')
 const { Decimal } = require("decimal.js");
 
-async function test(){
-    const balance = await  getTokenBalance("0x2a7af4e48f25a751ddb9d0174738e01d0a2743c2");
+async function test(id){
+    const balance = await  getTokenBalance(id);
     console.log(balance)
 }
 
 async function getEosBalance(){
     const balance = await getCurrencyBalance('11g22p33s')
+    console.log(balance)
+}
+
+async function getEthBalances(id){
+    const balance = await getEthBalance(id);
     console.log(balance)
 }
 
@@ -32,7 +37,22 @@ async function web3Transfer(){
     await sendSignTransfer(from,to,amount,privateKey);
     
 }
-;(async()=>{
-    const result = await getTransaction("0xc63ca2fa8fcb781cc98db2bd6e8de4ca8a35a0680e9ed95c025e6d1dd113f598")
+
+
+
+async function eosTransfer(){
+    const transfer_data = {
+        tokenContract :UE_CONTRACT,
+        from:"11g22p33s",
+        to:UE_TOKEN,
+        quantity:'20.0000 UE',
+        memo:'eth_address:0x2a7af4e48f25a751ddb9d0174738e01d0a2743c2'
+    }
+    const result  = await transfer(transfer_data)
     console.log(result)
+
+}
+;(async()=>{
+    await test("0x2a7af4e48f25a751ddb9d0174738e01d0a2743c2");
+
 })();

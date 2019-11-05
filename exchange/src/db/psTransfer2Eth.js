@@ -1,7 +1,7 @@
 // @ts-check
-const logger = require("../common/logger").getLogger("psExchange.js")
+const logger = require("../common/logger").getLogger("psTransfer2Eth.js")
 const getAmqpChannel = require("./amqp.js");
-const { HANDLE_TRANSFER2POG } = require("../common/constant/optConstants");
+const { HANDLE_TRANSFER2ETH } = require("../common/constant/optConstants");
 
 /**
  * 
@@ -9,8 +9,8 @@ const { HANDLE_TRANSFER2POG } = require("../common/constant/optConstants");
  */
 async function publish(data) {
     try {
-        let channel = await getAmqpChannel(HANDLE_TRANSFER2POG);
-        await channel.sendToQueue(HANDLE_TRANSFER2POG, Buffer.from(JSON.stringify(data)));
+        let channel = await getAmqpChannel(HANDLE_TRANSFER2ETH);
+        await channel.sendToQueue(HANDLE_TRANSFER2ETH, Buffer.from(JSON.stringify(data)));
     } catch (err) {
         throw err;
     }
@@ -22,8 +22,8 @@ async function publish(data) {
  */
 async function subscribe(callback) {
     try {
-        let channel = await getAmqpChannel(HANDLE_TRANSFER2POG);
-        channel.consume(HANDLE_TRANSFER2POG  , msg => {
+        let channel = await getAmqpChannel(HANDLE_TRANSFER2ETH);
+        channel.consume(HANDLE_TRANSFER2ETH  , msg => {
             // logger.debug("game message: ", msg);
             if (msg !== null) {
                 callback(msg.content.toString());

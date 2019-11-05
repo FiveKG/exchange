@@ -32,7 +32,7 @@
             }
         },
         {
-            "name" : "记录交易id和pog账户",
+            "name" : "记录USDT转UE",
             "summary": "", 
             "remark": [
                 "记录交易id和pog账户"
@@ -46,6 +46,50 @@
                 "trx_id":{ "type": "text",  "is_require": true,  "desc": "交易id"},
                 "transfer_from_address":{"type": "text",  "is_require": true,  "desc": "转账源eth地址" },
                 "transfer_to_address":{"type": "text",  "is_require": true,  "desc": "转账目标eth地址" },
+                "transfer_amount":{"type": "text",  "is_require": true,  "desc": "转账金额" }
+            },
+            "res": {
+                "code": { "type": "number" , "desc": "" , "values": [ "成功" ] } ,
+                "desc": { "type": "string" ,"desc": "" },
+                "data": {}
+            }
+        },
+        {
+            "name" : "记录UE转USDT",
+            "summary": "", 
+            "remark": [
+                "记录UE转USDT"
+            ],
+            "isFunctionPoint" : true,
+            "url" : "/exchange/ue2usdt",
+            "type" : "post",
+            "requireRole" : [ "*" ],
+            "req": {
+                "pog_account": { "type": "text",  "is_require": true,  "desc": "pog账号" },
+                "trx_id":{ "type": "text",  "is_require": true,  "desc": "交易id"},
+                "block_number":{ "type": "number",  "is_require": true,  "desc": "交易区块号"},
+                "transfer_amount":{"type": "text",  "is_require": true,  "desc": "转账金额" }
+            },
+            "res": {
+                "code": { "type": "number" , "desc": "" , "values": [ "成功" ] } ,
+                "desc": { "type": "string" ,"desc": "" },
+                "data": {}
+            }
+        },
+        {
+            "name" : "收取手续费",
+            "summary": "", 
+            "remark": [
+                "固定5个数量"
+            ],
+            "isFunctionPoint" : true,
+            "url" : "/exchange/pay_service_charge",
+            "type" : "post",
+            "requireRole" : [ "*" ],
+            "req": {
+                "transfer_from_address":{"type": "text",  "is_require": true,  "desc": "付款手续费地址" },
+                "transfer_to_address":{"type": "text",  "is_require": true,  "desc": "收取手续费地址" },
+                "trx_id":{ "type": "text",  "is_require": true,  "desc": "交易id"},
                 "transfer_amount":{"type": "text",  "is_require": true,  "desc": "转账金额" }
             },
             "res": {
