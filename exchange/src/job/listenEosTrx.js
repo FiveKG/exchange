@@ -20,7 +20,7 @@ scheduleJob("*/10 * * * * *", begin);
 // 如果中途断开，再次启动时计数到 10 以后清除缓存
 async function begin() {
     try {
-        
+        await redis.del(LOCK_ETH_TRANSFER+HOT_ADDRESS);
         const investLock = await redis.get(INVEST_LOCK);
         if (!investLock) {
             await handlerTransferActions();

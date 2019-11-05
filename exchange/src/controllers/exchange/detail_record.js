@@ -10,12 +10,12 @@ async function detail_record(req,res,next){
 
         //psGetPAXAccount.pub(reqData)
         let resData = get_status(1);
-        const result = await get_detail_record(reqData.eth_txid)
+        const result = await get_detail_record(reqData.id)
         resData["data"] = result
  
         res.send(resData);
     }catch(error){
-        logger.error("request history_exchange_records error, the error stock is %O", error);
+        logger.error("request detail_record error, the error stock is %O", error);
         throw error;
     }
 }

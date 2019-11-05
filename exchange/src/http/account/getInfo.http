@@ -47,11 +47,14 @@ content-type: application/json
     "transfer_amount":"20"
 }
 
-
+### get_examine_data
+GET http://localhost:7758/exchange/get_examine_data
 
 ### get history
 GET http://localhost:7758/exchange/history_exchange_records?pog_account=TES3
 
+### get detail
+GET http://localhost:7758/exchange/get_record_detail?id=xPnBYup9
 
 ### get detail
-GET http://localhost:7758/exchange/get_record_detail?record_id=Rets_vsn
+GET http://www.UETOKEN.IO/exchange/get_record_detail?id=xPnBYup9

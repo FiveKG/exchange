@@ -4,9 +4,9 @@ const logger = require("../common/logger").getLogger('getEOSTrxAction.js')
 const { JsSignatureProvider } = require('eosjs/dist/eosjs-jssig');  // development only
 const fetch = require('node-fetch');                                // node only
 const { TextDecoder, TextEncoder } = require('util');               // node only
-const { END_POINT,PRIVATE_KEY_TEST,UE_TOKEN_SYMBOL,UE_TOKEN,UE_CONTRACT } = require("../common/constant/eosConstants.js");
+const { END_POINT,PRIVATE_KEY_TEST,UE_TOKEN_SYMBOL,UE_TOKEN,UE_CONTRACT,UE_TOKEN2} = require("../common/constant/eosConstants.js");
 const sleep = require("./sleep.js");
-
+const {Decimal} = require("decimal.js");
 // @ts-ignore
 const rpc = new JsonRpc(END_POINT, { fetch });
 
@@ -251,6 +251,33 @@ async function transfer(transfer_data) {
     }
 }
 
+async function get_UE_status(){
+    try {
+        // @ts-ignore
+        const rpc = new JsonRpc(END_POINT,{ fetch });
+        let ret = await rpc.get_currency_stats(UE_CONTRACT,UE_TOKEN_SYMBOL)
+        let supply_total= new Decimal(ret.UE.supply.split(' ')[0]);
+
+        let uecirculate = new Decimal((await getCurrencyBalance(UE_TOKEN))[0].split(" ")[0]);
+        let uehcirculate = (await getCurrencyBalance(UE_TOKEN2));
+        if(uehcirculate.length==0){
+            uehcirculate=new Decimal(0);
+        }else{
+            uehcirculate = new Decimal(uehcirculate[0].split(" ")[0]);
+        }
+        let data = {
+            supply_total  : supply_total,
+            uecirculate   : uecirculate,
+            uehcirculate  : uehcirculate,
+            current_amount: supply_total.sub(uecirculate.add(uehcirculate))
+        }
+        console.log(data)
+        return data;
+    } catch (err) {
+        throw err;
+    }
+}
+
 module.exports = {
     getTrxAction,
     getCurrencyStats,
@@ -259,5 +286,6 @@ module.exports = {
     getTransactionInfo,
     transfer,
     getTrxInfoByBlockNumber,
-    rpc
+    rpc,
+    get_UE_status
 }

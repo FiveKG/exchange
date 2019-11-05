@@ -139,7 +139,7 @@
             "type" : "get",
             "requireRole" : [ "*" ],
             "req": {
-                "eth_txid": { "type": "text",  "is_require": true,  "desc": "记录id" }
+                "id": { "type": "text",  "is_require": true,  "desc": "记录id" }
             },
             "res": {
                 "code": { "type": "number" , "desc": "" , "values": [ "成功" ] } ,
@@ -152,6 +152,60 @@
                     "service_charge":{ "type": "string","is_require": true,"desc": "手续费"},
                     "ue_value":{"type": "string","is_require": true,"desc": "兑换UE数量"},
                     "pog_account":{"type": "string","is_require": true,"desc": "UE接受地址"}
+                }
+            }
+        },
+        {
+            "name" : "获取公审",
+            "summary": "",
+            "remark": [
+                "获取公审"
+            ],
+            "isFunctionPoint" : true,
+            "url" : "/exchange/get_examine_data",
+            "type" : "get",
+            "requireRole" : [ "*" ],
+            "req": {},
+            "res": {
+                "code": { "type": "number" , "desc": "" , "values": [ "成功" ] } ,
+                "desc": { "type": "string" ,"desc": "" },
+                "data": {
+                    "examine_data": { 
+                        "type": "object", "desc": "全部审和数据",
+                        "properties": {
+                            "get_UE_balance:":{
+                                "supply_total":{ "type": "text",  "is_require": true,  "desc": "发行数量"},
+                                "uecirculate": { "type": "text",  "is_require": true,  "desc": "uecirculate余额" },
+                                "uehcirculate": { "type": "text",  "is_require": true,  "desc": "uehcirculate余额" },
+                                "current_amount": { "type": "text",  "is_require": true,  "desc": "流通余额" }
+                            },
+                            "hot_address_balance_eth":{
+                                "address":{ "type": "text",  "is_require": true,  "desc": "地址"},
+                                "balance": { "type": "text",  "is_require": true,  "desc": "余额" }
+                            },
+                            "cold_address1_balance_eth":{
+                                "address":{ "type": "text",  "is_require": true,  "desc": "地址"},
+                                "balance": { "type": "text",  "is_require": true,  "desc": "余额" }
+                            },
+                            "cold_address2_balance_eth":{
+                                "address":{ "type": "text",  "is_require": true,  "desc": "地址"},
+                                "balance": { "type": "text",  "is_require": true,  "desc": "余额" }
+                            },
+                            "cold_address3_balance_eth":{
+                                "address":{ "type": "text",  "is_require": true,  "desc": "地址"},
+                                "balance": { "type": "text",  "is_require": true,  "desc": "余额" }
+                            },
+                            "cold_address4_balance_eth":{
+                                "address":{ "type": "text",  "is_require": true,  "desc": "地址"},
+                                "balance": { "type": "text",  "is_require": true,  "desc": "余额" }
+                            },
+                            "service_charge_balance_eth":{
+                                "address":{ "type": "text",  "is_require": true,  "desc": "地址"},
+                                "balance": { "type": "text",  "is_require": true,  "desc": "余额" }
+                            },
+                            "wait_transfer":{ "type": "text",  "is_require": true,  "desc": "待转金额"}
+                        }
+                    }
                 }
             }
         }
