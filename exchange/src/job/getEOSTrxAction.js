@@ -7,6 +7,7 @@ const { TextDecoder, TextEncoder } = require('util');               // node only
 const { END_POINT,PRIVATE_KEY_TEST,UE_TOKEN_SYMBOL,UE_TOKEN,UE_CONTRACT,UE_TOKEN2} = require("../common/constant/eosConstants.js");
 const sleep = require("./sleep.js");
 const {Decimal} = require("decimal.js");
+const keyConfig = require("../common/keyConfig.js");
 // @ts-ignore
 const rpc = new JsonRpc(END_POINT, { fetch });
 
@@ -221,8 +222,13 @@ async function newApi(privateKeyList) {
     */
 async function transfer(transfer_data) {
     try {
+        let key = await keyConfig.getConfig("PRIVATE_KEY_TEST");
+            if(key == ""){
+                logger.debug('can not get PRIVATE_KEY_TEST');
+                return
+            }
         const {tokenContract,from,to,quantity,memo} = transfer_data;
-        let api = await newApi(PRIVATE_KEY_TEST.split(","));
+        let api = await newApi([key]);
         let actions = {
             actions: [{
               account: tokenContract,

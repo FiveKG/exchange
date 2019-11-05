@@ -6,7 +6,7 @@ const { getTrxInfoByBlockNumber,getTransactionInfo } = require("./getEOSTrxActio
 const { Decimal } = require("decimal.js");
 const {sequelize,psTransfer2Eth} = require('../db');
 const {EXPIRATION_HOUR} = require("../common/constant/exchange_rule")
-const {UE_CONTRACT,UE_TOKEN,TBG_TOKEN2} = require('../common/constant/eosConstants')
+const {UE_CONTRACT,UE_TOKEN2,TBG_TOKEN2} = require('../common/constant/eosConstants')
 const LOCK_ETH_TRANSFER = "tgb:exchange:lockEthTransfer:from:"
 const {HOT_ADDRESS} = require('../common/constant/web3Config')
 
@@ -135,7 +135,7 @@ async function parseEosAccountAction(transaction_info){
                 logger.debug(`error:action.name is not transfer:${action.name}`);
                 continue
             }
-            if(action.data.to!==UE_TOKEN){
+            if(action.data.to!==UE_TOKEN2){
                 logger.debug(`error:transfer to unknown pog_account :${action.data.to}`);
                 continue
             }

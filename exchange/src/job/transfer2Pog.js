@@ -4,7 +4,7 @@ const {sequelize} = require('../db');
 const {redis} = require("../common");
 const TX_STATE = 'tgb:exchange:USDT2UE:tx_hash:';
 const {Decimal} = require('decimal.js')
-const {UE_TOKEN,UE_CONTRACT} = require("../common/constant/eosConstants");
+const {UE_TOKEN2,UE_CONTRACT} = require("../common/constant/eosConstants");
 const {transfer,getTransactionInfo} = require('./getEOSTrxAction');
 /**
  * 
@@ -53,7 +53,7 @@ async function transfer2Pog(data){
 
             const transfer_data ={
                 "tokenContract"  : UE_CONTRACT,
-                "from"           : UE_TOKEN,
+                "from"           : UE_TOKEN2,
                 "to"             : pog_account,
                 "quantity"       : ue_value,
                 "memo"           : ""
@@ -78,7 +78,7 @@ async function transfer2Pog(data){
         try{
             await update_DB(Eth_charge_filed,Eth_charge_where);
         }catch(err){
-            logger.error(`${UE_TOKEN}转账至${pog_account}更新数据库失败,重新处理`,err);
+            logger.error(`${UE_TOKEN2}转账至${pog_account}更新数据库失败,重新处理`,err);
             const tx_state =await redis.get(TX_STATE+Eth_charge_where.eth_txid)
             if(tx_state){
                 const update_result = await check_exchange(Eth_charge_filed,Eth_charge_where);

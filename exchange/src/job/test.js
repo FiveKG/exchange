@@ -14,6 +14,7 @@ const local  = require('date-fns/locale/zh-CN');
 const data_fns = require('date-fns/fromUnixTime')
 const { Decimal } = require("decimal.js");
 
+
 async function test(id){
     const balance = await  getTokenBalance(id);
     console.log(balance)

@@ -16,6 +16,7 @@ psTransfer2Pog.sub(async msg => {
     }
 })
 
+//@ts-ignore
 psTransfer2Eth.sub(async msg => {
     try {
         let result = JSON.parse(msg);

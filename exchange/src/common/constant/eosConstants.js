@@ -8,7 +8,7 @@ const UE_CONTRACT = "ue.token";
 const UE_TOKEN_SYMBOL = "UE"
 // TBG token 测试账户,钱都在这
 const UE_TOKEN = "uecirculate";
-
+//打钱钱包
 const UE_TOKEN2 = "uehcirculate";
 // TBG token 测试账户钱多一点
 const TBG_TOKEN2 = '11g22p33s'

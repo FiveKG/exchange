@@ -4,7 +4,8 @@ const {sequelize} = require('../db');
 const sleep = require('./sleep')
 const {redis} = require("../common");
 const {Decimal} = require('decimal.js')
-const {HOT_ADDRESS,HOT_ADDRESS_PRIVATEKEY,COLD_ADDRESS5}  =require('../common/constant/web3Config')
+const keyConfig = require("../common/keyConfig.js");
+const {HOT_ADDRESS,COLD_ADDRESS5}  =require('../common/constant/web3Config')
 const {sendSignTransfer,getTransaction,getHotAddressUSDTBalance} = require('./getEthTrxAction')
 const {MINIUSDT,UE2USDT_TAX} = require("../common/constant/exchange_rule")
 const TX_STATE = 'tgb:exchange:UE2USDT:tx_hash:';
@@ -39,15 +40,20 @@ async function transfer2Eth(data){
             //设置预转账状态,用redis记录，用于防止已经转账未更新数据库
             await redis.set(TX_STATE+data.pog_txid,1);
 
+            let key = await keyConfig.getConfig("HOT_ADDRESS_PRIVATEKEY");
+            if(key == ""){
+                logger.debug('can not get HOT_ADDRESS_PRIVATEKEY');
+                return
+            }
             //转给用户
-            const trx_id = await sendSignTransfer(HOT_ADDRESS,data.to_eth_address,value.mul(1000000).toNumber(),HOT_ADDRESS_PRIVATEKEY);
+            const trx_id = await sendSignTransfer(HOT_ADDRESS,data.to_eth_address,value.mul(1000000).toNumber(),key );//HOT_ADDRESS_PRIVATEKEY
             if(!trx_id){
                 redis.del(TX_STATE+data.pog_txid);
                 return
             }
 
             //转给冷钱包
-            await sendSignTransfer(HOT_ADDRESS,COLD_ADDRESS5,charge.mul(1000000).toNumber(),HOT_ADDRESS_PRIVATEKEY,5);
+            await sendSignTransfer(HOT_ADDRESS,COLD_ADDRESS5,charge.mul(1000000).toNumber(),key,5);
             Eth_charge_filed.eth_txid = trx_id;
         }catch(err){
             logger.error('热账号转账失败:',err);
