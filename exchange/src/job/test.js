@@ -6,7 +6,7 @@ const {PROVIDER,CONTRACT_ADDRESS,COLD_ADDRESS1,COLD_ADDRESS2,COLD_ADDRESS3,COLD_
 const {sequelize,psTransfer2Pog} = require('../db')
 const Web3 = require('web3')
 //let web3 = new Web3("http:// 172.19.2.122:39842");
-let web3 = new Web3("http://localhost:8545");
+let web3 = new Web3("http://ethapi.GPSTOKEN.IO:8545");
 
 const sleep = require('./sleep');
 var {format,parse,parseISO} = require('date-fns')
@@ -57,5 +57,5 @@ async function get_UE_status2(){
     console.log(await get_UE_status())
 }
 ;(async()=>{
-    await getAllAddressBalance()
+    await eosTransfer()
 })();

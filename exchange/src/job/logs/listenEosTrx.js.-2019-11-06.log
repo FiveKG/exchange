@@ -1,0 +1,1050 @@
+{"date":"2019-11-06T10:43:46.301","level":"DEBUG","category":"listenEosTrx.js","host":"frank-hp","pid":"43000","data":'handlerTransferActions EOS running...'}
+{"date":"2019-11-06T10:43:56.396","level":"DEBUG","category":"listenEosTrx.js","host":"frank-hp","pid":"43000","data":'error:transfer to unknown eth address :uecirculate'}
+{"date":"2019-11-06T10:43:56.397","level":"DEBUG","category":"listenEosTrx.js","host":"frank-hp","pid":"43000","data":'error:transfer to null eth address :'}
+{"date":"2019-11-06T10:45:39.222","level":"DEBUG","category":"listenEosTrx.js","host":"frank-hp","pid":"42396","data":'handlerTransferActions EOS running...'}
+{"date":"2019-11-06T11:25:57.253","level":"DEBUG","category":"listenEosTrx.js","host":"frank-hp","pid":"57464","data":'handlerTransferActions EOS running...'}
+{"date":"2019-11-06T11:25:59.302","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"57464","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'Eth_charge.is_queue' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'Eth_charge.is_queue' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'Eth_charge.is_queue\' in \'where clause\'',
+     sql:
+      'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'Eth_charge.is_queue' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'Eth_charge.is_queue\' in \'where clause\'',
+     sql:
+      'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+     parameters: undefined },
+  sql:
+   'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:26:01.263","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"57464","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'Eth_charge.is_queue' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'Eth_charge.is_queue' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'Eth_charge.is_queue\' in \'where clause\'',
+     sql:
+      'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'Eth_charge.is_queue' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'Eth_charge.is_queue\' in \'where clause\'',
+     sql:
+      'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+     parameters: undefined },
+  sql:
+   'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:30:22.608","level":"DEBUG","category":"listenEosTrx.js","host":"frank-hp","pid":"39104","data":'handlerTransferActions EOS running...'}
+{"date":"2019-11-06T11:34:37.773","level":"DEBUG","category":"listenEosTrx.js","host":"frank-hp","pid":"59704","data":'handlerTransferActions EOS running...'}
+{"date":"2019-11-06T11:35:17.805","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"59704","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Table 'exchange.Eth_charge' doesn't exist
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Table 'exchange.Eth_charge' doesn't exist
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     sqlMessage: 'Table \'exchange.Eth_charge\' doesn\'t exist',
+     sql:
+      'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+     parameters: undefined },
+  original:
+   { Error: Table 'exchange.Eth_charge' doesn't exist
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     sqlMessage: 'Table \'exchange.Eth_charge\' doesn\'t exist',
+     sql:
+      'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+     parameters: undefined },
+  sql:
+   'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:35:19.793","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"59704","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Table 'exchange.Eth_charge' doesn't exist
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Table 'exchange.Eth_charge' doesn't exist
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     sqlMessage: 'Table \'exchange.Eth_charge\' doesn\'t exist',
+     sql:
+      'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+     parameters: undefined },
+  original:
+   { Error: Table 'exchange.Eth_charge' doesn't exist
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     sqlMessage: 'Table \'exchange.Eth_charge\' doesn\'t exist',
+     sql:
+      'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+     parameters: undefined },
+  sql:
+   'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:35:21.794","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"59704","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Table 'exchange.Eth_charge' doesn't exist
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Table 'exchange.Eth_charge' doesn't exist
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     sqlMessage: 'Table \'exchange.Eth_charge\' doesn\'t exist',
+     sql:
+      'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+     parameters: undefined },
+  original:
+   { Error: Table 'exchange.Eth_charge' doesn't exist
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     sqlMessage: 'Table \'exchange.Eth_charge\' doesn\'t exist',
+     sql:
+      'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+     parameters: undefined },
+  sql:
+   'SELECT `id` FROM `Eth_charge` AS `Eth_charge` WHERE `Eth_charge`.`is_exchanged` = false AND `Eth_charge`.`log_info` = \'UE2USDT\' AND `Eth_charge`.`is_queue` = false;',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:35:37.358","level":"DEBUG","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'handlerTransferActions EOS running...'}
+{"date":"2019-11-06T11:35:53.482","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:35:55.397","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:35:57.398","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:35:59.397","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:36:01.395","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:36:03.399","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:36:05.403","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:36:07.400","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:36:09.400","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:36:11.403","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:36:13.404","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:36:15.412","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:36:17.413","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:36:19.403","level":"ERROR","category":"listenEosTrx.js","host":"frank-hp","pid":"58188","data":'this error from handlerTransferActions(),the error trace is O% { SequelizeDatabaseError: Unknown column 'NZR_RsLI' in 'where clause'
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  original:
+   { Error: Unknown column 'NZR_RsLI' in 'where clause'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Query.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'NZR_RsLI\' in \'where clause\'',
+     sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+     parameters: undefined },
+  sql: 'update Eth_charge set is_queue = true where id = NZR_RsLI',
+  parameters: undefined }'}
+{"date":"2019-11-06T11:41:03.375","level":"DEBUG","category":"listenEosTrx.js","host":"frank-hp","pid":"56460","data":'handlerTransferActions EOS running...'}

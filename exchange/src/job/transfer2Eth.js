@@ -15,7 +15,18 @@ const TX_STATE = 'tgb:exchange:UE2USDT:tx_hash:';
  * @param {Object} data 
  */
 async function transfer2Eth(data){
-    try{    
+    try{
+        const findOption = { 
+            attributes : [ 'to_eth_address' , "is_exchanged"] ,
+            "where" : { id : data.id } ,  
+            raw : true
+        };
+        let origin_to_eth_address = await sequelize.Eth_charge.findOne(findOption);
+        if(origin_to_eth_address.is_exchanged == true){
+            logger.debug(`当前转账信息已经处理过了.`);
+            return ;
+        }
+
         const Eth_charge_filed = {
             to_eth_address: data.to_eth_address,
             eth_txid      : '',
@@ -30,13 +41,11 @@ async function transfer2Eth(data){
 
         //余额太低需要进行通知
         if(hot_add_balance.sub(value).lessThan(MINIUSDT)){
-            logger.debug("hot address balance is too low,balance:",hot_add_balance)
-            return
+            logger.debug("hot address balance is too low ,balance:",hot_add_balance)
+            return;
         }
         //转账
         try{
-
-            
             //设置预转账状态,用redis记录，用于防止已经转账未更新数据库
             await redis.set(TX_STATE+data.pog_txid,1);
 
@@ -44,6 +53,9 @@ async function transfer2Eth(data){
             if(key == ""){
                 logger.debug('can not get HOT_ADDRESS_PRIVATEKEY');
                 return
+            }
+            if(key.startsWith('0x')||key.startsWith('0X')){
+                key = key.substring(2)
             }
             //转给用户
             const trx_id = await sendSignTransfer(HOT_ADDRESS,data.to_eth_address,value.mul(1000000).toNumber(),key );//HOT_ADDRESS_PRIVATEKEY
@@ -55,9 +67,9 @@ async function transfer2Eth(data){
             //转给冷钱包
             await sendSignTransfer(HOT_ADDRESS,COLD_ADDRESS5,charge.mul(1000000).toNumber(),key,5);
             Eth_charge_filed.eth_txid = trx_id;
+
         }catch(err){
             logger.error('热账号转账失败:',err);
-            
             throw err
         }
 
@@ -76,6 +88,7 @@ async function transfer2Eth(data){
         throw err
     } 
 }
+
 //@ts-ignore
 async function update_DB(Eth_charge_filed,Eth_charge_where){
     //事务开始

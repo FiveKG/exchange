@@ -58,7 +58,7 @@ async function transfer2Pog(data){
                 "quantity"       : ue_value,
                 "memo"           : ""
             }
-            const res = await transfer(transfer_data)
+            const res = await transfer(transfer_data);
             Eth_charge_filed.pog_blockNumber = res.processed.block_num;
             Eth_charge_filed.pog_txid = res.processed.id;
             Eth_charge_filed.exchange_time= new Date()

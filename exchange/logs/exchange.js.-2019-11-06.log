@@ -1,0 +1,21 @@
+{"date":"2019-11-06T10:30:36.639","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"39100","data":'init server of pools server.'}
+{"date":"2019-11-06T10:30:37.329","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"39100","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-11-06T10:30:37.616","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"39100","data":'数据库同步成功'}
+{"date":"2019-11-06T10:42:57.553","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"39100","data":'POST /exchange/ue2usdt'}
+{"date":"2019-11-06T11:28:18.238","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"54616","data":'init server of pools server.'}
+{"date":"2019-11-06T11:28:18.910","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"54616","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-11-06T11:28:19.180","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"54616","data":'数据库同步成功'}
+{"date":"2019-11-06T11:28:27.465","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"54616","data":'POST /exchange/record_trx'}
+{"date":"2019-11-06T11:28:37.102","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"54616","data":'POST /exchange/ue2usdt'}
+{"date":"2019-11-06T11:29:04.151","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"54616","data":'POST /exchange/ue2usdt'}
+{"date":"2019-11-06T11:29:58.864","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"56192","data":'init server of pools server.'}
+{"date":"2019-11-06T11:29:59.583","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"56192","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-11-06T11:29:59.875","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"56192","data":'数据库同步成功'}
+{"date":"2019-11-06T11:30:04.532","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"56192","data":'POST /exchange/ue2usdt'}
+{"date":"2019-11-06T11:33:51.440","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"59724","data":'init server of pools server.'}
+{"date":"2019-11-06T11:33:52.238","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"59724","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-11-06T11:33:52.304","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"59724","data":'数据库同步成功'}
+{"date":"2019-11-06T11:34:14.791","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"60396","data":'init server of pools server.'}
+{"date":"2019-11-06T11:34:15.493","level":"WARN","category":"exchange.js","host":"frank-hp","pid":"60396","data":'**** server of pools running at http://0.0.0.0:7758/  ****'}
+{"date":"2019-11-06T11:34:15.773","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"60396","data":'数据库同步成功'}
+{"date":"2019-11-06T11:34:26.276","level":"INFO","category":"exchange.js","host":"frank-hp","pid":"60396","data":'POST /exchange/ue2usdt'}

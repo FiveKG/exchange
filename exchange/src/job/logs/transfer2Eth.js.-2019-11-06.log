@@ -1,0 +1,204 @@
+{"date":"2019-11-06T11:25:40.428","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"57860","data":'this error from transfer2Eth(),the error is TypeError: Cannot read property 'findOne' of undefined
+    at transfer2Eth (D:\work_space\yuezhi\eos\exchange\src\job\transfer2Eth.js:24:65)
+    at psTransfer2Eth.sub (D:\work_space\yuezhi\eos\exchange\src\job\mqHandler.js:23:15)
+    at channel.consume.msg (D:\work_space\yuezhi\eos\exchange\src\db\psTransfer2Eth.js:29:17)
+    at Channel.BaseChannel.dispatchMessage (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:484:12)
+    at Channel.BaseChannel.handleDelivery (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:493:15)
+    at Channel.emit (events.js:198:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:279:10
+    at Channel.content [as handleMessage] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:332:9)
+    at Channel.C.acceptMessageFrame (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:247:31)
+    at Channel.C.accept (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:400:17)
+    at Connection.mainAccept [as accept] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:64:33)
+    at Socket.go (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:478:48)
+    at Socket.emit (events.js:198:13)
+    at emitReadable_ (_stream_readable.js:554:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T11:25:40.431","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"57860","data":'this error from transfer2Eth(),the error is TypeError: Cannot read property 'findOne' of undefined
+    at transfer2Eth (D:\work_space\yuezhi\eos\exchange\src\job\transfer2Eth.js:24:65)
+    at psTransfer2Eth.sub (D:\work_space\yuezhi\eos\exchange\src\job\mqHandler.js:23:15)
+    at channel.consume.msg (D:\work_space\yuezhi\eos\exchange\src\db\psTransfer2Eth.js:29:17)
+    at Channel.BaseChannel.dispatchMessage (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:484:12)
+    at Channel.BaseChannel.handleDelivery (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:493:15)
+    at Channel.emit (events.js:198:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:279:10
+    at Channel.content [as handleMessage] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:332:9)
+    at Channel.C.acceptMessageFrame (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:247:31)
+    at Channel.C.accept (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:400:17)
+    at Connection.mainAccept [as accept] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:64:33)
+    at Socket.go (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:478:48)
+    at Socket.emit (events.js:198:13)
+    at emitReadable_ (_stream_readable.js:554:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T11:25:40.432","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"57860","data":'this error from transfer2Eth(),the error is TypeError: Cannot read property 'findOne' of undefined
+    at transfer2Eth (D:\work_space\yuezhi\eos\exchange\src\job\transfer2Eth.js:24:65)
+    at psTransfer2Eth.sub (D:\work_space\yuezhi\eos\exchange\src\job\mqHandler.js:23:15)
+    at channel.consume.msg (D:\work_space\yuezhi\eos\exchange\src\db\psTransfer2Eth.js:29:17)
+    at Channel.BaseChannel.dispatchMessage (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:484:12)
+    at Channel.BaseChannel.handleDelivery (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:493:15)
+    at Channel.emit (events.js:198:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:279:10
+    at Channel.content [as handleMessage] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:332:9)
+    at Channel.C.acceptMessageFrame (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:247:31)
+    at Channel.C.accept (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:400:17)
+    at Connection.mainAccept [as accept] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:64:33)
+    at Socket.go (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:478:48)
+    at Socket.emit (events.js:198:13)
+    at emitReadable_ (_stream_readable.js:554:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T11:25:40.433","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"57860","data":'this error from transfer2Eth(),the error is TypeError: Cannot read property 'findOne' of undefined
+    at transfer2Eth (D:\work_space\yuezhi\eos\exchange\src\job\transfer2Eth.js:24:65)
+    at psTransfer2Eth.sub (D:\work_space\yuezhi\eos\exchange\src\job\mqHandler.js:23:15)
+    at channel.consume.msg (D:\work_space\yuezhi\eos\exchange\src\db\psTransfer2Eth.js:29:17)
+    at Channel.BaseChannel.dispatchMessage (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:484:12)
+    at Channel.BaseChannel.handleDelivery (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:493:15)
+    at Channel.emit (events.js:198:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:279:10
+    at Channel.content [as handleMessage] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:332:9)
+    at Channel.C.acceptMessageFrame (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:247:31)
+    at Channel.C.accept (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:400:17)
+    at Connection.mainAccept [as accept] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:64:33)
+    at Socket.go (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:478:48)
+    at Socket.emit (events.js:198:13)
+    at emitReadable_ (_stream_readable.js:554:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T11:25:40.434","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"57860","data":'this error from transfer2Eth(),the error is TypeError: Cannot read property 'findOne' of undefined
+    at transfer2Eth (D:\work_space\yuezhi\eos\exchange\src\job\transfer2Eth.js:24:65)
+    at psTransfer2Eth.sub (D:\work_space\yuezhi\eos\exchange\src\job\mqHandler.js:23:15)
+    at channel.consume.msg (D:\work_space\yuezhi\eos\exchange\src\db\psTransfer2Eth.js:29:17)
+    at Channel.BaseChannel.dispatchMessage (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:484:12)
+    at Channel.BaseChannel.handleDelivery (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:493:15)
+    at Channel.emit (events.js:198:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:279:10
+    at Channel.content [as handleMessage] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:332:9)
+    at Channel.C.acceptMessageFrame (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:247:31)
+    at Channel.C.accept (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:400:17)
+    at Connection.mainAccept [as accept] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:64:33)
+    at Socket.go (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:478:48)
+    at Socket.emit (events.js:198:13)
+    at emitReadable_ (_stream_readable.js:554:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T11:25:40.437","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"57860","data":'this error from transfer2Eth(),the error is TypeError: Cannot read property 'findOne' of undefined
+    at transfer2Eth (D:\work_space\yuezhi\eos\exchange\src\job\transfer2Eth.js:24:65)
+    at psTransfer2Eth.sub (D:\work_space\yuezhi\eos\exchange\src\job\mqHandler.js:23:15)
+    at channel.consume.msg (D:\work_space\yuezhi\eos\exchange\src\db\psTransfer2Eth.js:29:17)
+    at Channel.BaseChannel.dispatchMessage (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:484:12)
+    at Channel.BaseChannel.handleDelivery (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:493:15)
+    at Channel.emit (events.js:198:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:279:10
+    at Channel.content [as handleMessage] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:332:9)
+    at Channel.C.acceptMessageFrame (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:247:31)
+    at Channel.C.accept (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:400:17)
+    at Connection.mainAccept [as accept] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:64:33)
+    at Socket.go (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:478:48)
+    at Socket.emit (events.js:198:13)
+    at emitReadable_ (_stream_readable.js:554:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T11:25:40.438","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"57860","data":'this error from transfer2Eth(),the error is TypeError: Cannot read property 'findOne' of undefined
+    at transfer2Eth (D:\work_space\yuezhi\eos\exchange\src\job\transfer2Eth.js:24:65)
+    at psTransfer2Eth.sub (D:\work_space\yuezhi\eos\exchange\src\job\mqHandler.js:23:15)
+    at channel.consume.msg (D:\work_space\yuezhi\eos\exchange\src\db\psTransfer2Eth.js:29:17)
+    at Channel.BaseChannel.dispatchMessage (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:484:12)
+    at Channel.BaseChannel.handleDelivery (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:493:15)
+    at Channel.emit (events.js:198:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:279:10
+    at Channel.content [as handleMessage] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:332:9)
+    at Channel.C.acceptMessageFrame (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:247:31)
+    at Channel.C.accept (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:400:17)
+    at Connection.mainAccept [as accept] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:64:33)
+    at Socket.go (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:478:48)
+    at Socket.emit (events.js:198:13)
+    at emitReadable_ (_stream_readable.js:554:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T11:25:40.439","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"57860","data":'this error from transfer2Eth(),the error is TypeError: Cannot read property 'findOne' of undefined
+    at transfer2Eth (D:\work_space\yuezhi\eos\exchange\src\job\transfer2Eth.js:24:65)
+    at psTransfer2Eth.sub (D:\work_space\yuezhi\eos\exchange\src\job\mqHandler.js:23:15)
+    at channel.consume.msg (D:\work_space\yuezhi\eos\exchange\src\db\psTransfer2Eth.js:29:17)
+    at Channel.BaseChannel.dispatchMessage (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:484:12)
+    at Channel.BaseChannel.handleDelivery (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:493:15)
+    at Channel.emit (events.js:198:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:279:10
+    at Channel.content [as handleMessage] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:332:9)
+    at Channel.C.acceptMessageFrame (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:247:31)
+    at Channel.C.accept (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:400:17)
+    at Connection.mainAccept [as accept] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:64:33)
+    at Socket.go (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:478:48)
+    at Socket.emit (events.js:198:13)
+    at emitReadable_ (_stream_readable.js:554:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T11:25:40.440","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"57860","data":'this error from transfer2Eth(),the error is TypeError: Cannot read property 'findOne' of undefined
+    at transfer2Eth (D:\work_space\yuezhi\eos\exchange\src\job\transfer2Eth.js:24:65)
+    at psTransfer2Eth.sub (D:\work_space\yuezhi\eos\exchange\src\job\mqHandler.js:23:15)
+    at channel.consume.msg (D:\work_space\yuezhi\eos\exchange\src\db\psTransfer2Eth.js:29:17)
+    at Channel.BaseChannel.dispatchMessage (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:484:12)
+    at Channel.BaseChannel.handleDelivery (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:493:15)
+    at Channel.emit (events.js:198:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:279:10
+    at Channel.content [as handleMessage] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:332:9)
+    at Channel.C.acceptMessageFrame (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:247:31)
+    at Channel.C.accept (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:400:17)
+    at Connection.mainAccept [as accept] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:64:33)
+    at Socket.go (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:478:48)
+    at Socket.emit (events.js:198:13)
+    at emitReadable_ (_stream_readable.js:554:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T11:25:40.441","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"57860","data":'this error from transfer2Eth(),the error is TypeError: Cannot read property 'findOne' of undefined
+    at transfer2Eth (D:\work_space\yuezhi\eos\exchange\src\job\transfer2Eth.js:24:65)
+    at psTransfer2Eth.sub (D:\work_space\yuezhi\eos\exchange\src\job\mqHandler.js:23:15)
+    at channel.consume.msg (D:\work_space\yuezhi\eos\exchange\src\db\psTransfer2Eth.js:29:17)
+    at Channel.BaseChannel.dispatchMessage (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:484:12)
+    at Channel.BaseChannel.handleDelivery (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:493:15)
+    at Channel.emit (events.js:198:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:279:10
+    at Channel.content [as handleMessage] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:332:9)
+    at Channel.C.acceptMessageFrame (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:247:31)
+    at Channel.C.accept (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:400:17)
+    at Connection.mainAccept [as accept] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:64:33)
+    at Socket.go (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:478:48)
+    at Socket.emit (events.js:198:13)
+    at emitReadable_ (_stream_readable.js:554:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T11:35:53.476","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"59628","data":'this error from transfer2Eth(),the error is TypeError: Cannot read property 'findOne' of undefined
+    at transfer2Eth (D:\work_space\yuezhi\eos\exchange\src\job\transfer2Eth.js:24:65)
+    at psTransfer2Eth.sub (D:\work_space\yuezhi\eos\exchange\src\job\mqHandler.js:23:15)
+    at channel.consume.msg (D:\work_space\yuezhi\eos\exchange\src\db\psTransfer2Eth.js:29:17)
+    at Channel.BaseChannel.dispatchMessage (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:484:12)
+    at Channel.BaseChannel.handleDelivery (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:493:15)
+    at Channel.emit (events.js:198:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:279:10
+    at Channel.content [as handleMessage] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:332:9)
+    at Channel.C.acceptMessageFrame (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:247:31)
+    at Channel.C.accept (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:400:17)
+    at Connection.mainAccept [as accept] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:64:33)
+    at Socket.go (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:478:48)
+    at Socket.emit (events.js:198:13)
+    at emitReadable_ (_stream_readable.js:554:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T11:35:55.397","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"59628","data":'this error from transfer2Eth(),the error is TypeError: Cannot read property 'findOne' of undefined
+    at transfer2Eth (D:\work_space\yuezhi\eos\exchange\src\job\transfer2Eth.js:24:65)
+    at psTransfer2Eth.sub (D:\work_space\yuezhi\eos\exchange\src\job\mqHandler.js:23:15)
+    at channel.consume.msg (D:\work_space\yuezhi\eos\exchange\src\db\psTransfer2Eth.js:29:17)
+    at Channel.BaseChannel.dispatchMessage (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:484:12)
+    at Channel.BaseChannel.handleDelivery (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:493:15)
+    at Channel.emit (events.js:198:13)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:279:10
+    at Channel.content [as handleMessage] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:332:9)
+    at Channel.C.acceptMessageFrame (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:247:31)
+    at Channel.C.accept (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\channel.js:400:17)
+    at Connection.mainAccept [as accept] (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:64:33)
+    at Socket.go (D:\work_space\yuezhi\eos\exchange\node_modules\amqplib\lib\connection.js:478:48)
+    at Socket.emit (events.js:198:13)
+    at emitReadable_ (_stream_readable.js:554:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T11:39:20.332","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
+{"date":"2019-11-06T11:39:20.333","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
+{"date":"2019-11-06T11:39:20.334","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
+{"date":"2019-11-06T11:39:20.334","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
+{"date":"2019-11-06T11:39:20.334","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
+{"date":"2019-11-06T11:39:20.335","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
+{"date":"2019-11-06T11:39:20.335","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
+{"date":"2019-11-06T11:39:20.335","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
+{"date":"2019-11-06T11:39:20.335","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
+{"date":"2019-11-06T11:39:20.336","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
+{"date":"2019-11-06T11:39:20.337","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
+{"date":"2019-11-06T11:39:20.338","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}

@@ -12,7 +12,11 @@ const option = {
     "port"    : Number(port),
     "password": auth
 };
-
+// const option = {
+//     "host"    : "192.168.1.115",//172.19.2.22
+//     "port"    : 6379 ,
+//     "password": "redis_pass_2018"  //hxTJ4jsl+9mvx+tAgw==
+// }
 const innerConfig = new InnerConfig(option);
 
 module.exports = innerConfig;

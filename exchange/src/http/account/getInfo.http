@@ -41,9 +41,9 @@ POST http://localhost:7758/exchange/ue2usdt
 content-type: application/json
 
 {
-    "block_number":813935,
+    "block_number":942503,
     "pog_account":"11g22p33s",
-    "trx_id":"28ac8c3f38fcbce7792e51f92211babbfaf99fb427d11bcd878dd22cf78a9d30",
+    "trx_id":"4c8c4cea802f69fc648eef88a47264f42b8664b2c2f9166502bdc6c17d9199f4",
     "transfer_amount":"20"
 }
 

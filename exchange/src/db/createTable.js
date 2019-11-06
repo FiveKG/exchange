@@ -74,7 +74,11 @@ function createTable(sequelize,Sequelize){
            // get(){return this.getDataValue('exchange_time')},set(valueToBeSet){this.setDataValue('exchange_time', valueToBeSet)},
         },
         is_exchanged:{
-            type: Sequelize.BOOLEAN,allowNull : false,comment: '是否兑换执行过',
+            type: Sequelize.BOOLEAN,allowNull: false, defaultValue: false,comment: '是否兑换执行过',
+           // get(){return this.getDataValue('Is_exchanged')},set(valueToBeSet){this.setDataValue('Is_exchanged', valueToBeSet)},
+        },
+        is_queue:{
+            type: Sequelize.BOOLEAN,allowNull: false, defaultValue: false,comment: '是否已经发送到消息队列',
            // get(){return this.getDataValue('Is_exchanged')},set(valueToBeSet){this.setDataValue('Is_exchanged', valueToBeSet)},
         },
         eth_blockNumber:{

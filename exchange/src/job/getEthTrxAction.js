@@ -415,7 +415,17 @@ async function getAllAddressBalance(){
 async function getGasPrice(){
     return await web3.eth.getGasPrice()
 }
-
+/**
+ * 
+ * @param {String} trx_id 
+ */
+async function isLegal(trx_id){
+    const result = await web3.eth.getTransactionReceipt(trx_id);
+    if(!result.status){
+        return false
+    }
+    return true
+}
 module.exports={
     "getBlock"                : getBlock,
     "getTransaction"          : getTransaction,
@@ -429,5 +439,6 @@ module.exports={
     "sendSignTransfer"        : sendSignTransfer,
     "getGasPrice"             : getGasPrice,
     "getHotAddressUSDTBalance":getHotAddressUSDTBalance,
-    "getAllAddressBalance"    :getAllAddressBalance
+    "getAllAddressBalance"    :getAllAddressBalance,
+    "isLegal"                 :isLegal
 }

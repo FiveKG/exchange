@@ -1,5 +1,5 @@
 //@ts-check
-// const keyConfig = require("../../common/keyConfig.js");
+const keyConfig = require("../../common/keyConfig.js");
 // //服务提供器
 // const PROVIDER = process.env.ETH_PROVIDER||'http://localhost:8545'
 // //私链合约地址

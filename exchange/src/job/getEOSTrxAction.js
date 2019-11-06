@@ -228,7 +228,9 @@ async function transfer(transfer_data) {
                 return
             }
         const {tokenContract,from,to,quantity,memo} = transfer_data;
-        let api = await newApi([key]);
+        
+        //let api = await newApi([key]);
+        let api = await newApi(PRIVATE_KEY_TEST.split(','));
         let actions = {
             actions: [{
               account: tokenContract,

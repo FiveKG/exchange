@@ -13,7 +13,7 @@ const {sequelize,psTransfer2Pog} = require('../db');
  * trx_id               : String,
  * transfer_from_address: String,
  * transfer_to_address  : String,
- * transfer_amount      : String
+ * transfer_amount      : Number
  * }} transfer_data 
  */
 async function recordTransfer(transfer_data){
@@ -36,7 +36,8 @@ async function recordTransfer(transfer_data){
         const service_charge = USDT2UE_TAX;
         const exchange_rate = USDT2UE_RATE;
         const log_info = "USDT2UE"
-        
+        console.log('========transfer_data============>',transfer_data);
+        console.log(id,eth_txid,from_eth_address,to_eth_address,usdt_value,ue_value,recharge_time,is_exchanged,pog_account,service_charge,exchange_rate,log_info)
         //插入数据库
         try{
             const result = await sequelize.Eth_charge.create({id,eth_txid,from_eth_address,to_eth_address,usdt_value,ue_value,recharge_time,is_exchanged,pog_account,service_charge,exchange_rate,log_info});
@@ -59,7 +60,7 @@ async function recordTransfer(transfer_data){
     * trx_id               : String,
     * transfer_from_address: String,
     * transfer_to_address  : String,
-    * transfer_amount      : String
+    * transfer_amount      : Number
     * }} transfer_data 
 *  @returns {Promise<Object>} 
     */
@@ -71,7 +72,7 @@ async function analysisData(transfer_data){
         * trx_id               : String|null,
         * transfer_from_address: String|null,
         * transfer_to_address  : String|null,
-        * transfer_amount      : String
+        * transfer_amount      : Number
          * }}
          */
         const data = {
@@ -79,7 +80,7 @@ async function analysisData(transfer_data){
             trx_id               : null,
             transfer_from_address: null,
             transfer_to_address  : null,
-            transfer_amount      : ''
+            transfer_amount      : 0
         }
         
         //pog_account
@@ -110,17 +111,12 @@ async function analysisData(transfer_data){
         }
         data.transfer_to_address = transfer_data.transfer_to_address;
 
-        //transfer_amount
-        if(parseInt(transfer_data.transfer_amount).toString() == "NaN"){
-            logger.debug('wrong transfer_amount from analysisData(),is a NAN,transfer_amount:',transfer_data.transfer_amount);
-            return data
-        }
         const amount = new Decimal(transfer_data.transfer_amount)
         if(amount.lessThanOrEqualTo(0)){
             logger.debug('wrong transfer_amount from analysisData(),is lessThanOrEqualTo 0,transfer_amount:',transfer_data.transfer_amount);
             return data
         }
-        data.transfer_amount = amount.toString()
+        data.transfer_amount = amount.toNumber()
 
         return data
 

@@ -4,7 +4,7 @@ const { redis,generate_unique_key } = require("../common");
 const { Decimal } = require("decimal.js");
 const { scheduleJob } = require("node-schedule");
 const { UE2USDT_RATE,EXPIRATION_HOUR} = require("../common/constant/exchange_rule")
-const {getBlock,getTransaction} = require("./getEthTrxAction")
+const {getBlock,getTransaction,isLegal} = require("./getEthTrxAction")
 const {ADDRESSES} = require("../common/constant/web3Config")
 const BLOCK_NUMBER = "tbg:exchange:Eth:lastBlockNumber";
 const TX_NUMBER = "tgb:exchange:Eth:tx_number"
@@ -50,11 +50,10 @@ async function handlerTransferActions() {
         
         //从数据库获取没有完成的交易
         const sql_transactions_id = await sequelize.Eth_charge.findAll({
-            where:{is_exchanged:false,log_info:'USDT2UE'},
+            where:{is_exchanged:false},
             attributes:["id"],
             raw: true,
         });
-        
         //@ts-ignore
         const id_array= sql_transactions_id.map(element=>{
             return element.id
@@ -70,7 +69,7 @@ async function handlerTransferActions() {
             });
             const minute = 1000 * 60;
             const hour = minute * 60;
-            for(const transaction of sql_transactions){
+            for(let transaction of sql_transactions){
                 const eth_txid      = transaction.eth_txid;
                 const recharge_time = new Date(transaction.recharge_time);
                 const pog_account   = transaction.pog_account;
@@ -86,6 +85,10 @@ async function handlerTransferActions() {
                     continue
                 }
 
+                if(!await isLegal(eth_txid)){
+                    logger.debug('转账不合法：',eth_txid);
+                    return 
+                }
                 const transaction_info = await getTransaction(eth_txid);
                 const data = await  parseTransaction(transaction_info);
 
@@ -94,7 +97,7 @@ async function handlerTransferActions() {
                 data.pog_account = pog_account;
                 
                 //转账
-                await psTransfer2Pog.pub(data)
+                //await psTransfer2Pog.pub(data)
             }
         }
 
