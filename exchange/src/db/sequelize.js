@@ -24,6 +24,7 @@ const sequelize = new Sequelize(database,user, password, {
     },
     timestamps: true
   },
+  logging: false,
   dialect:'mysql', /* 'mysql' | 'mariadb' | 'postgres' | 'mssql' 之一 */
   pool: {
     max: 20, // 连接池中最大连接数量

@@ -1,9 +1,9 @@
 // @ts-check
 const logger = require("../common/logger.js").getLogger("mqHandler.js")
-const {psTransfer2Pog,psTransfer2Eth} = require("../db");
+const {psTransfer2Pog,psTransfer2Eth,psServiceCharge} = require("../db");
 const transfer2Pog = require("./transfer2Pog");
 const transfer2Eth = require('./transfer2Eth')
-
+const sleep = require("./sleep")
 
 // 写入Eth_charge 操作
 //@ts-ignore
@@ -20,8 +20,11 @@ psTransfer2Pog.sub(async msg => {
 psTransfer2Eth.sub(async msg => {
     try {
         let result = JSON.parse(msg);
+	logger.debug("psTransfer2Eth  result: ", JSON.stringify(result, null, 4));
+	await sleep(200);
         await transfer2Eth(result);
     } catch (err) {
         throw err;
     }
 })
+

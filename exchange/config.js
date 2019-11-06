@@ -1,18 +1,18 @@
 module.exports = {
     "db" : {
-        "host"    : "192.168.92.128",   //我的虚拟机
+        "host"    : "127.0.0.1",  
         "database": "exchange",
-        "user"    : "exchange_user",
+        "user"    : "hash_dice_user",
         "password": "mysql_pass_2019",
         "port"    : 3306,
     },
     "redis": {
-        "host" : "192.168.92.128",
-        "port" : 7758,
+        "host" : "127.0.0.1",
+        "port" : 6379,
         "auth" : "redis_pass_2019"
     },
     "rabbitmq": {
-        "host": "192.168.92.128",
+        "host": "127.0.0.1",
         "port": 5672,
         "user": "mq_user",
         "pwd" : "pass_2019"

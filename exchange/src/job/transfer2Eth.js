@@ -1,6 +1,6 @@
 //@ts-check
 const logger = require("../common/logger").getLogger("transfer2Eth.js");
-const {sequelize} = require('../db');
+const {sequelize,psServiceCharge} = require('../db');
 const sleep = require('./sleep')
 const {redis} = require("../common");
 const {Decimal} = require('decimal.js')
@@ -9,6 +9,7 @@ const {HOT_ADDRESS,COLD_ADDRESS5}  =require('../common/constant/web3Config')
 const {sendSignTransfer,getTransaction,getHotAddressUSDTBalance} = require('./getEthTrxAction')
 const {MINIUSDT,UE2USDT_TAX} = require("../common/constant/exchange_rule")
 const TX_STATE = 'tgb:exchange:UE2USDT:tx_hash:';
+const generate_unique_key = require("../common/generate_unique_key")
 
 /**
  * 
@@ -17,32 +18,43 @@ const TX_STATE = 'tgb:exchange:UE2USDT:tx_hash:';
 async function transfer2Eth(data){
     try{
         const findOption = { 
-            attributes : [ 'to_eth_address' , "is_exchanged"] ,
+            attributes : [ 'pog_account' ,'to_eth_address' , "is_exchanged"] ,
             "where" : { id : data.id } ,  
             raw : true
         };
+        
         let origin_to_eth_address = await sequelize.Eth_charge.findOne(findOption);
         if(origin_to_eth_address.is_exchanged == true){
             logger.debug(`当前转账信息已经处理过了.`);
             return ;
         }
 
+        //插入数据库数据
+        const service_charge_id = generate_unique_key();
         const Eth_charge_filed = {
             to_eth_address: data.to_eth_address,
             eth_txid      : '',
             confirm_time  : data.confirm_time,
             exchange_time : new Date(),
-            is_exchanged  : true
+            is_exchanged  : true,
+            service_charge: false
         }
         const hot_add_balance = new Decimal(await getHotAddressUSDTBalance());
         //转账金额要扣除5个数量手续费，发给规定的钱包地址
         const value = new Decimal(data.quantity).sub(5);
-        const charge = new Decimal(UE2USDT_TAX.split(' ')[0]);
+        const charge = new Decimal(UE2USDT_TAX.split(' ')[0])
 
         //余额太低需要进行通知
         if(hot_add_balance.sub(value).lessThan(MINIUSDT)){
+            // todo 记录交易的订单，等待后台人工审核
             logger.debug("hot address balance is too low ,balance:",hot_add_balance)
             return;
+        }
+
+     
+        //记录更新数据库的值
+        const Eth_charge_where = {
+        "pog_txid":data.pog_txid,
         }
         //转账
         try{
@@ -60,23 +72,31 @@ async function transfer2Eth(data){
             //转给用户
             const trx_id = await sendSignTransfer(HOT_ADDRESS,data.to_eth_address,value.mul(1000000).toNumber(),key );//HOT_ADDRESS_PRIVATEKEY
             if(!trx_id){
-                redis.del(TX_STATE+data.pog_txid);
+                await redis.del(TX_STATE+data.pog_txid);
                 return
             }
-
-            //转给冷钱包
-            await sendSignTransfer(HOT_ADDRESS,COLD_ADDRESS5,charge.mul(1000000).toNumber(),key,5);
+            //服务费充值队列
+            // const queue_data = {
+            //     id              : service_charge_id,
+            //     charge_id       : data.id,
+            //     pog_account     : origin_to_eth_address.pog_account,
+            //     amount          : charge,
+            //     map_time        : new Date(),
+            //     from_eth_address: HOT_ADDRESS,
+            //     to_eth_address  : COLD_ADDRESS5,
+            //     eth_txid        : '',
+            //     log_info        : 'SERVICE_CHARGE'
+            // }
+            // await psServiceCharge.pub(queue_data)
+            
+          
             Eth_charge_filed.eth_txid = trx_id;
-
         }catch(err){
             logger.error('热账号转账失败:',err);
             throw err
         }
 
-            //记录更新数据库的值
-        const Eth_charge_where = {
-            "pog_txid":data.pog_txid
-        }
+          
         //更新数据库
         await update_DB(Eth_charge_filed,Eth_charge_where);
 

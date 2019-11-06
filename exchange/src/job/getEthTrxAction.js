@@ -346,7 +346,7 @@ async function sendSignTransfer(from_address,to_address,value,privateKey,nonceNu
         "from": from_address,
         "nonce": web3.utils.toHex(nonce++),
         "gasLimit": web3.utils.toHex(99000),
-        "gasPrice": web3.utils.toHex(10e9),
+        "gasPrice": web3.utils.toHex(20e9),
         "to": CONTRACT_ADDRESS,
         "value": "0x0",
         "data": data,
@@ -420,11 +420,16 @@ async function getGasPrice(){
  * @param {String} trx_id 
  */
 async function isLegal(trx_id){
+    /**
+     * result 成功的交易返回true 
+     * 如果交易处于pending状态，则返回null。
+     * 如果EVM回滚了该交易则返回 false
+     */
     const result = await web3.eth.getTransactionReceipt(trx_id);
-    if(!result.status){
-        return false
+    if (result === null) {
+        return false;
     }
-    return true
+    return result.status
 }
 module.exports={
     "getBlock"                : getBlock,

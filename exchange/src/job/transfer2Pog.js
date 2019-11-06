@@ -14,7 +14,8 @@ const {transfer,getTransactionInfo} = require('./getEOSTrxAction');
 *  confirm_time:Date,
 *  eth_blockNumber:Number,
 *  ue_value:String,
-*  eth_confirm_blockNumber:Number
+*  eth_confirm_blockNumber:Number,
+*  id:string
 * }} data 
  */
 async function transfer2Pog(data){
@@ -31,6 +32,20 @@ async function transfer2Pog(data){
             * ue_value               : String
             * }}
             */
+           //从数据库获取没有完成的交易
+            const sql_transactions = await sequelize.Eth_charge.findOne({
+                where:{
+                    is_queue    : false,
+                    id: data.id
+                },
+                attributes:[ "id" ],
+                raw: true,
+            });
+
+            if (!!sql_transactions) {
+                logger.warn("usdt to ue 交易重复提交 ", JSON.stringify(sql_transactions, null, 4));
+                return;
+            }
            const Eth_charge_filed = {
                confirm_time           : data.confirm_time,
                eth_blockNumber        : data.eth_blockNumber,
@@ -44,7 +59,12 @@ async function transfer2Pog(data){
 
             const pog_account = data.pog_account;
             const ue_value = `${new Decimal(data.ue_value).toFixed(4) } UE`;
-
+            const ethCheckKey = `eth_trx:${data.eth_txid}`;
+            const isEx = await redis.get(ethCheckKey);
+            if (isEx) {
+                logger.warn("这笔交易已经转账, 交易信息为： ", JSON.stringify(Eth_charge_filed, null, 4));
+                return;
+            }
  
            //转账
            try{
@@ -61,8 +81,11 @@ async function transfer2Pog(data){
             const res = await transfer(transfer_data);
             Eth_charge_filed.pog_blockNumber = res.processed.block_num;
             Eth_charge_filed.pog_txid = res.processed.id;
+            // @ts-ignore
             Eth_charge_filed.exchange_time= new Date()
             Eth_charge_filed.is_exchanged = true;
+            // 处理过以后，在redis记录一条信息
+            await redis.set(ethCheckKey, 1);
         }catch(err){
             logger.error(pog_account+'接收转账操作失败:',err)
             //转账失败预转账删除状态
@@ -84,7 +107,6 @@ async function transfer2Pog(data){
                 const update_result = await check_exchange(Eth_charge_filed,Eth_charge_where);
             }
         }
-
     }catch(err){
         logger.error('this error from transfer2Pog(),the error trace is O%',err)
         throw err;

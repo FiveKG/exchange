@@ -8,15 +8,12 @@ const port = process.env.EXCHANGE_REDIS_PORT || config.redis.port;
 const auth = process.env.EXCHANGE_REDIS_PASS || config.redis.auth;
 
 const option = {
-    "host"    : host,
-    "port"    : Number(port),
-    "password": auth
-};
-// const option = {
-//     "host"    : "192.168.1.115",//172.19.2.22
-//     "port"    : 6379 ,
-//     "password": "redis_pass_2018"  //hxTJ4jsl+9mvx+tAgw==
-// }
+     "host"    : "172.19.2.22",//hxTJ4jsl+9mvx+tAgw==
+//"192.168.1.115",//172.19.2.22
+     "port"    : 6379 ,
+     "password": "hxTJ4jsl+9mvx+tAgw=="
+ }
+console.log('=====redis++====',option)
 const innerConfig = new InnerConfig(option);
 
 module.exports = innerConfig;
