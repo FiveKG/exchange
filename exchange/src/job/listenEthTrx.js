@@ -80,15 +80,17 @@ async function handlerTransferActions() {
             // null, isLegalResult.status ==> false || true
             const isLegalResult = await isLegal(eth_txid);
             logger.debug('交易状态：', isLegalResult);
-            if(isLegalResult === null){
+            if(isLegalResult === null ){
                 logger.debug('交易未确认，转账不合法：', eth_txid);
-                //需要重新转账 转账失败 is_queue = 2  by hu
-                await sequelize.sequelize.query(`update Eth_charge set is_queue = 2 where id = '${transaction.id}'` , { type: sequelize.sequelize.QueryTypes.UPDATE});
+                
                 continue; 
             }
             if (!isLegalResult) {
                 // todo hash 确认失败，需要重新转账
                 logger.debug('hash 确认失败，需要重新转账：', eth_txid);
+                //需要重新转账 转账失败 is_queue = 2  by hu
+                await sequelize.sequelize.query(`update Eth_charge set is_queue = 2 where id = '${transaction.id}'` , { type: sequelize.sequelize.QueryTypes.UPDATE});
+                
                 // await sequelize.sequelize.query(`update Eth_charge set is_queue = true where id = '${transaction.id}'` , { type: sequelize.sequelize.QueryTypes.UPDATE});
                 continue;
             }

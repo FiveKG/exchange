@@ -396,10 +396,10 @@ async function isLegal(trx_id){
      * 如果EVM回滚了该交易则返回 false
      */
     const result = await web3.eth.getTransactionReceipt(trx_id);
-    if (result === null) {
-        return false;
-    }
-    return result.status
+    // if (result === null) {
+    //     return false;
+    // }
+    return result;//.status 2019-11-7 原样返回获取的状态 本次修改与listenEthTx.js 要同步
 }
 module.exports={
     "getBlock"                : getBlock,
