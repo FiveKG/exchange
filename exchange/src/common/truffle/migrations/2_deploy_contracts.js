@@ -7,10 +7,13 @@
 //   deployer.deploy(MetaCoin);
 // };
 
-var ExchangeToken = artifacts.require("ExchangeToken");
-var HelloWorld = artifacts.require("./HelloWorld.sol");
+// var ExchangeToken = artifacts.require("ExchangeToken");
+// var HelloWorld = artifacts.require("./HelloWorld.sol");
+var DemoTypes = artifacts.require("DemoTypes");
 
 module.exports = function(deployer) {
-  deployer.deploy(HelloWorld);
-  deployer.deploy(ExchangeToken,"0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c",10000);
+   deployer.deploy(DemoTypes);
+  // deployer.deploy(HelloWorld);
+  // deployer.deploy(ExchangeToken,"0x2a6f0e7ce6cb445cb8d1928274792dab9f28107c",10000);
+
 };

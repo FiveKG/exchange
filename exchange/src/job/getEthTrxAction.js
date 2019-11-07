@@ -413,12 +413,6 @@ module.exports={
     "getABI"                  : getABI,
     "sendSignTransfer"        : sendSignTransfer,
     "getGasPrice"             : getGasPrice,
-<<<<<<< HEAD
     "getHotAddressUSDTBalance":getHotAddressUSDTBalance,
-    "getAllAddressBalance"    :getAllAddressBalance,
     "isLegal"                 :isLegal
 }
-=======
-    "getHotAddressUSDTBalance":getHotAddressUSDTBalance
-}
->>>>>>> f-function-exchange
