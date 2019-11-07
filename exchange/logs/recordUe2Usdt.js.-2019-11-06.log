@@ -62,3 +62,104 @@
        validatorKey: 'is_null',
        validatorName: null,
        validatorArgs: [] } ] }:'}
+{"date":"2019-11-06T16:03:05.786","level":"ERROR","category":"recordUe2Usdt.js","host":"frank-hp","pid":"77864","data":'err from recordTransfer() to insert db error,ths track is { SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Execute.handler [as onResult] (D:\work_space\yuezhi\eos\exchange\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeUniqueConstraintError',
+  errors:
+   [ ValidationErrorItem {
+       message: 'pog_txid must be unique',
+       type: 'unique violation',
+       path: 'pog_txid',
+       value:
+        '4c8c4cea802f69fc648eef88a47264f42b8664b2c2f9166502bdc6c17d9199f4',
+       origin: 'DB',
+       instance: [Eth_charge],
+       validatorKey: 'not_unique',
+       validatorName: null,
+       validatorArgs: [] } ],
+  fields:
+   { pog_txid:
+      '4c8c4cea802f69fc648eef88a47264f42b8664b2c2f9166502bdc6c17d9199f4' },
+  parent:
+   { Error: Duplicate entry '4c8c4cea802f69fc648eef88a47264f42b8664b2c2f9166502bdc6c17d9199f4' for key 'pog_txid'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage:
+      'Duplicate entry \'4c8c4cea802f69fc648eef88a47264f42b8664b2c2f9166502bdc6c17d9199f4\' for key \'pog_txid\'',
+     sql:
+      'INSERT INTO `Eth_charge` (`id`,`from_eth_address`,`usdt_value`,`ue_value`,`recharge_time`,`is_exchanged`,`is_queue`,`pog_blockNumber`,`pog_confirm_blockNumber`,`pog_account`,`pog_txid`,`service_charge`,`exchange_rate`,`log_info`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);',
+     parameters:
+      [ 'uBRL6O9P',
+        '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+        '15',
+        '20',
+        '2019-11-06 08:03:05',
+        false,
+        false,
+        942503,
+        942509,
+        '11g22p33s',
+        '4c8c4cea802f69fc648eef88a47264f42b8664b2c2f9166502bdc6c17d9199f4',
+        '5 USDT',
+        '1',
+        'UE2USDT' ] },
+  original:
+   { Error: Duplicate entry '4c8c4cea802f69fc648eef88a47264f42b8664b2c2f9166502bdc6c17d9199f4' for key 'pog_txid'
+       at Packet.asError (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packets\packet.js:708:17)
+       at Execute.execute (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\commands\command.js:28:26)
+       at Connection.handlePacket (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (D:\work_space\yuezhi\eos\exchange\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_DUP_ENTRY',
+     errno: 1062,
+     sqlState: '23000',
+     sqlMessage:
+      'Duplicate entry \'4c8c4cea802f69fc648eef88a47264f42b8664b2c2f9166502bdc6c17d9199f4\' for key \'pog_txid\'',
+     sql:
+      'INSERT INTO `Eth_charge` (`id`,`from_eth_address`,`usdt_value`,`ue_value`,`recharge_time`,`is_exchanged`,`is_queue`,`pog_blockNumber`,`pog_confirm_blockNumber`,`pog_account`,`pog_txid`,`service_charge`,`exchange_rate`,`log_info`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);',
+     parameters:
+      [ 'uBRL6O9P',
+        '0xd73b2c72435276c98a1266db457fbcd0c2d2bf28',
+        '15',
+        '20',
+        '2019-11-06 08:03:05',
+        false,
+        false,
+        942503,
+        942509,
+        '11g22p33s',
+        '4c8c4cea802f69fc648eef88a47264f42b8664b2c2f9166502bdc6c17d9199f4',
+        '5 USDT',
+        '1',
+        'UE2USDT' ] },
+  sql:
+   'INSERT INTO `Eth_charge` (`id`,`from_eth_address`,`usdt_value`,`ue_value`,`recharge_time`,`is_exchanged`,`is_queue`,`pog_blockNumber`,`pog_confirm_blockNumber`,`pog_account`,`pog_txid`,`service_charge`,`exchange_rate`,`log_info`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);' }:'}

@@ -9,7 +9,7 @@ const sleep = require("./sleep.js");
 const {Decimal} = require("decimal.js");
 const keyConfig = require("../common/keyConfig.js");
 // @ts-ignore
-const rpc = new JsonRpc(END_POINT, { fetch });
+const rpc = new JsonRpc("http://node3.poggy.one:8888", { fetch });
 
 const request = require("request");
 
@@ -90,13 +90,72 @@ async function getTrxAction(accountName, fromPosition) {
  */
 async function getTransactionInfo(blockNumber,txid){
     try{
+        let trx_info =  await _getTransactionInfo(blockNumber,txid);
+        let c=1;
+        while(!trx_info && c<=10){
+            trx_info = await  _getTransactionInfo(blockNumber+c,txid);
+            if( trx_info){
+                break;
+            }
+            c++;
+
+            logger.debug("c:",c); 
+        }
+        if(trx_info){
+            logger.debug("get trx :",trx_info); 
+        }else{
+            logger.debug("get trx null,c :",c); 
+        }
+        return trx_info
+    }
+    catch (err) {
+        throw err;
+    }
+}
+
+/**
+ * 
+ * @param {*} blockNumber 
+ * @param {*} txid 
+ */
+async function _getTransactionInfo(blockNumber,txid){
+    try{
         const block_info = await rpc.get_block(blockNumber)
+
+
         //block_info.transactions[0].trx.transaction.actions
         //@ts-ignore
-        const trx_info = block_info.transactions.find(transaction=>{
-            return transaction.trx.id==txid
-        })
+       // logger.debug("block_info========>: ", JSON.stringify(block_info, null, 4));
+        let trx_info = null;
+        for (const act of block_info.transactions) {
+            if (act.trx.id == txid) {
+                
+                trx_info = {
+                    ...act
+                }
+                break;
+            }
+        }
+        // }
+        // const trx_info = block_info.transactions.find(transaction=>{
+        //     return transaction.trx.id==txid
+        // })
         return trx_info
+    }
+    catch (err) {
+        throw err;
+    }
+}
+
+/**
+ * 根据交易 id 获取交易信息
+ * @param {String} txid 
+ * @returns {Promise<Object>}
+ */
+async function getActionByTrId(txid){
+    try{
+        const trxInfo = await rpc.history_get_transaction(txid);
+        return trxInfo
     }
     catch (err) {
         throw err;
@@ -230,7 +289,7 @@ async function transfer(transfer_data) {
         const {tokenContract,from,to,quantity,memo} = transfer_data;
         
         //let api = await newApi([key]);
-        let api = await newApi(PRIVATE_KEY_TEST.split(','));
+        let api = await newApi([key]);
         let actions = {
             actions: [{
               account: tokenContract,
@@ -252,6 +311,7 @@ async function transfer(transfer_data) {
             blocksBehind: 3,
             expireSeconds: 30,
         });
+        
         return result;
  
     } catch (err) {
@@ -295,5 +355,6 @@ module.exports = {
     transfer,
     getTrxInfoByBlockNumber,
     rpc,
-    get_UE_status
+    get_UE_status,
+    getActionByTrId
 }

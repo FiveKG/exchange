@@ -4,7 +4,7 @@ const {ADDRESSES} =require("../common/constant/web3Config");
 const {USDT2UE_RATE,USDT2UE_TAX} = require("../common/constant/exchange_rule")
 const {Decimal} = require('decimal.js');
 const { generate_unique_key } = require("../common");
-const {sequelize,psTransfer2Pog} = require('../db');
+const {sequelize} = require('../db');
 
 /**
  * 
@@ -36,8 +36,6 @@ async function recordTransfer(transfer_data){
         const service_charge = USDT2UE_TAX;
         const exchange_rate = USDT2UE_RATE;
         const log_info = "USDT2UE"
-        console.log('========transfer_data============>',transfer_data);
-        console.log(id,eth_txid,from_eth_address,to_eth_address,usdt_value,ue_value,recharge_time,is_exchanged,pog_account,service_charge,exchange_rate,log_info)
         //插入数据库
         try{
             const result = await sequelize.Eth_charge.create({id,eth_txid,from_eth_address,to_eth_address,usdt_value,ue_value,recharge_time,is_exchanged,pog_account,service_charge,exchange_rate,log_info});

@@ -202,3 +202,70 @@
 {"date":"2019-11-06T11:39:20.336","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
 {"date":"2019-11-06T11:39:20.337","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
 {"date":"2019-11-06T11:39:20.338","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"60188","data":'can not get HOT_ADDRESS_PRIVATEKEY'}
+{"date":"2019-11-06T14:59:49.070","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"13532","data":'热账号转账失败: Error: Returned error: known transaction: c5ca2a59eceedee7b01908678ac3170a7689c3f2d036608a2f02fa7fda3aed30
+    at Object.ErrorResponse (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-helpers\src\errors.js:29:16)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-http\src\index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T14:59:49.072","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"13532","data":'this error from transfer2Eth(),the error is Error: Returned error: known transaction: c5ca2a59eceedee7b01908678ac3170a7689c3f2d036608a2f02fa7fda3aed30
+    at Object.ErrorResponse (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-helpers\src\errors.js:29:16)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-http\src\index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T15:19:35.190","level":"DEBUG","category":"transfer2Eth.js","host":"frank-hp","pid":"67448","data":'当前转账信息已经处理过了.'}
+{"date":"2019-11-06T15:28:33.099","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"90860","data":'热账号转账失败: Error: Returned error: known transaction: adbc2b7ea6b82aba6ac45df807f8fd833ae6563d7eb70c9744aced45012d7386
+    at Object.ErrorResponse (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-helpers\src\errors.js:29:16)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-http\src\index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T15:28:33.101","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"90860","data":'this error from transfer2Eth(),the error is Error: Returned error: known transaction: adbc2b7ea6b82aba6ac45df807f8fd833ae6563d7eb70c9744aced45012d7386
+    at Object.ErrorResponse (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-helpers\src\errors.js:29:16)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-http\src\index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T15:58:09.037","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"96548","data":'热账号转账失败: Error: Returned error: known transaction: ac3230a199cee4866d20a1fca8ae198c826a08792b497a542d9b0a921fdb1c1e
+    at Object.ErrorResponse (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-helpers\src\errors.js:29:16)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-http\src\index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}
+{"date":"2019-11-06T15:58:09.040","level":"ERROR","category":"transfer2Eth.js","host":"frank-hp","pid":"96548","data":'this error from transfer2Eth(),the error is Error: Returned error: known transaction: ac3230a199cee4866d20a1fca8ae198c826a08792b497a542d9b0a921fdb1c1e
+    at Object.ErrorResponse (D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-helpers\src\errors.js:29:16)
+    at D:\work_space\yuezhi\eos\exchange\node_modules\web3-core-requestmanager\src\index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (D:\work_space\yuezhi\eos\exchange\node_modules\web3-providers-http\src\index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (D:\work_space\yuezhi\eos\exchange\node_modules\xhr2-cookies\dist\xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)'}

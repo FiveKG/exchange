@@ -13,6 +13,8 @@ var {format,parse,parseISO} = require('date-fns')
 const local  = require('date-fns/locale/zh-CN');
 const data_fns = require('date-fns/fromUnixTime')
 const { Decimal } = require("decimal.js");
+const { getActionByTrId } = require("./getEOSTrxAction");
+
 
 
 async function test(id){
@@ -56,6 +58,10 @@ async function eosTransfer(){
 async function get_UE_status2(){
     console.log(await get_UE_status())
 }
+
 ;(async()=>{
-    await eosTransfer()
+    // await eosTransfer()
+    const trx_id = "32c592c477ecdaddfd52efdd8c8126de1c6d89eda42ed98bdf6957dd96131d51"
+    const ret = await getActionByTrId(trx_id);
+    console.debug("ret: ", ret);
 })();

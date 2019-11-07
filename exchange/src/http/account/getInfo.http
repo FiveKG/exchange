@@ -57,4 +57,4 @@ GET http://localhost:7758/exchange/history_exchange_records?pog_account=TES3
 GET http://localhost:7758/exchange/get_record_detail?id=xPnBYup9
 
 ### get detail
-GET http://www.UETOKEN.IO/exchange/get_record_detail?id=xPnBYup9
+GET http://www.UETOKEN.IO/exchange/get_examine_data

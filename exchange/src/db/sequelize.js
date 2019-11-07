@@ -24,6 +24,7 @@ const sequelize = new Sequelize(database,user, password, {
     },
     timestamps: true
   },
+  logging: false,
   dialect:'mysql', /* 'mysql' | 'mariadb' | 'postgres' | 'mssql' 之一 */
   pool: {
     max: 20, // 连接池中最大连接数量
@@ -32,10 +33,10 @@ const sequelize = new Sequelize(database,user, password, {
     idle: 10000 // 如果一个线程 10 秒钟内没有被使用过的话，那么就释放线程
     }
 });
-const {Eth_account,Eth_charge} = createTable(sequelize,Sequelize)
+const {Eth_tax,Eth_charge} = createTable(sequelize,Sequelize)
 
 module.exports = {
   "sequelize" : sequelize,
-  "Eth_account": Eth_account,
+  "Eth_tax": Eth_tax,
   "Eth_charge": Eth_charge
 };
