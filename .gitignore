@@ -1,7 +1,11 @@
 node_modules
 <<<<<<< HEAD
+<<<<<<< HEAD
 logs
 *.log
 =======
 *.log
 >>>>>>> e28e4301e0d7c56a77df61a878a79030d2c67597
+=======
+*.log
+>>>>>>> dev
