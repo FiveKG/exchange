@@ -21,6 +21,8 @@ psTransfer2Pog.sub(async msg => {
 psTransfer2Eth.sub(async msg => {
     try {
         let result = JSON.parse(msg);
+	logger.debug("psTransfer2Eth  result: ", JSON.stringify(result, null, 4));
+	await sleep(200);
         await transfer2Eth(result);
     } catch (err) {
         throw err;
