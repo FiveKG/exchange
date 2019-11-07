@@ -11,7 +11,6 @@ const InputDataDecoder = require('ethereum-input-data-decoder');
 const decoder = new InputDataDecoder(ABI);
 const logger = require("../common/logger").getLogger('getEthTrxAction.js');
 const contract =new web3.eth.Contract(ABI,CONTRACT_ADDRESS);
-const {get_UE_status} = require('./getEOSTrxAction')
 const Tx = require('ethereumjs-tx');
 const LOCK_ETH_TRANSFER = "tgb:exchange:lockEthTransfer:from:"
 const redis = require('../common/redis')
@@ -382,35 +381,6 @@ function sendSignedTransaction(hash_str){
     return promise;
 }
 
-/**
- * 返回所有冷热钱包余额
- */
-async function getAllAddressBalance(){
-    const hot_address_balance_eth = new Decimal(await getTokenBalance(HOT_ADDRESS));
-    const cold_address1_balance_eth = new Decimal(await getTokenBalance(COLD_ADDRESS1));
-    const cold_address2_balance_eth = new Decimal(await getTokenBalance(COLD_ADDRESS2));
-    const cold_address3_balance_eth = new Decimal(await getTokenBalance(COLD_ADDRESS3));
-    const cold_address4_balance_eth = new Decimal(await getTokenBalance(COLD_ADDRESS4));
-    const cold_address5_balance_eth = new Decimal(await getTokenBalance(COLD_ADDRESS5));
-
-    const get_UE_balance= await get_UE_status();
-    const current_ue = new Decimal(get_UE_balance.current_amount);
-
-    const all_eth_balance = hot_address_balance_eth.plus(cold_address1_balance_eth).plus(cold_address2_balance_eth).plus(cold_address3_balance_eth).plus(cold_address4_balance_eth).plus(cold_address5_balance_eth);
-    const wait_transfer = current_ue.sub(all_eth_balance);
-    const data ={
-        get_UE_balance:get_UE_balance,
-        hot_address_balance_eth:{address:HOT_ADDRESS,balance:hot_address_balance_eth},
-        cold_address1_balance_eth:{address:COLD_ADDRESS1,balance:cold_address1_balance_eth},
-        cold_address2_balance_eth:{address:COLD_ADDRESS2,balance:cold_address2_balance_eth},
-        cold_address3_balance_eth:{address:COLD_ADDRESS3,balance:cold_address3_balance_eth},
-        cold_address4_balance_eth:{address:COLD_ADDRESS4,balance:cold_address4_balance_eth},
-        service_charge_balance_eth:{address:COLD_ADDRESS5,balance:cold_address5_balance_eth},
-        wait_transfer:wait_transfer
-    }
-
-    return data
-}
 
 async function getGasPrice(){
     return await web3.eth.getGasPrice()
@@ -443,7 +413,12 @@ module.exports={
     "getABI"                  : getABI,
     "sendSignTransfer"        : sendSignTransfer,
     "getGasPrice"             : getGasPrice,
+<<<<<<< HEAD
     "getHotAddressUSDTBalance":getHotAddressUSDTBalance,
     "getAllAddressBalance"    :getAllAddressBalance,
     "isLegal"                 :isLegal
 }
+=======
+    "getHotAddressUSDTBalance":getHotAddressUSDTBalance
+}
+>>>>>>> f-function-exchange

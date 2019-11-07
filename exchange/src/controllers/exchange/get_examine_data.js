@@ -1,7 +1,7 @@
 // @ts-check
 const {inspect_req_data,get_status} = require("../../common")
 const logger  =require("../../common/logger").getLogger("get_examine_data.js")
-const {getAllAddressBalance} = require("../../job/getEthTrxAction")
+const getPublicExamination = require("../../job/getPublicExamination")
 
 //@ts-ignore
 async function get_examine_data(req,res,next){
@@ -11,7 +11,7 @@ async function get_examine_data(req,res,next){
         
 
         let resData = get_status(1);
-        const examine_data = await getAllAddressBalance()
+        const examine_data = await getPublicExamination()
         resData["data"] = examine_data;
         res.send(resData);
     }catch(error){
