@@ -9,8 +9,7 @@ const {HOT_ADDRESS,COLD_ADDRESS5}  =require('../common/constant/web3Config')
 const {sendSignTransfer,getTransaction,getHotAddressUSDTBalance} = require('./getEthTrxAction')
 const {MINIUSDT,UE2USDT_TAX} = require("../common/constant/exchange_rule")
 const TX_STATE = 'tgb:exchange:UE2USDT:tx_hash:';
-const generate_unique_key = require("../common/generate_unique_key")
-
+const generate_unique_key = require("../common/generate_unique_key");
 /**
  * 
  * @param {Object} data 
@@ -18,7 +17,7 @@ const generate_unique_key = require("../common/generate_unique_key")
 async function transfer2Eth(data){
     try{
         const findOption = { 
-            attributes : [ 'pog_account' ,'to_eth_address' , "is_exchanged"] ,
+            attributes : [ 'pog_account' ,'to_eth_address' , "is_exchanged" ] ,
             "where" : { id : data.id } ,  
             raw : true
         };
@@ -56,25 +55,27 @@ async function transfer2Eth(data){
         const Eth_charge_where = {
         "pog_txid":data.pog_txid,
         }
+        //设置预转账状态,用redis记录，用于防止已经转账未更新数据库
+        await redis.set(TX_STATE+data.pog_txid,1);
+
+        let key = await keyConfig.getConfig("HOT_ADDRESS_PRIVATEKEY");
+        if(key == ""){
+            logger.debug('can not get HOT_ADDRESS_PRIVATEKEY');
+            return
+        }
+        if(key.startsWith('0x')||key.startsWith('0X')){
+            key = key.substring(2)
+        }
+        let trx_id = null
         //转账
         try{
-            //设置预转账状态,用redis记录，用于防止已经转账未更新数据库
-            await redis.set(TX_STATE+data.pog_txid,1);
-
-            let key = await keyConfig.getConfig("HOT_ADDRESS_PRIVATEKEY");
-            if(key == ""){
-                logger.debug('can not get HOT_ADDRESS_PRIVATEKEY');
-                return
-            }
-            if(key.startsWith('0x')||key.startsWith('0X')){
-                key = key.substring(2)
-            }
             //转给用户
-            const trx_id = await sendSignTransfer(HOT_ADDRESS,data.to_eth_address,value.mul(1000000).toNumber(),key );//HOT_ADDRESS_PRIVATEKEY
+            trx_id = await sendSignTransfer(HOT_ADDRESS,data.to_eth_address,value.mul(1000000).toNumber(),key );//HOT_ADDRESS_PRIVATEKEY
             if(!trx_id){
                 await redis.del(TX_STATE+data.pog_txid);
                 return
             }
+
             //服务费充值队列
             // const queue_data = {
             //     id              : service_charge_id,
@@ -88,17 +89,24 @@ async function transfer2Eth(data){
             //     log_info        : 'SERVICE_CHARGE'
             // }
             // await psServiceCharge.pub(queue_data)
-            
-          
             Eth_charge_filed.eth_txid = trx_id;
-        }catch(err){
-            logger.error('热账号转账失败:',err);
-            throw err
-        }
+            //更新数据库
+            await update_DB(Eth_charge_filed,Eth_charge_where);
 
-          
-        //更新数据库
-        await update_DB(Eth_charge_filed,Eth_charge_where);
+        }catch(err){
+            // await sleep(10 * 1000);
+            // trx_id = await sendSignTransfer(HOT_ADDRESS,data.to_eth_address,value.mul(1000000).toNumber(), key);//HOT_ADDRESS_PRIVATEKEY
+            // if(!trx_id){
+            //     logger.error("执行重新转账失败");
+            //     await update_DB(Eth_charge_filed,Eth_charge_where);
+            // } else {
+            //     Eth_charge_filed.eth_txid = trx_id;
+            // }
+
+            logger.error('热账号转账失败，失败的记录为： ', JSON.stringify(Eth_charge_filed, null, 4));
+            throw err
+        } 
+        
 
         await redis.del(TX_STATE+data.pog_txid);
     }catch(err){

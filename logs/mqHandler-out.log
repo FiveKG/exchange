@@ -1,0 +1,192 @@
+=====redis++==== { host: '172.19.2.22', port: 6379, password: 'hxTJ4jsl+9mvx+tAgw==' }
+[36m[2019-11-07T08:36:24.882] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+[36m[2019-11-07T08:36:24.890] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+=====redis++==== { host: '172.19.2.22', port: 6379, password: 'hxTJ4jsl+9mvx+tAgw==' }
+[36m[2019-11-07T08:46:34.330] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+[36m[2019-11-07T08:46:34.337] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+=====redis++==== { host: '172.19.2.22', port: 6379, password: 'hxTJ4jsl+9mvx+tAgw==' }
+[36m[2019-11-07T08:51:50.572] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+[36m[2019-11-07T08:51:50.579] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+=====redis++==== { host: '172.19.2.22', port: 6379, password: 'hxTJ4jsl+9mvx+tAgw==' }
+[36m[2019-11-07T08:56:12.220] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+[36m[2019-11-07T08:56:12.227] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+[33m[2019-11-07T08:56:16.973] [WARN] transfer2Pog.js - [39musdt to ue 交易重复提交  {
+    "id": "Virm8eFEa"
+}
+=====redis++==== { host: '172.19.2.22', port: 6379, password: 'hxTJ4jsl+9mvx+tAgw==' }
+[36m[2019-11-07T09:05:22.215] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+[36m[2019-11-07T09:05:22.221] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+=====redis++==== { host: '172.19.2.22', port: 6379, password: 'hxTJ4jsl+9mvx+tAgw==' }
+[36m[2019-11-07T09:13:17.376] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+[36m[2019-11-07T09:13:17.383] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+[36m[2019-11-07T09:17:02.539] [DEBUG] mqHandler.js - [39mpsTransfer2Eth  result:  {
+    "confirm_time": "2019-11-07T01:17:25",
+    "to_eth_address": "0x1f5862a717Fa55bc529C8445D524b84ed153ffcB",
+    "quantity": "10",
+    "pog_txid": "30fd88b6b67a274bb25b0bf90eab571b2199c6412e1a4b128af261df29fc164b",
+    "id": "iDLDMD_e"
+}
+[36m[2019-11-07T09:17:12.634] [DEBUG] mqHandler.js - [39mpsTransfer2Eth  result:  {
+    "confirm_time": "2019-11-07T01:17:25",
+    "to_eth_address": "0xe19B4e7FbCb4eeD988D0E97FDBa33e7094180834",
+    "quantity": "10",
+    "pog_txid": "e7d7dbcd6b8e90dbd423639fba025779108f899e1f05ba8b2cd4252b79ee27a3",
+    "id": "Aco3pDW1b"
+}
+[91m[2019-11-07T09:17:15.145] [ERROR] transfer2Eth.js - [39m热账号转账失败，失败的记录为：  {
+    "to_eth_address": "0xe19B4e7FbCb4eeD988D0E97FDBa33e7094180834",
+    "eth_txid": "",
+    "confirm_time": "2019-11-07T01:17:25",
+    "exchange_time": "2019-11-07T01:17:12.836Z",
+    "is_exchanged": true,
+    "service_charge": false
+}
+[91m[2019-11-07T09:17:15.146] [ERROR] transfer2Eth.js - [39mthis error from transfer2Eth(),the error is Error: Returned error: There are too many transactions in the queue. Your transaction was dropped due to limit. Try increasing the fee.
+    at Object.ErrorResponse (/data/code/exchange/exchange/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /data/code/exchange/exchange/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/data/code/exchange/exchange/node_modules/web3-providers-http/src/index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1183:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[36m[2019-11-07T09:17:22.725] [DEBUG] mqHandler.js - [39mpsTransfer2Eth  result:  {
+    "confirm_time": "2019-11-07T01:17:47",
+    "to_eth_address": "0xdd1340Bc3F88E9D8e92Ca06C7f38c80DC380109D",
+    "quantity": "10",
+    "pog_txid": "62fc04998fe325d91cd2d609e44b9be68ac00999d8494d748cc9f8203e438de2",
+    "id": "FlS02p7f"
+}
+[91m[2019-11-07T09:17:23.257] [ERROR] transfer2Eth.js - [39m热账号转账失败，失败的记录为：  {
+    "to_eth_address": "0xdd1340Bc3F88E9D8e92Ca06C7f38c80DC380109D",
+    "eth_txid": "",
+    "confirm_time": "2019-11-07T01:17:47",
+    "exchange_time": "2019-11-07T01:17:22.927Z",
+    "is_exchanged": true,
+    "service_charge": false
+}
+[91m[2019-11-07T09:17:23.257] [ERROR] transfer2Eth.js - [39mthis error from transfer2Eth(),the error is Error: Returned error: There are too many transactions in the queue. Your transaction was dropped due to limit. Try increasing the fee.
+    at Object.ErrorResponse (/data/code/exchange/exchange/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /data/code/exchange/exchange/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/data/code/exchange/exchange/node_modules/web3-providers-http/src/index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1183:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+=====redis++==== { host: '172.19.2.22', port: 6379, password: 'hxTJ4jsl+9mvx+tAgw==' }
+[36m[2019-11-07T09:29:16.331] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+[36m[2019-11-07T09:29:16.338] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+[36m[2019-11-07T09:29:51.648] [DEBUG] mqHandler.js - [39mpsTransfer2Eth  result:  {
+    "confirm_time": "2019-11-07T01:17:25",
+    "to_eth_address": "0xe19B4e7FbCb4eeD988D0E97FDBa33e7094180834",
+    "quantity": "10",
+    "pog_txid": "e7d7dbcd6b8e90dbd423639fba025779108f899e1f05ba8b2cd4252b79ee27a3",
+    "id": "Aco3pDW1b"
+}
+[36m[2019-11-07T09:30:06.750] [DEBUG] mqHandler.js - [39mpsTransfer2Eth  result:  {
+    "confirm_time": "2019-11-06T13:13:30",
+    "to_eth_address": "0x1f5862a717Fa55bc529C8445D524b84ed153ffcB",
+    "quantity": "10",
+    "pog_txid": "32c592c477ecdaddfd52efdd8c8126de1c6d89eda42ed98bdf6957dd96131d51",
+    "id": "0lQ-thAl"
+}
+[91m[2019-11-07T09:30:07.292] [ERROR] transfer2Eth.js - [39m热账号转账失败，失败的记录为：  {
+    "to_eth_address": "0x1f5862a717Fa55bc529C8445D524b84ed153ffcB",
+    "eth_txid": "",
+    "confirm_time": "2019-11-06T13:13:30",
+    "exchange_time": "2019-11-07T01:30:06.956Z",
+    "is_exchanged": true,
+    "service_charge": false
+}
+[91m[2019-11-07T09:30:07.294] [ERROR] transfer2Eth.js - [39mthis error from transfer2Eth(),the error is Error: Returned error: There are too many transactions in the queue. Your transaction was dropped due to limit. Try increasing the fee.
+    at Object.ErrorResponse (/data/code/exchange/exchange/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /data/code/exchange/exchange/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/data/code/exchange/exchange/node_modules/web3-providers-http/src/index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1183:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[36m[2019-11-07T09:31:46.899] [DEBUG] mqHandler.js - [39mpsTransfer2Eth  result:  {
+    "confirm_time": "2019-11-06T13:13:30",
+    "to_eth_address": "0x1f5862a717Fa55bc529C8445D524b84ed153ffcB",
+    "quantity": "10",
+    "pog_txid": "32c592c477ecdaddfd52efdd8c8126de1c6d89eda42ed98bdf6957dd96131d51",
+    "id": "0lQ-thAl"
+}
+[36m[2019-11-07T09:38:42.271] [DEBUG] mqHandler.js - [39mpsTransfer2Eth  result:  {
+    "confirm_time": "2019-11-07T01:39:08",
+    "to_eth_address": "0x1f5862a717Fa55bc529C8445D524b84ed153ffcB",
+    "quantity": "10",
+    "pog_txid": "2a5654cd084feb133859eb014c8788589018376e4fe00612583f860fd5942dcb",
+    "id": "0MtfUZb6"
+}
+[36m[2019-11-07T09:38:52.364] [DEBUG] mqHandler.js - [39mpsTransfer2Eth  result:  {
+    "confirm_time": "2019-11-07T01:39:08",
+    "to_eth_address": "0xe19B4e7FbCb4eeD988D0E97FDBa33e7094180834",
+    "quantity": "10",
+    "pog_txid": "1cec97ceaaaf744a8529d528324962d1f87d3526e15497da126087155d2d6dfe",
+    "id": "XlqTp2OR"
+}
+[91m[2019-11-07T09:38:52.901] [ERROR] transfer2Eth.js - [39m热账号转账失败，失败的记录为：  {
+    "to_eth_address": "0xe19B4e7FbCb4eeD988D0E97FDBa33e7094180834",
+    "eth_txid": "",
+    "confirm_time": "2019-11-07T01:39:08",
+    "exchange_time": "2019-11-07T01:38:52.567Z",
+    "is_exchanged": true,
+    "service_charge": false
+}
+[91m[2019-11-07T09:38:52.901] [ERROR] transfer2Eth.js - [39mthis error from transfer2Eth(),the error is Error: Returned error: There are too many transactions in the queue. Your transaction was dropped due to limit. Try increasing the fee.
+    at Object.ErrorResponse (/data/code/exchange/exchange/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /data/code/exchange/exchange/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/data/code/exchange/exchange/node_modules/web3-providers-http/src/index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1183:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[36m[2019-11-07T09:39:02.458] [DEBUG] mqHandler.js - [39mpsTransfer2Eth  result:  {
+    "confirm_time": "2019-11-07T01:39:08",
+    "to_eth_address": "0x2852a60b5CAe0f75b411F22aB8B4f4b09F34fcb4",
+    "quantity": "10",
+    "pog_txid": "f366f1c39bee64b9cb0b72211374503430f4e5a6f8f3a0bc65d4d395eb04fb61",
+    "id": "guqg2ebA5"
+}
+[91m[2019-11-07T09:39:05.651] [ERROR] transfer2Eth.js - [39m热账号转账失败，失败的记录为：  {
+    "to_eth_address": "0x2852a60b5CAe0f75b411F22aB8B4f4b09F34fcb4",
+    "eth_txid": "",
+    "confirm_time": "2019-11-07T01:39:08",
+    "exchange_time": "2019-11-07T01:39:02.663Z",
+    "is_exchanged": true,
+    "service_charge": false
+}
+[91m[2019-11-07T09:39:05.651] [ERROR] transfer2Eth.js - [39mthis error from transfer2Eth(),the error is Error: Returned error: Transaction nonce is too low. Try incrementing the nonce.
+    at Object.ErrorResponse (/data/code/exchange/exchange/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /data/code/exchange/exchange/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/data/code/exchange/exchange/node_modules/web3-providers-http/src/index.js:96:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (/data/code/exchange/exchange/node_modules/xhr2-cookies/dist/xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1183:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[36m[2019-11-07T09:39:12.625] [DEBUG] mqHandler.js - [39mpsTransfer2Eth  result:  {
+    "confirm_time": "2019-11-07T01:39:08",
+    "to_eth_address": "0xC79Abd1729496677b338B42e251DBf2120F5b23E",
+    "quantity": "10",
+    "pog_txid": "76735b55de96a42aa83f6d5406d4ab1ce007835a0af1a3f8a119e3956f401183",
+    "id": "mfu1JUaf"
+}
+=====redis++==== { host: '172.19.2.22', port: 6379, password: 'hxTJ4jsl+9mvx+tAgw==' }
+[36m[2019-11-07T09:47:56.033] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}
+[36m[2019-11-07T09:47:56.041] [DEBUG] amqp.js - [39mamqp option: {"protocol":"amqp","hostname":"127.0.0.1","port":5672,"username":"mq_user","password":"pass_2019","heartbeat":300}

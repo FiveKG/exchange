@@ -77,11 +77,23 @@ async function handlerTransferActions() {
                 // })
                
             }
-            if(!await isLegal(eth_txid)){
-                logger.debug('交易未确认，转账不合法：',eth_txid);
+            // null, isLegalResult.status ==> false || true
+            const isLegalResult = await isLegal(eth_txid);
+            logger.debug('交易状态：', isLegalResult);
+            if(isLegalResult === null){
+                logger.debug('交易未确认，转账不合法：', eth_txid);
+                //需要重新转账 转账失败 is_queue = 2  by hu
+                await sequelize.sequelize.query(`update Eth_charge set is_queue = 2 where id = '${transaction.id}'` , { type: sequelize.sequelize.QueryTypes.UPDATE});
                 continue; 
             }
+            if (!isLegalResult) {
+                // todo hash 确认失败，需要重新转账
+                logger.debug('hash 确认失败，需要重新转账：', eth_txid);
+                // await sequelize.sequelize.query(`update Eth_charge set is_queue = true where id = '${transaction.id}'` , { type: sequelize.sequelize.QueryTypes.UPDATE});
+                continue;
+            }
             const ethCheckKey = `usdt_to_ue:${transaction.id}`;
+            logger.debug('redis Key :', ethCheckKey);
             const isEx = await redis.get(ethCheckKey);
             if (isEx) {
                 logger.warn("USDT2UE 这笔交易已经转账, 交易信息为： ", JSON.stringify(transaction, null, 4));

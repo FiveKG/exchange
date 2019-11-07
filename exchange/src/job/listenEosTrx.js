@@ -11,6 +11,7 @@ const LOCK_ETH_TRANSFER = "tgb:exchange:lockEthTransfer:from:"
 const {HOT_ADDRESS} = require('../common/constant/web3Config')
 const { differenceInHours } = require("date-fns");
 const sleep = require("./sleep")
+const transfer2Eth = require("./transfer2Eth")
 // logger.debug(`handlerTransferActions EOS running...`);
 
 
@@ -94,11 +95,14 @@ async function handlerTransferActions() {
                     await sequelize.sequelize.query(`update Eth_charge set is_queue = true where id = '${transaction.id}'` , { type: sequelize.sequelize.QueryTypes.UPDATE});
                     continue;
                 }
-                await sequelize.sequelize.query(`update Eth_charge set is_queue = true where id = '${transaction.id}'` , { type: sequelize.sequelize.QueryTypes.UPDATE});
                 // 转账
-                logger.debug("pub 转账 ===》: ");
-                await psTransfer2Eth.pub(data);
-                logger.debug("pub 转账 ===》 end: ");
+                // logger.debug("pub 转账 ===》: ");
+                // await psTransfer2Eth.pub(data);
+                // logger.debug("pub 转账 ===》 end: ");
+
+                await transfer2Eth(data);
+
+                await sequelize.sequelize.query(`update Eth_charge set is_queue = true where id = '${transaction.id}'` , { type: sequelize.sequelize.QueryTypes.UPDATE});
                 await sleep(5 * 1000);
             } catch (error) {
                 logger.error("处理转帐消息出错: ", error, " 出错的 action 为: ", JSON.stringify(transaction, null, 4));
