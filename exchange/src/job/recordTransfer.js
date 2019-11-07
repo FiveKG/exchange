@@ -4,7 +4,7 @@ const {ADDRESSES} =require("../common/constant/web3Config");
 const {USDT2UE_RATE,USDT2UE_TAX} = require("../common/constant/exchange_rule")
 const {Decimal} = require('decimal.js');
 const { generate_unique_key } = require("../common");
-const {sequelize,psTransfer2Pog} = require('../db');
+const {sequelize} = require('../db');
 
 /**
  * 

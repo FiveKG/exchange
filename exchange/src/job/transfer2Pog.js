@@ -35,7 +35,7 @@ async function transfer2Pog(data){
            //从数据库获取没有完成的交易
             const sql_transactions = await sequelize.Eth_charge.findOne({
                 where:{
-                    is_queue    : false,
+                    is_queue: false,
                     id: data.id
                 },
                 attributes:[ "id" ],

@@ -17,11 +17,11 @@ const TBG_TOKEN2 = '11g22p33s'
 
 
 
-// // 节点信息
-const END_POINT = process.env.EOS_END_POINT || "http://node3.poggy.one:8888";
+// // // 节点信息
+// const END_POINT = process.env.EOS_END_POINT || "http://node3.poggy.one:8888";
 
-// //测试节点
- //const END_POINT = process.env.EOS_END_POINT || "http://testnode.poggy.one:8888";
+//测试节点
+ const END_POINT = process.env.EOS_END_POINT || "http://testnode.poggy.one:8888";
 // // 私钥
 // const PRIVATE_KEY_TEST = "5J6sFQ2xv32UzS9dWJHZ8HHcjxcCYBiWR7mt3bhpvzdYj5xUjiJ,5KQDHX3bQHkhAeo9CW3KxJ1YiUfYPMVuEcsYeC7hgyyjFB5k8oz"
 const JWT_SECRET = "Cpj9cTX8aZEIIThCyT1jWG4D4xqGNGH9caZAG5SQ";

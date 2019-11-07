@@ -26,8 +26,8 @@ async function subscribe(callback) {
         channel.consume(HANDLE_TRANSFER2ETH  , msg => {
             // logger.debug("game message: ", msg);
             if (msg !== null) {
-                callback(msg.content.toString());
                 channel.ack(msg);
+                callback(msg.content.toString());
             }
         });
     } catch (err) {

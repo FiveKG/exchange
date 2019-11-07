@@ -399,7 +399,8 @@ async function isLegal(trx_id){
     // if (result === null) {
     //     return false;
     // }
-    return result;//.status 2019-11-7 原样返回获取的状态 本次修改与listenEthTx.js 要同步
+    // return result.status
+    return result;
 }
 module.exports={
     "getBlock"                : getBlock,
